@@ -51,7 +51,7 @@
     "postProcessors": [],
     "globalMetadata": {
         "_appTitle": "Opensource Knowledgebase",
-        "_appLogoPath": "images/"
+        "_appLogoPath": ""
     },
     "markdownEngineName": "markdig",
     "noLangKeyword": false,

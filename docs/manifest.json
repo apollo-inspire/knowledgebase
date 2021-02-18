@@ -5,23 +5,26 @@
   "files": [
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "source_relative_path": "articles/cmgt/index.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "AyRHI5BXNS/oAJdOIOaBBw=="
+          "relative_path": "articles/cmgt/index.html",
+          "hash": "JAPUyypOGfYh1qmSH0EOIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
+      "log_codes": [
+        "EmptyTocItemName"
+      ],
       "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "source_relative_path": "articles/cmgt/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "relative_path": "articles/cmgt/toc.html",
+          "hash": "GtNo6cM4Y9G6WSQwLcD3Cw=="
         }
       },
       "is_incremental": false,
@@ -33,19 +36,22 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3LQubDMeHIVD7OMaRSB9Xw=="
+          "hash": "jU59X4/wsGA06Al/D0cGiA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "pKV8tlE0iQhgO9RLvAvDPw=="
+          "hash": "68so42c9VLk94eYWyTD7mg=="
         }
       },
       "is_incremental": false,
@@ -55,19 +61,17 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 1
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
