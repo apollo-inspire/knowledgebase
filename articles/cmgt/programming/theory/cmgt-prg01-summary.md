@@ -5,7 +5,7 @@ modified: '2020'
 published: '2020'
 ---
 
-# CMGT Programmeren 2: Managing Content in Webapplications
+# CMGT Programmeren 1: JavaScript Basics & Adafruit development  
 
 _**door: Lucas van der Vegt**_
 

@@ -1,15 +1,17 @@
 ---
-title: 'CMGT-PRG01-summary'
+title: ''
 created: '2020-09-06'
 published: '2020-09-06'
 modified: '2021-02-19'
 author: 'Lucas van der Vegt'
-modifiedby: 'Lucas van der Vegt', 'test'
+modifiedby: ['Lucas van der Vegt', 'test']
 knowledgebase: 'luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/design/theory/cmgt-ont01-summary.md'
+lang: 'nl'
+tags: ['ontwerpen', 'summery', 'design']
 ---
 
-# CMGT Programmeren 1: JavaScript Basics & Adafruit development  
+# CMGT Ontwerpen 1
 
 *Knowledgebase: luukftf.github.io/knowledgebase*  
 *(code: github.com/LuukFTF/knowledgebase)*  
