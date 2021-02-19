@@ -1,17 +1,18 @@
 ---
 title: ''
 created: ''
-modified: ''
 published: ''
+modified: ''
 author: ''
 modifiedby: ''
-knowledgebase: ''
-link: ''
+knowledgebase: 'luukftf.github.io/knowledgebase'
+link: 'github.com/LuukFTF/knowledgebase/'
 ---
 
 # Title
 
-*Knowledgebase: github.com/LuukFTF/knowledgebase*
+*Knowledgebase: luukftf.github.io/knowledgebase*  
+*(code: github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 

@@ -8,8 +8,8 @@ Template
 ---
 title: ''
 created: ''
-modified: ''
 published: ''
+modified: ''
 author: ''
 modifiedby: ''
 knowledgebase: ''
@@ -18,7 +18,8 @@ link: ''
 
 # Title
 
-*Knowledgebase: github.com/LuukFTF/knowledgebase*
+*Knowledgebase: luukftf.github.io/knowledgebase*  
+*(code: github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
