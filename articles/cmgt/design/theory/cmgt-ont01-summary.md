@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'CMGT Ontwerpen 1 Samenvatting'
 created: '2020-09-06'
 published: '2020-09-06'
 modified: '2021-02-19'
@@ -11,7 +11,7 @@ lang: 'nl'
 tags: ['ontwerpen', 'summery', 'design']
 ---
 
-# CMGT Ontwerpen 1
+# CMGT Ontwerpen 1:
 
 *Knowledgebase: luukftf.github.io/knowledgebase*  
 *(code: github.com/LuukFTF/knowledgebase)*  

@@ -1,27 +1,48 @@
+# Readme
+
 Go to > `/docs/articles/` for all the opensource documentation files
 
-Use template for articles (`/template.md/`)
+Explenation of markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-Template
+Please use the template for adding and making articles (`/template.md/`) 
 
+**Template:**
 ```md
 ---
-title: ''
+title: ''+
 created: ''
 published: ''
 modified: ''
 author: ''
-modifiedby: ''
-knowledgebase: ''
-link: ''
+modifiedby: ['', '']
+knowledgebase: 'https://luukftf.github.io/knowledgebase'
+link: 'https://github.com/LuukFTF/knowledgebase'
+lang: 'en'
+tags: ['', '', '']
 ---
+
 
 # Title
 
-*Knowledgebase: luukftf.github.io/knowledgebase*  
-*(code: github.com/LuukFTF/knowledgebase)*  
+*Knowledgebase: https://luukftf.github.io/knowledgebase*  
+*(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
 ## h1
+
+CONTENT
+
+`end of file`
+*publish date:*
+*modified date:*
+
+<!-- LINKS -->
+[Google](https://www.google.com)
 ```
+
+
+`end of file`
+
+*publish date:*
+*modified date:*
