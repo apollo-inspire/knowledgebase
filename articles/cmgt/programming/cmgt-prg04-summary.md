@@ -1,29 +1,22 @@
 ---
-title: cmgt-prg04-summary
+title: 'cmgt-prg04-summary'
 created: '2020-06-24'
-modified: '2020-06-27'
 published: '2020-06-27'
+modified: '2021-02-20'
+author: 'Lucas van der Vegt'
+teacher: ''
+modifiedby: ['', '']
+knowledgebase: 'https://luukftf.github.io/knowledgebase'
+link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg04-summary.md'
+lang: 'en'
+tags: ['typescript', 'oop', 'gamedev']
 ---
 
-# CMGT Programmeren 4: Object Oriented Game Development
-_**Object Oriented Game Development - TypeScript**_
-_**door: Lucas van der Vegt**_
+# CMGT Programmeren 4: Object Oriented Game Development (TypeScript)
 
----
-title: CMGT-PRG01-summary
-created: '2020-09-06'
-modified: '2020-09-06'
----
-
-# CMGT Programmeren 1: JavaScript Basics & Adafruit development
-
-_**door: Lucas van der Vegt**_
-
-## Leerdoelen
-
-## Topics
-
-## Main Meterial
+*Knowledgebase: https://luukftf.github.io/knowledgebase*  
+*(code: https://github.com/LuukFTF/knowledgebase)*  
+*By: Lucas van der Vegt*
 
 
 ## Leerdoelen
@@ -85,7 +78,7 @@ ervan beredeneren.
   - Encapsulation
 
 
-## Main Meterial
+## Main
 
 ### Basic Javascript
 
@@ -428,5 +421,10 @@ Car has a driver
 # protected
 ```
 
-
+`end of file`  
+*publish date: 2020-06-27*  
+*modified date: 2021-02-20*  
+  
+<!-- LINKS -->
+[google]: https://www.google.com  
 
