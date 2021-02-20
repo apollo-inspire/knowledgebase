@@ -1,10 +1,11 @@
-# Readme
+# readme
 
-Go to > `/docs/articles/` for all the opensource documentation files
+Go to > `/docs/articles/` for all the opensource documentation files  
 
-Explenation of markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-Please use the template for adding and making articles (`/template.md/`) 
+Explanation of markdown: [Markdown Cheatsheet][markdown-cheatsheet]  
+Docfx flavoured markdown: [Markdown Docfx][markdown-docfx]  
+Please use the template for adding and making articles: `/template.md/`   
+[Template.md Link][article-template]
 
 **Template:**
 ```md
@@ -31,18 +32,25 @@ tags: ['', '', '']
 
 ## h1
 
-CONTENT
+CONTENT  
 
-`end of file`
-*publish date:*
-*modified date:*
+[link][google]
+
+`end of file`  
+*publish date:*  
+*modified date:*  
 
 <!-- LINKS -->
-[Google](https://www.google.com)
+[google]: https://www.google.com
 ```
 
 
-`end of file`
 
-*publish date:*
-*modified date:*
+`end of file`  
+*publish date: 2021-02-19*  
+*modified date: 2021-02-20*  
+
+<!-- LINKS -->
+[markdown-cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet  
+[markdown-docfx]: https://dotnet.github.io/docfx/spec/docfx_flavored_markdown  
+[article-template]: https://github.com/LuukFTF/knowledgebase/blob/master/template.md  

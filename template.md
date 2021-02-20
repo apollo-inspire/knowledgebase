@@ -4,13 +4,13 @@ created: ''
 published: ''
 modified: ''
 author: ''
+teacher: ''
 modifiedby: ['', '']
-knowledgebase: 'luukftf.github.io/knowledgebase'
+knowledgebase: 'https://luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase'
 lang: 'en'
 tags: ['', '', '']
 ---
-
 
 # Title
 
@@ -19,13 +19,17 @@ tags: ['', '', '']
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
-## h1
+## h1  
 
-CONTENT
+CONTENT  
 
-`end of file`
-*publish date:*
-*modified date:*
+[link][google]
 
+
+
+`end of file`  
+*publish date:*  
+*modified date:*  
+  
 <!-- LINKS -->
-[Google](https://www.google.com)
+[google]: https://www.google.com  
