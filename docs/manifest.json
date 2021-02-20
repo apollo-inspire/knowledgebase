@@ -12,7 +12,7 @@
           "hash": "nHdl6VQyNzzOVuSkfkfxOQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "ekgjopAlCz5/z1545X2A+w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg04-summary.html",
-          "hash": "vUjOEfj4aV5lvWpwMyRI4A=="
+          "hash": "3JmUr/kSV9Lp3S4+n4A+fg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +192,7 @@
           "hash": "/ObeQWzTHlaJFBGso0zVjw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -292,7 +292,7 @@
           "hash": "Q6ejZpHfksYeOPFLd3VG2g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -304,7 +304,7 @@
           "hash": "LVvFMVYWdpD9tfflHuy/rQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -336,7 +336,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 24,
-          "skipped_file_count": 19
+          "skipped_file_count": 23
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
