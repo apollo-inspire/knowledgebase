@@ -10,18 +10,18 @@ Please use the template for adding and making articles: `/template.md/`
 **Template:**
 ```md
 ---
-title: ''+
+title: ''
 created: ''
 published: ''
 modified: ''
 author: ''
+teacher: ''
 modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase'
 lang: 'en'
 tags: ['', '', '']
 ---
-
 
 # Title
 
@@ -30,18 +30,20 @@ tags: ['', '', '']
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
-## h1
+## h1  
 
 CONTENT  
 
 [link][google]
 
+
+
 `end of file`  
 *publish date:*  
 *modified date:*  
-
+  
 <!-- LINKS -->
-[google]: https://www.google.com
+[google]: https://www.google.com  
 ```
 
 

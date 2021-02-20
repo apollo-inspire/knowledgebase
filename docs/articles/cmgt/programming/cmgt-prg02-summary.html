@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>cmgt-prg02-summary | Opensource Knowledgebase </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="cmgt-prg02-summary | Opensource Knowledgebase ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cmgt-programmeren-2-managing-content-in-webapplications">CMGT Programmeren 2: Managing Content in Webapplications</h1>
+
+<p><em><strong>door: Lucas van der Vegt</strong></em>
+<em>Published: 2020-01-25</em></p>
+<h2 id="leerdoelen">Leerdoelen</h2>
+<p>Ik ken
+De werking en afhandeling van een webrequest icm een database
+De structuur van een database
+Manieren om data te onthouden tussen meerdere requests
+Veiligheidsrisico’s bij het werken met formulieren
+Ik kan
+Gegevens uit een database zowel gestructureerd ophalen als tonen
+Gegevens uit een formulier verwerken in een database
+Een database opzetten waarbij er sprake is van een veel-op-veel relatie
+Een gelaagde website bouwen waarbij er sprake is van een scheiding tussen structuur, presentatie en logica</p>
+<h2 id="topics">Topics</h2>
+<p>Website vanaf database
+Formulieren
+Veiligheidsrisico's
+SQL Queries
+CRUD (Create, Read, Update &amp; Delete)
+Pseudocode</p>
+<ul>
+<li><p>General PHP</p>
+<ul>
+<li>Preprocessor op server</li>
+<li>Syntax
+<ul>
+<li><?php????>
+</li>
+<li><?=????>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Datum en tijd</p>
+</li>
+<li><p>Login</p>
+<ul>
+<li>Arrays</li>
+<li>Associative array</li>
+</ul>
+</li>
+<li><p>Foreach Loop</p>
+</li>
+<li><p>$Variables
+- isset()</p>
+</li>
+<li><p>SQL Queries</p>
+</li>
+<li><p>SELECT</p>
+<ul>
+<li>INSERT</li>
+</ul>
+</li>
+<li><p>UPDATE</p>
+</li>
+<li><p>DELETE</p>
+</li>
+<li><p>Forms</p>
+<ul>
+<li>GET</li>
+</ul>
+</li>
+<li><p>POST</p>
+</li>
+<li><p>Hidden Forms</p>
+</li>
+<li><p>Database</p>
+</li>
+<li><p>Werken met de beheeromgeving
+- Aanmaken database</p>
+<ul>
+<li>Relaties
+<ul>
+<li>Entity Relation Diagram (ERD)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Veel op veel relaties</p>
+</li>
+<li><p>eveiliging</p>
+<ul>
+<li>XSS</li>
+</ul>
+</li>
+<li><p>Htmlentities</p>
+</li>
+<li><p>SQL Injections</p>
+</li>
+<li><p>Internet Protocollen/ HTTP</p>
+<ul>
+<li>HTTPS Request/Response</li>
+<li>Server (Hardware)</li>
+<li>Webserver (Software)</li>
+<li>Session</li>
+<li>Cookie</li>
+</ul>
+</li>
+<li><p>Pseudocode</p>
+</li>
+</ul>
+<h2 id="main-meterial">Main Meterial</h2>
+<h3 id="1-basic-php">1. Basic PHP</h3>
+<h4 id="11-syntax">1.1 Syntax</h4>
+<h4 id="12-linking">1.2 Linking</h4>
+<h4 id="13-datatypes">1.3 Datatypes</h4>
+<h4 id="14-operators">1.4 Operators</h4>
+<h4 id="15-control-statements">1.5 Control Statements</h4>
+<h4 id="16-functions">1.6 Functions</h4>
+<h4 id="17-objects">1.7 Objects</h4>
+<h4 id="18-arrays">1.8 Arrays</h4>
+<h4 id="19-variables">1.9 $Variables</h4>
+<h4 id="110-config">1.10 Config</h4>
+<h4 id="111-login">1.11 Login</h4>
+<h4 id="112-datum-en-tijd">1.12 Datum en tijd</h4>
+<h4 id="113-switch">1.13 Switch</h4>
+<h3 id="2-database">2. Database</h3>
+<h4 id="general">General</h4>
+<h4 id="sql-datatypes">SQL Datatypes</h4>
+<h4 id="queries">Queries</h4>
+<h5 id="operators">Operators</h5>
+<h3 id="3-php--databases">3. PHP &amp; Databases</h3>
+<h3 id="4-forms">4. Forms</h3>
+<h3 id="5-beveiliging">5. Beveiliging</h3>
+<h3 id="6-internet-protocollen-http">6. Internet Protocollen/ HTTP</h3>
+<h3 id="7-pseudocode">7. Pseudocode</h3>
+<h3 id="8-git">8. Git</h3>
+<h3 id="9-ide-visual-studio-code">9. IDE Visual Studio Code</h3>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg02-summary.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

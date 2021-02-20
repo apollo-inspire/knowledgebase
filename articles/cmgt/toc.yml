@@ -1,1 +1,41 @@
 - href: index.md
+
+- name: Design
+  items:
+  - name: Ontwerpen 1
+    href: design/cmgt-ont01-summary.md
+  - name: Ontwerpen 2
+    href: design/cmgt-ont02-summary.md
+  - name: Ontwerpen 3
+    href: design/cmgt-ont03-summary.md
+  - name: Ontwerpen 4
+    href: design/cmgt-ont04-summary.md
+
+- name: Mediaphilosophy
+  items:
+  - name: Techfilo 1
+    href: mediaphilosophy/cmgt-techfil01-summary.md
+  - name: Techfilo 2
+    href: mediaphilosophy/cmgt-techfil02-summary.md
+  - name: Techfilo 3
+    href: mediaphilosophy/cmgt-techfil03-summary.md
+  - name: Techfilo 4
+    href: mediaphilosophy/cmgt-techfil04-summary.md
+
+- name: Programming
+  items:
+  - name: Programmeren 1
+    href: programming/cmgt-prg01-summary.md
+  - name: Programmeren 2
+    href: programming/cmgt-prg02-summary.md
+  - name: Programmeren 2 Advanced
+    href: programming/cmgt-prg02-advanced-summary.md
+  - name: Programmeren 3
+    href: programming/cmgt-prg03-summary.md
+  - name: Programmeren 4
+    href: programming/cmgt-prg04-summary.md
+
+- name: Speedcourses
+  items:
+  - name: Essay
+    href: speedcourses/cmgt-speedcourse-essay.md

@@ -5,6 +5,54 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/design/cmgt-ont01-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/design/cmgt-ont01-summary.html",
+          "hash": "nHdl6VQyNzzOVuSkfkfxOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/design/cmgt-ont02-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/design/cmgt-ont02-summary.html",
+          "hash": "xLPeg0Ys3ReEAgY8mUj9Bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/design/cmgt-ont03-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/design/cmgt-ont03-summary.html",
+          "hash": "vRmLk+mBT7nt0glAQ8w5eA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/design/cmgt-ont04-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/design/cmgt-ont04-summary.html",
+          "hash": "ekgjopAlCz5/z1545X2A+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/cmgt/index.md",
       "output": {
         ".html": {
@@ -16,7 +64,176 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil01-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil01-summary.html",
+          "hash": "o6etQ6CfWfgxBM8eoEUgYA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil02-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil02-summary.html",
+          "hash": "mi4CeFJdjCC1HiNZgPWfIg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil03-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil03-summary.html",
+          "hash": "NCuuGM0Zz03nw5NPBLxJpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary copy.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary copy.html",
+          "hash": "ebm1x+9Q3S5UFnU1or80kQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg01-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg01-summary.html",
+          "hash": "TdUWDzd9cwt5EGCWNCdYug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg02-advanced-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg02-advanced-summary.html",
+          "hash": "iml5OKpe19ISjkyqwwFibg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg02-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg02-summary.html",
+          "hash": "Uz9M5w2xujxb2nfG5CG0cw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg03-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg03-summary.html",
+          "hash": "QvWclEFRl2HW+mMofSwJwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg04-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg04-summary.html",
+          "hash": "vUjOEfj4aV5lvWpwMyRI4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-doelgroep.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-doelgroep.html",
+          "hash": "KSdpyAs29xob6vkEgf9oZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-essay.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-essay.html",
+          "hash": "/ObeQWzTHlaJFBGso0zVjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-pitching.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-pitching.html",
+          "hash": "d7WX5DUr4v40NxzUd7GQNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-plannen.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-plannen.html",
+          "hash": "FvXMkekRtk7GqE1sHoubhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/tedx-deathbypowerpoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/tedx-deathbypowerpoint.html",
+          "hash": "BH6cxPVrQ/dpdq3A3v2FXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
       "log_codes": [
+        "InvalidFileLink",
         "EmptyTocItemName"
       ],
       "type": "Toc",
@@ -24,10 +241,34 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/toc.html",
-          "hash": "GtNo6cM4Y9G6WSQwLcD3Cw=="
+          "hash": "s1ZQNE63NLvBUQ0OktjnpQ=="
         }
       },
       "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/css.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/css.html",
+          "hash": "kdZl9dU5zDsbB3KdRbM38A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/hr/electives/minidocu/hr-minidocu-theory.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/hr/electives/minidocu/hr-minidocu-theory.html",
+          "hash": "9JaWOSyoEmtbFEK7QcXG2w=="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -36,7 +277,31 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jU59X4/wsGA06Al/D0cGiA=="
+          "hash": "sFh35EZn7hl9FFNDfhjOkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme.html",
+          "hash": "Q6ejZpHfksYeOPFLd3VG2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "template.md",
+      "output": {
+        ".html": {
+          "relative_path": "template.html",
+          "hash": "LVvFMVYWdpD9tfflHuy/rQ=="
         }
       },
       "is_incremental": false,
@@ -51,7 +316,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "68so42c9VLk94eYWyTD7mg=="
+          "hash": "Q5D2BMq9sb5MwcD9LC3bfw=="
         }
       },
       "is_incremental": false,
@@ -70,8 +335,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 1
+          "total_file_count": 24,
+          "skipped_file_count": 19
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

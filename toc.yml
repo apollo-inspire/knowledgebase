@@ -1,3 +1,8 @@
 - name: CMGT
   href: articles/cmgt
 
+- name: HR
+  href: articles/hr
+
+- name: development
+  href: articles/development

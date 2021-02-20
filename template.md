@@ -14,8 +14,8 @@ tags: ['', '', '']
 
 # Title
 
-*Knowledgebase: luukftf.github.io/knowledgebase*  
-*(code: github.com/LuukFTF/knowledgebase)*  
+*Knowledgebase: https://luukftf.github.io/knowledgebase*  
+*(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 

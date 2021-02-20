@@ -7,15 +7,15 @@ author: 'Lucas van der Vegt'
 teacher: 'Monique'
 modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
-link: 'https://github.com/LuukFTF/knowledgebase'
+link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/speedcourses/cmgt-speedcourse-essay.md'
 lang: 'en'
 tags: ['techfilo3', 'techfilo', 'speedcourse', 'essay']
 ---
 
 # Speedcourse Essay Schrijven
 
-*Knowledgebase: luukftf.github.io/knowledgebase*  
-*(code: github.com/LuukFTF/knowledgebase)*  
+*Knowledgebase: https://luukftf.github.io/knowledgebase*  
+*(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: Monique*  
 *Editted by: Lucas van der Vegt*  
 
