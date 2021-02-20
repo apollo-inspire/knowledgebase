@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil03-summary.html",
-          "hash": "NCuuGM0Zz03nw5NPBLxJpw=="
+          "hash": "smTcPktSD+ro4pStBocxNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -256,7 +256,7 @@
           "hash": "F15S56vwi+N5TUsJfOMgjQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -268,7 +268,7 @@
           "hash": "Yt8dxNquKCPIhtntCPUsBg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -280,7 +280,7 @@
           "hash": "Wy+nfANAB0WrdIT60FmGJA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -292,7 +292,7 @@
           "hash": "uZUpuIQ+krLvlcbhj8k9RQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -320,7 +320,7 @@
           "hash": "qjAu07ldgXbk/lFh8fYwCw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -332,7 +332,7 @@
           "hash": "mYz8ulAEo8nGGHObtLfbPw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -344,7 +344,7 @@
           "hash": "yKaDQkhVdJi6/8iA2hmLCg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -368,7 +368,7 @@
           "hash": "7/QaTvwhuCB/BDzts3kNtA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -380,7 +380,7 @@
           "hash": "gnO7BDQlOm19Vncq1Q1kbg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -424,7 +424,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 30,
-          "skipped_file_count": 22
+          "skipped_file_count": 29
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
