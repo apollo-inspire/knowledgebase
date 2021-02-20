@@ -5,9 +5,10 @@ Go to > `/docs/articles/` for all the opensource documentation files
 Explanation of markdown: [Markdown Cheatsheet][markdown-cheatsheet]  
 Docfx flavoured markdown: [Markdown Docfx][markdown-docfx]  
 Please use the template for adding and making articles: `/template.md/`   
+
 [Template.md Link][article-template]
 
-**Template:**
+## Template
 ```md
 ---
 title: ''

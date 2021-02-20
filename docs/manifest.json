@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg04-summary.html",
-          "hash": "3JmUr/kSV9Lp3S4+n4A+fg=="
+          "hash": "91pC6hYQ79GDhNwcaiMEMQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,14 +249,102 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/development/10-commandments-of-webdev.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/10-commandments-of-webdev.html",
+          "hash": "F15S56vwi+N5TUsJfOMgjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/adafruit-codesnippets.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/adafruit-codesnippets.html",
+          "hash": "Yt8dxNquKCPIhtntCPUsBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/arduino-codesnippets.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/arduino-codesnippets.html",
+          "hash": "Wy+nfANAB0WrdIT60FmGJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/development/css.md",
       "output": {
         ".html": {
           "relative_path": "articles/development/css.html",
-          "hash": "kdZl9dU5zDsbB3KdRbM38A=="
+          "hash": "uZUpuIQ+krLvlcbhj8k9RQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink",
+        "EmptyTocItemName"
+      ],
+      "type": "Toc",
+      "source_relative_path": "articles/development/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/toc.html",
+          "hash": "VaniLMW2drTi+v5Ars0zaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/ux-techniques.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/ux-techniques.html",
+          "hash": "qjAu07ldgXbk/lFh8fYwCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/webdev-general-2020.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/webdev-general-2020.html",
+          "hash": "mYz8ulAEo8nGGHObtLfbPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/webdev-mvc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/webdev-mvc.html",
+          "hash": "yKaDQkhVdJi6/8iA2hmLCg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -277,10 +365,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "sFh35EZn7hl9FFNDfhjOkg=="
+          "hash": "7/QaTvwhuCB/BDzts3kNtA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -289,10 +377,10 @@
       "output": {
         ".html": {
           "relative_path": "readme.html",
-          "hash": "Q6ejZpHfksYeOPFLd3VG2g=="
+          "hash": "gnO7BDQlOm19Vncq1Q1kbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -335,8 +423,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 24,
-          "skipped_file_count": 23
+          "total_file_count": 30,
+          "skipped_file_count": 22
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

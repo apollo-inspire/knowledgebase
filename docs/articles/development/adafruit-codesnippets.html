@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>media querys | Opensource Knowledgebase </title>
+    <title>Arduino Codesnippets | Opensource Knowledgebase </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="media querys | Opensource Knowledgebase ">
+    <meta name="title" content="Arduino Codesnippets | Opensource Knowledgebase ">
     <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,14 +67,24 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="media-querys">media querys</h2>
+<h1 id="arduino-codesnippets">Arduino Codesnippets</h1>
 
-<p>@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) <em>/ }
-@media (min-width:480px) { /</em> smartphones, Android phones, landscape iPhone <em>/ }
-@media (min-width:600px) { /</em> portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) <em>/ }
-@media (min-width:801px) { /</em> tablet, landscape iPad, lo-res laptops ands desktops <em>/ }
-@media (min-width:1025px) { /</em> big landscape tablets, laptops, and desktops <em>/ }
-@media (min-width:1281px) { /</em> hi-res laptops and desktops */ }</p>
+<p>sonar sensor</p>
+<pre><code class="lang-ts">let distance = 0
+loops.forever(function () {
+   pins.A2.digitalWrite(false)
+   control.waitMicros(2)
+   pins.A2.digitalWrite(true)
+   control.waitMicros(10)
+   pins.A2.digitalWrite(false)
+   distance = pins.A1.pulseIn(PulseValue.High) / 58
+   light.graph(distance, 30)
+   if (distance &gt;= 0.25 &amp;&amp; distance &lt;= 50) {
+       
+   }
+   console.logValue(&quot;distancecm&quot;, distance)
+})
+</code></pre>
 </article>
           </div>
           
@@ -83,7 +93,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/css.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/adafruit-codesnippets.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

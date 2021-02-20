@@ -12,7 +12,7 @@ lang: 'en'
 tags: ['typescript', 'oop', 'gamedev']
 ---
 
-# CMGT Programmeren 4: Object Oriented Game Development (TypeScript)
+# Programmeren 4: Object Oriented Game Development (TypeScript)
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  

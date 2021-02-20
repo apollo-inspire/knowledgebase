@@ -1,0 +1,29 @@
+- href: index.md
+
+- name: general
+  items:
+  - name: My 10 Commandments of Webdev
+    href: 10-commandments-of-webdev.md
+
+- name: UX-Design
+  items:
+  - name: UX-Design Techniques
+    href: ux-techniques.md
+
+- name: Webdevelopment
+  items:
+  - name: Webdevelopment 2020 - Practical Guide
+    href: webdev-general-2020.md
+  - name: Webdev MVC Model
+    href: webdev-mvc.md
+
+
+- name: Adafruit
+  items:
+  - name: Adafruit Codesnippets
+    href: adafruit-codesnippets.md
+
+- name: Arduino
+  items:
+  - name: Arduino Codesnippets
+    href: arduino-codesnippets.md

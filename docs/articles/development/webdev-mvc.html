@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>media querys | Opensource Knowledgebase </title>
+    <title>Webdev MVC Model | Opensource Knowledgebase </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="media querys | Opensource Knowledgebase ">
+    <meta name="title" content="Webdev MVC Model | Opensource Knowledgebase ">
     <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,14 +67,45 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h2 id="media-querys">media querys</h2>
+<h1 id="webdev-mvc-model">Webdev MVC Model</h1>
 
-<p>@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) <em>/ }
-@media (min-width:480px) { /</em> smartphones, Android phones, landscape iPhone <em>/ }
-@media (min-width:600px) { /</em> portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) <em>/ }
-@media (min-width:801px) { /</em> tablet, landscape iPad, lo-res laptops ands desktops <em>/ }
-@media (min-width:1025px) { /</em> big landscape tablets, laptops, and desktops <em>/ }
-@media (min-width:1281px) { /</em> hi-res laptops and desktops */ }</p>
+<h2 id="general">General</h2>
+<p>Model<br>
+View<br>
+Controller</p>
+<p>Router<br>
+Browser
+Database</p>
+<h2 id="example-pseudocode">Example Pseudocode</h2>
+<h3 id="browser">browser</h3>
+<pre><code class="lang-http">https://awesomewebapp.com/catalog/products/1234
+</code></pre>
+<h3 id="router">router</h3>
+<pre><code class="lang-js">catalog/products/:sku =  Products.getProduct(sku)
+</code></pre>
+<h3 id="controller">controller</h3>
+<pre><code class="lang-js">class Products {
+  function getProduct(sku){
+    product = this.ProductsModel.getProduct(sku)
+
+    renderView('views/products', product)
+  }
+}
+</code></pre>
+<h3 id="model">model</h3>
+<pre><code class="lang-js">class ProductsModel {
+  function getProduct(sku) {
+    data = this.db.get('SELECT * FROM products WHERE sku = sku')
+    return data
+  }
+}
+</code></pre>
+<h3 id="viewproducts">view/products</h3>
+<pre><code class="lang-php">&lt;h1&gt;$product.name;&lt;/h1&gt;
+&lt;img src=$product.name;&gt;
+&lt;p&gt;$product.description;&lt;/p&gt;
+&lt;p&gt;$product.price;&lt;/p&gt;
+</code></pre>
 </article>
           </div>
           
@@ -83,7 +114,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/css.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/webdev-mvc.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
