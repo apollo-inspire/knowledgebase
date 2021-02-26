@@ -6,7 +6,7 @@ modified: '2021'
 published: ''
 ---
 
-# CMGT Programmeren 3: Javascript & Webservices
+# Programmeren 3: Javascript & Webservices
 
 _**door: Lucas van der Vegt**_
 

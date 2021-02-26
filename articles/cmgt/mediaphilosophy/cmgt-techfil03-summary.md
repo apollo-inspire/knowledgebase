@@ -39,8 +39,8 @@ https://www.moralmachine.net/
 
 
 `end of file`  
-*publish date:*  
-*modified date:*  
+*publish date: 2021-02-19*  
+*modified date: 2021-02-20*  
   
 <!-- LINKS -->
 [google]: https://www.google.com  

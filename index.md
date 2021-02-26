@@ -13,8 +13,6 @@ Please use the template for adding and making articles: `/template.md/`
 [Template.md Link][article-template]
 
 ## Template
-
-**Template:**
 ```md
 ---
 title: ''
