@@ -2,9 +2,17 @@
 
 ## About
 
-## Contributing
+## Viewing
+
+Website: https://luukftf.github.io/knowledgebase/
 
 Go to > https://github.com/LuukFTF/knowledgebase > `/docs/articles/` for all the opensource documentation files  
+
+## Contributing
+
+1. Fork the repo 
+2. Make changes
+3. Merge request
 
 Explanation of markdown: [Markdown Cheatsheet][markdown-cheatsheet]  
 Docfx flavoured markdown: [Markdown Docfx][markdown-docfx]  
