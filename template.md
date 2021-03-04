@@ -1,5 +1,6 @@
 ---
 title: ''
+code: ''
 created: ''
 published: ''
 modified: ''
@@ -12,24 +13,29 @@ lang: 'en'
 tags: ['', '', '']
 ---
 
-# Title
+# Template
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
-## h1  
+## Topics
 
-CONTENT  
+- Topic A
+    - Subtopic A1
+    
+## Main
 
-[link][google]
+CONTENT
+see [content template][template_content.md]
 
 
-
+---
 `end of file`  
 *publish date:*  
 *modified date:*  
   
 <!-- LINKS -->
 [google]: https://www.google.com  
+[template_content.md]: template_content.md
