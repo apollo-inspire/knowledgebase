@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/design/cmgt-ont01-summary.html",
-          "hash": "nHdl6VQyNzzOVuSkfkfxOQ=="
+          "hash": "lGcLOyiuAFmgd+mcQJHW0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil03-summary.html",
-          "hash": "smTcPktSD+ro4pStBocxNA=="
+          "hash": "p06LMNeSEYjS1PzBBCywsA=="
         }
       },
       "is_incremental": false,
@@ -101,14 +101,14 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary copy.md",
+      "source_relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary.md",
       "output": {
         ".html": {
-          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary copy.html",
-          "hash": "ebm1x+9Q3S5UFnU1or80kQ=="
+          "relative_path": "articles/cmgt/mediaphilosophy/cmgt-techfil04-summary.html",
+          "hash": "WrrjXWKA4EWyj1yYUITxFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg03-summary.html",
-          "hash": "QvWclEFRl2HW+mMofSwJwQ=="
+          "hash": "Y0xZp0rC/BaOLq62HDB7Yg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -233,7 +233,6 @@
     },
     {
       "log_codes": [
-        "InvalidFileLink",
         "EmptyTocItemName"
       ],
       "type": "Toc",
@@ -241,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/toc.html",
-          "hash": "s1ZQNE63NLvBUQ0OktjnpQ=="
+          "hash": "2yh8abO0O4xqVAbaNn9c1g=="
         }
       },
       "is_incremental": false,
@@ -365,10 +364,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "7/QaTvwhuCB/BDzts3kNtA=="
+          "hash": "iEv+nhUfh333pRSFci+Gww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -377,10 +376,10 @@
       "output": {
         ".html": {
           "relative_path": "readme.html",
-          "hash": "gnO7BDQlOm19Vncq1Q1kbg=="
+          "hash": "FQwF5IFNzIoTtOmrhBV8yQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -389,10 +388,22 @@
       "output": {
         ".html": {
           "relative_path": "template.html",
-          "hash": "LVvFMVYWdpD9tfflHuy/rQ=="
+          "hash": "Nq54tqhbloYhxx8zxb2u3A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "template_content.md",
+      "output": {
+        ".html": {
+          "relative_path": "template_content.html",
+          "hash": "t7+/Jux8IaYUmuRxF9y4Hw=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -423,8 +434,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 30,
-          "skipped_file_count": 29
+          "total_file_count": 31,
+          "skipped_file_count": 23
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
