@@ -74,47 +74,114 @@
 <em>By: Lucas van der Vegt</em></p>
 <!-- Editted by: NAME, NAME, NAME -->
 <h2 id="leerdoelen">Leerdoelen</h2>
+<p>Ik ken:</p>
+<ul>
+<li>de rol van HTML, CSS, JS en PHP binnen het client-server-model.</li>
+<li>het verschil tussen simpele en complexe webservices in de back-end.</li>
+<li>het concept van JSON en wanneer je dit kunt gebruiken.</li>
+<li>het verschil tussen native Javascript en verwante libraries/frameworks.</li>
+<li>de structuur van een DOM en hoe deze is opgebouwd.</li>
+<li>de rol van AJAX en hoe asynchrone communicatie werkt.</li>
+<li>het principe van events, welke er zijn en waarom ik ze zou gebruiken.</li>
+<li>de rol van Web API’s en hoe die zich verhouden tot de browser.</li>
+</ul>
+<p>Ik kan:</p>
+<ul>
+<li>gebruik maken van een simpele webservice met PHP, zodat ik data uit eenexterne bron kan inladen.</li>
+<li>JSON schrijven en aanbieden als een webservice in PHP.</li>
+<li>native Javascript (hierna: “Javascript”) toepassen binnen de front-end van eenapplicatie, inclusief het manipuleren van de DOM.</li>
+<li>via Javascript events lezen en schrijven waarmee ik een applicatieinteractiever maak.</li>
+<li>via AJAX dynamische data ophalen van zowel externe als eigen geschrevenwebservices, en dit verwerken in mijn applicatie.</li>
+<li>via Javascript, Web API’s (must: localstorage) van mijn browser aanspreken enverwerken in mijn applicatie</li>
+</ul>
 <h2 id="topics">Topics</h2>
 <ul>
 <li><p><a href="#client-server-model">Client Server Model</a></p>
 </li>
-<li><p>API</p>
+<li><p>Basic Frontend: HTML &amp; CSS</p>
+<ul>
+<li>HTML Basics</li>
+<li>CSS Basics</li>
+</ul>
 </li>
 <li><p>Javascript</p>
+<ul>
+<li>Basics
+<ul>
+<li>Events</li>
+</ul>
 </li>
-<li><p>DOM</p>
+<li>Functions</li>
+<li>Objects</li>
+<li>Classes</li>
+<li>DOM</li>
+<li>JSON</li>
+<li>Ajax</li>
+<li>APIs
+<ul>
+<li>Browser API</li>
+<li>Server API</li>
+<li>Web API</li>
+</ul>
 </li>
-<li><p>Web Api's</p>
+</ul>
 </li>
-<li><p>Ajax</p>
+<li><p>PHP</p>
+</li>
+<li><p>Javascript Frameworks</p>
 </li>
 </ul>
 <h2 id="main">Main</h2>
-<h3 id="client-server-model">Client Server Model</h3>
+<h3 id="a-client-server-model">A. Client Server Model</h3>
 <p>Client Server Model flowchart:</p>
-<pre><code class="lang-md">1. Pagina wordt geladen. Dit kan zowel een `.html` als een `.php` bestand zijn. Resultaat is hetzelfde namelijk HTML, CSS en Javascript.
-2. Na wachten op het `load` event van het `window`, wordt de Javascript van de applicatie uitgevoerd en is de applicatie klaar met `renderen`
-3. Als we dynamisch data willen inladen op onze webpagina kunnen we `AJAX` calls doen dmv de `fetch` functie in Javascript. Deze functie doet een `request` naar een specifiek PHP bestand op de server.
-4. De `response` vanuit de server zal `JSON` data bevatten die weer verwerkt kan worden in Javascript.
-5. De Javascript van de pagina verwerkt de `response` ern in `callback functie` waarna alle bekende Javascript functies (HTML elementen aanroepen, aanmaken, etc) weer aangeroepen kunnen worden.
-</code></pre>
+<ol>
+<li>Pagina wordt geladen. Dit kan zowel een <code>.html</code> als een <code>.php</code> bestand zijn. Resultaat is hetzelfde namelijk HTML, CSS en Javascript.</li>
+<li>Na wachten op het <code>load</code> event van het <code>window</code>, wordt de Javascript van de applicatie uitgevoerd en is de applicatie klaar met <code>renderen</code></li>
+<li>Als we dynamisch data willen inladen op onze webpagina kunnen we <code>AJAX</code> calls doen dmv de <code>fetch</code> functie in Javascript. Deze functie doet een <code>request</code> naar een specifiek PHP bestand op de server.</li>
+<li>De <code>response</code> vanuit de server zal <code>JSON</code> data bevatten die weer verwerkt kan worden in Javascript.</li>
+<li>De Javascript van de pagina verwerkt de <code>response</code> ern in <code>callback functie</code> waarna alle bekende Javascript functies (HTML elementen aanroepen, aanmaken, etc) weer aangeroepen kunnen worden.</li>
+</ol>
 <p><strong>Client</strong> <em>&lt; de gebruikerskant van de website &gt;</em><br>
-HTML CSS<br>
-Javascript<br>
-Fetch API</p>
-<p>Web server<br>
+Server</p>
+<p>Backend
+Web server<br>
 ngix/ apache<br>
 PHP<br>
 Database</p>
 <p>AJAX call
 JSON response</p>
-<p>Webservices<br>
-APIs<br>
-OpenAPIs</p>
+<p>Fetch API</p>
+<h3 id="b-basic-frontend-html--css">B. Basic Frontend: HTML &amp; CSS</h3>
+<p>Frontend
+HTML
+CSS</p>
+<h3 id="v-javascript">V. Javascript</h3>
+<h4 id="1-basics">1. Basics</h4>
+<h5 id="syntax">Syntax</h5>
+<h5 id="events">Events</h5>
+<h4 id="2-functions">2. Functions</h4>
+<h4 id="3-objects">3. Objects</h4>
+<h4 id="4-classes">4. Classes</h4>
+<h4 id="5-dom">5. DOM</h4>
+<p>Relaties</p>
+<h4 id="6-json">6. JSON</h4>
+<h4 id="7-ajax">7. Ajax</h4>
+<h4 id="8-apis">8. APIs</h4>
+<p>Browser API
+Server API</p>
+<p>Webservices
+Web API
+Open APIs</p>
+<h3 id="d-backend">D. Backend</h3>
+<p>php
+node.js</p>
+<h3 id="e-typescript">E. Typescript</h3>
+<h3 id="f-javascript-frameworks">F. Javascript Frameworks</h3>
 <p>React<br>
 Angular<br>
 Vue</p>
-<p>Node.js</p>
+<p>Electron</p>
+<h3 id="x-other">x. Other</h3>
 <p>Socket.io</p>
 <hr>
 <p><code>end of file</code><br>
