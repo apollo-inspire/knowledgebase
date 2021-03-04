@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg03-summary.html",
-          "hash": "o5Ut7MrToetuHc4+FRgjfg=="
+          "hash": "3MiIvsts3ngQ/NYQb6gtGQ=="
         }
       },
       "is_incremental": false,
@@ -391,7 +391,7 @@
           "hash": "hrzfaL2hua9zO3P9u/DTjQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -403,7 +403,7 @@
           "hash": "t7+/Jux8IaYUmuRxF9y4Hw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -435,7 +435,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 31,
-          "skipped_file_count": 29
+          "skipped_file_count": 30
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

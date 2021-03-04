@@ -43,7 +43,7 @@ Ik kan:
 
 ## Topics
 
-- [Client Server Model](#client-server-model)
+- [Client Server Model](#a-client-server-model)
 
 - Basic Frontend: HTML & CSS
     - HTML Basics
@@ -63,7 +63,11 @@ Ik kan:
         - Server API
         - Web API
 
-- PHP
+- Backend
+    - PHP
+    - node.js
+
+- Typescript
 
 - Javascript Frameworks
 
@@ -98,10 +102,12 @@ Frontend
 HTML 
 CSS  
 
-### V. Javascript
+### C. Javascript
 
 #### 1. Basics
+
 ##### Syntax
+
 ##### Events
 
 #### 2. Functions
@@ -122,10 +128,10 @@ Web API
 Open APIs
 
 
-
 ### D. Backend
 
 php
+
 node.js
 
 ### E. Typescript
@@ -136,9 +142,14 @@ React
 Angular  
 Vue    
 
-Electron
+Progressive Web App:
+Angular PWA
+React Native
 
-### x. Other
+Flutter
+Electron  
+
+### X. Other
 
 Socket.io  
 
