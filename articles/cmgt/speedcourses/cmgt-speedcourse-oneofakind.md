@@ -18,8 +18,8 @@ tags: ['oneofakind', 'speedcourse', 'linkedin', 'netwerk', 'skills']
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *Course By: Rene*
-Author: Lucas van der Vegt
-Editted by: Lucas van der Vegt
+Author: Lucas van der Vegt 
+Editted by: Lucas van der Vegt  
 
 [Clever][cmgt_bb-oneofakind-clever]  
 [Buildingblock Planner][cmgt_bbplanner]
@@ -33,7 +33,7 @@ Editted by: Lucas van der Vegt
 ## Main
 *Je hebt inzicht in je eigen kwaliteiten op het CMGT-werkterrein, en weet hier bij de uitvoering van het werk op te sturen. Je hebt je georiënteerd op het werkveld en bent online actief op werkgerelateerd communities of practice. Daarbij ben je actief in verschillende online netwerkomgevingen (bv. Github, Codepen, Twitter). Naast een online netwerk ben je ook in het echte leven actief op netwerkbijeenkomsten als meetup’s, conferenties, hackathons. Daarbij heb je minimaal een superheld die jouw inspireert op een thema binnen de opleiding.*
 
-## 1. Ken je kwaliteiten
+### 1. Ken je kwaliteiten
 *Je (h)erkent je sterke en zwakke punten binnen het opleidingsdomein zodanig dat je deze punten bewust aanpakt in je eigen ontwikkeling.*
 
 Soft Skills & Hard Skills
@@ -48,23 +48,23 @@ Hard Skills:
 Programmeren  
 Programeertalen  
 
-## 2. Event
+### 2. Event
 *Je hebt minimaal één branchegerelateerd netwerkevent bezocht (meetup, conferentie, e.d.) zodanig dat je aantoonbaar je vakkennis hebt vergroot.*
 
 Online Events over de hele wereld  
 
-## 3. Netwerk
+### 3. Netwerk
 *Je hebt een netwerk van externe contacten zodanig samengesteld dat deze contacten je verder kunnen helpen in je ontwikkeling.*
 
 linkedin  
 binnen cmgt  
 
-## 4. Rolmodellen
+### 4. Rolmodellen
 *Je hebt een superheld uit het domein van CMGT gekozen die jou weet te inspireren. Je kan goed onderbouwen hoe dit rolmodel jou inspireert.*
 
 Kleiner dan de grote mensen  
 
-## 5. Online Presence
+### 5. Online Presence
 *Je hebt je online geprofileerd en gemanifesteerd (online presence) via het delen van applicaties / code snippets / tutorials. Je draagt actief bij aan de online tech-community en bent hierdoor zichtbaar als aankomend professional voor externen.*
 
 Minimaal 2+ online platformen (aanbevolen 3-4)  
@@ -78,10 +78,10 @@ twitter (codesnippits, interresante nieuwe features/apps binnen industrie)
 linkedin (cle projecten, eigen projecten)    
 
 
-## Leeswijzer
+### Leeswijzer
 
 
-## Beoordelers
+### Beoordelers
 Dieuwertje  
 Stan  
 Rene  
