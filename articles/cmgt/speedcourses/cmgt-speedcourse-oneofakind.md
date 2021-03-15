@@ -1,19 +1,19 @@
 ---
 title: 'cmgt-speedcourse-oneofakind'
 code: ''
-created: ''
-published: ''
-modified: ''
-author: ''
+created: '2021-03-15'
+published: '2021-03-15'
+modified: '2021-03-15'
+author: 'Lucas van der Vegt'
 teacher: 'rene'
 modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase'
-lang: 'en'
-tags: ['', '', '']
+lang: 'nl'
+tags: ['oneofakind', 'speedcourse', 'linkedin', 'netwerk', 'skills']
 ---
 
-# Template
+# Speedcourse: One of a Kind
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
@@ -21,64 +21,81 @@ tags: ['', '', '']
 Author: Lucas van der Vegt
 Editted by: Lucas van der Vegt
 
+[Clever][cmgt_bb-oneofakind-clever]  
+[Buildingblock Planner][cmgt_bbplanner]
+
 ## Topics
 
-- [Topic A](#1-topic-a)
-    - Subtopic A1
-    
+- [Ken je kwaliteiten](#1-ken-je-kwaliteiten)
+
 ---
     
 ## Main
+*Je hebt inzicht in je eigen kwaliteiten op het CMGT-werkterrein, en weet hier bij de uitvoering van het werk op te sturen. Je hebt je georiënteerd op het werkveld en bent online actief op werkgerelateerd communities of practice. Daarbij ben je actief in verschillende online netwerkomgevingen (bv. Github, Codepen, Twitter). Naast een online netwerk ben je ook in het echte leven actief op netwerkbijeenkomsten als meetup’s, conferenties, hackathons. Daarbij heb je minimaal een superheld die jouw inspireert op een thema binnen de opleiding.*
 
 ## 1. Ken je kwaliteiten
+*Je (h)erkent je sterke en zwakke punten binnen het opleidingsdomein zodanig dat je deze punten bewust aanpakt in je eigen ontwikkeling.*
+
 Soft Skills & Hard Skills
 
 Soft Skills:
-Persoonlijke Ontwikkeling
-Gedrag
-Professioneel
-Feedback
+Persoonlijke Ontwikkeling  
+Gedrag  
+Professioneel  
+Feedback  
 
 Hard Skills:
-Programmeren
-Programeertalen
+Programmeren  
+Programeertalen  
 
 ## 2. Event
-Online Events over de hele wereld
+*Je hebt minimaal één branchegerelateerd netwerkevent bezocht (meetup, conferentie, e.d.) zodanig dat je aantoonbaar je vakkennis hebt vergroot.*
+
+Online Events over de hele wereld  
 
 ## 3. Netwerk
-linkedin
+*Je hebt een netwerk van externe contacten zodanig samengesteld dat deze contacten je verder kunnen helpen in je ontwikkeling.*
+
+linkedin  
+binnen cmgt  
 
 ## 4. Rolmodellen
-Kleiner dan de grote mensen
+*Je hebt een superheld uit het domein van CMGT gekozen die jou weet te inspireren. Je kan goed onderbouwen hoe dit rolmodel jou inspireert.*
+
+Kleiner dan de grote mensen  
 
 ## 5. Online Presence
-Minimaal 3 online platformen
+*Je hebt je online geprofileerd en gemanifesteerd (online presence) via het delen van applicaties / code snippets / tutorials. Je draagt actief bij aan de online tech-community en bent hierdoor zichtbaar als aankomend professional voor externen.*
 
-codepen
-glitch
-youtube
-podcast
-medium.com, blog
-twitter
-linked
+Minimaal 2+ online platformen (aanbevolen 3-4)  
+
+Bijdragen aan de [CMGT Knowledgebase][cmgt_knowledgebase]  
+github, gist.github, codepen, glitch (codesnippits, opensource contribution, opensource development, documentation)   
+youtube (tutorial, uitleg, news)    
+podcast (techindustrie, cle projecten)  
+blog, medium.com (uitgebreide blog over een cmgt onderdeel)    
+twitter (codesnippits, interresante nieuwe features/apps binnen industrie)  
+linkedin (cle projecten, eigen projecten)    
+
 
 ## Leeswijzer
 
 
 ## Beoordelers
-Dieuwertje
-Stan
-Rene
-Sara
-Niek
+Dieuwertje  
+Stan  
+Rene  
+Sara  
+Niek  
 
 
 ---
 `end of file`  
-*publish date:*  
-*modified date:*  
+*publish date:*  2021-03-15  
+*modified date:*  2021-03-15 
   
 <!-- LINKS -->
 [google]: https://www.google.com  
-[template_content.md]: template_content.md
+[cmgt_bb-oneofakind-clever]: https://clever.cmgt.hr.nl/student/buildingblocks/one-of-a-kind-block/details  
+[cmgt_bbplanner]: https://bbplanner.nl/
+[cmgt_knowledgebase]: https://github.com/LuukFTF/knowledgebase/tree/master/articles/cmgt
