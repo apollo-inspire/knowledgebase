@@ -12,7 +12,7 @@
           "hash": "lGcLOyiuAFmgd+mcQJHW0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,7 +24,7 @@
           "hash": "xLPeg0Ys3ReEAgY8mUj9Bw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,7 +36,7 @@
           "hash": "vRmLk+mBT7nt0glAQ8w5eA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,7 +48,7 @@
           "hash": "ekgjopAlCz5/z1545X2A+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "JAPUyypOGfYh1qmSH0EOIw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,7 +72,7 @@
           "hash": "o6etQ6CfWfgxBM8eoEUgYA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,7 +84,7 @@
           "hash": "mi4CeFJdjCC1HiNZgPWfIg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "p06LMNeSEYjS1PzBBCywsA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,7 +108,7 @@
           "hash": "WrrjXWKA4EWyj1yYUITxFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -120,7 +120,7 @@
           "hash": "TdUWDzd9cwt5EGCWNCdYug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,7 +132,7 @@
           "hash": "iml5OKpe19ISjkyqwwFibg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -144,7 +144,7 @@
           "hash": "Uz9M5w2xujxb2nfG5CG0cw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg03-summary.html",
-          "hash": "3MiIvsts3ngQ/NYQb6gtGQ=="
+          "hash": "MG6ndgn322ME+2wJzF/3KA=="
         }
       },
       "is_incremental": false,
@@ -168,7 +168,19 @@
           "hash": "91pC6hYQ79GDhNwcaiMEMQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/readme.html",
+          "hash": "a0uAA7RDTuHyzN+vb1G/cg=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,7 +192,7 @@
           "hash": "KSdpyAs29xob6vkEgf9oZw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,7 +204,19 @@
           "hash": "/ObeQWzTHlaJFBGso0zVjw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-oneofakind.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-oneofakind.html",
+          "hash": "F0FQGIhS0KXtXvfoVKCKwQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,7 +228,7 @@
           "hash": "d7WX5DUr4v40NxzUd7GQNA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +240,7 @@
           "hash": "FvXMkekRtk7GqE1sHoubhQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -228,7 +252,7 @@
           "hash": "BH6cxPVrQ/dpdq3A3v2FXQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -240,7 +264,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/toc.html",
-          "hash": "2yh8abO0O4xqVAbaNn9c1g=="
+          "hash": "0fRzCtIeY+uK1c+vsr3nIw=="
         }
       },
       "is_incremental": false,
@@ -289,6 +313,18 @@
         ".html": {
           "relative_path": "articles/development/css.html",
           "hash": "uZUpuIQ+krLvlcbhj8k9RQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/readme.html",
+          "hash": "f4z7einzjgpSXPoZ/z48fA=="
         }
       },
       "is_incremental": true,
@@ -388,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "template.html",
-          "hash": "hrzfaL2hua9zO3P9u/DTjQ=="
+          "hash": "FI+cII6sE57hIZRdEEdD/g=="
         }
       },
       "is_incremental": true,
@@ -400,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "template_content.html",
-          "hash": "t7+/Jux8IaYUmuRxF9y4Hw=="
+          "hash": "wRNpGiATVE5qh6iIJJWKiQ=="
         }
       },
       "is_incremental": true,
@@ -434,8 +470,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 31,
-          "skipped_file_count": 30
+          "total_file_count": 34,
+          "skipped_file_count": 34
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
