@@ -196,4 +196,8 @@ Leerdoel
 
 #### Testopzet
 
+A/B Test
+Crowtest
+5 Seconden test
+
 #### Uitkomsten Test
