@@ -4,7 +4,7 @@
 
 
 ## CMGT
-[CMGT](/cmgt)
+[CMGT](cmgt)
 
 ## HR
 
