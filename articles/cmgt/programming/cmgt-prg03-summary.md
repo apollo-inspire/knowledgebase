@@ -14,7 +14,6 @@ tags: ['Programmeren3', '', '']
 ---
 
 # Programmeren 3: Javascript & Webservices
- m
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: Lucas van der Vegt*
