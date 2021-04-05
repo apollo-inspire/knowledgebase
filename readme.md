@@ -10,7 +10,7 @@ Go to > https://github.com/LuukFTF/knowledgebase > `/docs/articles/` for all the
 
 ## Article Index
 
-
+see [Article index][article-index]
 
 ## Contributing
 
