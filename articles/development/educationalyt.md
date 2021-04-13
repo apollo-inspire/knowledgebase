@@ -30,6 +30,7 @@
 [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
 [Chris Hawkes](https://www.youtube.com/channel/UCfV36TX5AejfAGIbtwTc7Zw)
 [LearnCode.academy](https://www.youtube.com/channel/UCVTlvUkGslCV_h-nSAId8Sw)
+[Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw)
 
 ### Gamedev
 
@@ -82,6 +83,12 @@
 
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
 
+### Cyber Philosophy
+[HealthyGamerGG](https://www.youtube.com/c/HealthyGamerGG/)
+[Ordinary Things](https://www.youtube.com/c/OrdinaryThings/)
+[Lessons in Meme Culture](https://www.youtube.com/c/LessonsinMemeCulture)
+[Disrupt](https://www.youtube.com/c/DisruptReality/)
+
 ### Business
 
 [The Defiant](https://www.youtube.com/channel/UCL0J4MLEdLP0-UyLu0hCktg)
@@ -91,7 +98,6 @@
 
 ## Tech
 
-[Lessons in Meme Culture](https://www.youtube.com/c/LessonsinMemeCulture)
 [Morrog](https://www.youtube.com/watch?v=VMuh0mXvE9A)
 [2kliksphilip](https://www.youtube.com/user/2kliksphilip)
 [kliksphilip](https://www.youtube.com/c/kliksphilip)
@@ -100,6 +106,7 @@
 [Curious Droid](https://www.youtube.com/channel/UC726J5A0LLFRxQ0SZqr2mYQ/)
 [Boston Dynamics](https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ)
 [NetworkChuck](https://www.youtube.com/c/NetworkChuck/)
+[TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw)
 
 ## Sciences
 
@@ -113,7 +120,6 @@
 [TheSlomoGuys](https://www.youtube.com/user/theslowmoguys/)
 [Vsauce](https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA)
 [D!NG](https://www.youtube.com/channel/UClq42foiSgl7sSpLupnugGA)
-[Disrupt](https://www.youtube.com/c/DisruptReality/)
 [Aperture](https://www.youtube.com/c/ApertureScience/)
 [JCS - Criminal Psychology](https://www.youtube.com/channel/UCYwVxWpjeKFWwu8TML-Te9A)
 [CrashCourse](https://www.youtube.com/user/crashcourse/)
@@ -127,6 +133,8 @@
 [Josh Deek](https://www.youtube.com/channel/UCetLp-kZUVa2SXSpPxEdUOQ)
 [neo](https://www.youtube.com/c/neoyoutube)
 [Wendover Productions](https://www.youtube.com/user/Wendoverproductions)
+[CGP Grey](https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w)
+[Joe Rogan Podcast](https://www.youtube.com/c/joerogan/)
 
 ## Maatschappelijk
 
@@ -144,6 +152,7 @@
 [Universiteit van Nederland](https://www.youtube.com/c/UniversiteitvanNederlandNL/)
 [GeenStijl](https://www.youtube.com/user/geenstijl)
 [VRT Innovatie](https://www.youtube.com/user/innovatievrt/)
+[Pieter Omtzigt](https://www.youtube.com/channel/UC5qTHJz24IuyC5N8w9bgfXw)
 [Kaj Gorgels Podcast](https://www.youtube.com/channel/UCrgA4v5zhT6AlNM8BzKe1vQ)
 
 ## Video Creation
@@ -165,6 +174,7 @@
 [MAKE. ART. NOW.](https://www.youtube.com/channel/UCmRE4gvdeDkwf1oJrsabWWQ)
 [wolfcrow](https://www.youtube.com/watch?v=YCJXS4hvOsU)
 [This Guy Edits](https://www.youtube.com/channel/UCcPuBEAwuF6XWXkcXJXJwsg)
+[Eric Floberg](https://www.youtube.com/channel/UC-K_P65-XIDGhiM54VxuWvg)
 
 ### Inspiration
 [Birdseye](https://www.youtube.com/channel/UCBA5BtMHAE-6utKFk4dUjpA)
@@ -187,4 +197,3 @@
 [Neon Vines](https://www.youtube.com/channel/UC4zehj1nGYMJ-KBQ1p1RFnw)
 [Jonas Aden](https://www.youtube.com/channel/UCktCCsmFnLxDv8c9xfI-i3g)
 [PianoPig](https://www.youtube.com/channel/UC-obvt6Gn0Eef9vKxwcg_pg)
-

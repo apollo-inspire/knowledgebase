@@ -119,8 +119,8 @@ CSS
 Relaties
 
 #### 6. JSON
-#### 7. Ajax
-#### 8. APIs
+
+#### 7. APIs 
 Browser API
 Server API
 
@@ -129,6 +129,63 @@ Web API
 Open APIs
 
 
+#### 8. RESTful
+
+#### 9. AJAX
+
+Fetch GET
+```js
+fetch('https://swapi.dev/api/films/' { method: 'GET' })
+    .then(response => response.json())
+    .then(data => return data)
+```
+
+Fetch POST
+```js
+fetch('https://swapi.dev/api/films/' { 
+    method: 'POST',
+    headers: { 'content-type': 'application/json'},
+    body: JSON.stringify({
+        name: 'User 1'
+    })
+})
+    .then(response => response.json())
+    .then(data => return data)
+```
+
+
+Fetch GET with error handling
+```js
+fetch('https://swapi.dev/api/films/')
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+        return response.json();
+    })
+    .then(getSuccessHandler)
+    .catch(getErrorHandler);
+```
+
+Fetch POST with error handling
+```js
+fetch('https://swapi.dev/api/films/' { 
+    method: 'POST',
+    headers: { 'content-type': 'application/json'},
+    body: JSON.stringify({
+        name: 'User 1'
+    })
+})
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+        return response.json();
+    })
+    .then(getSuccessHandler)
+    .catch(getErrorHandler);
+```
+
 ### D. Backend
 
 php
@@ -136,6 +193,8 @@ php
 node.js
 
 ### E. Typescript
+
+PRG04 > uitbreiding op javascript
 
 ### F. Javascript Frameworks
 
