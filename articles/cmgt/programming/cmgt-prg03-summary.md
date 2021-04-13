@@ -135,14 +135,14 @@ Open APIs
 
 Fetch GET
 ```js
-fetch('https://swapi.dev/api/films/' { method: 'GET' })
+fetch('https://swapi.dev/api/films/', { method: 'GET' })
     .then(response => response.json())
     .then(data => return data)
 ```
 
 Fetch POST
 ```js
-fetch('https://swapi.dev/api/films/' { 
+fetch('https://swapi.dev/api/films/', { 
     method: 'POST',
     headers: { 'content-type': 'application/json'},
     body: JSON.stringify({
@@ -156,7 +156,7 @@ fetch('https://swapi.dev/api/films/' {
 
 Fetch GET with error handling
 ```js
-fetch('https://swapi.dev/api/films/')
+fetch('https://swapi.dev/api/films/', { method: 'GET' })
     .then((response) => {
         if (!response.ok) {
             throw new Error(response.statusText);
@@ -169,7 +169,7 @@ fetch('https://swapi.dev/api/films/')
 
 Fetch POST with error handling
 ```js
-fetch('https://swapi.dev/api/films/' { 
+fetch('https://swapi.dev/api/films/', { 
     method: 'POST',
     headers: { 'content-type': 'application/json'},
     body: JSON.stringify({
