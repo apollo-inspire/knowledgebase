@@ -1,5 +1,10 @@
 - href: index.md
 
+- name: General
+  items:
+  - name: Deadlines
+    href: general/deadlines/deadlines-y1op4.md
+
 - name: Design
   items:
   - name: Ontwerpen 1
