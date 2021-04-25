@@ -28,7 +28,7 @@ WEEK 6 - Jun 13 | PRG03 HERKANSING: magazine
 
 WEEK 7 - Jun 18 | TECHFIL04: Online Netwerkevent Verslag {20b/100}  
 
-WEEK 8 - Jun 25| TECHFIL04: Online Manifestatie {30a/100}  
+WEEK 8 - Jun 25 | TECHFIL04: Online Manifestatie {30a/100}  
 WEEK 8 - Jun 26 | ONT03 HERKANSING: eindopdracht poster  
 WEEK 8 - Jun | CLE4: eindoplevering  
 
