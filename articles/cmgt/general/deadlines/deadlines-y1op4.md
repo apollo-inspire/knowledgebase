@@ -4,6 +4,8 @@ WEEK # - Mnth | VAK04: opdracht {ptn/max}
 
 WEEK 1 - Apr | VAK04:   
 
+MEI VAKANTIE
+
 WEEK 2 - Mei 12 | CLE4: oplevering sprint 1  
 WEEK 2 - Mei 12 | CLE4: retro sprint 1   
 
