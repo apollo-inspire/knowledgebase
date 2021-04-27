@@ -1,5 +1,5 @@
 ---
-title: 'CMGT Programmeren'
+title: 'CMGT Programmeren 3'
 code: 'cmgt-prg03-summary'
 created: '2021-02-18'
 published: '2021-03-04'
