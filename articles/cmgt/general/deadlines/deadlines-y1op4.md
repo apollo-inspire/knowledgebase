@@ -1,12 +1,8 @@
 # CMGT Deadlines Y1 Periode 4 
 
-WEEK # - Mnth | VAK04: opdracht {ptn/max}   
 
-WEEK 1
 
-MEI VAKANTIE
-
-| Progress      | Week   | Date     | Subject   | Description                       | Points    | 
+| Work Amount   | Week   | Date     | Subject   | Description                       | Points    | 
 |---            |:---:   |:---:     |---        |---                                |---        |
 | WEEK 1        |        |          |           |                                   |           |
 |               |        |          |           |                                   |           |
@@ -73,3 +69,6 @@ MEI VAKANTIE
 | [?]           | Week 9 | Jun      | TECHFIL04 | Verslag Online Manifestatie       | 30b/100   |    
 | WEEK 10       |        |          |           |                                   |           |
 |               | WEEK 10| Jul 9    | CLE4      | laatste BB mogelijkheid P4        |           |  
+
+
+(work amount progress bar: [===----])
