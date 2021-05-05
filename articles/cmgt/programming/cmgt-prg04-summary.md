@@ -100,14 +100,26 @@ console.log(a)
 
 TypeScript:
 ```ts
-let a = 1 : number
-let b = true : boolean
-let c = "Car" : string
+let a : number = 1;
+let b : boolean = true;
+let c : string = "Car";
 
-a = "hoi"
-console.log(a)
+a = "hoi";
+console.log(a);
 
 // output = ERROR
+```
+
+TypeScript:
+```ts
+let a : number = 1;
+let b : boolean = true;
+let c : string = "Car";
+
+a = 3;
+console.log(a);
+
+// output = 3
 ```
 
 
@@ -115,7 +127,9 @@ console.log(a)
 
 Een array van `numbers`
 ```ts
-let list : number = [1, 2, 3]
+let list : Array<number> = [1, 2, 3];
+
+// output = [ 1, 2, 3 ]
 ```
 
 #### Functions
@@ -124,7 +138,7 @@ Bij `function argument` altijd het `type` aangeven.
 
 ```ts
 function getValue(a : number) {
-  return true
+  return true;
 }
 ```
 
