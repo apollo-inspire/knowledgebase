@@ -49,7 +49,7 @@
 | [---------]   | WEEK 6 | Jun 13  |       | PRG03 HERKANSING | magazine                   |           | [H!] |   
 | WEEK 7        |        |         |       |           |                                   |           |      |
 | [?]           | WEEK 7 | Jun 14  | 08:30 | ONT04     | Project Opdracht 6                | 15/100    |      |  
-| [----------]  | Week 7 | Jun 14  | 08:30 | ONT04     | Game Desigcn Document              | 100/100   | [!]  |
+| [----------]  | Week 7 | Jun 14  | 08:30 | ONT04     | Game Design Document             | 100/100   | [!]  |
 | [?]           | WEEK 7 | Jun 15  | 10:00 | TECHFIL04 | Online Netwerkevent Verslag       | 20b/100   | [x]  |      
 | [?]           | WEEK 7 | Jun 17  | 11:00 | PRG04     | opdracht 6                        |           |      |  
 | WEEK 8        |        |         |       |           |                                   |           |      |
