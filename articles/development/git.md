@@ -66,7 +66,7 @@ git add .
 git commit -m "[message]"
 git push
 ```
-## Commit Message Standards
+## Commit/ PR Message Standards
 
 First Word | Meaning
 --- | ---
@@ -79,6 +79,8 @@ First Word | Meaning
 `Optimized ...` | Refactor of performance, e.g. speed up code.
 `Documented ...` | Refactor of documentation, e.g. help files.
 
-## Pull Request / Merge
+## Pull Request (PR)
+
+## Merge
 
 ## Fetch Upstream
