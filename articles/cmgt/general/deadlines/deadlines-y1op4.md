@@ -1,7 +1,6 @@
 # CMGT Deadlines Y1 Periode 4 
 
 
-
 | Work Amount   | Week   | Date    | Time  | Subject   | Description                       | Points    | Must | 
 |---            |:---:   |:---:    |:---:  |---        |---                                |---        |:---: |
 | WEEK 1        |        |         |       |           |                                   |           |      |
