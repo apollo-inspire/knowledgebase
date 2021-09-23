@@ -2,7 +2,7 @@
 title: 'cmgt-prg04-summary'
 created: '2020-06-24'
 published: '2020-06-27'
-modified: '2021-02-20'
+modified: '2021-09-23'
 author: 'Lucas van der Vegt'
 teacher: ''
 modifiedby: ['', '']
@@ -38,27 +38,34 @@ Ik kan code van anderen lezen en de werking
 ervan beredeneren.
 
 
+
 ## Index
 
-- 1. Basic Javascript
-  - 1.1 Static Types
-  - 1.2 Arrays
-  - 1.3 Functions
-- 2. Classes
-- 3. Inheritance
-- 4. Composition
-- 5. Encapsulation
-  - 5.1 Private & Public
-  - 5.2 Protected
-  - 5.3 Get & Set
-- 6. Full Advanced Classes
-- 7. Game Techniques
-  - 7.1 Game loop
-  - 7.2 DOM Elements
-  - 7.3 Bouding box
-  - 7.4 Collision
-  - 7.5 Vector
-- 8. UML
+  - [1. Basic Javascript](#1-basic-javascript)
+    - [1.1 Static Types](#11-static-types)
+    - [1.2 Arrays](#12-arrays)
+    - [1.3 Functions](#functions)
+  - [2. Classes](#2-classes)
+  - [3. Inheritance](#3-inheritance)
+  - [4. Composition](#4-composition)
+  - [5. Encapsulation](#5-encapsulation)
+    - [5.1 Public & Private](#51-public--private)
+    - [5.2 Get & Set](#52-get--set)
+    - [5.3 Protected](#53-protected)
+  - [6. Full Advanced Classes](#6-full-advanced-classes)
+  - [7. Game Techniques](#7-game-techniques)
+    - [7.1 Game loop](#71-game-loop)
+    - [7.2 DOM Elements](#72-dom-elements)
+    - [7.3 Bouding box](#73-bouding-box)
+    - [7.4 Collision](#74-collision)
+    - [7.5 Vector](#75-vector)
+    - [7.6 Other](#76-other)
+  - [8. UML](#8-uml)
+    - [8.1 Example](#81-example)
+    - [8.2 Inheritance](#82-inheritance)
+    - [8.3 Composition](#83-composition)
+    - [8.4 Encapsulation (Acces modifiers)](#84-encapsulation-acces-modifiers)
+
 
 ---
 
@@ -100,7 +107,7 @@ Een array van `numbers`
 let list : number = [1, 2, 3]
 ```
 
-### Functions
+### 1.3 Functions
 
 Bij `function argument` altijd het `type` aangeven.
 

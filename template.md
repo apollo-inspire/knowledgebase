@@ -1,6 +1,6 @@
 ---
 title: ''
-code: ''
+slug: ''
 created: ''
 published: ''
 modified: ''
@@ -13,31 +13,34 @@ lang: 'en'
 tags: ['', '', '']
 ---
 
-# Template
+# Template Title
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: NAME*
 <!-- Editted by: NAME, NAME, NAME -->
 
-## Topics
+## Index
 
-- [Topic A](#1-topic-a)
-    - Subtopic A1
+  - [1. Topic A](#1-topic-a)
     
 ---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
     
-## Main
+{{CONTENT}}
 
-CONTENT
+## 1. Topic
+
 see [content template][template_content.md]
 
-### 1. Topic A
-
 ---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 `end of file`  
-*publish date:*  
-*modified date:*  
+*publish date: 0000-00-00*  
+*modified date: 0000-00-00*  
   
 <!-- LINKS -->
 [google]: https://www.google.com  
