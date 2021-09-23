@@ -4,6 +4,8 @@ slug: ''
 created: ''
 published: ''
 modified: ''
+class: ''
+class-slug: ''
 author: ''
 teacher: ''
 modifiedby: ['', '']
