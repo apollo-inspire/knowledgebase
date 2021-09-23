@@ -38,51 +38,33 @@ Ik kan code van anderen lezen en de werking
 ervan beredeneren.
 
 
-## Topics
+## Index
 
-- Basic Javascript
-  - Static Types
-  - Arrays
-  - Functions
+- 1. Basic Javascript
+  - 1.1 Static Types
+  - 1.2 Arrays
+  - 1.3 Functions
+- 2. Classes
+- 3. Inheritance
+- 4. Composition
+- 5. Encapsulation
+  - 5.1 Private & Public
+  - 5.2 Protected
+  - 5.3 Get & Set
+- 6. Full Advanced Classes
+- 7. Game Techniques
+  - 7.1 Game loop
+  - 7.2 DOM Elements
+  - 7.3 Bouding box
+  - 7.4 Collision
+  - 7.5 Vector
+- 8. UML
 
-- Classes
+---
 
-- Inheritance
-  - Class 2 extends Class 1
+## 1. Basic Javascript
 
-- Composition
-  - Class 1 has Class 2
-
-- Encapsulation
-  - Private
-  - Public
-  - Protected
-  - Get & Set
-
-- Full Advanced Classes
-
-- Game Techniques
-  - Game loop
-  - DOM Elements
-    - HTML
-    - CSS
-    - TS
-  - Bouding box
-  - Collision
-  - Vector
-
-- UML
-  - Class
-  - Inheritance
-  - Composition
-  - Encapsulation
-
-
-## Main
-
-### Basic Javascript
-
-#### Static Types
+### 1.1 Static Types
 
 Typescript is Javascript met `static types`
 
@@ -100,50 +82,36 @@ console.log(a)
 
 TypeScript:
 ```ts
-let a : number = 1;
-let b : boolean = true;
-let c : string = "Car";
+let a = 1 : number
+let b = true : boolean
+let c = "Car" : string
 
-a = "hoi";
-console.log(a);
+a = "hoi"
+console.log(a)
 
 // output = ERROR
 ```
 
-TypeScript:
-```ts
-let a : number = 1;
-let b : boolean = true;
-let c : string = "Car";
 
-a = 3;
-console.log(a);
-
-// output = 3
-```
-
-
-#### Arrays
+### 1.2 Arrays
 
 Een array van `numbers`
 ```ts
-let list : Array<number> = [1, 2, 3];
-
-// output = [ 1, 2, 3 ]
+let list : number = [1, 2, 3]
 ```
 
-#### Functions
+### Functions
 
 Bij `function argument` altijd het `type` aangeven.
 
 ```ts
 function getValue(a : number) {
-  return true;
+  return true
 }
 ```
 
 
-### Classes
+## 2. Classes
 
 class example:
 ```ts
@@ -171,7 +139,7 @@ p.sayHi()
 ```
 
 
-### Inheritance
+## 3. Inheritance
 Class 2 extends Class 1
 
 Class 1 example:
@@ -204,7 +172,7 @@ let d = new Driver()
 // Driving: bus
 ```
 
-### Composition
+## 4. Composition
 Class 1 has Class 2
 
 Class 1 example:
@@ -236,9 +204,9 @@ let c = new Car()
 // output = Driver is Lucas
 ```
 
-### Encapsulation
+## 5. Encapsulation
 
-#### Public & Private
+### 5.1 Public & Private
 
 Class met encapsulation:
 ```ts
@@ -263,7 +231,7 @@ console.log(this.Person.name)
 // Lucas
 ```
 
-#### Get & Set
+### 5.2 Get & Set
 
 ```ts
 class Person {
@@ -289,21 +257,21 @@ console.log(this.Person.name)
 // Lucas
 ```
 
-#### Protected
+### 5.3 Protected
 
 Protected is hetzelfde als private alleen word het geextend bij een inharitance.
 
 ```ts
 ```
 
-### Full Advanced Classes
+## 6. Full Advanced Classes
 
 ```ts
 ```
 
-### Game Techniques
+## 7. Game Techniques
 
-#### Game loop
+### 7.1 Game loop
 
 Met `requestAnimationFrame()` word elke "animation frame" een keer aangeroepen, bij een normaal beeldscherm zal dit 60 keer per seconden zijn. Zo onstaat er een framerate van 60fps. De functie werkt alleen als de tab actief is.
 
@@ -322,19 +290,19 @@ class Game {
 }
 ```
 
-#### DOM Elements
+### 7.2 DOM Elements
 
 
 Gebruik semantische elementen in html en css om elementen te laten bewegen.
 
-##### HTML
+#### 7.2.1 HTML
 
 Semantische HTML tags, een geprefereerde manier is om semantische tags in de HTML aan te maken binnen de TypeScript class
 ```html
 <car></car>
 ```
 
-##### CSS
+#### 7.2.2 CSS
 
 Alle gemaakte elementen in game kunnen op deze manier gemanipuleerd worden op de gewenste manier in de typescript classes
 
@@ -353,7 +321,7 @@ car {
 }
 ```
 HTML element creeeren samen met de class.
-##### TS
+#### 7.2.3 Typescript
 ```ts
 class Car {
   div : HTMLElement
@@ -373,7 +341,7 @@ class Car {
 }
 ```
 
-#### Bouding box
+### 7.3 Bouding box
 
 Een DOM rectangle gebruik je op previes te zien waar het object staat en hoe groot het is. Hij heeft 8 properties: `left, top, right, bottom, x, y, width, height`
 
@@ -381,7 +349,7 @@ Een DOM rectangle gebruik je op previes te zien waar het object staat en hoe gro
 let rectangle : ClientRect = div.getBoundingClientRect()
 ```
 
-#### Collision
+### 7.4 Collision
 
 Gebruik een collision function op te zien of zien twee rectangles overlappen.
 ```ts
@@ -400,9 +368,9 @@ this.checkCollison(this.car1.getRectangle(), this.car2.getRectangle())
 Returns true or false
 
 
-#### Vector
+### 7.5 Vector
 
-#### Other
+### 7.6 Other
 
 Grid
 ```ts
@@ -411,9 +379,11 @@ this.x = column * this.div.clientWidth + offsetX
 this.y = row * this.div.clientHeight   + 100
 ```
 
-### UML
+## 8. UML
 
-#### Example
+<!-- insert mermaid example -->
+
+### 8.1 Example
 - Object
     - Parameters
         - Fields
@@ -422,18 +392,20 @@ this.y = row * this.div.clientHeight   + 100
     - Functions
 
 
-#### Inheritance
+### 8.2 Inheritance
 Car is a vehicle
 
-#### Composition
+### 8.3 Composition
 Car has a driver
 
-#### Encapsulation (Acces modifiers )
+### 8.4 Encapsulation (Acces modifiers)
 ```uml
 + public
 - private
 # protected
 ```
+
+---
 
 `end of file`  
 *publish date: 2020-06-27*  
