@@ -9,7 +9,7 @@ modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/design/theory/cmgt-ont01-summary.md'
 lang: 'nl'
-tags: ['ontwerpen', 'summery', 'design']
+tags: ['ontwerpen', 'summary', 'design']
 ---
 
 # CMGT Ontwerpen 1 Samenvatting
