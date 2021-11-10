@@ -1,21 +1,23 @@
 ---
-title: 'backend-framework-laravel'
-slug: 'cmgt-prg05-summary'
-created: '2021-06-23'
+title: 'frontend'
+slug: 'cmgt-prg06-summary'
+created: '2021-11-10'
 published: '2021-00-00'
-modified: '2021-09-23'
+modified: '2021-11-10'
 author: 'Lucas van der Vegt'
-class: 'Programmeren 5'
-class-slug: 'PRG05'
+class: 'Programmeren 6'
+class-slug: 'PRG06'
 teacher: ''
 modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
-link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg05-summary.md'
+link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
 lang: 'en'
-tags: ['php', 'backend', 'laravel', 'mvc']
+tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 'api', 'node.js']
 ---
 
-# Programmeren 5: Backend Framework (Laravel)
+
+# Programmeren 6: Frontend Framework & Basic Backend Api (React & Node.js)
+
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
@@ -40,45 +42,14 @@ tags: ['php', 'backend', 'laravel', 'mvc']
 
 ## Topics
 
-Routes
-
-Views
-    Blade
-    CSS
-    JS
-
-Models
-    Collections 
-
-Database
-    Env files
-    Migrations
-    ORM
-    Eloquent
-
-    Create
-    Read
-    Update
-    Delete
-
-Controller
-
-Design Patterns
-    Search
-    Filtering
-    Pagination
-    Forms
-    Authentication
-    Authorization (Admin Section)
-    Comments
-    Email & APIS
-
-Security
 
 
 ---
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
+## 1.
+
 
 `end of file`  
 *publish date: 0000-00-00*  
