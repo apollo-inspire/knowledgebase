@@ -48,7 +48,34 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
-## 1.
+## A. backend - Nodejs & Express
+https://www.youtube.com/watch?v=ENrzD9HAZK4
+
+## B. HTTP, RESTfull API & OAuth
+https://www.youtube.com/watch?v=-MTSQjw5DrM
+
+### HTTP
+
+#### Basic Networking
+
+#### Statuscodes
+
+### RESTfull API
+
+### OAuth
+
+
+## C. operations - VPS & Linux
+
+### Virtual Private Server (VPS)
+
+### Linux
+
+
+## D. frontend - React
+
+## E. frontend - Sass
+
 
 
 `end of file`  
