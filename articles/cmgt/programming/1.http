@@ -1,0 +1,15 @@
+POST https://pokeapi.co/api/v2/pokemon/ditto
+
+###
+
+GET https://pokeapi.co/api/v2/pokemon/ditto
+
+
+###
+
+GET http://docent.cmi.hro.nl/bootb/demo/notes/
+Accept: application/json
+
+###
+
+GET https://google.com/

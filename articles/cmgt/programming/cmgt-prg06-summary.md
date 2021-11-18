@@ -51,16 +51,87 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 ## A. backend - Nodejs & Express
 https://www.youtube.com/watch?v=ENrzD9HAZK4
 
+## Endpoint
+
+## Middleware
+
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
 
+**API** *< an Application Programming Interface is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. >*
+
+**HTTP**
+
+**idempotency** *< Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. >*
+
 ### HTTP
+
+stateless
+
+
+#### Software
+
+Postman
+Insomnia
+
+VScode extension: REST Client
+
+#### Methods
+
+POST create  
+GET read  
+PATCH update  
+DELETE destroy  
+
+PUT create / update
+
+#### URIs
+
+https://api.com/v2/comet
+network location / resource
+
+#### Request
+POST comet HTTP 1.1
+VERB / resource uri / protocol 
+Accept: application/json
+Authorization: <token>
+Connection: keep-alive
+
+{
+    "body": "body"
+}
+
+
+#### Response
+
+protocol / statuscode
+HTTP/1.1 200 OK
+Serer: ngix
+Age: 2323
+Connection: keep-alive
+
+{
+    "id": "2"
+    "status": "3"
+}
 
 #### Basic Networking
 
 #### Statuscodes
 
+2XX good
+4XX client error
+5XX server error
+
+
 ### RESTfull API
+
+**RESTful** *< Representational State Transfer, invented by Roy Fielding in 2000 >*
+
+JSON
+
+#### OpenAPI Spec
+https://swagger.io/specification/
 
 ### OAuth
 
