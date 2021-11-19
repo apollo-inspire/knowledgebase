@@ -85,6 +85,10 @@ DELETE destroy
 
 PUT create / update
 
+OPTIONS get possible methods
+
+HEAD
+
 #### URIs
 
 https://api.com/v2/comet
@@ -145,8 +149,12 @@ https://swagger.io/specification/
 
 ## D. frontend - React
 
-## E. frontend - Sass
 
+
+## E. frontend - Sass
+styleguides
+http://styleguides.io/
+https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
 
 `end of file`  
