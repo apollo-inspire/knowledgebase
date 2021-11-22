@@ -64,6 +64,9 @@ https://www.youtube.com/watch?v=-MTSQjw5DrM
 
 **idempotency** *< Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. >*
 
+**Safe Method** *< Deze method veranderd niks op de server >*
+
+
 ### HTTP
 
 stateless
@@ -80,14 +83,17 @@ VScode extension: REST Client
 
 POST create  
 GET read  
-PATCH update  
+PUT create / update (geheel)
+PATCH update (deel)
 DELETE destroy  
 
-PUT create / update
 
 OPTIONS get possible methods
+HEAD get zonder body
 
-HEAD
+TRACE
+CONNECT
+
 
 #### URIs
 
@@ -130,12 +136,27 @@ Connection: keep-alive
 
 ### RESTfull API
 
-**RESTful** *< Representational State Transfer, invented by Roy Fielding in 2000 >*
+**RESTful** *< Representational State Transfer, invented by Roy Fielding in 2000 >* 
 
 JSON
 
 #### OpenAPI Spec
 https://swagger.io/specification/
+
+### POST overloading
+
+undelete
+
+(of je maakt je eigen methods)
+
+### Type RESTFULL Resources
+
+**REST Resource** *< Het type resource wat in de body teruggestuurd word >*
+
+Collection
+
+Function
+Controllers
 
 ### OAuth
 

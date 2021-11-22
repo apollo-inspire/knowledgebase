@@ -10,6 +10,11 @@ GET https://pokeapi.co/api/v2/pokemon/ditto
 GET http://docent.cmi.hro.nl/bootb/demo/notes/
 Accept: application/json
 
+
+###
+
+OPTIONS http://docent.cmi.hro.nl/bootb/demo/notes/
+
 ###
 
 GET https://google.com/
