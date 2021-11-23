@@ -81,11 +81,11 @@ VScode extension: REST Client
 
 #### Methods
 
-POST create  
-GET read  
-PUT create / update (geheel)
-PATCH update (deel)
-DELETE destroy  
+POST create 
+GET read  {safe, idempotent}
+PUT create / update (geheel) {idempotent}
+PATCH update (deel) 
+DELETE destroy  {idempotent}
 
 
 OPTIONS get possible methods
@@ -153,10 +153,11 @@ undelete
 
 **REST Resource** *< Het type resource wat in de body teruggestuurd word >*
 
+Detail
 Collection
-
+Composition
 Function
-Controllers
+Controller
 
 ### OAuth
 
