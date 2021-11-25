@@ -170,8 +170,72 @@ Controller *< special function, POST>*
 
 ### Virtual Private Server (VPS)
 
-### Linux
+### Basic Networking / VPS commands
 
+ssh username@ipa
+
+### Linux
+https://cheatography.com/davechild/cheat-sheets/linux-command-line/
+
+#### Basic BASH commands
+
+```bash
+pwd # Show current directory
+mkdir [dir] # Make directory
+cd [dir] # Change directory to dir
+cd .. # Go up a directory
+ls # List files
+-a # Show all (including hidden)
+-t # Sort by last modified
+-S # Sort by file size
+cp # copy
+mv # move
+rm # remove
+
+ps # process snapshot
+kill [pid] # kill process
+uptime # Show uptime
+uname -a # Show system and kernel
+whoami # Show your username
+help / man # manuals and information
+clear # clear screen
+
+CTRL-C # Stop dcurrent running command
+```
+
+#### Backend MERN
+
+```bash
+sudo apt update # update apt packages
+sudo apt install npm # install npm
+sudo apt install nodejs # install nodejs
+sudo apt install mongodb # install mondgodb
+
+npm -v # check if npm is correctly installed
+nodejs -v # check if nodojs is correctly installed
+mongodb -v # check if mongodb is correctly installed
+
+git clone / pull [repo] # clone or pull repository
+
+cd [dir] # change directory to repo dir
+
+npm i # install repo packages
+node . # start node index.js
+
+sudo systemctl status mongodb # check status of mongodb server
+
+mongo --eval 'db.runCommand({ connectionStatus: 1 })' # diagnostic mongo command
+
+
+sudo systemctl stop mongodb # stop mongodb server
+sudo systemctl start mongodb # start mongodb server
+sudo systemctl restart mongodb # restand mongodb server
+
+sudo ufw status # check firewall status
+
+sudo nano /etc/mongodb.conf # edit mongodb config
+
+```
 
 ## D. frontend - React
 
