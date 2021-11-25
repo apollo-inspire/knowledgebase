@@ -48,12 +48,18 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
-## A. backend - Nodejs & Express
+## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
 
 ## Endpoint
 
 ## Middleware
+
+## Models
+Database 
+
+Mongoose
+Schema
 
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
@@ -105,6 +111,8 @@ VScode extension: REST Client
 https://api.com/v2/comet
 network location / resource
 
+https://www.slideshare.net/landlessness/teach-a-dog-to-rest
+
 #### Request
 POST comet HTTP 1.1
 VERB / resource uri / protocol 
@@ -137,6 +145,12 @@ Connection: keep-alive
 2XX good
 4XX client error
 5XX server error
+
+200 - OK
+
+401 - Unauthorized
+
+404 - Not found
 
 
 ### RESTfull API
