@@ -81,19 +81,24 @@ VScode extension: REST Client
 
 #### Methods
 
-POST create 
-GET read  {safe, idempotent}
-PUT create / update (geheel) {idempotent}
-PATCH update (deel) 
-DELETE destroy  {idempotent}
 
+| name    | function                 | safe  | idempotent |
+| ------- | ------------------------ | :---: | :--------: |
+| POST    | create                   |       |     x      |
+| GET     | read                     |   x   |     x      |
+| PUT     | create / update (geheel) |       |     x      |
+| PATCH   | update (deel)            |       |            |
+| DELETE  | destroy                  |       |     x      |
+|         |                          |       |            |
+| OPTIONS | get possible methods     |   x   |     x      |
+| HEAD    | get without body         |   x   |     x      |
+|         |                          |       |            |
+| TRACE   |                          |       |            |
+| CONNECT |                          |       |            |
 
-OPTIONS get possible methods
-HEAD get zonder body
+**POST overloading** *< sending HTTP requests that doesnt exist can be done with a POST request. You send a method with the head that specifies what custom request you are using (document this correctly)>*
 
-TRACE
-CONNECT
-
+**Custom Methods** *< another way to use create new request methods, is to use custom http methods, just excange `post` for something else like `undelete` (document this correctly)>*
 
 #### URIs
 
@@ -140,24 +145,23 @@ Connection: keep-alive
 
 JSON
 
-#### OpenAPI Spec
+### API Documentation
+OpenAPI Specification
 https://swagger.io/specification/
 
-### POST overloading
+Postman
 
-undelete
 
-(of je maakt je eigen methods)
 
 ### Type RESTFULL Resources
 
 **REST Resource** *< Het type resource wat in de body teruggestuurd word >*
 
-Detail
-Collection
-Composition
-Function
-Controller
+Detail *< all data of specific item >*
+Collection *< list of items with indexable information>*
+Composition *< a combination of diffrent types of resources>*
+Function *< functional resource, custom input generates custom output `/distance/rdam;adam`, GET>*
+Controller *< special function, POST>*
 
 ### OAuth
 
