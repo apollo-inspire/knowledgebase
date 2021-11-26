@@ -235,9 +235,10 @@ ls # List files
 -a # Show all (including hidden)
 -t # Sort by last modified
 -S # Sort by file size
-cp # copy
-mv # move
-rm # remove
+cp [dir/name] [newdir/name] # copy
+mv [dir/name] [newdir/name]# move
+rm [dir/name] # remove
+touch [name] # new file
 
 ps # process snapshot
 kill [pid] # kill process
