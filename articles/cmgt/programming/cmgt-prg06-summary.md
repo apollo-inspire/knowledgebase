@@ -51,6 +51,30 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 ## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
 
+
+.ENV
+
+installing needed software (windows)
+```bash
+winget install npm # install npm
+winget install nodejs # install nodejs
+winget install mongodb # install mondgodb
+
+npm -v # check if npm is correctly installed
+nodejs -v # check if nodojs is correctly installed
+mongodb -v # check if mongodb is correctly installed
+```
+
+new project
+```bash
+git clone # clone corresponding git repo
+
+npm install express mongoose # add express & mongoose dependency to project
+npm install --save-dev dotenv nodemon # add express & mongoose dependency to project development
+
+npm i # install repo packages
+```
+
 ## Endpoint
 
 ## Middleware
@@ -140,17 +164,26 @@ Connection: keep-alive
 
 #### Basic Networking
 
+
+IP/TCP
+
+Packets
+
+7 layers 
+
+
+
 #### Statuscodes
 
-2XX good
-4XX client error
-5XX server error
-
+##### 2XX good
 200 - OK
 
+##### 4XX client error
 401 - Unauthorized
-
 404 - Not found
+
+#####
+5XX server error
 
 
 ### RESTfull API
@@ -219,6 +252,7 @@ CTRL-C # Stop dcurrent running command
 
 #### Backend MERN
 
+installing needed software (linux)
 ```bash
 sudo apt update # update apt packages
 sudo apt install npm # install npm
@@ -228,7 +262,10 @@ sudo apt install mongodb # install mondgodb
 npm -v # check if npm is correctly installed
 nodejs -v # check if nodojs is correctly installed
 mongodb -v # check if mongodb is correctly installed
+```
 
+installing on server / locally
+```bash
 git clone / pull [repo] # clone or pull repository
 
 cd [dir] # change directory to repo dir
@@ -236,19 +273,21 @@ cd [dir] # change directory to repo dir
 npm i # install repo packages
 node . # start node index.js
 
-sudo systemctl status mongodb # check status of mongodb server
+sudo systemctl start mongodb # start mongodb server
 
+sudo systemctl status mongodb # check status of mongodb server
+```
+
+configuration
+```bash
 mongo --eval 'db.runCommand({ connectionStatus: 1 })' # diagnostic mongo command
 
-
 sudo systemctl stop mongodb # stop mongodb server
-sudo systemctl start mongodb # start mongodb server
 sudo systemctl restart mongodb # restand mongodb server
 
 sudo ufw status # check firewall status
 
 sudo nano /etc/mongodb.conf # edit mongodb config
-
 ```
 
 ## D. frontend - React
@@ -260,6 +299,9 @@ styleguides
 http://styleguides.io/
 https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
+
+## Links
+https://www.youtube.com/watch?v=fgTGADljAeg
 
 `end of file`  
 *publish date: 0000-00-00*  
