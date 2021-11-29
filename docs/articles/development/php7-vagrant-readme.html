@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PHP7 Vagrant Box | Opensource Knowledgebase </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PHP7 Vagrant Box | Opensource Knowledgebase ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="php7-vagrant-box">PHP7 Vagrant Box</h2>
+
+<p>Original repository: <a href="https://github.com/antwanvdm/php7-vagrant">antwanvdm/php7-vagrant</a><br>
+by <a href="https://github.com/antwanvdm">Antwan</a></p>
+<p>This box provides a basic box based on the
+'<a href="https://app.vagrantup.com/bento/boxes/ubuntu-20.04">bento/ubuntu-20.04</a>' box.<br>
+When cloned and installed you're ready to develop PHP7 based applications.</p>
+<p>This package includes the following setup:</p>
+<ul>
+<li>Nginx web server</li>
+<li>PHP7</li>
+<li>PHP7 dev tools (settings in php.ini &amp; xdebug (<em>IDE Key = PHPSTORM</em>) installed)</li>
+<li>MariaDB database server</li>
+<li>Composer</li>
+<li>Default tools: htop, dos2unix, git &amp; sendmail</li>
+</ul>
+<p>Everything is installed through <a href="https://www.ansible.com/">ansible</a> which allows you to
+add/change/remove packages for your own needs. Check the <code>_scripts/ansible/vars.yml</code> to
+change current packages (for example: disable php7 dev tools). Or check the
+scripts/templates from the current packages if you require any changes within this structure.</p>
+<h3 id="install-guide">Install Guide</h3>
+<ol>
+<li><p>Install <a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a> (needed to provide a
+virtual machine)</p>
+</li>
+<li><p>Install <a href="https://www.vagrantup.com/">Vagrant</a> (easy base for development environments)</p>
+</li>
+<li><p>For Windows users, install <a href="https://git-scm.com/download/win">Git</a></p>
+</li>
+<li><p>Install 2 plugins for vagrant, <strong>nugrant</strong> for .vagrantuser support &amp; <strong>hostmanager</strong> to
+support a nice development URL instead of your IP (for Windows you can use 'Git bash')]</p>
+<pre><code class="lang-bash">vagrant plugin install vagrant-hostmanager
+vagrant plugin install nugrant
+</code></pre>
+</li>
+<li><p>(Optional, please file an issue when things break without) Add 'ForwardAgent yes' as new
+line in your <strong>~/.ssh/config</strong> file</p>
+</li>
+<li><p>got to <code>setup guide</code></p>
+</li>
+</ol>
+<h3 id="setup-guide">Setup Guide</h3>
+<ol>
+<li><p>Clone this repository (after navigating to your dev folder)</p>
+<pre><code class="lang-bash">git clone [repolink]
+</code></pre>
+</li>
+<li><p>Navigate in new project folder</p>
+<pre><code class="lang-bash">cd [repo]
+</code></pre>
+</li>
+<li><p>Run vagrantuser script to create the .vagrantuser file.</p>
+<pre><code class="lang-bash">./_scripts/create_vagrantuser_file.sh
+</code></pre>
+<p>BEWARE: Currently needs a manual path fix on Windows!!</p>
+<ul>
+<li>in the <code>.vagrantuser</code> file change the value for <code>local_git_path:</code> from <code>&quot;/c/....&quot;</code> to <code>&quot;c:/....&quot;</code></li>
+</ul>
+<p>If you want to use multiple vagrant boxes:</p>
+<ul>
+<li>change <code>ip_address:</code> to one thats not used anymore</li>
+</ul>
+</li>
+<li><p>Start Vagrant (grant admin in process for changing hosts file)</p>
+<pre><code class="lang-bash">vagrant up
+</code></pre>
+</li>
+<li><p>Go to <code>http://[repo].local</code> to find your <code>phpinfo()</code> page</p>
+</li>
+<li><p>If it works, you're ready to develop inside the <code>/public</code> folder!</p>
+</li>
+</ol>
+<h3 id="starting-vagrant">Starting Vagrant</h3>
+<ol>
+<li><p>Open bash/terminal in local reposistory</p>
+</li>
+<li><p>Start Vagrant</p>
+<pre><code class="lang-bash">vagrant up
+</code></pre>
+</li>
+</ol>
+<h3 id="connecting">Connecting</h3>
+<p>Open local website: http://[repo].local</p>
+<h4 id="connecting-to-database">Connecting to database</h4>
+<p>In MySQL Workbench</p>
+<ol>
+<li>Click on <code>Setup New Connection</code></li>
+<li>Set Connection Name to correstponding repository name.</li>
+<li>Set Hostname to the corresponding <code>ip_address</code> in the <code>.vagrantuser</code> file (default: <code>192.168.50.5</code>)</li>
+<li>Set Username &amp; Password (default: <code>root</code>)-</li>
+</ol>
+<h3 id="other-references">Other References</h3>
+<ul>
+<li><a href="https://www.php.net/">PHP</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/">Nginx</a></li>
+<li><a href="https://mariadb.org/">MariaDB</a></li>
+<li><a href="https://getcomposer.org/">Composer</a></li>
+<li><a href="https://xdebug.org/">Xdebug</a></li>
+</ul>
+<hr>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/php7-vagrant-readme.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

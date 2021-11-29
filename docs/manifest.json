@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/design/cmgt-ont01-summary.html",
-          "hash": "lGcLOyiuAFmgd+mcQJHW0g=="
+          "hash": "SWaopK+loi4LnnNklFK6Ew=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/design/cmgt-ont02-summary.html",
-          "hash": "xLPeg0Ys3ReEAgY8mUj9Bw=="
+          "hash": "LrM9f2bUpQwPP6/NdXTwDQ=="
         }
       },
       "is_incremental": false,
@@ -36,7 +36,7 @@
           "hash": "CaHFjNTQrBB1kjWBx68C0A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/design/cmgt-ont04-summary.html",
-          "hash": "vH+kWJ0a/OlYZcP4ogvcTQ=="
+          "hash": "NDyrWW1h4wnVM6I+PxDWbA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/general/deadlines/deadlines-y1op4.html",
-          "hash": "mINwnWFrIsZICk1qgo/EQg=="
+          "hash": "QaLvjZMBezfGzkcN7IkCYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/general/deadlines/deadlines-y2op1.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/general/deadlines/deadlines-y2op1.html",
+          "hash": "FGeyT3ebIj9VaTMcmuLooQ=="
         }
       },
       "is_incremental": false,
@@ -72,7 +84,7 @@
           "hash": "JAPUyypOGfYh1qmSH0EOIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,7 +96,7 @@
           "hash": "o6etQ6CfWfgxBM8eoEUgYA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,7 +108,7 @@
           "hash": "mi4CeFJdjCC1HiNZgPWfIg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,7 +120,7 @@
           "hash": "p06LMNeSEYjS1PzBBCywsA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,7 +132,7 @@
           "hash": "WrrjXWKA4EWyj1yYUITxFw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,7 +144,7 @@
           "hash": "TdUWDzd9cwt5EGCWNCdYug=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,7 +156,7 @@
           "hash": "iml5OKpe19ISjkyqwwFibg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,7 +168,7 @@
           "hash": "Uz9M5w2xujxb2nfG5CG0cw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg03-summary.html",
-          "hash": "QZQzvdM2q1FSvA2Q5ewghQ=="
+          "hash": "8aJnThdY1vqX5I2/pAP+yw=="
         }
       },
       "is_incremental": false,
@@ -177,7 +189,31 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg04-summary.html",
-          "hash": "91pC6hYQ79GDhNwcaiMEMQ=="
+          "hash": "KYo0aDhmMK5DhrMeuQZoNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg05-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg05-summary.html",
+          "hash": "4yLQeQ5JgwHkXQ2L01m/LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/programming/cmgt-prg06-summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/programming/cmgt-prg06-summary.html",
+          "hash": "iR99zhT/cKpyI+uQGT5X7A=="
         }
       },
       "is_incremental": false,
@@ -192,7 +228,7 @@
           "hash": "a0uAA7RDTuHyzN+vb1G/cg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,7 +240,7 @@
           "hash": "EKl6r3raquAtREghvgFW5g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -216,7 +252,7 @@
           "hash": "KSdpyAs29xob6vkEgf9oZw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,7 +264,7 @@
           "hash": "/ObeQWzTHlaJFBGso0zVjw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,7 +276,7 @@
           "hash": "Mj0IB3yO3kKrNsTtN9WuCQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,7 +288,7 @@
           "hash": "d7WX5DUr4v40NxzUd7GQNA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -264,7 +300,7 @@
           "hash": "FvXMkekRtk7GqE1sHoubhQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -276,7 +312,7 @@
           "hash": "VF3bjNo5yzn6Qg0TrflYnQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,7 +324,7 @@
           "hash": "BH6cxPVrQ/dpdq3A3v2FXQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -336,7 +372,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/development/api.html",
-          "hash": "aMsdmts9Y2OJ8X765OrHRA=="
+          "hash": "o68p1iHKd9LgKUpdMLJNgA=="
         }
       },
       "is_incremental": false,
@@ -363,6 +399,18 @@
           "hash": "xyiNf1v9EfPF38h8L/vhLg=="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/ccna.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/ccna.html",
+          "hash": "6Z3VUgnGiqAOcQZF5bJhBw=="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -385,6 +433,42 @@
         ".html": {
           "relative_path": "articles/development/educationalyt.html",
           "hash": "b0EQJh07cYK8qXOFMIyxXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/git.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/git.html",
+          "hash": "ovsZ1cUbWUEitJE1CO7tuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/lunix.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/lunix.html",
+          "hash": "2CPtlVYVOK8hq50ai96ooQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/php7-vagrant-readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/php7-vagrant-readme.html",
+          "hash": "u75CE7I1QQjuQxkrrL8PvA=="
         }
       },
       "is_incremental": false,
@@ -456,14 +540,14 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/hr/electives/minidocu/hr-minidocu-theory.md",
+      "source_relative_path": "articles/hr/electives/shortfilm/hr-minidocu-theory.md",
       "output": {
         ".html": {
-          "relative_path": "articles/hr/electives/minidocu/hr-minidocu-theory.html",
-          "hash": "9JaWOSyoEmtbFEK7QcXG2w=="
+          "relative_path": "articles/hr/electives/shortfilm/hr-minidocu-theory.html",
+          "hash": "JSIdcAdBWMEejLjUygq7DQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -478,7 +562,7 @@
           "hash": "mLbF05mQ9mSkXbJbEmgMgA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -502,7 +586,7 @@
           "hash": "Mwc1K+AvFwJASz9eigMP0Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -511,10 +595,10 @@
       "output": {
         ".html": {
           "relative_path": "template.html",
-          "hash": "FI+cII6sE57hIZRdEEdD/g=="
+          "hash": "WnNxDMufclDZ3RRyhr3jlQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -523,10 +607,10 @@
       "output": {
         ".html": {
           "relative_path": "template_content.html",
-          "hash": "wRNpGiATVE5qh6iIJJWKiQ=="
+          "hash": "hdtXIHW2Iv9d3squ46HNEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -557,8 +641,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 41,
-          "skipped_file_count": 29
+          "total_file_count": 48,
+          "skipped_file_count": 31
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

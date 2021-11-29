@@ -88,64 +88,48 @@ gemaakt wordt van Inheritance, Composition
 en Encapsulation.</p>
 <p>Ik kan code van anderen lezen en de werking
 ervan beredeneren.</p>
-<h2 id="topics">Topics</h2>
+<h2 id="index">Index</h2>
 <ul>
-<li><p>Basic Javascript</p>
+<li><a href="#1-basic-javascript">1. Basic Javascript</a>
 <ul>
-<li>Static Types</li>
-<li>Arrays</li>
-<li>Functions</li>
+<li><a href="#11-static-types">1.1 Static Types</a></li>
+<li><a href="#12-arrays">1.2 Arrays</a></li>
+<li><a href="#functions">1.3 Functions</a></li>
 </ul>
 </li>
-<li><p>Classes</p>
-</li>
-<li><p>Inheritance</p>
+<li><a href="#2-classes">2. Classes</a></li>
+<li><a href="#3-inheritance">3. Inheritance</a></li>
+<li><a href="#4-composition">4. Composition</a></li>
+<li><a href="#5-encapsulation">5. Encapsulation</a>
 <ul>
-<li>Class 2 extends Class 1</li>
+<li><a href="#51-public--private">5.1 Public &amp; Private</a></li>
+<li><a href="#52-get--set">5.2 Get &amp; Set</a></li>
+<li><a href="#53-protected">5.3 Protected</a></li>
 </ul>
 </li>
-<li><p>Composition</p>
+<li><a href="#6-full-advanced-classes">6. Full Advanced Classes</a></li>
+<li><a href="#7-game-techniques">7. Game Techniques</a>
 <ul>
-<li>Class 1 has Class 2</li>
+<li><a href="#71-game-loop">7.1 Game loop</a></li>
+<li><a href="#72-dom-elements">7.2 DOM Elements</a></li>
+<li><a href="#73-bouding-box">7.3 Bouding box</a></li>
+<li><a href="#74-collision">7.4 Collision</a></li>
+<li><a href="#75-vector">7.5 Vector</a></li>
+<li><a href="#76-other">7.6 Other</a></li>
 </ul>
 </li>
-<li><p>Encapsulation</p>
+<li><a href="#8-uml">8. UML</a>
 <ul>
-<li>Private</li>
-<li>Public</li>
-<li>Protected</li>
-<li>Get &amp; Set</li>
-</ul>
-</li>
-<li><p>Full Advanced Classes</p>
-</li>
-<li><p>Game Techniques</p>
-<ul>
-<li>Game loop</li>
-<li>DOM Elements
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>TS</li>
-</ul>
-</li>
-<li>Bouding box</li>
-<li>Collision</li>
-<li>Vector</li>
-</ul>
-</li>
-<li><p>UML</p>
-<ul>
-<li>Class</li>
-<li>Inheritance</li>
-<li>Composition</li>
-<li>Encapsulation</li>
+<li><a href="#81-example">8.1 Example</a></li>
+<li><a href="#82-inheritance">8.2 Inheritance</a></li>
+<li><a href="#83-composition">8.3 Composition</a></li>
+<li><a href="#84-encapsulation-acces-modifiers">8.4 Encapsulation (Acces modifiers)</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="main">Main</h2>
-<h3 id="basic-javascript">Basic Javascript</h3>
-<h4 id="static-types">Static Types</h4>
+<hr>
+<h2 id="1-basic-javascript">1. Basic Javascript</h2>
+<h3 id="11-static-types">1.1 Static Types</h3>
 <p>Typescript is Javascript met <code>static types</code></p>
 <p>JavaScript:</p>
 <pre><code class="lang-js">let a = 1
@@ -167,17 +151,17 @@ console.log(a)
 
 // output = ERROR
 </code></pre>
-<h4 id="arrays">Arrays</h4>
+<h3 id="12-arrays">1.2 Arrays</h3>
 <p>Een array van <code>numbers</code></p>
 <pre><code class="lang-ts">let list : number = [1, 2, 3]
 </code></pre>
-<h4 id="functions">Functions</h4>
+<h3 id="13-functions">1.3 Functions</h3>
 <p>Bij <code>function argument</code> altijd het <code>type</code> aangeven.</p>
 <pre><code class="lang-ts">function getValue(a : number) {
   return true
 }
 </code></pre>
-<h3 id="classes">Classes</h3>
+<h2 id="2-classes">2. Classes</h2>
 <p>class example:</p>
 <pre><code class="lang-ts">class Person {
   name : string
@@ -199,7 +183,7 @@ p.sayHi()
 
 // output = Lucas said hi!
 </code></pre>
-<h3 id="inheritance">Inheritance</h3>
+<h2 id="3-inheritance">3. Inheritance</h2>
 <p>Class 2 extends Class 1</p>
 <p>Class 1 example:</p>
 <pre><code class="lang-ts">class Person {
@@ -225,7 +209,7 @@ p.sayHi()
 // Person
 // Driving: bus
 </code></pre>
-<h3 id="composition">Composition</h3>
+<h2 id="4-composition">4. Composition</h2>
 <p>Class 1 has Class 2</p>
 <p>Class 1 example:</p>
 <pre><code class="lang-ts">class Driver {
@@ -250,8 +234,8 @@ p.sayHi()
 
 // output = Driver is Lucas
 </code></pre>
-<h3 id="encapsulation">Encapsulation</h3>
-<h4 id="public--private">Public &amp; Private</h4>
+<h2 id="5-encapsulation">5. Encapsulation</h2>
+<h3 id="51-public--private">5.1 Public &amp; Private</h3>
 <p>Class met encapsulation:</p>
 <pre><code class="lang-ts">class Person {
   private age : number = 18
@@ -271,7 +255,7 @@ console.log(this.Person.name)
 // ERROR
 // Lucas
 </code></pre>
-<h4 id="get--set">Get &amp; Set</h4>
+<h3 id="52-get--set">5.2 Get &amp; Set</h3>
 <pre><code class="lang-ts">class Person {
   private _age : number = 18
   public name : string = &quot;Lucas&quot;
@@ -292,13 +276,13 @@ console.log(this.Person.name)
 // 18
 // Lucas
 </code></pre>
-<h4 id="protected">Protected</h4>
+<h3 id="53-protected">5.3 Protected</h3>
 <p>Protected is hetzelfde als private alleen word het geextend bij een inharitance.</p>
 <pre><code class="lang-ts"></code></pre>
-<h3 id="full-advanced-classes">Full Advanced Classes</h3>
+<h2 id="6-full-advanced-classes">6. Full Advanced Classes</h2>
 <pre><code class="lang-ts"></code></pre>
-<h3 id="game-techniques">Game Techniques</h3>
-<h4 id="game-loop">Game loop</h4>
+<h2 id="7-game-techniques">7. Game Techniques</h2>
+<h3 id="71-game-loop">7.1 Game loop</h3>
 <p>Met <code>requestAnimationFrame()</code> word elke &quot;animation frame&quot; een keer aangeroepen, bij een normaal beeldscherm zal dit 60 keer per seconden zijn. Zo onstaat er een framerate van 60fps. De functie werkt alleen als de tab actief is.</p>
 <pre><code class="lang-ts">class Game {
 
@@ -313,13 +297,13 @@ console.log(this.Person.name)
   }
 }
 </code></pre>
-<h4 id="dom-elements">DOM Elements</h4>
+<h3 id="72-dom-elements">7.2 DOM Elements</h3>
 <p>Gebruik semantische elementen in html en css om elementen te laten bewegen.</p>
-<h5 id="html">HTML</h5>
+<h4 id="721-html">7.2.1 HTML</h4>
 <p>Semantische HTML tags, een geprefereerde manier is om semantische tags in de HTML aan te maken binnen de TypeScript class</p>
 <pre><code class="lang-html">&lt;car&gt;&lt;/car&gt;
 </code></pre>
-<h5 id="css">CSS</h5>
+<h4 id="722-css">7.2.2 CSS</h4>
 <p>Alle gemaakte elementen in game kunnen op deze manier gemanipuleerd worden op de gewenste manier in de typescript classes</p>
 <pre><code class="lang-css">game * {
   position: absolute
@@ -333,7 +317,7 @@ console.log(this.Person.name)
 }
 </code></pre>
 <p>HTML element creeeren samen met de class.</p>
-<h5 id="ts">TS</h5>
+<h4 id="723-typescript">7.2.3 Typescript</h4>
 <pre><code class="lang-ts">class Car {
   div : HTMLElement
   x : number = 100
@@ -351,11 +335,11 @@ console.log(this.Person.name)
   }
 }
 </code></pre>
-<h4 id="bouding-box">Bouding box</h4>
+<h3 id="73-bouding-box">7.3 Bouding box</h3>
 <p>Een DOM rectangle gebruik je op previes te zien waar het object staat en hoe groot het is. Hij heeft 8 properties: <code>left, top, right, bottom, x, y, width, height</code></p>
 <pre><code class="lang-ts">let rectangle : ClientRect = div.getBoundingClientRect()
 </code></pre>
-<h4 id="collision">Collision</h4>
+<h3 id="74-collision">7.4 Collision</h3>
 <p>Gebruik een collision function op te zien of zien twee rectangles overlappen.</p>
 <pre><code class="lang-ts">function checkCollision(a : ClientRect, b : ClientRect) {
   return (a.left &lt;= b.right &amp;&amp;
@@ -368,15 +352,16 @@ console.log(this.Person.name)
 <pre><code class="lang-ts">this.checkCollison(this.car1.getRectangle(), this.car2.getRectangle())
 </code></pre>
 <p>Returns true or false</p>
-<h4 id="vector">Vector</h4>
-<h4 id="other">Other</h4>
+<h3 id="75-vector">7.5 Vector</h3>
+<h3 id="76-other">7.6 Other</h3>
 <p>Grid</p>
 <pre><code class="lang-ts">let offsetX = (window.innerWidth - grid.columns * this.div.clientWidth) / 2
 this.x = column * this.div.clientWidth + offsetX
 this.y = row * this.div.clientHeight   + 100
 </code></pre>
-<h3 id="uml">UML</h3>
-<h4 id="example">Example</h4>
+<h2 id="8-uml">8. UML</h2>
+<!-- insert mermaid example -->
+<h3 id="81-example">8.1 Example</h3>
 <ul>
 <li>Object
 <ul>
@@ -391,15 +376,16 @@ this.y = row * this.div.clientHeight   + 100
 </ul>
 </li>
 </ul>
-<h4 id="inheritance-1">Inheritance</h4>
+<h3 id="82-inheritance">8.2 Inheritance</h3>
 <p>Car is a vehicle</p>
-<h4 id="composition-1">Composition</h4>
+<h3 id="83-composition">8.3 Composition</h3>
 <p>Car has a driver</p>
-<h4 id="encapsulation-acces-modifiers-">Encapsulation (Acces modifiers )</h4>
+<h3 id="84-encapsulation-acces-modifiers">8.4 Encapsulation (Acces modifiers)</h3>
 <pre><code class="lang-uml">+ public
 - private
 # protected
 </code></pre>
+<hr>
 <p><code>end of file</code><br>
 <em>publish date: 2020-06-27</em><br>
 <em>modified date: 2021-02-20</em></p>

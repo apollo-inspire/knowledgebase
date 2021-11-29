@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Opensource Knowledgebase </title>
+    <title>Git | Opensource Knowledgebase </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Opensource Knowledgebase ">
+    <meta name="title" content="Git | Opensource Knowledgebase ">
     <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,7 +67,92 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="git">Git</h1>
 
+<h2 id="install-git--git-bash">Install Git (+ Git Bash)</h2>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<h2 id="open-git-bash">Open Git Bash</h2>
+<p>Right mouse button in folder &gt; open git bash</p>
+<h2 id="clone-repository">Clone Repository</h2>
+<pre><code class="lang-bash">git clone [repolink]
+</code></pre>
+<h2 id="git-status">Git status</h2>
+<pre><code class="lang-bash">git status
+</code></pre>
+<h2 id="pull-repository">Pull Repository</h2>
+<pre><code class="lang-bash">git fetch
+git pull
+</code></pre>
+<h2 id="branch">Branch</h2>
+<p>Github:</p>
+<p>Bash:
+see all branches:</p>
+<pre><code class="lang-bash">git branch --list
+git branch -a
+</code></pre>
+<p>Local new branch</p>
+<pre><code class="lang-bash">git branch [newbranch]
+</code></pre>
+<p>Remote new branch</p>
+<pre><code class="lang-bash">git push origin [branch]
+</code></pre>
+<h2 id="checkout-to-new-branch">Checkout to new branch</h2>
+<p>Change your local branch to another branch</p>
+<h2 id="fork">Fork</h2>
+<pre><code class="lang-bash">git fetch
+git checkout [branch]
+</code></pre>
+<h2 id="commit-changes">Commit Changes</h2>
+<pre><code class="lang-bash">git add .
+git commit -m &quot;[message]&quot;
+git push
+</code></pre>
+<h2 id="commit-pr-message-standards">Commit/ PR Message Standards</h2>
+<table>
+<thead>
+<tr>
+<th>First Word</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Added ...</code></td>
+<td>Created a capability e.g. feature, test, dependency.</td>
+</tr>
+<tr>
+<td><code>Updated ...</code></td>
+<td>Worked on or updated a capability e.g. feature, test, dependency.</td>
+</tr>
+<tr>
+<td><code>Fixed ...</code></td>
+<td>Fixed an issue e.g. bug, typo, accident, misstatement.</td>
+</tr>
+<tr>
+<td><code>Removed ...</code></td>
+<td>Removed a capability e.g. feature, test, dependency.</td>
+</tr>
+<tr>
+<td><code>Refactored ...</code></td>
+<td>A code change that MUST be just a refactoring.</td>
+</tr>
+<tr>
+<td><code>Reformatted ...</code></td>
+<td>Refactor of formatting, e.g. omit whitespace.</td>
+</tr>
+<tr>
+<td><code>Optimized ...</code></td>
+<td>Refactor of performance, e.g. speed up code.</td>
+</tr>
+<tr>
+<td><code>Documented ...</code></td>
+<td>Refactor of documentation, e.g. help files.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pull-request-pr">Pull Request (PR)</h2>
+<h2 id="merge">Merge</h2>
+<h2 id="fetch-upstream">Fetch Upstream</h2>
 </article>
           </div>
           
@@ -76,7 +161,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/api.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/LuukFTF/knowledgebase/blob/master/articles/development/git.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
