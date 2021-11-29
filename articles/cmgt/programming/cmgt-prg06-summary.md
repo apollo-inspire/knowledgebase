@@ -146,6 +146,107 @@ https://api.com/v2/comet
 network_location/resource
 
 
+structuur / hierarchie (pad)
+nevenschikking (, ;)
+leesbaarheid (- _)
+geen extensies (of extensies over de inhoud, liever application/json /xml (.json .xml))
+
+routing verbergt techniek
+
+#### Representatieformaten
+
+Mensen: html
+
+Mensen & Machines: html met microformats
+
+Machines: json, xml, yaml, rss
+
+##### JSON
+
+```json
+{
+    "widget": {
+        "debug": "on",
+        "window": {
+            "title": "Sample Konfabulator Widget",
+            "name": "main_window",
+            "width": 500,
+            "height": 500
+        },
+        "image": { 
+            "src": "Images/Sun.png",
+            "name": "sun1",
+            "hOffset": 250,
+            "vOffset": 250,
+            "alignment": "center"
+        },
+        "text": {
+            "data": "Click Here",
+            "size": 36,
+            "style": "bold",
+            "name": "text1",
+            "hOffset": 250,
+            "vOffset": 100,
+            "alignment": "center",
+            "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
+        }
+    }
+}    
+```
+
+##### XML
+
+```xml
+<widget>
+    <debug>on</debug>
+    <window title="Sample Konfabulator Widget">
+        <name>main_window</name>
+        <width>500</width>
+        <height>500</height>
+    </window>
+    <image src="Images/Sun.png" name="sun1">
+        <hOffset>250</hOffset>
+        <vOffset>250</vOffset>
+        <alignment>center</alignment>
+    </image>
+    <text data="Click Here" size="36" style="bold">
+        <name>text1</name>
+        <hOffset>250</hOffset>
+        <vOffset>100</vOffset>
+        <alignment>center</alignment>
+        <onMouseUp>
+            sun1.opacity = (sun1.opacity / 100) * 90;
+        </onMouseUp>
+    </text>
+</widget>
+```
+
+##### YAML
+
+```yaml
+widget:
+  debug: 'on'
+  window:
+    title: Sample Konfabulator Widget
+    name: main_window
+    width: 500
+    height: 500
+  image:
+    src: Images/Sun.png
+    name: sun1
+    hOffset: 250
+    vOffset: 250
+    alignment: center
+  text:
+    data: Click Here
+    size: 36
+    style: bold
+    name: text1
+    hOffset: 250
+    vOffset: 100
+    alignment: center
+    onMouseUp: sun1.opacity = (sun1.opacity / 100) * 90;
+```
 
 #### Request
 ```json
@@ -218,7 +319,125 @@ https://swagger.io/specification/
 
 Postman
 
+### HATEOAS (Linking)
+*< Hypermedia as the Engine of Application State >*
+https://en.wikipedia.org/wiki/HATEOAS
 
+
+#### HAL
+https://en.wikipedia.org/wiki/Hypertext_Application_Language
+
+```json
+{
+    "_links": {
+        "self": { "href" : "http://api....." },
+        "collection": { "href" : "http://api......" }
+    }
+}
+```
+
+##### link relation types
+
+self
+collection
+alternate
+edit
+related
+previous & next
+first & last
+
+### Pagination
+
+start (begin bij 1)
+limit (aantal)
+
+```json
+GET /items?start=6&limit=5
+```
+pagina 6 tot en met 10
+
+```json
+{
+    "pagination": {
+        "currentPage": 2,
+        "currentItems": 5,
+        "totalPages": 2,
+        "totalItems": 10,
+        "links": {
+            "first": {
+                "page": 1,
+                "href":"/items?start=1&limit=5"
+            },
+            "last": {
+                "page": 2,
+                "href":"/items?start=6&limit=5"
+            },
+            "previous": {
+                "page": 1,
+                "href":"/items?start=1&limit=5"
+            },
+            "next": {
+                "page": 2,
+                "href":"/items?start=6&limit=5"
+            },
+        }
+    }
+}
+```
+
+### Response Categories
+
+items
+links
+pagination
+
+
+```json
+{
+    "items": [
+        {
+            "id": "200",
+            "title": "test",
+            "links": {
+                "self": "/items/200"
+            }
+        },
+        {
+            "id": "201",
+            "title": "test",
+            "links": {
+                "self": "/items/201"
+        },
+    ],
+    "links": {
+        "self": "/items/"
+    },
+    "pagination": {
+        "currentPage": 1,
+        "currentItems": 4,
+        "totalPages": 1,
+        "totalItems": 4,
+        "links": {
+            "first": {
+                "page": 1,
+                "href":"/items/"
+            },
+            "last": {
+                "page": 1,
+                "href":"/items/"
+            },
+            "previous": {
+                "page": 1,
+                "href":"/items/"
+            },
+            "next": {
+                "page": 1,
+                "href":"/items/"
+            },
+        }
+    }
+}
+```
 
 ### Type RESTFULL Resources
 
@@ -372,6 +591,11 @@ Accept: application/json
 // calcutation if a pokemon is still alive after a hit, amount left & stats
 ```
 POST, OPTIONS
+
+### Queries
+Filter
+
+/pokemon?type=fire
 
 ### OAuth
 
