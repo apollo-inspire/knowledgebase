@@ -12,11 +12,11 @@ modifiedby: ['', '']
 knowledgebase: 'https://luukftf.github.io/knowledgebase'
 link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
 lang: 'en'
-tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 'api', 'node.js']
+tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 'api', 'node.js']
 ---
 
 
-# Programmeren 6: Frontend Framework & Basic Backend Api (React & Node.js)
+# Programmeren 6: Fullstack Webdevelopment (React & Node.js)
 
 
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
@@ -35,13 +35,55 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 
 ## Index
 
-
----
-<br><br><br><br>
-<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
-
-## Topics
-
+- [Programmeren 6: Fullstack Webdevelopment (React & Node.js)](#programmeren-6-fullstack-webdevelopment-react--nodejs)
+  - [Leerdoelen](#leerdoelen)
+  - [Index](#index)
+  - [A. backend - Nodejs & Express & MongoDB](#a-backend---nodejs--express--mongodb)
+    - [NPM Packages](#npm-packages)
+    - [Installing & Setup](#installing--setup)
+    - [.ENV](#env)
+    - [Endpoint](#endpoint)
+    - [Middleware](#middleware)
+    - [Models](#models)
+    - [Checker](#checker)
+  - [B. HTTP, RESTfull API & OAuth](#b-http-restfull-api--oauth)
+    - [HTTP](#http)
+      - [Software](#software)
+      - [Methods](#methods)
+      - [URIs](#uris)
+      - [Representatieformaten](#representatieformaten)
+        - [JSON](#json)
+        - [XML](#xml)
+        - [YAML](#yaml)
+      - [Request](#request)
+      - [Response](#response)
+      - [Basic Networking](#basic-networking)
+        - [IP/TCP & OSI model](#iptcp--osi-model)
+      - [Statuscodes](#statuscodes)
+        - [2XX good](#2xx-good)
+        - [3XX recoverable error](#3xx-recoverable-error)
+        - [4XX client error](#4xx-client-error)
+        - [5XX server error](#5xx-server-error)
+    - [RESTfull API](#restfull-api)
+    - [API Documentation](#api-documentation)
+    - [HATEOAS (Linking)](#hateoas-linking)
+      - [HAL](#hal)
+        - [link relation types](#link-relation-types)
+    - [Pagination](#pagination)
+    - [Response Categories](#response-categories)
+    - [Type RESTFULL Resources](#type-restfull-resources)
+    - [Queries](#queries)
+    - [OAuth](#oauth)
+  - [C. operations - VPS & Linux](#c-operations---vps--linux)
+    - [Virtual Private Server (VPS)](#virtual-private-server-vps)
+    - [Basic Networking / VPS commands](#basic-networking--vps-commands)
+    - [Linux](#linux)
+      - [Basic BASH commands](#basic-bash-commands)
+      - [Installing Backend MERN](#installing-backend-mern)
+      - [Installing Frontend MERN](#installing-frontend-mern)
+  - [D. frontend - React](#d-frontend---react)
+  - [E. frontend - Sass](#e-frontend---sass)
+  - [Links](#links)
 
 
 ---
@@ -51,10 +93,20 @@ tags: ['frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 
 ## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
 
+### NPM Packages
 
-.ENV
+Express
+Mongoose
+Nodemon
+Dotenv
 
-installing needed software (windows)
+`/node_module` gitignore
+
+### Installing & Setup
+
+
+
+installing software (windows)
 ```bash
 winget install npm # install npm
 winget install nodejs # install nodejs
@@ -65,34 +117,59 @@ nodejs -v # check if nodojs is correctly installed
 mongodb -v # check if mongodb is correctly installed
 ```
 
-new project
+setup new project
 ```bash
 git clone # clone corresponding git repo
 
-npm install express mongoose # add express & mongoose dependency to project
-npm install --save-dev dotenv nodemon # add express & mongoose dependency to project development
+npm install express mongoose dotenv # add express, mongoose & dotenv dependency to project
+npm install --save-dev nodemon # add nodemon dependency to project development
 
 npm i # install repo packages
 ```
 
-## Endpoint
+### .ENV
 
-## Middleware
+init
+```js
+require('dotenv').config()
+```
 
-## Models
+call
+```js
+process.env.DATABASE_URL
+```
+
+
+`.env` file (gitignore)
+
+```env
+DATABASE_URL=mongodb://localhost/songs
+PORT=8000
+```
+
+`.env.example` file
+
+```env
+DATABASE_URL=mongodb://host/dbname
+PORT=3000
+```
+
+### Endpoint
+
+### Middleware
+
+### Models
 Database 
 
 Mongoose
 Schema
 
-## Checker
+### Checker
 
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
 
 **API** *< an Application Programming Interface is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. >*
-
-**HTTP**
 
 **idempotency** *< Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. >*
 
@@ -105,6 +182,8 @@ Hypertext Transfer Protocol
 Uniform Interface
 
 stateless
+
+Cacheable
 
 
 #### Software
@@ -412,6 +491,9 @@ Accept: application/json
 ```
 
 ```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "items": [
         {
@@ -464,13 +546,14 @@ Accept: application/json
 
 Detail *< all data of specific item >*
 ```json
-GET GET https://pokeapi.co/api/v2/pokemon/4
+GET https://pokeapi.co/api/v2/pokemon/4
 Accept: application/json
 ```
 
 ```json
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
 
     "id": 4,
@@ -508,6 +591,7 @@ Accept: application/json
 ```json
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "results": [
         {
@@ -558,6 +642,7 @@ Accept: application/json
 ```json
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "id": 2,
     "name": "eterna-city",
@@ -625,7 +710,9 @@ Filter
 
 ### Basic Networking / VPS commands
 
-ssh username@ipa
+```bash
+ssh username@ip
+```
 
 ### Linux
 https://cheatography.com/davechild/cheat-sheets/linux-command-line/
@@ -657,9 +744,9 @@ clear # clear screen
 CTRL-C # Stop dcurrent running command
 ```
 
-#### Backend MERN
+#### Installing Backend MERN
 
-installing needed software (linux)
+installing software (linux)
 ```bash
 sudo apt update # update apt packages
 sudo apt install npm # install npm
@@ -671,7 +758,7 @@ nodejs -v # check if nodojs is correctly installed
 mongodb -v # check if mongodb is correctly installed
 ```
 
-installing on server / locally
+installing project on server / locally
 ```bash
 git clone / pull [repo] # clone or pull repository
 
@@ -696,6 +783,8 @@ sudo ufw status # check firewall status
 
 sudo nano /etc/mongodb.conf # edit mongodb config
 ```
+
+#### Installing Frontend MERN
 
 ## D. frontend - React
 
