@@ -17,4 +17,6 @@ OPTIONS http://docent.cmi.hro.nl/bootb/demo/notes/
 
 ###
 
-GET https://google.com/
+GET https://pokeapi.co/api/v2/location/2/
+
+

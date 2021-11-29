@@ -131,15 +131,25 @@ VScode extension: REST Client
 **Custom Methods** *< another way to use create new request methods, is to use custom http methods, just excange `post` for something else like `undelete` (document this correctly)>*
 
 #### URIs
-
-https://api.com/v2/comet
-network location / resource
-
+*< Uniform Resource Identifier >*
 https://www.slideshare.net/landlessness/teach-a-dog-to-rest
 
+```
+```
+protocol://userinfo@subdomain.domain.tld:port/path?query#fragment
+
+
+```
+https://api.com/v2/comet
+
+```
+network_location/resource
+
+
+
 #### Request
-POST comet HTTP 1.1
-VERB / resource uri / protocol 
+```json
+POST https://api.com/v2/comet HTTP/1.1
 Accept: application/json
 Authorization: <token>
 Connection: keep-alive
@@ -147,13 +157,14 @@ Connection: keep-alive
 {
     "body": "body"
 }
-
+```
+VERB / resource uri / protocol 
 
 #### Response
 
-protocol / statuscode
+```json
+
 HTTP/1.1 200 OK
-Serer: ngix
 Age: 2323
 Connection: keep-alive
 
@@ -161,17 +172,26 @@ Connection: keep-alive
     "id": "2"
     "status": "3"
 }
+```
+protocol / statuscode
 
 #### Basic Networking
 
 
-IP/TCP
+##### IP/TCP & OSI model
 
-Packets
+Packets (information)
 
 7 layers 
 
+L7 - Application
+{L6 - Presentation}
+{L5 - Session}
 
+L4 - Transport - protocol / ports (TCP & UDP + https:443, http:80, ssh:22, ftp)
+L3 - Network - ip adressen
+L2 - Data Link - mac addressen
+L1 - Physical - ethernet ports
 
 #### Statuscodes
 
@@ -205,10 +225,153 @@ Postman
 **REST Resource** *< Het type resource wat in de body teruggestuurd word >*
 
 Detail *< all data of specific item >*
+```json
+GET GET https://pokeapi.co/api/v2/pokemon/4
+Accept: application/json
+```
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+
+    "id": 4,
+    "name": "charmander",
+    "base_experience": 62,
+    "height": 6,
+    "weight": 85,
+    "location_area_encounters": "https://pokeapi.co/api/v2/pokemon/4/encounters",
+    "stats": [
+        {
+            "base_stat": 39,
+            "stat": {
+                "name": "hp",
+                "url": "https://pokeapi.co/api/v2/stat/1/"
+            }
+        },
+        {
+            "base_stat": 52,
+            "stat": {
+                "name": "attack",
+                "url": "https://pokeapi.co/api/v2/stat/2/"
+            }
+        },
+    ], 
+}
+```
+GET, PUT/PATCH, DELTE, OPTIONS
+
 Collection *< list of items with indexable information>*
+```json
+GET https://pokeapi.co/api/v2/pokemon
+Accept: application/json
+```
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "results": [
+        {
+            "name": "bulbasaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/1/"
+        },
+        {
+            "name": "ivysaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/2/"
+        },
+        {
+            "name": "venusaur",
+            "url": "https://pokeapi.co/api/v2/pokemon/3/"
+        },
+        {
+            "name": "charmander",
+            "url": "https://pokeapi.co/api/v2/pokemon/4/"
+        },
+        {
+            "name": "charmeleon",
+            "url": "https://pokeapi.co/api/v2/pokemon/5/"
+        },
+        {
+            "name": "charizard",
+            "url": "https://pokeapi.co/api/v2/pokemon/6/"
+        },
+        {
+            "name": "squirtle",
+            "url": "https://pokeapi.co/api/v2/pokemon/7/"
+        }
+    ]
+    "pagination": {
+        "currentPage": 1,
+        "currentItems": 7,
+        "totalPages": 160,
+        "count": 1118,
+    }
+}
+```
+GET, POST, OPTIONS
+
 Composition *< a combination of diffrent types of resources>*
-Function *< functional resource, custom input generates custom output `/distance/rdam;adam`, GET>*
-Controller *< special function, POST>*
+```json
+GET https://pokeapi.co/api/v2/location/2/
+Accept: application/json
+```
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+    "id": 2,
+    "name": "eterna-city",
+    "region": {
+        "name": "sinnoh",
+        "url": "https://pokeapi.co/api/v2/region/4/"
+    }
+    "areas": [
+        {
+            "name": "eterna-city-area",
+            "url": "https://pokeapi.co/api/v2/location-area/2/"
+        },
+        {
+            "name": "eterna-city-west-gate",
+            "url": "https://pokeapi.co/api/v2/location-area/788/"
+        }
+    ],
+    "game_indices": [
+        {
+            "game_index": 9,
+            "generation": {
+                "name": "generation-iv",
+                "url": "https://pokeapi.co/api/v2/generation/4/"
+            }
+        }
+    ],
+
+}
+```
+GET, OPTIONS, (PUT/PATCH)
+
+Function *< functional resource, custom input generates custom output `/distance/rdam;adam`>*
+```json
+GET https://pokeapi.co/api/v2/battle/4;6
+Accept: application/json
+```
+
+```json
+// calcutation who wins the battle with stats and winner
+```
+GET, OPTIONS
+
+Controller *< special function >*
+```json
+GET https://pokeapi.co/api/v2/hit
+Accept: application/json
+```
+
+```json
+// calcutation if a pokemon is still alive after a hit, amount left & stats
+```
+POST, OPTIONS
 
 ### OAuth
 
