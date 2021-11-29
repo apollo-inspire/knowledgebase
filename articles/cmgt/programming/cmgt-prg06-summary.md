@@ -85,6 +85,8 @@ Database
 Mongoose
 Schema
 
+## Checker
+
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
 
@@ -98,6 +100,9 @@ https://www.youtube.com/watch?v=-MTSQjw5DrM
 
 
 ### HTTP
+Hypertext Transfer Protocol
+
+Uniform Interface
 
 stateless
 
@@ -295,16 +300,24 @@ L2 - Data Link - mac addressen
 L1 - Physical - ethernet ports
 
 #### Statuscodes
+Uniform Interface kan errors afhandelen
 
 ##### 2XX good
 200 - OK
+201 - Created
+
+##### 3XX recoverable error
+302 - Found (redirect)
+304 - Not Modified
 
 ##### 4XX client error
 401 - Unauthorized
+403 - Forbidden
 404 - Not found
 
-#####
-5XX server error
+##### 5XX server error
+500 - Internal Server Error
+503 - Service Unavailable
 
 
 ### RESTfull API
@@ -353,6 +366,7 @@ limit (aantal)
 
 ```json
 GET /items?start=6&limit=5
+Accept: application/json
 ```
 pagina 6 tot en met 10
 
@@ -391,6 +405,11 @@ items
 links
 pagination
 
+
+```json
+GET /items/
+Accept: application/json
+```
 
 ```json
 {
