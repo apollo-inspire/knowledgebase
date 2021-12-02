@@ -166,6 +166,8 @@ Schema
 
 ### Checker
 
+http://checker.basboot.nl/
+
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
 
