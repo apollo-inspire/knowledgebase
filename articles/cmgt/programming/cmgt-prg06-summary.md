@@ -39,6 +39,8 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
   - [Leerdoelen](#leerdoelen)
   - [Index](#index)
   - [A. backend - Nodejs & Express & MongoDB](#a-backend---nodejs--express--mongodb)
+    - [let vs var](#let-vs-var)
+    - [Functions](#functions)
     - [NPM Packages](#npm-packages)
     - [Installing & Setup](#installing--setup)
     - [.ENV](#env)
@@ -98,6 +100,121 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
 ## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
 
+### let vs var
+
+let is in de scope, var doet onverwachte dingen
+
+### Functions
+(function via parameter)
+
+
+functie in een functie meegeven
+```js
+function helle() {
+    console.log("Hello World")
+}
+
+function hello2(a) {
+    a()
+}
+
+hello2(hello)
+
+// Hello World
+```
+
+
+anonieme functie
+```js
+let b = function() {
+    console.log("Anonieme Functie")
+}
+
+b()
+
+// Anonieme Functie
+```
+
+object functie
+```js
+let j = {
+    "abc" : 1,
+    "xyx" : "asd",
+    "f1" : hello,
+    "f2" : b,
+    "f3" : function() {
+        console.log("Functie 3")
+    }
+}
+
+j.f1()
+j.f2()
+j.f3()
+
+// Hello World
+// Anonieme Functie
+// Functie 3
+```
+
+
+callback function  
+
+```js
+
+if (true) {
+    j.f1()
+} else {
+    
+}
+
+```
+
+nested functions
+
+
+Arrow Function
+```js
+let f = () => {
+    console.log("Random Arrow Function")
+}
+```
+
+
+IIFE
+old workoround for `var`
+```js
+(function() {
+:
+:
+})()
+```
+
+recursie
+regel 1. zorg dat het kan stoppen
+regel 2. zorg dat de recursie dichter bij de eindconditie kan komen
+
+```js
+function recursion(n) {
+    if (n == 1) {
+        return 1
+    }
+    return n + recursion(n - 1)
+}
+```
+
+beter alternatief
+
+```js
+function count(n) {
+    let total = 0;
+    for (let i = 1; i <= n; i++ ) {
+        total += 1
+    }
+
+    return total
+}
+```
+
 ### NPM Packages
 
 Express
@@ -145,7 +262,7 @@ process.env.DATABASE_URL
 ```
 
 
-`.env` file (gitignore)
+`.env` file (.gitignore)
 
 ```env
 DATABASE_URL=mongodb://localhost/songs
@@ -209,10 +326,10 @@ VScode extension: REST Client
 | ------- | ------------------------ | :---: | :--------: | :---:  |
 | POST    | create                   |       |     x      | 201 |
 | GET     | read                     |   x   |     x      | 200 |
-| PUT     | create / update (geheel) |       |     x      | 200|
-| PATCH   | update (deel)            |       |            | 200|
+| PUT     | create / update (geheel) |       |     x      | 200 |
+| PATCH   | update (deel)            |       |            | 200 |
 | DELETE  | destroy                  |       |     x      | 204 |
-|         |                          |       |            ||
+|         |                          |       |            | |
 | OPTIONS | get possible methods     |   x   |     x      | 200 |
 | HEAD    | get without body         |   x   |     x      | 200 |
 |         |                          |       |            | |
@@ -822,10 +939,12 @@ sudo nano /etc/mongodb.conf # edit mongodb config
 #### Installing Frontend MERN
 
 #### File Rights
+https://www.linux.com/training-tutorials/understanding-linux-file-permissions/
 
 Read Write eXecute
 RWX
 
+list with rights
 `ls -l`
 
 ```bash
