@@ -181,7 +181,7 @@ let f = () => {
 
 
 IIFE
-old workoround for `var`
+old workaround for `var`
 ```js
 (function() {
 :
@@ -202,7 +202,7 @@ function recursion(n) {
 }
 ```
 
-beter alternatief
+beter alternatief op recursion
 
 ```js
 function count(n) {
