@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="programmeren-6-frontend-framework--basic-backend-api-react--nodejs">Programmeren 6: Frontend Framework &amp; Basic Backend Api (React &amp; Node.js)</h1>
+<h1 id="programmeren-6-fullstack-webdevelopment-react--nodejs">Programmeren 6: Fullstack Webdevelopment (React &amp; Node.js)</h1>
 
 <p><em>Knowledgebase: <a href="https://luukftf.github.io/knowledgebase">https://luukftf.github.io/knowledgebase</a></em><br>
 <em>(code: <a href="https://github.com/LuukFTF/knowledgebase">https://github.com/LuukFTF/knowledgebase</a>)</em><br>
@@ -80,17 +80,203 @@
 <p><br><br><br><br></p>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="index">Index</h2>
-<hr>
-<p><br><br><br><br></p>
-<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
-<h2 id="topics">Topics</h2>
+<ul>
+<li><a href="#programmeren-6-fullstack-webdevelopment-react--nodejs">Programmeren 6: Fullstack Webdevelopment (React &amp; Node.js)</a>
+<ul>
+<li><a href="#leerdoelen">Leerdoelen</a></li>
+<li><a href="#index">Index</a></li>
+<li><a href="#a-backend---nodejs--express--mongodb">A. backend - Nodejs &amp; Express &amp; MongoDB</a>
+<ul>
+<li><a href="#let-vs-var">let vs var</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#npm-packages">NPM Packages</a></li>
+<li><a href="#installing--setup">Installing &amp; Setup</a></li>
+<li><a href="#env">.ENV</a></li>
+<li><a href="#endpoint">Endpoint</a>
+<ul>
+<li><a href="#resources">Resources</a></li>
+</ul>
+</li>
+<li><a href="#middleware">Middleware</a></li>
+<li><a href="#models">Models</a></li>
+<li><a href="#checker">Checker</a></li>
+</ul>
+</li>
+<li><a href="#b-http-restfull-api--oauth">B. HTTP, RESTfull API &amp; OAuth</a>
+<ul>
+<li><a href="#http">HTTP</a>
+<ul>
+<li><a href="#software">Software</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#uris">URIs</a></li>
+<li><a href="#representatieformaten">Representatieformaten</a>
+<ul>
+<li><a href="#json">JSON</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#yaml">YAML</a></li>
+</ul>
+</li>
+<li><a href="#request">Request</a></li>
+<li><a href="#response">Response</a></li>
+<li><a href="#basic-networking">Basic Networking</a>
+<ul>
+<li><a href="#iptcp--osi-model">IP/TCP &amp; OSI model</a></li>
+</ul>
+</li>
+<li><a href="#statuscodes">Statuscodes</a>
+<ul>
+<li><a href="#2xx-good">2XX good</a></li>
+<li><a href="#3xx-recoverable-error">3XX recoverable error</a></li>
+<li><a href="#4xx-client-error">4XX client error</a></li>
+<li><a href="#5xx-server-error">5XX server error</a></li>
+</ul>
+</li>
+<li><a href="#cors-headers">CORS headers</a>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#options">Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#restfull-api">RESTfull API</a></li>
+<li><a href="#api-documentation">API Documentation</a></li>
+<li><a href="#hateoas-linking">HATEOAS (Linking)</a>
+<ul>
+<li><a href="#hal">HAL</a>
+<ul>
+<li><a href="#link-relation-types">link relation types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pagination">Pagination</a></li>
+<li><a href="#response-categories">Response Categories</a></li>
+<li><a href="#type-restfull-resources">Type RESTFULL Resources</a></li>
+<li><a href="#queries">Queries</a></li>
+<li><a href="#oauth">OAuth</a></li>
+</ul>
+</li>
+<li><a href="#c-operations---vps--linux">C. operations - VPS &amp; Linux</a>
+<ul>
+<li><a href="#virtual-private-server-vps">Virtual Private Server (VPS)</a></li>
+<li><a href="#basic-networking--vps-commands">Basic Networking / VPS commands</a></li>
+<li><a href="#linux">Linux</a>
+<ul>
+<li><a href="#basic-bash-commands">Basic BASH commands</a></li>
+<li><a href="#installing-backend-mern">Installing Backend MERN</a></li>
+<li><a href="#installing-frontend-mern">Installing Frontend MERN</a></li>
+<li><a href="#file-rights">File Rights</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#d-frontend---react">D. frontend - React</a></li>
+<li><a href="#e-frontend---sass">E. frontend - Sass</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+</ul>
 <hr>
 <p><br><br><br><br></p>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="a-backend---nodejs--express--mongodb">A. backend - Nodejs &amp; Express &amp; MongoDB</h2>
 <p><a href="https://www.youtube.com/watch?v=ENrzD9HAZK4">https://www.youtube.com/watch?v=ENrzD9HAZK4</a></p>
-<p>.ENV</p>
-<p>installing needed software (windows)</p>
+<h3 id="let-vs-var">let vs var</h3>
+<p>let is in de scope, var doet onverwachte dingen</p>
+<h3 id="functions">Functions</h3>
+<p>(function via parameter)</p>
+<p>functie in een functie meegeven</p>
+<pre><code class="lang-js">function helle() {
+    console.log(&quot;Hello World&quot;)
+}
+
+function hello2(a) {
+    a()
+}
+
+hello2(hello)
+
+// Hello World
+</code></pre>
+<p>anonieme functie</p>
+<pre><code class="lang-js">let b = function() {
+    console.log(&quot;Anonieme Functie&quot;)
+}
+
+b()
+
+// Anonieme Functie
+</code></pre>
+<p>object functie</p>
+<pre><code class="lang-js">let j = {
+    &quot;abc&quot; : 1,
+    &quot;xyx&quot; : &quot;asd&quot;,
+    &quot;f1&quot; : hello,
+    &quot;f2&quot; : b,
+    &quot;f3&quot; : function() {
+        console.log(&quot;Functie 3&quot;)
+    }
+}
+
+j.f1()
+j.f2()
+j.f3()
+
+// Hello World
+// Anonieme Functie
+// Functie 3
+</code></pre>
+<p>callback function</p>
+<pre><code class="lang-js">
+if (true) {
+    j.f1()
+} else {
+    
+}
+
+</code></pre>
+<p>nested functions</p>
+<p>Arrow Function</p>
+<pre><code class="lang-js">let f = () =&gt; {
+    console.log(&quot;Random Arrow Function&quot;)
+}
+</code></pre>
+<p>IIFE
+old workaround for <code>var</code></p>
+<pre><code class="lang-js">(function() {
+:
+:
+})()
+</code></pre>
+<p>recursie
+regel 1. zorg dat het kan stoppen
+regel 2. zorg dat de recursie dichter bij de eindconditie kan komen</p>
+<pre><code class="lang-js">function recursion(n) {
+    if (n == 1) {
+        return 1
+    }
+    return n + recursion(n - 1)
+}
+</code></pre>
+<p>beter alternatief op recursion</p>
+<pre><code class="lang-js">function count(n) {
+    let total = 0;
+    for (let i = 1; i &lt;= n; i++ ) {
+        total += 1
+    }
+
+    return total
+}
+</code></pre>
+<h3 id="npm-packages">NPM Packages</h3>
+<p>Express
+Mongoose
+Nodemon
+Dotenv</p>
+<p><code>/node_module</code> gitignore</p>
+<h3 id="installing--setup">Installing &amp; Setup</h3>
+<p>installing software (windows)</p>
 <pre><code class="lang-bash">winget install npm # install npm
 winget install nodejs # install nodejs
 winget install mongodb # install mondgodb
@@ -99,28 +285,48 @@ npm -v # check if npm is correctly installed
 nodejs -v # check if nodojs is correctly installed
 mongodb -v # check if mongodb is correctly installed
 </code></pre>
-<p>new project</p>
+<p>setup new project</p>
 <pre><code class="lang-bash">git clone # clone corresponding git repo
 
-npm install express mongoose # add express &amp; mongoose dependency to project
-npm install --save-dev dotenv nodemon # add express &amp; mongoose dependency to project development
+npm install express mongoose dotenv # add express, mongoose &amp; dotenv dependency to project
+npm install --save-dev nodemon # add nodemon dependency to project development
 
 npm i # install repo packages
 </code></pre>
-<h2 id="endpoint">Endpoint</h2>
-<h2 id="middleware">Middleware</h2>
-<h2 id="models">Models</h2>
+<h3 id="env">.ENV</h3>
+<p>init</p>
+<pre><code class="lang-js">require('dotenv').config()
+</code></pre>
+<p>call</p>
+<pre><code class="lang-js">process.env.DATABASE_URL
+</code></pre>
+<p><code>.env</code> file (.gitignore)</p>
+<pre><code class="lang-env">DATABASE_URL=mongodb://localhost/songs
+PORT=8000
+</code></pre>
+<p><code>.env.example</code> file</p>
+<pre><code class="lang-env">DATABASE_URL=mongodb://host/dbname
+PORT=3000
+</code></pre>
+<h3 id="endpoint">Endpoint</h3>
+<h4 id="resources">Resources</h4>
+<h3 id="middleware">Middleware</h3>
+<h3 id="models">Models</h3>
 <p>Database</p>
 <p>Mongoose
 Schema</p>
+<h3 id="checker">Checker</h3>
+<p><a href="http://checker.basboot.nl/">http://checker.basboot.nl/</a></p>
 <h2 id="b-http-restfull-api--oauth">B. HTTP, RESTfull API &amp; OAuth</h2>
 <p><a href="https://www.youtube.com/watch?v=-MTSQjw5DrM">https://www.youtube.com/watch?v=-MTSQjw5DrM</a></p>
 <p><strong>API</strong> <em>&lt; an Application Programming Interface is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. &gt;</em></p>
-<p><strong>HTTP</strong></p>
 <p><strong>idempotency</strong> <em>&lt; Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. &gt;</em></p>
 <p><strong>Safe Method</strong> <em>&lt; Deze method veranderd niks op de server &gt;</em></p>
 <h3 id="http">HTTP</h3>
+<p>Hypertext Transfer Protocol</p>
+<p>Uniform Interface</p>
 <p>stateless</p>
+<p>Cacheable</p>
 <h4 id="software">Software</h4>
 <p>Postman
 Insomnia</p>
@@ -133,6 +339,7 @@ Insomnia</p>
 <th>function</th>
 <th style="text-align: center;">safe</th>
 <th style="text-align: center;">idempotent</th>
+<th style="text-align: center;">Status Code Response</th>
 </tr>
 </thead>
 <tbody>
@@ -141,34 +348,40 @@ Insomnia</p>
 <td>create</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">201</td>
 </tr>
 <tr>
 <td>GET</td>
 <td>read</td>
 <td style="text-align: center;">x</td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td>PUT</td>
 <td>create / update (geheel)</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td>PATCH</td>
 <td>update (deel)</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td>DELETE</td>
 <td>destroy</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">204</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
@@ -177,16 +390,19 @@ Insomnia</p>
 <td>get possible methods</td>
 <td style="text-align: center;">x</td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td>HEAD</td>
 <td>get without body</td>
 <td style="text-align: center;">x</td>
 <td style="text-align: center;">x</td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
@@ -195,52 +411,175 @@ Insomnia</p>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">200</td>
 </tr>
 <tr>
 <td>CONNECT</td>
 <td></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;">200</td>
 </tr>
 </tbody>
 </table>
 <p><strong>POST overloading</strong> <em>&lt; sending HTTP requests that doesnt exist can be done with a POST request. You send a method with the head that specifies what custom request you are using (document this correctly)&gt;</em></p>
 <p><strong>Custom Methods</strong> <em>&lt; another way to use create new request methods, is to use custom http methods, just excange <code>post</code> for something else like <code>undelete</code> (document this correctly)&gt;</em></p>
 <h4 id="uris">URIs</h4>
-<p><a href="https://api.com/v2/comet">https://api.com/v2/comet</a>
-network location / resource</p>
-<p><a href="https://www.slideshare.net/landlessness/teach-a-dog-to-rest">https://www.slideshare.net/landlessness/teach-a-dog-to-rest</a></p>
+<p><em>&lt; Uniform Resource Identifier &gt;</em>
+<a href="https://www.slideshare.net/landlessness/teach-a-dog-to-rest">https://www.slideshare.net/landlessness/teach-a-dog-to-rest</a></p>
+<pre><code></code></pre>
+<p>protocol://userinfo@subdomain.domain.tld:port/path?query#fragment</p>
+<pre><code>https://api.com/v2/comet
+
+</code></pre>
+<p>network_location/resource</p>
+<p>structuur / hierarchie (pad)
+nevenschikking (, ;)
+leesbaarheid (- _)
+geen extensies (of extensies over de inhoud, liever application/json /xml (.json .xml))</p>
+<p>routing verbergt techniek</p>
+<h4 id="representatieformaten">Representatieformaten</h4>
+<p>Mensen: html</p>
+<p>Mensen &amp; Machines: html met microformats</p>
+<p>Machines: json, xml, yaml, rss</p>
+<h5 id="json">JSON</h5>
+<pre><code class="lang-json">{
+    &quot;widget&quot;: {
+        &quot;debug&quot;: &quot;on&quot;,
+        &quot;window&quot;: {
+            &quot;title&quot;: &quot;Sample Konfabulator Widget&quot;,
+            &quot;name&quot;: &quot;main_window&quot;,
+            &quot;width&quot;: 500,
+            &quot;height&quot;: 500
+        },
+        &quot;image&quot;: { 
+            &quot;src&quot;: &quot;Images/Sun.png&quot;,
+            &quot;name&quot;: &quot;sun1&quot;,
+            &quot;hOffset&quot;: 250,
+            &quot;vOffset&quot;: 250,
+            &quot;alignment&quot;: &quot;center&quot;
+        },
+        &quot;text&quot;: {
+            &quot;data&quot;: &quot;Click Here&quot;,
+            &quot;size&quot;: 36,
+            &quot;style&quot;: &quot;bold&quot;,
+            &quot;name&quot;: &quot;text1&quot;,
+            &quot;hOffset&quot;: 250,
+            &quot;vOffset&quot;: 100,
+            &quot;alignment&quot;: &quot;center&quot;,
+            &quot;onMouseUp&quot;: &quot;sun1.opacity = (sun1.opacity / 100) * 90;&quot;
+        }
+    }
+}    
+</code></pre>
+<h5 id="xml">XML</h5>
+<pre><code class="lang-xml">&lt;widget&gt;
+    &lt;debug&gt;on&lt;/debug&gt;
+    &lt;window title=&quot;Sample Konfabulator Widget&quot;&gt;
+        &lt;name&gt;main_window&lt;/name&gt;
+        &lt;width&gt;500&lt;/width&gt;
+        &lt;height&gt;500&lt;/height&gt;
+    &lt;/window&gt;
+    &lt;image src=&quot;Images/Sun.png&quot; name=&quot;sun1&quot;&gt;
+        &lt;hOffset&gt;250&lt;/hOffset&gt;
+        &lt;vOffset&gt;250&lt;/vOffset&gt;
+        &lt;alignment&gt;center&lt;/alignment&gt;
+    &lt;/image&gt;
+    &lt;text data=&quot;Click Here&quot; size=&quot;36&quot; style=&quot;bold&quot;&gt;
+        &lt;name&gt;text1&lt;/name&gt;
+        &lt;hOffset&gt;250&lt;/hOffset&gt;
+        &lt;vOffset&gt;100&lt;/vOffset&gt;
+        &lt;alignment&gt;center&lt;/alignment&gt;
+        &lt;onMouseUp&gt;
+            sun1.opacity = (sun1.opacity / 100) * 90;
+        &lt;/onMouseUp&gt;
+    &lt;/text&gt;
+&lt;/widget&gt;
+</code></pre>
+<h5 id="yaml">YAML</h5>
+<pre><code class="lang-yaml">widget:
+  debug: 'on'
+  window:
+    title: Sample Konfabulator Widget
+    name: main_window
+    width: 500
+    height: 500
+  image:
+    src: Images/Sun.png
+    name: sun1
+    hOffset: 250
+    vOffset: 250
+    alignment: center
+  text:
+    data: Click Here
+    size: 36
+    style: bold
+    name: text1
+    hOffset: 250
+    vOffset: 100
+    alignment: center
+    onMouseUp: sun1.opacity = (sun1.opacity / 100) * 90;
+</code></pre>
 <h4 id="request">Request</h4>
-<p>POST comet HTTP 1.1
-VERB / resource uri / protocol
+<pre><code class="lang-json">POST https://api.com/v2/comet HTTP/1.1
 Accept: application/json
-Authorization: <token>
-Connection: keep-alive<p>
-<p>{
-&quot;body&quot;: &quot;body&quot;
-}</p>
+Authorization: &lt;token&gt;
+Connection: keep-alive
+
+{
+    &quot;body&quot;: &quot;body&quot;
+}
+</code></pre>
+<p>VERB / resource uri / protocol</p>
 <h4 id="response">Response</h4>
-<p>protocol / statuscode
+<pre><code class="lang-json">
 HTTP/1.1 200 OK
-Serer: ngix
 Age: 2323
-Connection: keep-alive</p>
-<p>{
-&quot;id&quot;: &quot;2&quot;
-&quot;status&quot;: &quot;3&quot;
-}</p>
+Connection: keep-alive
+
+{
+    &quot;id&quot;: &quot;2&quot;
+    &quot;status&quot;: &quot;3&quot;
+}
+</code></pre>
+<p>protocol / statuscode</p>
 <h4 id="basic-networking">Basic Networking</h4>
-<p>IP/TCP</p>
-<p>Packets</p>
+<h5 id="iptcp--osi-model">IP/TCP &amp; OSI model</h5>
+<p>Packets (information)</p>
 <p>7 layers</p>
+<p>L7 - Application
+{L6 - Presentation}
+{L5 - Session}</p>
+<p>L4 - Transport - protocol / ports (TCP &amp; UDP + https:443, http:80, ssh:22, ftp)
+L3 - Network - ip adressen
+L2 - Data Link - mac addressen
+L1 - Physical - ethernet ports</p>
 <h4 id="statuscodes">Statuscodes</h4>
+<p>Uniform Interface kan errors afhandelen
+HTTP Errors</p>
 <h5 id="2xx-good">2XX good</h5>
-<p>200 - OK</p>
+<p>200 - OK
+201 - Created
+204 - No Content</p>
+<h5 id="3xx-recoverable-error">3XX recoverable error</h5>
+<p>300 - Multiple Choices
+302 - Found (redirect)
+304 - Not Modified</p>
 <h5 id="4xx-client-error">4XX client error</h5>
-<p>401 - Unauthorized
+<p>400 - Bad Request
+401 - Unauthorized
+403 - Forbidden
 404 - Not found</p>
-<h5 id="section"></h5>
-<p>5XX server error</p>
+<h5 id="5xx-server-error">5XX server error</h5>
+<p>500 - Internal Server Error
+501 - Not Implemented
+503 - Service Unavailable</p>
+<h4 id="cors-headers">CORS headers</h4>
+<h5 id="general">General</h5>
+<p>vb.
+res.header(&quot;Acces-Control-Allow-Origin&quot;, &quot;*&quot;);
+res.header(&quot;Acces-Control-Allow-Headers&quot;, &quot;Origin, X-Requested-With, Content-Type, Accept&quot;)</p>
+<h5 id="options">Options</h5>
 <h3 id="restfull-api">RESTfull API</h3>
 <p><strong>RESTful</strong> <em>&lt; Representational State Transfer, invented by Roy Fielding in 2000 &gt;</em></p>
 <p>JSON</p>
@@ -248,18 +587,265 @@ Connection: keep-alive</p>
 <p>OpenAPI Specification
 <a href="https://swagger.io/specification/">https://swagger.io/specification/</a></p>
 <p>Postman</p>
+<h3 id="hateoas-linking">HATEOAS (Linking)</h3>
+<p><em>&lt; Hypermedia as the Engine of Application State &gt;</em>
+<a href="https://en.wikipedia.org/wiki/HATEOAS">https://en.wikipedia.org/wiki/HATEOAS</a></p>
+<h4 id="hal">HAL</h4>
+<p><a href="https://en.wikipedia.org/wiki/Hypertext_Application_Language">https://en.wikipedia.org/wiki/Hypertext_Application_Language</a></p>
+<pre><code class="lang-json">{
+    &quot;_links&quot;: {
+        &quot;self&quot;: { &quot;href&quot; : &quot;http://api.....&quot; },
+        &quot;collection&quot;: { &quot;href&quot; : &quot;http://api......&quot; }
+    }
+}
+</code></pre>
+<h5 id="link-relation-types">link relation types</h5>
+<p>self
+collection
+alternate
+edit
+related
+previous &amp; next
+first &amp; last</p>
+<h3 id="pagination">Pagination</h3>
+<p>start (begin bij 1)
+limit (aantal)</p>
+<pre><code class="lang-json">GET /items?start=6&amp;limit=5
+Accept: application/json
+</code></pre>
+<p>pagina 6 tot en met 10</p>
+<pre><code class="lang-json">{
+    &quot;pagination&quot;: {
+        &quot;currentPage&quot;: 2,
+        &quot;currentItems&quot;: 5,
+        &quot;totalPages&quot;: 2,
+        &quot;totalItems&quot;: 10,
+        &quot;links&quot;: {
+            &quot;first&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items?start=1&amp;limit=5&quot;
+            },
+            &quot;last&quot;: {
+                &quot;page&quot;: 2,
+                &quot;href&quot;:&quot;/items?start=6&amp;limit=5&quot;
+            },
+            &quot;previous&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items?start=1&amp;limit=5&quot;
+            },
+            &quot;next&quot;: {
+                &quot;page&quot;: 2,
+                &quot;href&quot;:&quot;/items?start=6&amp;limit=5&quot;
+            },
+        }
+    }
+}
+</code></pre>
+<h3 id="response-categories">Response Categories</h3>
+<p>items
+links
+pagination</p>
+<pre><code class="lang-json">GET /items/
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    &quot;items&quot;: [
+        {
+            &quot;id&quot;: &quot;200&quot;,
+            &quot;title&quot;: &quot;test&quot;,
+            &quot;links&quot;: {
+                &quot;self&quot;: &quot;/items/200&quot;
+            }
+        },
+        {
+            &quot;id&quot;: &quot;201&quot;,
+            &quot;title&quot;: &quot;test&quot;,
+            &quot;links&quot;: {
+                &quot;self&quot;: &quot;/items/201&quot;
+        },
+    ],
+    &quot;links&quot;: {
+        &quot;self&quot;: &quot;/items/&quot;
+    },
+    &quot;pagination&quot;: {
+        &quot;currentPage&quot;: 1,
+        &quot;currentItems&quot;: 4,
+        &quot;totalPages&quot;: 1,
+        &quot;totalItems&quot;: 4,
+        &quot;links&quot;: {
+            &quot;first&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items/&quot;
+            },
+            &quot;last&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items/&quot;
+            },
+            &quot;previous&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items/&quot;
+            },
+            &quot;next&quot;: {
+                &quot;page&quot;: 1,
+                &quot;href&quot;:&quot;/items/&quot;
+            },
+        }
+    }
+}
+</code></pre>
 <h3 id="type-restfull-resources">Type RESTFULL Resources</h3>
 <p><strong>REST Resource</strong> <em>&lt; Het type resource wat in de body teruggestuurd word &gt;</em></p>
-<p>Detail <em>&lt; all data of specific item &gt;</em>
-Collection <em>&lt; list of items with indexable information&gt;</em>
-Composition <em>&lt; a combination of diffrent types of resources&gt;</em>
-Function <em>&lt; functional resource, custom input generates custom output <code>/distance/rdam;adam</code>, GET&gt;</em>
-Controller <em>&lt; special function, POST&gt;</em></p>
+<p>Detail <em>&lt; all data of specific item &gt;</em></p>
+<pre><code class="lang-json">GET https://pokeapi.co/api/v2/pokemon/4
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+
+    &quot;id&quot;: 4,
+    &quot;name&quot;: &quot;charmander&quot;,
+    &quot;base_experience&quot;: 62,
+    &quot;height&quot;: 6,
+    &quot;weight&quot;: 85,
+    &quot;location_area_encounters&quot;: &quot;https://pokeapi.co/api/v2/pokemon/4/encounters&quot;,
+    &quot;stats&quot;: [
+        {
+            &quot;base_stat&quot;: 39,
+            &quot;stat&quot;: {
+                &quot;name&quot;: &quot;hp&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/stat/1/&quot;
+            }
+        },
+        {
+            &quot;base_stat&quot;: 52,
+            &quot;stat&quot;: {
+                &quot;name&quot;: &quot;attack&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/stat/2/&quot;
+            }
+        },
+    ], 
+}
+</code></pre>
+<p>GET, PUT/PATCH, DELETE, OPTIONS</p>
+<p>Collection <em>&lt; list of items with indexable information&gt;</em></p>
+<pre><code class="lang-json">GET https://pokeapi.co/api/v2/pokemon
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    &quot;results&quot;: [
+        {
+            &quot;name&quot;: &quot;bulbasaur&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/1/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;ivysaur&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/2/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;venusaur&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/3/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;charmander&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/4/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;charmeleon&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/5/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;charizard&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/6/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;squirtle&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/pokemon/7/&quot;
+        }
+    ]
+    &quot;pagination&quot;: {
+        &quot;currentPage&quot;: 1,
+        &quot;currentItems&quot;: 7,
+        &quot;totalPages&quot;: 160,
+        &quot;count&quot;: 1118,
+    }
+}
+</code></pre>
+<p>GET, POST, OPTIONS</p>
+<p>Composition <em>&lt; a combination of diffrent types of resources&gt;</em></p>
+<pre><code class="lang-json">GET https://pokeapi.co/api/v2/location/2/
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;eterna-city&quot;,
+    &quot;region&quot;: {
+        &quot;name&quot;: &quot;sinnoh&quot;,
+        &quot;url&quot;: &quot;https://pokeapi.co/api/v2/region/4/&quot;
+    }
+    &quot;areas&quot;: [
+        {
+            &quot;name&quot;: &quot;eterna-city-area&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/location-area/2/&quot;
+        },
+        {
+            &quot;name&quot;: &quot;eterna-city-west-gate&quot;,
+            &quot;url&quot;: &quot;https://pokeapi.co/api/v2/location-area/788/&quot;
+        }
+    ],
+    &quot;game_indices&quot;: [
+        {
+            &quot;game_index&quot;: 9,
+            &quot;generation&quot;: {
+                &quot;name&quot;: &quot;generation-iv&quot;,
+                &quot;url&quot;: &quot;https://pokeapi.co/api/v2/generation/4/&quot;
+            }
+        }
+    ],
+
+}
+</code></pre>
+<p>GET, OPTIONS, (PUT/PATCH)</p>
+<p>Function <em>&lt; functional resource, custom input generates custom output <code>/distance/rdam;adam</code>&gt;</em></p>
+<pre><code class="lang-json">GET https://pokeapi.co/api/v2/battle/4;6
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">// calcutation who wins the battle with stats and winner
+</code></pre>
+<p>GET, OPTIONS</p>
+<p>Controller <em>&lt; special function &gt;</em></p>
+<pre><code class="lang-json">GET https://pokeapi.co/api/v2/hit
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">// calcutation if a pokemon is still alive after a hit, amount left &amp; stats
+</code></pre>
+<p>POST, OPTIONS</p>
+<p>OPTIONS <em>&lt; see what html methods are pssible on this link&gt;</em></p>
+<pre><code class="lang-json">OPTIONS https://pokeapi.co/api/v2/pokemon/4/
+Accept: application/json
+</code></pre>
+<pre><code class="lang-json">// insert options response
+GET, PUT/PATCH, DELETE, OPTIONS
+</code></pre>
+<h3 id="queries">Queries</h3>
+<p>Filter</p>
+<p>/pokemon?type=fire</p>
 <h3 id="oauth">OAuth</h3>
 <h2 id="c-operations---vps--linux">C. operations - VPS &amp; Linux</h2>
 <h3 id="virtual-private-server-vps">Virtual Private Server (VPS)</h3>
 <h3 id="basic-networking--vps-commands">Basic Networking / VPS commands</h3>
-<p>ssh username@ipa</p>
+<pre><code class="lang-bash">ssh username@ip
+</code></pre>
 <h3 id="linux">Linux</h3>
 <p><a href="https://cheatography.com/davechild/cheat-sheets/linux-command-line/">https://cheatography.com/davechild/cheat-sheets/linux-command-line/</a></p>
 <h4 id="basic-bash-commands">Basic BASH commands</h4>
@@ -286,8 +872,8 @@ clear # clear screen
 
 CTRL-C # Stop dcurrent running command
 </code></pre>
-<h4 id="backend-mern">Backend MERN</h4>
-<p>installing needed software (linux)</p>
+<h4 id="installing-backend-mern">Installing Backend MERN</h4>
+<p>installing software (linux)</p>
 <pre><code class="lang-bash">sudo apt update # update apt packages
 sudo apt install npm # install npm
 sudo apt install nodejs # install nodejs
@@ -297,7 +883,7 @@ npm -v # check if npm is correctly installed
 nodejs -v # check if nodojs is correctly installed
 mongodb -v # check if mongodb is correctly installed
 </code></pre>
-<p>installing on server / locally</p>
+<p>installing project on server / locally</p>
 <pre><code class="lang-bash">git clone / pull [repo] # clone or pull repository
 
 cd [dir] # change directory to repo dir
@@ -319,6 +905,28 @@ sudo ufw status # check firewall status
 
 sudo nano /etc/mongodb.conf # edit mongodb config
 </code></pre>
+<h4 id="installing-frontend-mern">Installing Frontend MERN</h4>
+<h4 id="file-rights">File Rights</h4>
+<p><a href="https://www.linux.com/training-tutorials/understanding-linux-file-permissions/">https://www.linux.com/training-tutorials/understanding-linux-file-permissions/</a></p>
+<p>Read Write eXecute
+RWX</p>
+<p>list with rights
+<code>ls -l</code></p>
+<pre><code class="lang-bash">drwxrwxr-x 3 ubuntu-user ubuntu-group   4096 Nev 23 10:59 helloworld
+drwx------ 2 root        dialout        4096 Dec 3  13:54 test
+</code></pre>
+<p>Rights Owner Group Other</p>
+<p>Right codes
+Owner, Group, Other</p>
+<p>-===---===</p>
+<p>d: directory
+r: read
+w: write
+x: execute</p>
+<p>change right modus
+<code>chmod</code>
+change owner
+<code>chown</code></p>
 <h2 id="d-frontend---react">D. frontend - React</h2>
 <h2 id="e-frontend---sass">E. frontend - Sass</h2>
 <p>styleguides
@@ -330,7 +938,7 @@ sudo nano /etc/mongodb.conf # edit mongodb config
 <em>publish date: 0000-00-00</em><br>
 <em>modified date: 0000-00-00</em></p>
 <!-- LINKS -->
-</token></article>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
