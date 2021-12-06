@@ -43,6 +43,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
     - [Installing & Setup](#installing--setup)
     - [.ENV](#env)
     - [Endpoint](#endpoint)
+      - [Resources](#resources)
     - [Middleware](#middleware)
     - [Models](#models)
     - [Checker](#checker)
@@ -64,6 +65,9 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
         - [3XX recoverable error](#3xx-recoverable-error)
         - [4XX client error](#4xx-client-error)
         - [5XX server error](#5xx-server-error)
+      - [CORS headers](#cors-headers)
+        - [General](#general)
+        - [Options](#options)
     - [RESTfull API](#restfull-api)
     - [API Documentation](#api-documentation)
     - [HATEOAS (Linking)](#hateoas-linking)
@@ -81,6 +85,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Basic BASH commands](#basic-bash-commands)
       - [Installing Backend MERN](#installing-backend-mern)
       - [Installing Frontend MERN](#installing-frontend-mern)
+      - [File Rights](#file-rights)
   - [D. frontend - React](#d-frontend---react)
   - [E. frontend - Sass](#e-frontend---sass)
   - [Links](#links)
@@ -99,7 +104,7 @@ Express
 Mongoose
 Nodemon
 Dotenv
-
+ 
 `/node_module` gitignore
 
 ### Installing & Setup
@@ -156,6 +161,8 @@ PORT=3000
 
 ### Endpoint
 
+#### Resources
+
 ### Middleware
 
 ### Models
@@ -198,19 +205,19 @@ VScode extension: REST Client
 #### Methods
 
 
-| name    | function                 | safe  | idempotent |
-| ------- | ------------------------ | :---: | :--------: |
-| POST    | create                   |       |     x      |
-| GET     | read                     |   x   |     x      |
-| PUT     | create / update (geheel) |       |     x      |
-| PATCH   | update (deel)            |       |            |
-| DELETE  | destroy                  |       |     x      |
-|         |                          |       |            |
-| OPTIONS | get possible methods     |   x   |     x      |
-| HEAD    | get without body         |   x   |     x      |
-|         |                          |       |            |
-| TRACE   |                          |       |            |
-| CONNECT |                          |       |            |
+| name    | function                 | safe  | idempotent | Status Code Response |
+| ------- | ------------------------ | :---: | :--------: | :---:  |
+| POST    | create                   |       |     x      | 201 |
+| GET     | read                     |   x   |     x      | 200 |
+| PUT     | create / update (geheel) |       |     x      | 200|
+| PATCH   | update (deel)            |       |            | 200|
+| DELETE  | destroy                  |       |     x      | 204 |
+|         |                          |       |            ||
+| OPTIONS | get possible methods     |   x   |     x      | 200 |
+| HEAD    | get without body         |   x   |     x      | 200 |
+|         |                          |       |            | |
+| TRACE   |                          |       |            | 200 |
+| CONNECT |                          |       |            | 200 |
 
 **POST overloading** *< sending HTTP requests that doesnt exist can be done with a POST request. You send a method with the head that specifies what custom request you are using (document this correctly)>*
 
@@ -382,23 +389,37 @@ L1 - Physical - ethernet ports
 
 #### Statuscodes
 Uniform Interface kan errors afhandelen
+HTTP Errors
 
 ##### 2XX good
 200 - OK
 201 - Created
+204 - No Content
 
 ##### 3XX recoverable error
+300 - Multiple Choices
 302 - Found (redirect)
 304 - Not Modified
 
 ##### 4XX client error
+400 - Bad Request
 401 - Unauthorized
 403 - Forbidden
 404 - Not found
 
 ##### 5XX server error
 500 - Internal Server Error
+501 - Not Implemented
 503 - Service Unavailable
+
+#### CORS headers
+
+##### General
+vb.
+res.header("Acces-Control-Allow-Origin", "*");
+res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+##### Options
 
 
 ### RESTfull API
@@ -582,7 +603,7 @@ Content-Type: application/json
     ], 
 }
 ```
-GET, PUT/PATCH, DELTE, OPTIONS
+GET, PUT/PATCH, DELETE, OPTIONS
 
 Collection *< list of items with indexable information>*
 ```json
@@ -698,6 +719,18 @@ Accept: application/json
 ```
 POST, OPTIONS
 
+OPTIONS *< see what html methods are pssible on this link>*
+```json
+OPTIONS https://pokeapi.co/api/v2/pokemon/4/
+Accept: application/json
+```
+
+```json
+// insert options response
+GET, PUT/PATCH, DELETE, OPTIONS
+```
+
+
 ### Queries
 Filter
 
@@ -787,6 +820,35 @@ sudo nano /etc/mongodb.conf # edit mongodb config
 ```
 
 #### Installing Frontend MERN
+
+#### File Rights
+
+Read Write eXecute
+RWX
+
+`ls -l`
+
+```bash
+drwxrwxr-x 3 ubuntu-user ubuntu-group   4096 Nev 23 10:59 helloworld
+drwx------ 2 root        dialout        4096 Dec 3  13:54 test
+```
+
+Rights Owner Group Other
+
+Right codes
+Owner, Group, Other
+
+-===---===
+
+d: directory
+r: read
+w: write 
+x: execute
+
+change right modus
+`chmod`
+change owner
+`chown`
 
 ## D. frontend - React
 
