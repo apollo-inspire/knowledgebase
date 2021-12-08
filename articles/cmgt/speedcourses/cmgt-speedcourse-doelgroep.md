@@ -1,24 +1,77 @@
-# Speedcourse Doelgroep
-*2021-02-15*
+# Doelgroep speedcourse
+*2021-08-12*
+
+Wie zijn de doelgroep:
+mensen die jouw product gebruiken
+
+product moet aanstluiten op jouw doelgroep
 
 
-## Interviewen
+## In kaart brengen (persona)
+
+deskresearch
+
+interviews & blogs
+
+
+minimaal 1 persoon spreken
+
+
+wie heeft een probleem & waarom
+
+in kaart brengen
+persona
+
+persona moet aansluiten op jouw product, alleen relevante informatie
+
+samenvatting van meerdere interviews
+
+bij concrete verschillen meerdere persona
+
+let op niet teveel doelgroepen
 
 
 
-## Analyseren
+jou is de interactie met jouw product
 
-Personas
+hoe ziet hun dag eruit
 
-Customer Journey
+relevante kerakteristieken
 
 
-## Testopzet
+## testen
 
-A/B test
+### uitvoering
 
-## Uitvoering
+usability test
+ab test
+five second
 
-Clickstream
+minimaal 1 persoon
 
-## Conclusies
+### visualiseren test
+
+objectief
+
+inzichtelijk, helder, duidelijk
+
+clickstream
+barchart
+heatmap
+customer journey clickstream
+
+
+### conclusies
+
+eerst objectief en nu conclusies trekken
+
+wat was het resultaat
+wat ga je aanpassen
+waarom
+
+
+## taal als tool
+
+scanbare manier
+
+conclusie & visualisatie
