@@ -249,6 +249,11 @@ npm install --save-dev nodemon # add nodemon dependency to project development
 npm i # install repo packages
 ```
 
+update
+```bash
+npm update # update all packages, respecting package versioning rules
+```
+
 ### .ENV
 
 init
@@ -292,6 +297,10 @@ Schema
 
 http://checker.basboot.nl/
 
+
+VPS: api
+hosted.hr: webservice.json
+
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
 
@@ -323,18 +332,18 @@ VScode extension: REST Client
 
 
 | name    | function                 | safe  | idempotent | Status Code Response |
-| ------- | ------------------------ | :---: | :--------: | :---:  |
-| POST    | create                   |       |     x      | 201 |
-| GET     | read                     |   x   |     x      | 200 |
-| PUT     | create / update (geheel) |       |     x      | 200 |
-| PATCH   | update (deel)            |       |            | 200 |
-| DELETE  | destroy                  |       |     x      | 204 |
-|         |                          |       |            | |
-| OPTIONS | get possible methods     |   x   |     x      | 200 |
-| HEAD    | get without body         |   x   |     x      | 200 |
-|         |                          |       |            | |
-| TRACE   |                          |       |            | 200 |
-| CONNECT |                          |       |            | 200 |
+| ------- | ------------------------ | :---: | :--------: | :---:                |
+| POST    | create                   |       |     x      | 201                  |
+| GET     | read                     |   x   |     x      | 200                  |
+| PUT     | create / update (geheel) |       |     x      | 200                  |
+| PATCH   | update (deel)            |       |            | 200                  |
+| DELETE  | destroy                  |       |     x      | 204                  |
+|         |                          |       |            |                      |
+| OPTIONS | get possible methods     |   x   |     x      | 200                  |
+| HEAD    | get without body         |   x   |     x      | 200                  |
+|         |                          |       |            |                      |
+| TRACE   |                          |       |            | 200                  |
+| CONNECT |                          |       |            | 200                  |
 
 **POST overloading** *< sending HTTP requests that doesnt exist can be done with a POST request. You send a method with the head that specifies what custom request you are using (document this correctly)>*
 
@@ -885,13 +894,17 @@ mv [dir/name] [newdir/name]# move
 rm [dir/name] # remove
 touch [name] # new file
 
+top # show live processes
 ps # process snapshot
 kill [pid] # kill process
 uptime # Show uptime
 uname -a # Show system and kernel
 whoami # Show your username
-help / man # manuals and information
+[tool] -v # show if tool is installen and which version
+[tool] help / man # manuals and information
+whereis / where [tool] # find location of installed tool
 clear # clear screen
+
 
 CTRL-C # Stop dcurrent running command
 ```

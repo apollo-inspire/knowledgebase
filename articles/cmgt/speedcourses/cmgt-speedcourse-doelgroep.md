@@ -32,7 +32,7 @@ let op niet teveel doelgroepen
 
 
 
-jou is de interactie met jouw product
+hoe zou de interactie met jouw product gaan
 
 hoe ziet hun dag eruit
 
