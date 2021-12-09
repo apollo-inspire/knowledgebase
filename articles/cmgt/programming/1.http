@@ -20,3 +20,35 @@ OPTIONS http://docent.cmi.hro.nl/bootb/demo/notes/
 GET https://pokeapi.co/api/v2/location/2/
 
 
+
+
+### 
+GET https://docent.cmi.hro.nl/bootb/demo/notes/
+
+
+### 
+POST https://docent.cmi.hro.nl/bootb/demo/notes/
+Content-Type: application/json
+
+{
+    "title": "maarten is stom",
+    "body": "hehehe",
+    "author": "lucas"
+}
+
+
+
+
+### 
+OPTIONS https://docent.cmi.hro.nl/bootb/demo/notes
+
+###
+
+GET https://docent.cmi.hro.nl/bootb/demo/notes/20847
+
+
+###
+GET https://google.com
+
+###
+GET https://wttr.in
