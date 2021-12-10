@@ -254,6 +254,16 @@ update
 npm update # update all packages, respecting package versioning rules
 ```
 
+run
+```bash
+cd 'C:\Program Files\MongoDB\Server\5.1\bin\'
+mongod.exe
+
+net start mongodb
+
+npm run dev || npm start
+```
+
 ### .ENV
 
 init
@@ -909,6 +919,8 @@ clear # clear screen
 CTRL-C # Stop dcurrent running command
 ```
 
+?how to clean cache & logs
+
 #### Installing Backend MERN
 
 installing software (linux)
@@ -949,6 +961,8 @@ sudo ufw status # check firewall status
 sudo nano /etc/mongodb.conf # edit mongodb config
 ```
 
+
+
 #### Installing Frontend MERN
 
 #### File Rights
@@ -981,6 +995,7 @@ change right modus
 `chmod`
 change owner
 `chown`
+
 
 ## D. frontend - React
 
