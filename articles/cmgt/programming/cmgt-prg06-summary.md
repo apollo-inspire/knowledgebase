@@ -895,14 +895,20 @@ pwd # Show current directory
 mkdir [dir] # Make directory
 cd [dir] # Change directory to dir
 cd .. # Go up a directory
+cd / # go to root dir
+cd ~ # go to home dir
+cd - # go to previous dir
 ls # List files
+df -h # show disks
+du -h # show disk usage for a dir
 -a # Show all (including hidden)
 -t # Sort by last modified
 -S # Sort by file size
-cp [dir/name] [newdir/name] # copy
-mv [dir/name] [newdir/name]# move
-rm [dir/name] # remove
+cp [dir || file] [new dir || file] # copy
+mv [dir || file] [new dir || file] # move
+rm [dir || file] # remove
 touch [name] # new file
+
 
 top # show live processes
 ps # process snapshot
@@ -911,8 +917,8 @@ uptime # Show uptime
 uname -a # Show system and kernel
 whoami # Show your username
 [tool] -v # show if tool is installen and which version
-[tool] help / man # manuals and information
-whereis / where [tool] # find location of installed tool
+[tool] help || -h || --help || man # manuals and information
+whereis || where [tool] # find location of installed tool
 clear # clear screen
 
 
