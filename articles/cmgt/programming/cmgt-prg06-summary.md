@@ -49,6 +49,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
     - [Middleware](#middleware)
     - [Models](#models)
     - [Checker](#checker)
+    - [CORS](#cors)
   - [B. HTTP, RESTfull API & OAuth](#b-http-restfull-api--oauth)
     - [HTTP](#http)
       - [Software](#software)
@@ -89,6 +90,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Screen](#screen)
       - [Installing Frontend MERN](#installing-frontend-mern)
       - [File Rights](#file-rights)
+      - [Directiories](#directiories)
   - [D. frontend - React](#d-frontend---react)
   - [E. frontend - Sass](#e-frontend---sass)
   - [Links](#links)
@@ -311,6 +313,11 @@ http://checker.basboot.nl/
 
 VPS: api
 hosted.hr: webservice.json
+
+
+### CORS
+
+Acces-Allow-Origin
 
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
@@ -979,6 +986,8 @@ screen -r
 
 `ctrl+a d`
 
+
+
 #### Installing Frontend MERN
 
 #### File Rights
@@ -1012,6 +1021,9 @@ change right modus
 change owner
 `chown`
 
+#### Directiories
+
+var/www/
 
 ## D. frontend - React
 
