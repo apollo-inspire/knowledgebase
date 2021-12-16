@@ -86,6 +86,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
     - [Linux](#linux)
       - [Basic BASH commands](#basic-bash-commands)
       - [Installing Backend MERN](#installing-backend-mern)
+      - [Screen](#screen)
       - [Installing Frontend MERN](#installing-frontend-mern)
       - [File Rights](#file-rights)
   - [D. frontend - React](#d-frontend---react)
@@ -967,7 +968,16 @@ sudo ufw status # check firewall status
 sudo nano /etc/mongodb.conf # edit mongodb config
 ```
 
+#### Screen
 
+```bash
+sudo apt install screen
+
+screen
+screen -r
+```
+
+`ctrl+a d`
 
 #### Installing Frontend MERN
 
