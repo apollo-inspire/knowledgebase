@@ -93,6 +93,10 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Directories](#directories)
   - [D. frontend - React](#d-frontend---react)
     - [History](#history)
+      - [Facebook](#facebook)
+      - [React](#react)
+      - [FLOW / Typescript](#flow--typescript)
+      - [Frontend Frameworks](#frontend-frameworks)
     - [The 3 Modern Frontend Framework Concepts](#the-3-modern-frontend-framework-concepts)
     - [General](#general-1)
       - [Native In Web](#native-in-web)
@@ -1059,20 +1063,20 @@ javascript framework
 reactjs.org
 
 ### History
-Facebook
+#### Facebook
 De facebook website werd te complex om met
 traditionele webdesign technieken te bouwen.
 
-React
+#### React
 Facebook bedacht React in 2013 om beter om te gaan
 met grote hoeveelheid data die door de app "stroomt".
 
-FLOW / Typescript
+#### FLOW / Typescript
 Facebook bedacht "FLOW" om een betere
 ontwikkelomgeving voor Javascript te bouwen.
 
 
-Frontend Frameworks
+#### Frontend Frameworks
     React
     Angular
     Vue
@@ -1086,11 +1090,11 @@ Frontend Frameworks
 
 ### The 3 Modern Frontend Framework Concepts
 
-Single Page Application *< Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. >*
+**Single Page Application** *< Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. >*
 
-Components *< Geïsoleerde componenten >*
+**Components** *< Geïsoleerde componenten >*
 
-Databinding *< Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) >*
+**Databinding** *< Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) >*
 
 ### General
 
