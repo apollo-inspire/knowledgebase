@@ -90,7 +90,7 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Screen](#screen)
       - [Installing Frontend MERN](#installing-frontend-mern)
       - [File Rights](#file-rights)
-      - [Directiories](#directiories)
+      - [Directories](#directories)
   - [D. frontend - React](#d-frontend---react)
   - [E. frontend - Sass](#e-frontend---sass)
   - [Links](#links)
@@ -1021,12 +1021,21 @@ change right modus
 change owner
 `chown`
 
-#### Directiories
+#### Directories
 
 var/www/
 
 ## D. frontend - React
+reactjs.org
 
+Frontend Frameworks
+    React
+    Angular
+    Vue
+
+
+Components 
+Databinding
 
 
 ## E. frontend - Sass
