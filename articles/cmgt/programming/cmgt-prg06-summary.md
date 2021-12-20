@@ -92,6 +92,22 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [File Rights](#file-rights)
       - [Directories](#directories)
   - [D. frontend - React](#d-frontend---react)
+    - [History](#history)
+    - [The 3 Modern Frontend Framework Concepts](#the-3-modern-frontend-framework-concepts)
+    - [General](#general-1)
+      - [Native In Web](#native-in-web)
+    - [Components](#components)
+      - [Example (pseudo code):](#example-pseudo-code)
+    - [Databinding](#databinding)
+      - [State](#state)
+      - [Prop](#prop)
+      - [Event Handlers](#event-handlers)
+      - [Lifting state up](#lifting-state-up)
+      - [Data Store](#data-store)
+      - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
+    - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
+    - [React Native](#react-native)
+    - [Build Process](#build-process)
   - [E. frontend - Sass](#e-frontend---sass)
   - [Links](#links)
 
@@ -318,6 +334,10 @@ hosted.hr: webservice.json
 ### CORS
 
 Acces-Allow-Origin
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## B. HTTP, RESTfull API & OAuth
 https://www.youtube.com/watch?v=-MTSQjw5DrM
@@ -883,6 +903,10 @@ Filter
 ### OAuth
 
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## C. operations - VPS & Linux
 
 ### Virtual Private Server (VPS)
@@ -1025,18 +1049,192 @@ change owner
 
 var/www/
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## D. frontend - React
+javascript framework
+
 reactjs.org
+
+### History
+Facebook
+De facebook website werd te complex om met
+traditionele webdesign technieken te bouwen.
+
+React
+Facebook bedacht React in 2013 om beter om te gaan
+met grote hoeveelheid data die door de app "stroomt".
+
+FLOW / Typescript
+Facebook bedacht "FLOW" om een betere
+ontwikkelomgeving voor Javascript te bouwen.
+
 
 Frontend Frameworks
     React
     Angular
     Vue
 
+    Svelte
+    Gatsby (CMS)
+    Stencil
+    Preact
+    React Native
 
-Components 
-Databinding
 
+### The 3 Modern Frontend Framework Concepts
+
+Single Page Application *< Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. >*
+
+Components *< Geïsoleerde componenten >*
+
+Databinding *< Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) >*
+
+### General
+
+#### Native In Web
+Webcomponents
+
+Modules
+
+### Components
+Een React App is opgebouwd uit geïsoleerde
+components.
+
+Een component bevat Javascript en HTML (JSX)
+
+Composition
+App HAS a shop
+Shop HAS products
+
+Inheritance (fixed structure)
+Shop EXTENDS app
+
+#### Example (pseudo code):
+
+`app.js`
+```jsx
+<body>
+    <Navigation />
+    <Shop />
+<body/>
+```
+
+`Navigation.js`
+```jsx
+<div>
+    <button>home</button>
+    <button>about us</button>
+    <button>shop</button>
+</div>
+```
+
+`shop.js`
+```
+<div>
+    <Product />
+    <Product />
+    <Product />
+</div>
+```
+
+
+
+### Databinding
+Een component haalt JSON data van een API.
+
+De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.
+
+Variabelen in een component zijn verbonden aan de view van het component. Als de variabele verandert, verandert de view automatisch mee.
+
+```jsx
+let items = 1
+
+function buyItem(){
+    items++
+}
+
+function render() {
+    <div>
+        <p>winkelwagen</p>
+        <p>{ items }</p>
+        <button onClick={ buyItem() }>Buy Item</button>
+    </div>
+}
+```
+
+#### State
+Reactive data maak je aan middels een state variabele
+
+State variabelen mogen alleen door de eigenaar aangepast worden.
+
+#### Prop
+Met Props kan je reactive data aan een childcomponent doorgeven. 
+
+Het child component kan props data tonen maar niet bewerken.
+
+#### Event Handlers
+Een child component kan event handlers in een parent aanroepen.
+
+Dit is de manier om de state van een parent te veranderen vanuit een child.
+
+#### Lifting state up
+Data die in je hele app relevant is plaats je vaak in de main app.
+
+#### Data Store
+Gebruik bij complexe / nested flow (big scale, coolblue)
+
+
+#### No Dom Manipulation (Old way)
+In je React code staat geen rechtstreekse DOM manipulation meer!
+
+`shop.html`
+```html
+<div>
+    <p>winkelwagen</p>
+    <div id="items">1</div>
+    <button id="button">Buy Item</button>
+</div>
+
+<script src="shop.js"></script>
+```
+
+`shop.js`
+```js
+let cart = document.querySelector("#items")
+let btn = document.querySelector("#button")
+btn.addEventListener("click", ()=>buyItem())
+
+let items = 1
+
+function buyItem(){
+    items++
+    cart.innerHTML = `Winkelwagen: ${items}`
+}
+```
+
+### Wanneer gebruik je react en wanneer niet?
+
+Statische Website (Onepager / Papier)
+Statische tekst en afbeeldingen
+in een html pagina.
+(Geen react nodig)
+
+Web Applicatie
+- Complexe logica
+- Complexe interactie
+- Veel gebruikersdata
+
+### React Native
+React native voor native (mobile) apps
+
+### Build Process
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## E. frontend - Sass
 styleguides
