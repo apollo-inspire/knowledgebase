@@ -106,17 +106,19 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Example (pseudo code):](#example-pseudo-code)
     - [Directory Structure](#directory-structure)
     - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
+    - [Functional vs OOP programming](#functional-vs-oop-programming)
     - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
     - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
     - [Module Bundler](#module-bundler)
-    - [Broswer Addon](#broswer-addon)
+    - [Browser Addon](#browser-addon)
     - [Setup](#setup)
       - [Optional:](#optional)
     - [Parcel](#parcel)
     - [NPM Script](#npm-script)
     - [Github](#github)
     - [Github Pages](#github-pages)
-    - [React Template vanilla](#react-template-vanilla)
+    - [React Template vanilla Functionl](#react-template-vanilla-functionl)
+    - [React Template Object Oriented](#react-template-object-oriented)
     - [Databinding](#databinding)
     - [State](#state)
     - [Prop](#prop)
@@ -135,7 +137,9 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Class](#class)
       - [Component](#component)
     - [JSON laden (api fetch)](#json-laden-api-fetch)
-    - [React Full Example Vanilla](#react-full-example-vanilla)
+    - [Components Updates (functional)](#components-updates-functional)
+      - [Effect Hook](#effect-hook)
+    - [React Full Basic Example Vanilla](#react-full-basic-example-vanilla)
   - [E. frontend - Sass](#e-frontend---sass)
     - [CSS](#css)
       - [Grid](#grid)
@@ -1219,6 +1223,26 @@ class Car extends Vehicle {
 }
 ```
 
+
+### Functional vs OOP programming
+
+
+function
+
+hooks function
+
+functions zijn kleiner
+
+
+
+class
+
+standaard
+
+uitgebreider (constructor)
+
+<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
+
 geen public of private > alles is private
 
 ### CommonJS vs ES6 modules
@@ -1297,7 +1321,7 @@ rollopjs
 webpack
 Create React App
 
-### Broswer Addon
+### Browser Addon
 
 React Developer Tools
 
@@ -1340,10 +1364,7 @@ parcel build src/index.html
 ```
 
 ### NPM Script
-Het is handig om Parcel's
-development en build
-commando's in je
-package.json te plaatsen
+Het is handig om Parcel's development en build commando's in je package.json te plaatsen
 
 ```json
 {
@@ -1372,10 +1393,68 @@ npm run build
 ### Github Pages 
 <!-- todo: (week6.1) -->
 
-### React Template vanilla
+### React Template vanilla Functionl
 https://parceljs.org/recipes/react/
 
 <!-- todo: insert -->
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PRG06-Frontend</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
+
+`index.js`
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+import { App } from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
+
+`App.js`
+```jsx
+import React from "react";
+import "./style.css";
+
+export function App() {
+    render() {
+        return(
+            <div className="app">
+
+            </div>
+        );
+    }
+}
+```
+
+
+### React Template Object Oriented
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PRG06-Frontend</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
 
 `index.js`
 ```jsx
@@ -1691,7 +1770,7 @@ te tonen als een variabele TRUE is
 
         return (
         <div>
-            <h1>{props.name}</h1>
+            <h1>{ props.name }</h1>
             { props.liked && <h2>❤</h2> }
         </div>
         );
@@ -1775,8 +1854,13 @@ export function ApiDemo() {
 }
 ```
 
+### Components Updates (functional)
 
-### React Full Example Vanilla
+#### Effect Hook
+
+https://reactjs.org/docs/hooks-effect.html
+
+### React Full Basic Example Vanilla
 
 `index.js`
 ```js
@@ -1851,6 +1935,8 @@ export class Shop extends React.Component {
     padding: 20px
 }
 ```
+
+
 
 
 
