@@ -104,11 +104,18 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Native In Web](#native-in-web)
     - [Components](#components)
       - [Example (pseudo code):](#example-pseudo-code)
-    - [Build Process](#build-process)
     - [Directory Structure](#directory-structure)
     - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
     - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
     - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
+    - [Module Bundler](#module-bundler)
+    - [Broswer Addon](#broswer-addon)
+    - [Setup](#setup)
+      - [Optional:](#optional)
+    - [Parcel](#parcel)
+    - [NPM Script](#npm-script)
+    - [Github](#github)
+    - [Github Pages](#github-pages)
     - [React Template vanilla](#react-template-vanilla)
     - [Databinding](#databinding)
     - [State](#state)
@@ -1184,7 +1191,10 @@ Shop EXTENDS app
 
 
 
-### Build Process
+
+
+
+
 
 ### Directory Structure
 
@@ -1281,9 +1291,89 @@ function buyItem(){
 }
 ```
 
+### Module Bundler
+Parcel
+rollopjs
+webpack
+Create React App
 
+### Broswer Addon
+
+React Developer Tools
+
+### Setup
+
+Installeer NodeJS. Maak een project met `npm init -y` Installeer parcel. Installeer react
+
+```bash
+npm init -y
+npm install --save-dev parcel
+
+npm install react react-dom
+```
+
+#### Optional:
+Typescript
+Hernoem je .js modules naar .ts modules. Installeer type information.
+```bash
+npm install @types/react @types/react-dom --dev
+```
+
+
+Sass
+```bash
+npm install node-sass
+```
+
+### Parcel
+Parcel: https://parceljs.org
+
+Start de live development server in watch mode. Openhttp://localhost:1234
+
+```bash
+npx parcel src/index.html
+```
+
+Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
+```bash
+parcel build src/index.html
+```
+
+### NPM Script
+Het is handig om Parcel's
+development en build
+commando's in je
+package.json te plaatsen
+
+```json
+{
+    :
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    },
+    :
+}
+```
+
+Start live dev mode
+```bash
+npm run start
+```
+
+Build
+```bash
+npm run build
+```
+
+### Github 
+(week6.1)
+
+### Github Pages 
+(week6.1)
 
 ### React Template vanilla
+https://parceljs.org/recipes/react/
 
 `index.js`
 ```jsx
