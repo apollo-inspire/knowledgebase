@@ -96,30 +96,46 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Facebook](#facebook)
       - [React](#react)
       - [FLOW / Typescript](#flow--typescript)
-      - [Frontend Frameworks](#frontend-frameworks)
+    - [Frontend Frameworks](#frontend-frameworks)
+    - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
+    - [React Native](#react-native)
     - [The 3 Modern Frontend Framework Concepts](#the-3-modern-frontend-framework-concepts)
     - [General](#general-1)
       - [Native In Web](#native-in-web)
     - [Components](#components)
       - [Example (pseudo code):](#example-pseudo-code)
-    - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
-    - [React Native](#react-native)
     - [Build Process](#build-process)
     - [Directory Structure](#directory-structure)
     - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
     - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
-      - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
+    - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
     - [React Template vanilla](#react-template-vanilla)
     - [Databinding](#databinding)
-      - [State](#state)
-      - [Prop](#prop)
+    - [State](#state)
+    - [Prop](#prop)
     - [Prop & State](#prop--state)
-    - [Map](#map)
-      - [Event Handlers](#event-handlers)
-      - [Lifting state up](#lifting-state-up)
-      - [Data Store](#data-store)
-    - [React Full Example vanilla](#react-full-example-vanilla)
+    - [Map (Array)](#map-array)
+    - [Get Array length](#get-array-length)
+    - [Add to Array](#add-to-array)
+    - [Event Handlers](#event-handlers)
+    - [Lifting state up](#lifting-state-up)
+    - [Data Store](#data-store)
+    - [Images](#images)
+    - [Styling](#styling)
+    - [Input](#input)
+    - [Conditional (if)](#conditional-if)
+    - [If Else](#if-else)
+      - [Class](#class)
+      - [Component](#component)
+    - [JSON laden (api fetch)](#json-laden-api-fetch)
+    - [React Full Example Vanilla](#react-full-example-vanilla)
   - [E. frontend - Sass](#e-frontend---sass)
+    - [CSS](#css)
+      - [Grid](#grid)
+      - [Flex](#flex)
+    - [Installing](#installing)
+      - [Installing To React](#installing-to-react)
+      - [Installing Generally NPM](#installing-generally-npm)
   - [Links](#links)
 
 
@@ -1083,7 +1099,7 @@ Facebook bedacht "FLOW" om een betere
 ontwikkelomgeving voor Javascript te bouwen.
 
 
-#### Frontend Frameworks
+### Frontend Frameworks
     React
     Angular
     Vue
@@ -1093,6 +1109,21 @@ ontwikkelomgeving voor Javascript te bouwen.
     Stencil
     Preact
     React Native
+
+### Wanneer gebruik je react en wanneer niet?
+
+Statische Website (Onepager / Papier)
+Statische tekst en afbeeldingen
+in een html pagina.
+(Geen react nodig)
+
+Web Applicatie
+- Complexe logica
+- Complexe interactie
+- Veel gebruikersdata
+
+### React Native
+React native voor native (mobile) apps
 
 
 ### The 3 Modern Frontend Framework Concepts
@@ -1151,20 +1182,7 @@ Shop EXTENDS app
 </div>
 ```
 
-### Wanneer gebruik je react en wanneer niet?
 
-Statische Website (Onepager / Papier)
-Statische tekst en afbeeldingen
-in een html pagina.
-(Geen react nodig)
-
-Web Applicatie
-- Complexe logica
-- Complexe interactie
-- Veel gebruikersdata
-
-### React Native
-React native voor native (mobile) apps
 
 ### Build Process
 
@@ -1233,7 +1251,7 @@ import { App } from "./App.js"
 :
 ```
 
-#### No Dom Manipulation (Old way)
+### No Dom Manipulation (Old way)
 In je React code staat geen rechtstreekse DOM manipulation meer!
 
 Oude Methode:
@@ -1321,15 +1339,15 @@ function render() {
 
 
 
-#### State
+### State
 Reactive data maak je aan middels een state variabele
 
 State variabelen mogen alleen door de eigenaar aangepast worden.
 
 
 ```jsx
-:
 
+:
 export class Product extends React.Component {
     constructor {
         super()
@@ -1359,19 +1377,17 @@ export class Product extends React.Component {
         );
     }
 }
-
-:
 ```
 
-#### Prop
+### Prop
 Met Props kan je reactive data aan een childcomponent doorgeven. 
 
 Het child component kan props data tonen maar niet bewerken.
 
 
 ```jsx
-:
 
+:
 export class Product extends React.Component {
 
     :
@@ -1384,13 +1400,11 @@ export class Product extends React.Component {
         );
     }
 }
-
-:
 ```
 
 ```jsx
-:
 
+:
 export class Shop extends React.Component {
 
     :
@@ -1407,10 +1421,10 @@ export class Shop extends React.Component {
             </div>
         );
     }
-
 }
 ```
 
+**Een component kan de waarde van zijn props niet aanpassen!**
 
 ### Prop & State
 
@@ -1425,9 +1439,9 @@ export class Shop extends React.Component {
             products: ["Canon 200D", "Google Chromecast", "Skullcandy Crusher", "Duracell AA Batterijen"]
         }
     }
-
     :
 
+    :
     render() { 
         return(
             <div className="shop">
@@ -1445,27 +1459,27 @@ export class Shop extends React.Component {
 }
 ```
 
-### Map
+### Map (Array)
 loop over array ("foreach")
 
 ```jsx
-:
 
+:
 export class Shop extends React.Component {
     constructor {
         super()
 
         this.state = {
-            products: ["Canon 200D", "Google Chromecast", "Skullcandy Crusher", "Duracell AA Batterijen"]
+            products: ["Canon 200D", "Google Chromecast", "Skullcandy Crusher"]
         }
     }
-
     :
 
+    :
     render() { 
-        const allProducts = this.state.products.map((prod)=> {
-            <Product name="Test"/>
-        })
+        const allProducts = this.state.products.map((prod, index) => (
+            <Product key={ index } name={ prod }/>
+        ))
 
         return(
             <div className="shop">
@@ -1482,8 +1496,32 @@ export class Shop extends React.Component {
 }
 ```
 
+### Get Array length
+```jsx
 
-#### Event Handlers
+    :
+    <h2>Total Products: { this.state.products.length } </h2>
+    :
+
+```
+
+
+### Add to Array
+
+```jsx
+
+    :
+    addProduct {
+        this.setState((oldState) => {
+            products: [...oldState.products, "Duracell AA Batterijen"]
+        })
+    }
+    :
+
+```
+
+
+### Event Handlers
 Een child component kan event handlers in een parent aanroepen.
 
 Dit is de manier om de state van een parent te veranderen vanuit een child.
@@ -1501,21 +1539,152 @@ export class Product extends React.Component {
             :
 
         }
-        :
 }
 ```
 
-#### Lifting state up
+### Lifting state up
 Data die in je hele app relevant is plaats je vaak in de main app.
 
-#### Data Store
+### Data Store
 Gebruik bij complexe / nested flow (big scale, coolblue)
 
+### Images
+Gebruik import om images te laden.
+
+```jsx
+import logoImage from './images/logo.png';
+```
+```jsx
+<img src={ logoImage } alt="logo"/>
+```
+
+### Styling
+https://reactjs.org/docs/faq-styling.html
+
+https://parceljs.org/recipes/react/#styling
+
+### Input
+Een input element heeft een `onChange` handler nodig. Deze verandert de `inputValue` zodra iemand in het form field typt.
+
+In je overige code kan je de `inputValue` variabele gebruiken om te weten wat er is ingevuld
 
 
+```jsx
+import "./styles.css";
+import { useState } from "react";
+
+export function Pokedex() {
+
+    const [inputValue, setInputValue] = useState("");
+
+    const onChangeHandler = (event) => {
+        setInputValue(event.target.value);
+    };
+
+    return (
+        <div className="Pokedex">
+            <input type="text" onChange={onChangeHandler} value={inputValue} />
+        </div>
+    );
+}
+```
+
+### Conditional (if)
+
+Je kan `&&` gebruiken om een element alleen
+te tonen als een variabele TRUE is
+
+```jsx
+    function Pokemon(props) {
+
+        return (
+        <div>
+            <h1>{props.name}</h1>
+            { props.liked && <h2>❤</h2> }
+        </div>
+        );
+    }
+```
+
+```jsx
+function Pokemon(props) {
+
+    return (
+    <div>
+        <h1>{props.name}</h1>
+        { props.likes > 100 && <h2>❤❤❤</h2> }
+    </div>
+    );
+}
+```
+
+### If Else
+
+#### Class
+Toon een verschillende CSS style afhankelijk van of LIKED true of false is.
+
+```jsx
+export function Pokemon() {
+
+    const [liked, setLiked] = useState(false);
+
+    return (
+        <div className={ liked ? 'heart' : 'noheart' }>
+            Poliwhirl
+        </div>
+    );
+}
+```
+
+#### Component
+Toon een verschillend component afhankelijk van of LOADING true of false is.
+
+```jsx
+export function Pokemon() {
+
+    const [loading, setLoading] = useState(true);
+
+    return (
+        <div>
+            { loading ? <Spinner /> : <Details /> }
+        </div>
+    );
+}
+```
+
+### JSON laden (api fetch)
+Gebruik `async await` of `promises.then()` syntax om JSON te laden.
+Als de JSON geladen is, kan je de state aanpassen.
 
 
-### React Full Example vanilla
+```jsx
+:
+export function ApiDemo() {
+    const [pokemon, setPokemon] = useState([]);
+
+    const loadJson = () => {
+        fetch("https://pokeapi.co/api/v2/pokemon")
+            .then((response) => response.json())
+            .then((data) => dataWasLoaded(data))
+            .catch((error) => console.error("API fetch error"))
+    }
+
+    const dataWasLoaded = (data) => {
+        console.log(data.results)
+        setPokemon(data.results)
+    }
+
+    return (
+        <div className="ApiDemo">
+            <h4>JSON Pokemon loaded: { pokemon.length}</h4>
+            <button onClick={ loadJson }>Load JSON</button>
+        </div>
+    )
+}
+```
+
+
+### React Full Example Vanilla
 
 `index.js`
 ```js
@@ -1602,6 +1771,50 @@ styleguides
 http://styleguides.io/
 https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
+
+### CSS
+
+#### Grid
+
+```css
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+```
+
+```html
+<div className="shop">
+    <div>Item</div>
+    <div>Item</div>
+</div>
+```
+
+#### Flex
+
+```css
+.shop {
+    display: flex;
+}
+```
+
+
+```html
+<div className="shop">
+    <div>Item</div>
+    <div>Item</div>
+</div>
+```
+
+
+### Installing
+
+#### Installing To React
+
+#### Installing Generally NPM
 
 ## Links
 https://www.youtube.com/watch?v=fgTGADljAeg
