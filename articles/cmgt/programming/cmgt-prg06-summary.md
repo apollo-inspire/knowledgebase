@@ -102,16 +102,23 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [Native In Web](#native-in-web)
     - [Components](#components)
       - [Example (pseudo code):](#example-pseudo-code)
-    - [Databinding](#databinding)
-      - [State](#state)
-      - [Prop](#prop)
-      - [Event Handlers](#event-handlers)
-      - [Lifting state up](#lifting-state-up)
-      - [Data Store](#data-store)
-      - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
     - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
     - [React Native](#react-native)
     - [Build Process](#build-process)
+    - [Directory Structure](#directory-structure)
+    - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
+    - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
+      - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
+    - [React Template vanilla](#react-template-vanilla)
+    - [Databinding](#databinding)
+      - [State](#state)
+      - [Prop](#prop)
+    - [Prop & State](#prop--state)
+    - [Map](#map)
+      - [Event Handlers](#event-handlers)
+      - [Lifting state up](#lifting-state-up)
+      - [Data Store](#data-store)
+    - [React Full Example vanilla](#react-full-example-vanilla)
   - [E. frontend - Sass](#e-frontend---sass)
   - [Links](#links)
 
@@ -1144,55 +1151,92 @@ Shop EXTENDS app
 </div>
 ```
 
+### Wanneer gebruik je react en wanneer niet?
+
+Statische Website (Onepager / Papier)
+Statische tekst en afbeeldingen
+in een html pagina.
+(Geen react nodig)
+
+Web Applicatie
+- Complexe logica
+- Complexe interactie
+- Veel gebruikersdata
+
+### React Native
+React native voor native (mobile) apps
+
+### Build Process
+
+### Directory Structure
+
+- /public || /docs
+- /src
+    - App.js
+    - index.js
+    - style.css
+- package.json
 
 
-### Databinding
-Een component haalt JSON data van een API.
+### Flashback naar OOP in PRG04
 
-De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.
-
-Variabelen in een component zijn verbonden aan de view van het component. Als de variabele verandert, verandert de view automatisch mee.
-
-```jsx
-let items = 1
-
-function buyItem(){
-    items++
-}
-
-function render() {
-    <div>
-        <p>winkelwagen</p>
-        <p>{ items }</p>
-        <button onClick={ buyItem() }>Buy Item</button>
-    </div>
+```ts
+class Car extends Vehicle {
+    constructor() {
+        super()
+    }
+    public drive() {
+        console.log("Vrooom")
+    }
 }
 ```
 
-#### State
-Reactive data maak je aan middels een state variabele
+geen public of private > alles is private
 
-State variabelen mogen alleen door de eigenaar aangepast worden.
+### CommonJS vs ES6 modules
 
-#### Prop
-Met Props kan je reactive data aan een childcomponent doorgeven. 
+In NodeJS heb je met CommonJS
+modules gewerkt
 
-Het child component kan props data tonen maar niet bewerken.
+CommonJS
+```js
+const express = require('express');
+const myapp = require('./app.js');
 
-#### Event Handlers
-Een child component kan event handlers in een parent aanroepen.
+:
+```
 
-Dit is de manier om de state van een parent te veranderen vanuit een child.
+In React (en Node 17) werk je met ES6
+modules
 
-#### Lifting state up
-Data die in je hele app relevant is plaats je vaak in de main app.
+ES6
+```js
+export default function App() {
+}
+```
 
-#### Data Store
-Gebruik bij complexe / nested flow (big scale, coolblue)
+```js
+import App from "./App.js"
 
+:
+```
+or
+
+```js
+export function App() {
+}
+```
+
+```js
+import { App } from "./App.js"
+
+:
+```
 
 #### No Dom Manipulation (Old way)
 In je React code staat geen rechtstreekse DOM manipulation meer!
+
+Oude Methode:
 
 `shop.html`
 ```html
@@ -1219,22 +1263,335 @@ function buyItem(){
 }
 ```
 
-### Wanneer gebruik je react en wanneer niet?
 
-Statische Website (Onepager / Papier)
-Statische tekst en afbeeldingen
-in een html pagina.
-(Geen react nodig)
 
-Web Applicatie
-- Complexe logica
-- Complexe interactie
-- Veel gebruikersdata
+### React Template vanilla
 
-### React Native
-React native voor native (mobile) apps
+`index.js`
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
 
-### Build Process
+import { App } from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
+
+`App.js`
+```jsx
+import React from "react";
+import "./style.css";
+
+export class App extends React.Component {
+    render() {
+        return(
+            <div className="app">
+
+            </div>
+        );
+    }
+}
+```
+
+
+### Databinding
+Een component haalt JSON data van een API.
+
+De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.
+
+Variabelen in een component zijn verbonden aan de view van het component. Als de variabele verandert, verandert de view automatisch mee.
+
+```jsx
+let items = 1
+
+function buyItem(){
+    items++
+}
+
+function render() {
+    <div>
+        <p>winkelwagen</p>
+        <p>{ items }</p>
+        <button onClick={ buyItem() }>Buy Item</button>
+    </div>
+}
+```
+*psuedocode!*
+
+
+
+#### State
+Reactive data maak je aan middels een state variabele
+
+State variabelen mogen alleen door de eigenaar aangepast worden.
+
+
+```jsx
+:
+
+export class Product extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            name: "Canon 200D",
+            description: "Een mooie canon camera",
+            price: 499
+        }
+    }
+
+    updatePrice() {
+        this.setState((oldState) => {
+            name: "6D",
+            price: oldState.price + 500
+        })
+    }
+
+    render() { 
+        return(
+            <div className="product">
+                <h1>{ this.state.title }</h1>
+                <p>{ this.state.description }</p>
+                <h2>Price: { this.state.price }</h2>
+                <button onClick={ () => this.updatePrice() }>Aanbieding</button>
+            </div>
+        );
+    }
+}
+
+:
+```
+
+#### Prop
+Met Props kan je reactive data aan een childcomponent doorgeven. 
+
+Het child component kan props data tonen maar niet bewerken.
+
+
+```jsx
+:
+
+export class Product extends React.Component {
+
+    :
+    render() { 
+        return(
+            <div className="product">
+                <h1>{ this.props.title }</h1>
+                <p>{ this.props.description }</p>
+            </div>
+        );
+    }
+}
+
+:
+```
+
+```jsx
+:
+
+export class Shop extends React.Component {
+
+    :
+    render() { 
+        return(
+            <div className="shop">
+                :
+
+                <Product name="Google Chromecast"/>
+                <Product name="Skullcandy Crusher"/>
+                <Product name="Duracell AA Batterijen"/>
+
+                :
+            </div>
+        );
+    }
+
+}
+```
+
+
+### Prop & State
+
+```jsx
+:
+
+export class Shop extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            products: ["Canon 200D", "Google Chromecast", "Skullcandy Crusher", "Duracell AA Batterijen"]
+        }
+    }
+
+    :
+
+    render() { 
+        return(
+            <div className="shop">
+
+                :
+                <Product name={ this.state.products[0] }/>
+                <Product name={ this.state.products[1] }/>
+                <Product name={ this.state.products[2] }/>
+                <Product name={ this.state.products[3] }/>
+                :
+
+            </div>
+        );
+    }
+}
+```
+
+### Map
+loop over array ("foreach")
+
+```jsx
+:
+
+export class Shop extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            products: ["Canon 200D", "Google Chromecast", "Skullcandy Crusher", "Duracell AA Batterijen"]
+        }
+    }
+
+    :
+
+    render() { 
+        const allProducts = this.state.products.map((prod)=> {
+            <Product name="Test"/>
+        })
+
+        return(
+            <div className="shop">
+    
+                :
+                <div>
+                    { allProducts }
+                </div>
+                :
+
+            </div>
+        );
+    }
+}
+```
+
+
+#### Event Handlers
+Een child component kan event handlers in een parent aanroepen.
+
+Dit is de manier om de state van een parent te veranderen vanuit een child.
+
+
+
+```jsx
+export class Product extends React.Component {
+
+        :
+        render() { 
+
+            :
+            <button onClick={ Shop.doSomething() }>Button</button>
+            :
+
+        }
+        :
+}
+```
+
+#### Lifting state up
+Data die in je hele app relevant is plaats je vaak in de main app.
+
+#### Data Store
+Gebruik bij complexe / nested flow (big scale, coolblue)
+
+
+
+
+
+### React Full Example vanilla
+
+`index.js`
+```js
+import React from "react";
+import ReactDOM from "react-dom";
+
+import { App } from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
+`App.js`
+```jsx
+import React from "react";
+import "./style.css";
+import { Shop } from "./Shop.js"
+
+export class App extends React.Component {
+
+    constructor() {
+        super()
+        console.log("Created the app")
+        this.doSomethig()
+    }
+
+    doSomething() {
+        console.log("Doing something!")
+    }
+
+    render() {
+        return(
+            <div className="app">
+                <h1>Title</h1>
+                <p>Hello World!</p>
+
+                <Shop />
+                <Shop />
+            </div>
+        );
+    }
+}
+```
+
+`Shop.js`
+```jsx
+import React from "react";
+import "./style.css";
+
+export class Shop extends React.Component {
+    render() { 
+        return(
+            <div className="shop">
+                <h1>SHOP</h1>
+                <p>This is a shop</p>
+
+            </div>
+        );
+    }
+
+}
+```
+
+`style.css`
+```css
+.body {
+    background-color: lightgrey;
+}
+
+.shop {
+    background-color: white;
+    margin: 20px;
+    padding: 20px
+}
+```
+
+
 
 ---
 <br><br><br><br>
