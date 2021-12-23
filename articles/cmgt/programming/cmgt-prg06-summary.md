@@ -1367,13 +1367,15 @@ npm run build
 ```
 
 ### Github 
-(week6.1)
+<!-- todo: (week6.1) -->
 
 ### Github Pages 
-(week6.1)
+<!-- todo: (week6.1) -->
 
 ### React Template vanilla
 https://parceljs.org/recipes/react/
+
+<!-- todo: insert -->
 
 `index.js`
 ```jsx
