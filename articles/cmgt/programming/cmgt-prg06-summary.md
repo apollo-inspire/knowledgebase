@@ -3,7 +3,7 @@ title: 'frontend'
 slug: 'cmgt-prg06-summary'
 created: '2021-11-10'
 published: '2021-00-00'
-modified: '2021-11-10'
+modified: '2021-01-22'
 author: 'Lucas van der Vegt'
 class: 'Programmeren 6'
 class-slug: 'PRG06'
@@ -17,10 +17,10 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
 
 
 # Programmeren 6: Fullstack Webdevelopment (React & Node.js)
-
-
-*Knowledgebase: https://luukftf.github.io/knowledgebase*  
-*(code: https://github.com/LuukFTF/knowledgebase)*  
+Versie: 2021-01-22  
+ 
+*Knowledgebase: https://luukftf.github.io/knowledgebase*    
+*(code: https://github.com/LuukFTF/knowledgebase)*    
 *By: Lucas van der Vegt*
 
 ---
@@ -92,50 +92,56 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [File Rights](#file-rights)
       - [Directories](#directories)
   - [D. frontend - React](#d-frontend---react)
-    - [History](#history)
-      - [Facebook](#facebook)
-      - [React](#react)
-      - [FLOW / Typescript](#flow--typescript)
-    - [Frontend Frameworks](#frontend-frameworks)
-    - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
-    - [React Native](#react-native)
-    - [The 3 Modern Frontend Framework Concepts](#the-3-modern-frontend-framework-concepts)
-    - [General](#general-1)
-      - [Native In Web](#native-in-web)
-    - [Components](#components)
-      - [Example (pseudo code):](#example-pseudo-code)
-    - [Directory Structure](#directory-structure)
-    - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
-    - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
-    - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
-    - [Module Bundler](#module-bundler)
-    - [Broswer Addon](#broswer-addon)
-    - [Setup](#setup)
-      - [Optional:](#optional)
-    - [Parcel](#parcel)
-    - [NPM Script](#npm-script)
-    - [Github](#github)
-    - [Github Pages](#github-pages)
-    - [React Template vanilla](#react-template-vanilla)
-    - [Databinding](#databinding)
-    - [State](#state)
-    - [Prop](#prop)
-    - [Prop & State](#prop--state)
-    - [Map (Array)](#map-array)
-    - [Get Array length](#get-array-length)
-    - [Add to Array](#add-to-array)
-    - [Event Handlers](#event-handlers)
-    - [Lifting state up](#lifting-state-up)
-    - [Data Store](#data-store)
-    - [Images](#images)
-    - [Styling](#styling)
-    - [Input](#input)
-    - [Conditional (if)](#conditional-if)
-    - [If Else](#if-else)
-      - [Class](#class)
-      - [Component](#component)
-    - [JSON laden (api fetch)](#json-laden-api-fetch)
-    - [React Full Example Vanilla](#react-full-example-vanilla)
+    - [1. General](#1-general)
+      - [1.1 History](#11-history)
+        - [Facebook](#facebook)
+        - [React](#react)
+        - [FLOW / Typescript](#flow--typescript)
+      - [1.2 Frontend Frameworks](#12-frontend-frameworks)
+      - [1.3 Wanneer gebruik je react en wanneer niet?](#13-wanneer-gebruik-je-react-en-wanneer-niet)
+      - [1.4 React Native](#14-react-native)
+      - [1.5 The 3 Modern Frontend Framework Concepts](#15-the-3-modern-frontend-framework-concepts)
+      - [1.6 Native In Web](#16-native-in-web)
+      - [1.7 React Example (pseudo code):](#17-react-example-pseudo-code)
+    - [2. PRG04 vs PRG06](#2-prg04-vs-prg06)
+      - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
+      - [No DOM Manipulation](#no-dom-manipulation)
+    - [3. Setup](#3-setup)
+      - [Typescript % SASS](#typescript--sass)
+      - [NPM Script](#npm-script)
+      - [Directory Structure](#directory-structure)
+      - [React Template vanilla](#react-template-vanilla)
+    - [4. Tools](#4-tools)
+      - [Module Bundler](#module-bundler)
+      - [Parcel](#parcel)
+      - [Broswer Addon](#broswer-addon)
+      - [Github](#github)
+        - [Github Pages](#github-pages)
+    - [5. Modules](#5-modules)
+      - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
+    - [6. Components](#6-components)
+    - [7. Databinding](#7-databinding)
+      - [State](#state)
+      - [Prop](#prop)
+      - [Prop + State](#prop--state)
+      - [Lifting state up](#lifting-state-up)
+      - [Data Store](#data-store)
+    - [8. Event Handlers](#8-event-handlers)
+    - [9. Arrays](#9-arrays)
+      - [Map (Array)](#map-array)
+      - [Get Array length](#get-array-length)
+      - [Add to Array](#add-to-array)
+    - [10. Input](#10-input)
+    - [11. Conditional](#11-conditional)
+      - [If](#if)
+      - [If Else](#if-else)
+        - [Class](#class)
+        - [Component](#component)
+    - [12. API](#12-api)
+      - [fetch (JSON laden)](#fetch-json-laden)
+    - [13. Images](#13-images)
+    - [14. Styling](#14-styling)
+    - [XX. React Full Example Vanilla](#xx-react-full-example-vanilla)
   - [E. frontend - Sass](#e-frontend---sass)
     - [CSS](#css)
       - [Grid](#grid)
@@ -1092,21 +1098,24 @@ javascript framework
 
 reactjs.org
 
-### History
-#### Facebook
+
+### 1. General
+
+#### 1.1 History
+##### Facebook
 De facebook website werd te complex om met
 traditionele webdesign technieken te bouwen.
 
-#### React
+##### React
 Facebook bedacht React in 2013 om beter om te gaan
 met grote hoeveelheid data die door de app "stroomt".
 
-#### FLOW / Typescript
+##### FLOW / Typescript
 Facebook bedacht "FLOW" om een betere
 ontwikkelomgeving voor Javascript te bouwen.
 
 
-### Frontend Frameworks
+#### 1.2 Frontend Frameworks
     React
     Angular
     Vue
@@ -1117,7 +1126,7 @@ ontwikkelomgeving voor Javascript te bouwen.
     Preact
     React Native
 
-### Wanneer gebruik je react en wanneer niet?
+#### 1.3 Wanneer gebruik je react en wanneer niet?
 
 Statische Website (Onepager / Papier)
 Statische tekst en afbeeldingen
@@ -1129,11 +1138,11 @@ Web Applicatie
 - Complexe interactie
 - Veel gebruikersdata
 
-### React Native
+#### 1.4 React Native
 React native voor native (mobile) apps
 
 
-### The 3 Modern Frontend Framework Concepts
+#### 1.5 The 3 Modern Frontend Framework Concepts
 
 **Single Page Application** *< Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. >*
 
@@ -1141,27 +1150,14 @@ React native voor native (mobile) apps
 
 **Databinding** *< Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) >*
 
-### General
 
-#### Native In Web
+#### 1.6 Native In Web
 Webcomponents
 
 Modules
 
-### Components
-Een React App is opgebouwd uit geïsoleerde
-components.
 
-Een component bevat Javascript en HTML (JSX)
-
-Composition
-App HAS a shop
-Shop HAS products
-
-Inheritance (fixed structure)
-Shop EXTENDS app
-
-#### Example (pseudo code):
+#### 1.7 React Example (pseudo code):
 
 `app.js`
 ```jsx
@@ -1196,17 +1192,12 @@ Shop EXTENDS app
 
 
 
-### Directory Structure
-
-- /public || /docs
-- /src
-    - App.js
-    - index.js
-    - style.css
-- package.json
 
 
-### Flashback naar OOP in PRG04
+
+### 2. PRG04 vs PRG06
+
+#### Flashback naar OOP in PRG04
 
 ```ts
 class Car extends Vehicle {
@@ -1221,7 +1212,168 @@ class Car extends Vehicle {
 
 geen public of private > alles is private
 
-### CommonJS vs ES6 modules
+#### No DOM Manipulation
+In je React code staat geen rechtstreekse DOM manipulation meer!
+
+Oude Methode:
+
+`shop.html`
+```html
+<div>
+    <p>winkelwagen</p>
+    <div id="items">1</div>
+    <button id="button">Buy Item</button>
+</div>
+
+<script src="shop.js"></script>
+```
+
+`shop.js`
+```js
+let cart = document.querySelector("#items")
+let btn = document.querySelector("#button")
+btn.addEventListener("click", ()=>buyItem())
+
+let items = 1
+
+function buyItem(){
+    items++
+    cart.innerHTML = `Winkelwagen: ${items}`
+}
+```
+
+
+
+
+
+
+
+### 3. Setup
+
+Installeer NodeJS. Maak een project met `npm init -y` Installeer parcel. Installeer react
+
+```bash
+npm init -y
+npm install --save-dev parcel
+
+npm install react react-dom
+```
+
+#### Typescript % SASS
+Typescript
+Hernoem je .js modules naar .ts modules. Installeer type information.
+```bash
+npm install @types/react @types/react-dom --dev
+```
+
+
+Sass
+```bash
+npm install node-sass
+```
+
+#### NPM Script
+Het is handig om Parcel's development en build commandos in je package.json te plaatsen
+
+```json
+{
+    :
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    },
+    :
+}
+```
+
+Start live dev mode
+```bash
+npm run start
+```
+
+Build
+```bash
+npm run build
+```
+
+#### Directory Structure
+
+- /public || /docs
+- /src
+    - App.js
+    - index.js
+    - style.css
+- package.json
+
+
+#### React Template vanilla
+https://parceljs.org/recipes/react/
+
+<!-- todo: insert -->
+
+`index.js`
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+import { App } from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
+
+`App.js`
+```jsx
+import React from "react";
+import "./style.css";
+
+export class App extends React.Component {
+    render() {
+        return(
+            <div className="app">
+
+            </div>
+        );
+    }
+}
+```
+
+### 4. Tools
+
+#### Module Bundler
+Parcel
+rollopjs
+webpack
+Create React App
+
+#### Parcel
+Parcel: https://parceljs.org
+
+Start de live development server in watch mode. Openhttp://localhost:1234
+
+```bash
+npx parcel src/index.html
+```
+
+Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
+```bash
+parcel build src/index.html
+```
+
+#### Broswer Addon
+
+React Developer Tools
+
+
+#### Github 
+<!-- todo: (week6.1) -->
+
+##### Github Pages 
+<!-- todo: (week6.1) -->
+
+### 5. Modules
+
+#### CommonJS vs ES6 modules
 
 In NodeJS heb je met CommonJS
 modules gewerkt
@@ -1261,151 +1413,23 @@ import { App } from "./App.js"
 :
 ```
 
-### No Dom Manipulation (Old way)
-In je React code staat geen rechtstreekse DOM manipulation meer!
-
-Oude Methode:
-
-`shop.html`
-```html
-<div>
-    <p>winkelwagen</p>
-    <div id="items">1</div>
-    <button id="button">Buy Item</button>
-</div>
-
-<script src="shop.js"></script>
-```
-
-`shop.js`
-```js
-let cart = document.querySelector("#items")
-let btn = document.querySelector("#button")
-btn.addEventListener("click", ()=>buyItem())
-
-let items = 1
-
-function buyItem(){
-    items++
-    cart.innerHTML = `Winkelwagen: ${items}`
-}
-```
-
-### Module Bundler
-Parcel
-rollopjs
-webpack
-Create React App
-
-### Broswer Addon
-
-React Developer Tools
-
-### Setup
-
-Installeer NodeJS. Maak een project met `npm init -y` Installeer parcel. Installeer react
-
-```bash
-npm init -y
-npm install --save-dev parcel
-
-npm install react react-dom
-```
-
-#### Optional:
-Typescript
-Hernoem je .js modules naar .ts modules. Installeer type information.
-```bash
-npm install @types/react @types/react-dom --dev
-```
 
 
-Sass
-```bash
-npm install node-sass
-```
+### 6. Components
+Een React App is opgebouwd uit geïsoleerde
+components.
 
-### Parcel
-Parcel: https://parceljs.org
+Een component bevat Javascript en HTML (JSX)
 
-Start de live development server in watch mode. Openhttp://localhost:1234
+Composition
+App HAS a shop
+Shop HAS products
 
-```bash
-npx parcel src/index.html
-```
-
-Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
-```bash
-parcel build src/index.html
-```
-
-### NPM Script
-Het is handig om Parcel's
-development en build
-commando's in je
-package.json te plaatsen
-
-```json
-{
-    :
-    "scripts": {
-        "start": "parcel src/index.html",
-        "build": "parcel build src/index.html --dist-dir docs --public-url ./"
-    },
-    :
-}
-```
-
-Start live dev mode
-```bash
-npm run start
-```
-
-Build
-```bash
-npm run build
-```
-
-### Github 
-<!-- todo: (week6.1) -->
-
-### Github Pages 
-<!-- todo: (week6.1) -->
-
-### React Template vanilla
-https://parceljs.org/recipes/react/
-
-<!-- todo: insert -->
-
-`index.js`
-```jsx
-import React from "react";
-import ReactDOM from "react-dom";
-
-import { App } from "./App";
-
-ReactDOM.render(<App />, document.getElementById("root"))
-```
+Inheritance (fixed structure)
+Shop EXTENDS app
 
 
-`App.js`
-```jsx
-import React from "react";
-import "./style.css";
-
-export class App extends React.Component {
-    render() {
-        return(
-            <div className="app">
-
-            </div>
-        );
-    }
-}
-```
-
-
-### Databinding
+### 7. Databinding
 Een component haalt JSON data van een API.
 
 De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.
@@ -1431,7 +1455,7 @@ function render() {
 
 
 
-### State
+#### State
 Reactive data maak je aan middels een state variabele
 
 State variabelen mogen alleen door de eigenaar aangepast worden.
@@ -1471,7 +1495,7 @@ export class Product extends React.Component {
 }
 ```
 
-### Prop
+#### Prop
 Met Props kan je reactive data aan een childcomponent doorgeven. 
 
 Het child component kan props data tonen maar niet bewerken.
@@ -1518,7 +1542,7 @@ export class Shop extends React.Component {
 
 **Een component kan de waarde van zijn props niet aanpassen!**
 
-### Prop & State
+#### Prop + State
 
 ```jsx
 :
@@ -1551,7 +1575,39 @@ export class Shop extends React.Component {
 }
 ```
 
-### Map (Array)
+#### Lifting state up
+Data die in je hele app relevant is plaats je vaak in de main app.
+
+#### Data Store
+Gebruik bij complexe / nested flow (big scale, coolblue)
+
+
+### 8. Event Handlers
+Een child component kan event handlers in een parent aanroepen.
+
+Dit is de manier om de state van een parent te veranderen vanuit een child.
+
+
+
+```jsx
+export class Product extends React.Component {
+
+        :
+        render() { 
+
+            :
+            <button onClick={ Shop.doSomething() }>Button</button>
+            :
+
+        }
+}
+```
+
+
+
+### 9. Arrays
+
+#### Map (Array)
 loop over array ("foreach")
 
 ```jsx
@@ -1588,7 +1644,7 @@ export class Shop extends React.Component {
 }
 ```
 
-### Get Array length
+#### Get Array length
 ```jsx
 
     :
@@ -1598,7 +1654,7 @@ export class Shop extends React.Component {
 ```
 
 
-### Add to Array
+#### Add to Array
 
 ```jsx
 
@@ -1613,49 +1669,11 @@ export class Shop extends React.Component {
 ```
 
 
-### Event Handlers
-Een child component kan event handlers in een parent aanroepen.
-
-Dit is de manier om de state van een parent te veranderen vanuit een child.
 
 
 
-```jsx
-export class Product extends React.Component {
 
-        :
-        render() { 
-
-            :
-            <button onClick={ Shop.doSomething() }>Button</button>
-            :
-
-        }
-}
-```
-
-### Lifting state up
-Data die in je hele app relevant is plaats je vaak in de main app.
-
-### Data Store
-Gebruik bij complexe / nested flow (big scale, coolblue)
-
-### Images
-Gebruik import om images te laden.
-
-```jsx
-import logoImage from './images/logo.png';
-```
-```jsx
-<img src={ logoImage } alt="logo"/>
-```
-
-### Styling
-https://reactjs.org/docs/faq-styling.html
-
-https://parceljs.org/recipes/react/#styling
-
-### Input
+### 10. Input
 Een input element heeft een `onChange` handler nodig. Deze verandert de `inputValue` zodra iemand in het form field typt.
 
 In je overige code kan je de `inputValue` variabele gebruiken om te weten wat er is ingevuld
@@ -1681,7 +1699,9 @@ export function Pokedex() {
 }
 ```
 
-### Conditional (if)
+### 11. Conditional 
+
+#### If
 
 Je kan `&&` gebruiken om een element alleen
 te tonen als een variabele TRUE is
@@ -1710,9 +1730,9 @@ function Pokemon(props) {
 }
 ```
 
-### If Else
+#### If Else
 
-#### Class
+##### Class
 Toon een verschillende CSS style afhankelijk van of LIKED true of false is.
 
 ```jsx
@@ -1728,7 +1748,7 @@ export function Pokemon() {
 }
 ```
 
-#### Component
+##### Component
 Toon een verschillend component afhankelijk van of LOADING true of false is.
 
 ```jsx
@@ -1744,7 +1764,10 @@ export function Pokemon() {
 }
 ```
 
-### JSON laden (api fetch)
+
+### 12. API
+
+#### fetch (JSON laden)
 Gebruik `async await` of `promises.then()` syntax om JSON te laden.
 Als de JSON geladen is, kan je de state aanpassen.
 
@@ -1776,7 +1799,23 @@ export function ApiDemo() {
 ```
 
 
-### React Full Example Vanilla
+### 13. Images
+Gebruik import om images te laden.
+
+```jsx
+import logoImage from './images/logo.png';
+```
+```jsx
+<img src={ logoImage } alt="logo"/>
+```
+
+### 14. Styling
+https://reactjs.org/docs/faq-styling.html
+
+https://parceljs.org/recipes/react/#styling
+
+
+### XX. React Full Example Vanilla
 
 `index.js`
 ```js
