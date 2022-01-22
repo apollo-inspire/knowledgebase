@@ -105,6 +105,76 @@ Versie: 2021-01-22
       - [1.7 React Example (pseudo code):](#17-react-example-pseudo-code)
     - [2. PRG04 vs PRG06](#2-prg04-vs-prg06)
       - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
+    - [Functional vs OOP programming](#functional-vs-oop-programming)
+      - [No DOM Manipulation](#no-dom-manipulation)
+- [<<<<<<< HEAD](#-head)
+    - [Browser Addon](#browser-addon)
+    - [3. Setup](#3-setup)
+      - [Typescript & SASS](#typescript--sass)
+      - [NPM Script](#npm-script)
+- [Het is handig om Parcel's development en build commandos in je package.json te plaatsen](#het-is-handig-om-parcels-development-en-build-commandos-in-je-packagejson-te-plaatsen)
+    - [Parcel](#parcel)
+    - [NPM Script](#npm-script-1)
+      - [Directory Structure](#directory-structure)
+- [#### React Template vanilla](#-react-template-vanilla)
+    - [React Template vanilla Functionl](#react-template-vanilla-functionl)
+    - [React Template Object Oriented](#react-template-object-oriented)
+    - [4. Tools](#4-tools)
+      - [Module Bundler](#module-bundler)
+      - [Parcel](#parcel-1)
+      - [Broswer Addon](#broswer-addon)
+      - [Github](#github)
+        - [Github Pages](#github-pages)
+    - [5. Modules](#5-modules)
+      - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
+    - [6. Components](#6-components)
+    - [7. Databinding](#7-databinding)
+      - [State](#state)
+      - [Prop](#prop)
+      - [Prop + State](#prop--state)
+      - [Lifting state up](#lifting-state-up)
+      - [Data Store](#data-store)
+    - [8. Event Handlers](#8-event-handlers)
+    - [9. Arrays](#9-arrays)
+      - [Map (Array)](#map-array)
+      - [Get Array length](#get-array-length)
+      - [Add to Array](#add-to-array)
+    - [10. Input](#10-input)
+    - [11. Conditional](#11-conditional)
+      - [If](#if)
+      - [If Else](#if-else)
+        - [Class](#class)
+        - [Component](#component)
+    - [12. API](#12-api)
+      - [fetch (JSON laden)](#fetch-json-laden)
+    - [Components Updates (functional)](#components-updates-functional)
+      - [Effect Hook](#effect-hook)
+    - [13. Images](#13-images)
+    - [14. Styling](#14-styling)
+- [### XX. React Full Example Vanilla](#-xx-react-full-example-vanilla)
+    - [React Full Basic Example Vanilla](#react-full-basic-example-vanilla)
+  - [E. frontend - Sass](#e-frontend---sass)
+    - [CSS](#css)
+      - [Grid](#grid)
+      - [Flex](#flex)
+    - [Installing](#installing)
+      - [Installing To React](#installing-to-react)
+      - [Installing Generally NPM](#installing-generally-npm)
+  - [Links](#links)
+<<<<<<< HEAD
+    - [1. General](#1-general)
+      - [1.1 History](#11-history)
+        - [Facebook](#facebook)
+        - [React](#react)
+        - [FLOW / Typescript](#flow--typescript)
+      - [1.2 Frontend Frameworks](#12-frontend-frameworks)
+      - [1.3 Wanneer gebruik je react en wanneer niet?](#13-wanneer-gebruik-je-react-en-wanneer-niet)
+      - [1.4 React Native](#14-react-native)
+      - [1.5 The 3 Modern Frontend Framework Concepts](#15-the-3-modern-frontend-framework-concepts)
+      - [1.6 Native In Web](#16-native-in-web)
+      - [1.7 React Example (pseudo code):](#17-react-example-pseudo-code)
+    - [2. PRG04 vs PRG06](#2-prg04-vs-prg06)
+      - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
       - [No DOM Manipulation](#no-dom-manipulation)
     - [3. Setup](#3-setup)
       - [Typescript & SASS](#typescript--sass)
@@ -142,6 +212,7 @@ Versie: 2021-01-22
     - [13. Images](#13-images)
     - [14. Styling](#14-styling)
     - [XX. React Full Example Vanilla](#xx-react-full-example-vanilla)
+
   - [E. frontend - Sass](#e-frontend---sass)
     - [CSS](#css)
       - [Grid](#grid)
@@ -1210,6 +1281,26 @@ class Car extends Vehicle {
 }
 ```
 
+
+### Functional vs OOP programming
+
+
+function
+
+hooks function
+
+functions zijn kleiner
+
+
+
+class
+
+standaard
+
+uitgebreider (constructor)
+
+<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
+
 geen public of private > alles is private
 
 #### No DOM Manipulation
@@ -1243,6 +1334,10 @@ function buyItem(){
 ```
 
 
+<<<<<<< HEAD
+=======
+### Browser Addon
+>>>>>>> b5cf6671be75e4b82d908498e5529ec3552ed175
 
 
 
@@ -1272,8 +1367,27 @@ Sass
 npm install node-sass
 ```
 
+<<<<<<< HEAD
 #### NPM Script
 Het is handig om Parcel's development en build commandos in je package.json te plaatsen
+=======
+### Parcel
+Parcel: https://parceljs.org
+
+Start de live development server in watch mode. Openhttp://localhost:1234
+
+```bash
+npx parcel src/index.html
+```
+
+Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
+```bash
+parcel build src/index.html
+```
+
+### NPM Script
+Het is handig om Parcel's development en build commando's in je package.json te plaatsen
+>>>>>>> b5cf6671be75e4b82d908498e5529ec3552ed175
 
 ```json
 {
@@ -1305,11 +1419,73 @@ npm run build
     - style.css
 - package.json
 
+<<<<<<< HEAD
 
 #### React Template vanilla
+=======
+### React Template vanilla Functionl
+>>>>>>> b5cf6671be75e4b82d908498e5529ec3552ed175
 https://parceljs.org/recipes/react/
 
 <!-- todo: insert -->
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PRG06-Frontend</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
+
+`index.js`
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+import { App } from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"))
+```
+
+
+`App.js`
+```jsx
+import React from "react";
+import "./style.css";
+
+export function App() {
+    render() {
+        return(
+            <div className="app">
+
+            </div>
+        );
+    }
+}
+```
+
+
+### React Template Object Oriented
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PRG06-Frontend</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
+```
 
 `index.js`
 ```jsx
@@ -1711,7 +1887,7 @@ te tonen als een variabele TRUE is
 
         return (
         <div>
-            <h1>{props.name}</h1>
+            <h1>{ props.name }</h1>
             { props.liked && <h2>❤</h2> }
         </div>
         );
@@ -1798,7 +1974,11 @@ export function ApiDemo() {
 }
 ```
 
+### Components Updates (functional)
 
+#### Effect Hook
+
+<<<<<<< HEAD
 ### 13. Images
 Gebruik import om images te laden.
 
@@ -1816,6 +1996,11 @@ https://parceljs.org/recipes/react/#styling
 
 
 ### XX. React Full Example Vanilla
+=======
+https://reactjs.org/docs/hooks-effect.html
+
+### React Full Basic Example Vanilla
+>>>>>>> b5cf6671be75e4b82d908498e5529ec3552ed175
 
 `index.js`
 ```js
@@ -1890,6 +2075,8 @@ export class Shop extends React.Component {
     padding: 20px
 }
 ```
+
+
 
 
 
