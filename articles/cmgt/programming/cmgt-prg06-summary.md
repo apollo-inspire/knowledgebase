@@ -1,5 +1,5 @@
 ---
-title: 'frontend'
+title: 'prg06 fullstack webdev'
 slug: 'cmgt-prg06-summary'
 created: '2021-11-10'
 published: '2021-00-00'
@@ -7,12 +7,12 @@ modified: '2021-01-22'
 author: 'Lucas van der Vegt'
 class: 'Programmeren 6'
 class-slug: 'PRG06'
-teacher: ''
+teacher: ['Bas', 'Erik']
 modifiedby: ['', '']
-knowledgebase: 'https://luukftf.github.io/knowledgebase'
-link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
-lang: 'en'
-tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 'api', 'node.js']
+knowledgebase_link: 'https://luukftf.github.io/knowledgebase'
+self_link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
+lang: 'nl'
+tags: ['fullstack', 'frontend', 'mongodb', 'react', 'javascript', 'typescript', 'backend', 'api', 'nodejs', 'linux', 'vps']
 ---
 
 
