@@ -107,7 +107,7 @@ Versie: 2021-01-22
       - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
       - [No DOM Manipulation](#no-dom-manipulation)
     - [3. Setup](#3-setup)
-      - [Typescript % SASS](#typescript--sass)
+      - [Typescript & SASS](#typescript--sass)
       - [NPM Script](#npm-script)
       - [Directory Structure](#directory-structure)
       - [React Template vanilla](#react-template-vanilla)
@@ -1259,7 +1259,7 @@ npm install --save-dev parcel
 npm install react react-dom
 ```
 
-#### Typescript % SASS
+#### Typescript & SASS
 Typescript
 Hernoem je .js modules naar .ts modules. Installeer type information.
 ```bash
