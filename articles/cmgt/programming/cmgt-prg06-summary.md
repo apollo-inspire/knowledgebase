@@ -68,19 +68,20 @@ Versie: 2021-01-22
         - [3XX recoverable error](#3xx-recoverable-error)
         - [4XX client error](#4xx-client-error)
         - [5XX server error](#5xx-server-error)
-      - [CORS headers](#cors-headers)
-        - [Preflight Request](#preflight-request)
-        - [General](#general)
-        - [Options](#options)
     - [RESTfull API](#restfull-api)
+      - [Restfull Contstraints](#restfull-contstraints)
     - [API Documentation](#api-documentation)
-    - [HATEOAS (Linking)](#hateoas-linking)
+    - [Linking (HATEOAS)](#linking-hateoas)
       - [HAL](#hal)
         - [link relation types](#link-relation-types)
     - [Pagination](#pagination)
     - [Response Categories](#response-categories)
     - [Type RESTFULL Resources](#type-restfull-resources)
     - [Queries](#queries)
+      - [CORS headers](#cors-headers)
+        - [General](#general)
+        - [Preflight Request](#preflight-request)
+        - [Options](#options)
     - [Json Web Token](#json-web-token)
     - [OAuth](#oauth)
       - [OAuth 2.0](#oauth-20)
@@ -171,6 +172,8 @@ Versie: 2021-01-22
 ---
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
+**Fullstack** *< server (webserver), back-end (logica en data) en front-end (HTML/JavaScript, de user interactie) >*
 
 ## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
@@ -404,6 +407,7 @@ https://www.youtube.com/watch?v=-MTSQjw5DrM
 
 **Safe Method** *< Deze method veranderd niks op de server >*
 
+**Internet** *< een netwerk van netwerken >*
 
 ### HTTP
 Hypertext Transfer Protocol
@@ -413,7 +417,6 @@ Uniform Interface
 stateless
 
 Cacheable
-
 
 #### Software
 
@@ -447,14 +450,14 @@ VScode extension: REST Client
 *< Uniform Resource Identifier >*
 https://www.slideshare.net/landlessness/teach-a-dog-to-rest
 
-```
-```
+```http
 protocol://userinfo@subdomain.domain.tld:port/path?query#fragment
-
-
 ```
-https://api.com/v2/comet
 
+
+
+```http
+https://api.com/v2/comet
 ```
 network_location/resource
 
@@ -632,26 +635,6 @@ HTTP Errors
 501 - Not Implemented
 503 - Service Unavailable
 
-#### CORS headers
-
-Geen acces control voor "normale", cross origin browser requests:
-- GET of POST
-- Geen bijzondere headers (zoals Authentication)
-- Geen custom headers (zoals x-requested-with)
-- Geen custom header values (zoals Accept: application/json)
-- Content-type van request één van
-- application/x-www-form-urlencoded
-- multipart/form-data
-- text/plain
-
-##### Preflight Request
-
-##### General
-vb.
-res.header("Acces-Control-Allow-Origin", "*");
-res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-
-##### Options
 
 
 ### RESTfull API
@@ -660,13 +643,21 @@ res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Typ
 
 JSON
 
+#### Restfull Contstraints
+
+1. Client gescheiden van server *< cliënt weet niks van de interne server werking en andersom >*
+2. Stateless *< Server houdt niks bij van de state van de cliënt bijv. inloggegevens >*
+3. Cacheable *< Instellen wat wel/niet moet worden gecached om bandbreedte te besparen >*
+4. Uniforme interface *< Een vaste manier waarop de communicatie verloopt >*
+
+
 ### API Documentation
 OpenAPI Specification
 https://swagger.io/specification/
 
 Postman
 
-### HATEOAS (Linking)
+### Linking (HATEOAS)
 *< Hypermedia as the Engine of Application State >*
 https://en.wikipedia.org/wiki/HATEOAS
 
@@ -967,6 +958,29 @@ GET, PUT/PATCH, DELETE, OPTIONS
 Filter
 
 /pokemon?type=fire
+
+#### CORS headers
+
+Geen acces control voor "normale", cross origin browser requests:
+- GET of POST
+- Geen bijzondere headers (zoals Authentication)
+- Geen custom headers (zoals x-requested-with)
+- Geen custom header values (zoals Accept: application/json)
+- Content-type van request één van
+- application/x-www-form-urlencoded
+- multipart/form-data
+- text/plain
+
+
+##### General
+vb.
+res.header("Acces-Control-Allow-Origin", "*");
+res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+##### Preflight Request
+
+##### Options
+
 
 ### Json Web Token
 Base64

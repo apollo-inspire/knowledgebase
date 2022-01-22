@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/programming/cmgt-prg06-summary.html",
-          "hash": "ANGW/7vlwPRrxpB3t/PIGA=="
+          "hash": "5A2UU7Ck4IVuLCV3lGbqNA=="
         }
       },
       "is_incremental": false,
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-doelgroep.html",
-          "hash": "KSdpyAs29xob6vkEgf9oZw=="
+          "hash": "7P51vjZ8vLEZNvl3yv68+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -301,6 +301,18 @@
         }
       },
       "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-spelenmettaal.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cmgt/speedcourses/cmgt-speedcourse-spelenmettaal.html",
+          "hash": "3rNGMELBpF0koGIhyNC2QQ=="
+        }
+      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -459,6 +471,18 @@
           "hash": "wTmF5Y23X/8yT9DecRNIdA=="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/development/markdown.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/development/markdown.html",
+          "hash": "qCr6yvy6Cqrt1QXINpnLOQ=="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -540,14 +564,14 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/hr/electives/shortfilm/hr-minidocu-theory.md",
+      "source_relative_path": "articles/hr/electives/shortfilm/hr-shortfilm-theory.md",
       "output": {
         ".html": {
-          "relative_path": "articles/hr/electives/shortfilm/hr-minidocu-theory.html",
-          "hash": "JSIdcAdBWMEejLjUygq7DQ=="
+          "relative_path": "articles/hr/electives/shortfilm/hr-shortfilm-theory.html",
+          "hash": "VsSGfjYFP9CYFUIH5a/2jA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -641,8 +665,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 48,
-          "skipped_file_count": 46
+          "total_file_count": 50,
+          "skipped_file_count": 45
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

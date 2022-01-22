@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>frontend | Opensource Knowledgebase </title>
+    <title>prg06 fullstack webdev | Opensource Knowledgebase </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="frontend | Opensource Knowledgebase ">
+    <meta name="title" content="prg06 fullstack webdev | Opensource Knowledgebase ">
     <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -69,6 +69,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="programmeren-6-fullstack-webdevelopment-react--nodejs">Programmeren 6: Fullstack Webdevelopment (React &amp; Node.js)</h1>
 
+<p>Versie: 2021-01-22</p>
 <p><em>Knowledgebase: <a href="https://luukftf.github.io/knowledgebase">https://luukftf.github.io/knowledgebase</a></em><br>
 <em>(code: <a href="https://github.com/LuukFTF/knowledgebase">https://github.com/LuukFTF/knowledgebase</a>)</em><br>
 <em>By: Lucas van der Vegt</em></p>
@@ -100,6 +101,7 @@
 <li><a href="#middleware">Middleware</a></li>
 <li><a href="#models">Models</a></li>
 <li><a href="#checker">Checker</a></li>
+<li><a href="#cors">CORS</a></li>
 </ul>
 </li>
 <li><a href="#b-http-restfull-api--oauth">B. HTTP, RESTfull API &amp; OAuth</a>
@@ -131,17 +133,15 @@
 <li><a href="#5xx-server-error">5XX server error</a></li>
 </ul>
 </li>
-<li><a href="#cors-headers">CORS headers</a>
+</ul>
+</li>
+<li><a href="#restfull-api">RESTfull API</a>
 <ul>
-<li><a href="#general">General</a></li>
-<li><a href="#options">Options</a></li>
+<li><a href="#restfull-contstraints">Restfull Contstraints</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#restfull-api">RESTfull API</a></li>
 <li><a href="#api-documentation">API Documentation</a></li>
-<li><a href="#hateoas-linking">HATEOAS (Linking)</a>
+<li><a href="#linking-hateoas">Linking (HATEOAS)</a>
 <ul>
 <li><a href="#hal">HAL</a>
 <ul>
@@ -153,26 +153,175 @@
 <li><a href="#pagination">Pagination</a></li>
 <li><a href="#response-categories">Response Categories</a></li>
 <li><a href="#type-restfull-resources">Type RESTFULL Resources</a></li>
-<li><a href="#queries">Queries</a></li>
-<li><a href="#oauth">OAuth</a></li>
+<li><a href="#queries">Queries</a>
+<ul>
+<li><a href="#cors-headers">CORS headers</a>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#preflight-request">Preflight Request</a></li>
+<li><a href="#options">Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#json-web-token">Json Web Token</a></li>
+<li><a href="#oauth">OAuth</a>
+<ul>
+<li><a href="#oauth-20">OAuth 2.0</a>
+<ul>
+<li><a href="#grant-types">Grant Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#documentatie">Documentatie</a></li>
+<li><a href="#versiebeheer">Versiebeheer</a></li>
 </ul>
 </li>
 <li><a href="#c-operations---vps--linux">C. operations - VPS &amp; Linux</a>
 <ul>
-<li><a href="#virtual-private-server-vps">Virtual Private Server (VPS)</a></li>
+<li><a href="#virtual-private-server-vps">Virtual Private Server (VPS)</a>
+<ul>
+<li><a href="#http-en-https-samen">HTTP en HTTPS samen</a></li>
+</ul>
+</li>
 <li><a href="#basic-networking--vps-commands">Basic Networking / VPS commands</a></li>
 <li><a href="#linux">Linux</a>
 <ul>
 <li><a href="#basic-bash-commands">Basic BASH commands</a></li>
 <li><a href="#installing-backend-mern">Installing Backend MERN</a></li>
+<li><a href="#screen">Screen</a></li>
 <li><a href="#installing-frontend-mern">Installing Frontend MERN</a></li>
 <li><a href="#file-rights">File Rights</a></li>
+<li><a href="#directories">Directories</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#d-frontend---react">D. frontend - React</a></li>
-<li><a href="#e-frontend---sass">E. frontend - Sass</a></li>
+<li><a href="#d-frontend---react">D. frontend - React</a>
+<ul>
+<li><a href="#1-general">1. General</a>
+<ul>
+<li><a href="#11-history">1.1 History</a>
+<ul>
+<li><a href="#facebook">Facebook</a></li>
+<li><a href="#react">React</a></li>
+<li><a href="#flow--typescript">FLOW / Typescript</a></li>
+</ul>
+</li>
+<li><a href="#12-frontend-frameworks">1.2 Frontend Frameworks</a></li>
+<li><a href="#13-wanneer-gebruik-je-react-en-wanneer-niet">1.3 Wanneer gebruik je react en wanneer niet?</a></li>
+<li><a href="#14-react-native">1.4 React Native</a></li>
+<li><a href="#15-the-3-modern-frontend-framework-concepts">1.5 The 3 Modern Frontend Framework Concepts</a></li>
+<li><a href="#16-native-in-web">1.6 Native In Web</a></li>
+<li><a href="#17-react-example-pseudo-code">1.7 React Example (pseudo code):</a></li>
+</ul>
+</li>
+<li><a href="#2-prg04-vs-prg06">2. PRG04 vs PRG06</a>
+<ul>
+<li><a href="#flashback-naar-oop-in-prg04">Flashback naar OOP in PRG04</a></li>
+<li><a href="#no-dom-manipulation">No DOM Manipulation</a></li>
+<li><a href="#functional-vs-oop-programming">Functional vs OOP programming</a></li>
+</ul>
+</li>
+<li><a href="#3-setup">3. Setup</a>
+<ul>
+<li><a href="#typescript--sass">Typescript &amp; SASS</a></li>
+<li><a href="#directory-structure">Directory Structure</a></li>
+<li><a href="#npm-script">NPM Script</a></li>
+<li><a href="#packagejson">Package.json</a></li>
+<li><a href="#github">Github</a>
+<ul>
+<li><a href="#gitignore">Gitignore</a></li>
+<li><a href="#github-pages">Github Pages</a></li>
+</ul>
+</li>
+<li><a href="#templates">Templates</a>
+<ul>
+<li><a href="#react-template-vanilla-functionl">React Template vanilla Functionl</a></li>
+<li><a href="#react-template-vanilla-object-oriented">React Template vanilla Object Oriented</a></li>
+<li><a href="#strictmode">Strictmode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#4-tools">4. Tools</a>
+<ul>
+<li><a href="#module-bundler">Module Bundler</a></li>
+<li><a href="#parcel">Parcel</a></li>
+<li><a href="#broswer-addon">Broswer Addon</a></li>
+</ul>
+</li>
+<li><a href="#5-modules">5. Modules</a>
+<ul>
+<li><a href="#commonjs-vs-es6-modules">CommonJS vs ES6 modules</a></li>
+</ul>
+</li>
+<li><a href="#6-components">6. Components</a>
+<ul>
+<li><a href="#components-updates-functional">Components Updates (functional)</a>
+<ul>
+<li><a href="#effect-hook">Effect Hook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#7-databinding">7. Databinding</a>
+<ul>
+<li><a href="#state">State</a></li>
+<li><a href="#prop">Prop</a></li>
+<li><a href="#prop--state">Prop + State</a></li>
+<li><a href="#lifting-state-up">Lifting state up</a></li>
+<li><a href="#data-store">Data Store</a></li>
+</ul>
+</li>
+<li><a href="#8-event-handlers">8. Event Handlers</a></li>
+<li><a href="#9-arrays">9. Arrays</a>
+<ul>
+<li><a href="#map-array">Map (Array)</a></li>
+<li><a href="#get-array-length">Get Array length</a></li>
+<li><a href="#add-to-array">Add to Array</a></li>
+</ul>
+</li>
+<li><a href="#10-input">10. Input</a></li>
+<li><a href="#11-conditional">11. Conditional</a>
+<ul>
+<li><a href="#if">If</a></li>
+<li><a href="#if-else">If Else</a>
+<ul>
+<li><a href="#class">Class</a></li>
+<li><a href="#component">Component</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#12-api">12. API</a>
+<ul>
+<li><a href="#fetch-json-laden">fetch (JSON laden)</a></li>
+</ul>
+</li>
+<li><a href="#13-images">13. Images</a></li>
+<li><a href="#14-styling">14. Styling</a></li>
+<li><a href="#xx-react-full-basic-example-vanilla">XX. React Full Basic Example Vanilla</a></li>
+<li><a href="#lifecycle">Lifecycle</a></li>
+</ul>
+</li>
+<li><a href="#e-frontend---sass">E. frontend - Sass</a>
+<ul>
+<li><a href="#css">CSS</a>
+<ul>
+<li><a href="#grid">Grid</a></li>
+<li><a href="#flex">Flex</a></li>
+</ul>
+</li>
+<li><a href="#installing">Installing</a>
+<ul>
+<li><a href="#installing-to-react">Installing To React</a></li>
+<li><a href="#installing-generally-npm">Installing Generally NPM</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#links">Links</a></li>
 </ul>
 </li>
@@ -180,6 +329,7 @@
 <hr>
 <p><br><br><br><br></p>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+<p><strong>Fullstack</strong> <em>&lt; server (webserver), back-end (logica en data) en front-end (HTML/JavaScript, de user interactie) &gt;</em></p>
 <h2 id="a-backend---nodejs--express--mongodb">A. backend - Nodejs &amp; Express &amp; MongoDB</h2>
 <p><a href="https://www.youtube.com/watch?v=ENrzD9HAZK4">https://www.youtube.com/watch?v=ENrzD9HAZK4</a></p>
 <h3 id="let-vs-var">let vs var</h3>
@@ -293,6 +443,17 @@ npm install --save-dev nodemon # add nodemon dependency to project development
 
 npm i # install repo packages
 </code></pre>
+<p>update</p>
+<pre><code class="lang-bash">npm update # update all packages, respecting package versioning rules
+</code></pre>
+<p>run</p>
+<pre><code class="lang-bash">cd 'C:\Program Files\MongoDB\Server\5.1\bin\'
+mongod.exe
+
+net start mongodb
+
+npm run dev || npm start
+</code></pre>
 <h3 id="env">.ENV</h3>
 <p>init</p>
 <pre><code class="lang-js">require('dotenv').config()
@@ -317,11 +478,19 @@ PORT=3000
 Schema</p>
 <h3 id="checker">Checker</h3>
 <p><a href="http://checker.basboot.nl/">http://checker.basboot.nl/</a></p>
+<p>VPS: api
+hosted.hr: webservice.json</p>
+<h3 id="cors">CORS</h3>
+<p>Acces-Allow-Origin</p>
+<hr>
+<p><br><br><br><br></p>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="b-http-restfull-api--oauth">B. HTTP, RESTfull API &amp; OAuth</h2>
 <p><a href="https://www.youtube.com/watch?v=-MTSQjw5DrM">https://www.youtube.com/watch?v=-MTSQjw5DrM</a></p>
 <p><strong>API</strong> <em>&lt; an Application Programming Interface is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. &gt;</em></p>
 <p><strong>idempotency</strong> <em>&lt; Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application. &gt;</em></p>
 <p><strong>Safe Method</strong> <em>&lt; Deze method veranderd niks op de server &gt;</em></p>
+<p><strong>Internet</strong> <em>&lt; een netwerk van netwerken &gt;</em></p>
 <h3 id="http">HTTP</h3>
 <p>Hypertext Transfer Protocol</p>
 <p>Uniform Interface</p>
@@ -427,10 +596,9 @@ Insomnia</p>
 <h4 id="uris">URIs</h4>
 <p><em>&lt; Uniform Resource Identifier &gt;</em>
 <a href="https://www.slideshare.net/landlessness/teach-a-dog-to-rest">https://www.slideshare.net/landlessness/teach-a-dog-to-rest</a></p>
-<pre><code></code></pre>
-<p>protocol://userinfo@subdomain.domain.tld:port/path?query#fragment</p>
-<pre><code>https://api.com/v2/comet
-
+<pre><code class="lang-http">protocol://userinfo@subdomain.domain.tld:port/path?query#fragment
+</code></pre>
+<pre><code class="lang-http">https://api.com/v2/comet
 </code></pre>
 <p>network_location/resource</p>
 <p>structuur / hierarchie (pad)
@@ -574,20 +742,21 @@ HTTP Errors</p>
 <p>500 - Internal Server Error
 501 - Not Implemented
 503 - Service Unavailable</p>
-<h4 id="cors-headers">CORS headers</h4>
-<h5 id="general">General</h5>
-<p>vb.
-res.header(&quot;Acces-Control-Allow-Origin&quot;, &quot;*&quot;);
-res.header(&quot;Acces-Control-Allow-Headers&quot;, &quot;Origin, X-Requested-With, Content-Type, Accept&quot;)</p>
-<h5 id="options">Options</h5>
 <h3 id="restfull-api">RESTfull API</h3>
 <p><strong>RESTful</strong> <em>&lt; Representational State Transfer, invented by Roy Fielding in 2000 &gt;</em></p>
 <p>JSON</p>
+<h4 id="restfull-contstraints">Restfull Contstraints</h4>
+<ol>
+<li>Client gescheiden van server <em>&lt; cliënt weet niks van de interne server werking en andersom &gt;</em></li>
+<li>Stateless <em>&lt; Server houdt niks bij van de state van de cliënt bijv. inloggegevens &gt;</em></li>
+<li>Cacheable <em>&lt; Instellen wat wel/niet moet worden gecached om bandbreedte te besparen &gt;</em></li>
+<li>Uniforme interface <em>&lt; Een vaste manier waarop de communicatie verloopt &gt;</em></li>
+</ol>
 <h3 id="api-documentation">API Documentation</h3>
 <p>OpenAPI Specification
 <a href="https://swagger.io/specification/">https://swagger.io/specification/</a></p>
 <p>Postman</p>
-<h3 id="hateoas-linking">HATEOAS (Linking)</h3>
+<h3 id="linking-hateoas">Linking (HATEOAS)</h3>
 <p><em>&lt; Hypermedia as the Engine of Application State &gt;</em>
 <a href="https://en.wikipedia.org/wiki/HATEOAS">https://en.wikipedia.org/wiki/HATEOAS</a></p>
 <h4 id="hal">HAL</h4>
@@ -840,9 +1009,80 @@ GET, PUT/PATCH, DELETE, OPTIONS
 <h3 id="queries">Queries</h3>
 <p>Filter</p>
 <p>/pokemon?type=fire</p>
+<h4 id="cors-headers">CORS headers</h4>
+<p>Geen acces control voor &quot;normale&quot;, cross origin browser requests:</p>
+<ul>
+<li>GET of POST</li>
+<li>Geen bijzondere headers (zoals Authentication)</li>
+<li>Geen custom headers (zoals x-requested-with)</li>
+<li>Geen custom header values (zoals Accept: application/json)</li>
+<li>Content-type van request één van</li>
+<li>application/x-www-form-urlencoded</li>
+<li>multipart/form-data</li>
+<li>text/plain</li>
+</ul>
+<h5 id="general">General</h5>
+<p>vb.
+res.header(&quot;Acces-Control-Allow-Origin&quot;, &quot;*&quot;);
+res.header(&quot;Acces-Control-Allow-Headers&quot;, &quot;Origin, X-Requested-With, Content-Type, Accept&quot;)</p>
+<h5 id="preflight-request">Preflight Request</h5>
+<h5 id="options">Options</h5>
+<h3 id="json-web-token">Json Web Token</h3>
+<p>Base64</p>
 <h3 id="oauth">OAuth</h3>
+<p>Toegang tot de gegevens, maar niet tot het wachtwoord
+Gebruiker logt in bij andere partij, en geeft een applicatie toegang
+Gebruiker kan toegang te allen tijde intrekken</p>
+<h4 id="oauth-20">OAuth 2.0</h4>
+<p><strong>Resource owner</strong>
+dat is de gebruiker
+<strong>Client</strong>
+dat is je applicatie
+<strong>Resource server</strong>
+die heeft de resource gegevens (twitter, facebook,...)
+<strong>Authorization server</strong>
+die beheert OAuth voor de resource (twitter, facebook,...)</p>
+<h5 id="grant-types">Grant Types</h5>
+<ul>
+<li>Authorization code (back-end)</li>
+<li>Implicit (deels front-end)</li>
+<li>Client credential (app is resource owner)</li>
+<li>Resource owner password credential</li>
+</ul>
+<p><a href="https://www.c-sharpcorner.com/article/understanding-workflow-of-oauth2-0-authorization-grant-types/">https://www.c-sharpcorner.com/article/understanding-workflow-of-oauth2-0-authorization-grant-types/</a></p>
+<h3 id="documentatie">Documentatie</h3>
+<ul>
+<li>Resources
+<ul>
+<li>Beschrijving van de resource</li>
+<li>URI</li>
+<li>Volledige beschrijving van alle velden</li>
+</ul>
+</li>
+<li>Representatie-formaten (xml, json)</li>
+<li>Welke methoden (PUT, POST etc.)
+<ul>
+<li>Welke filters zijn mogelijk (?)</li>
+<li>Bij POST: beschrijf ook de resource die je stuurt</li>
+<li>Welke headers (request en response)</li>
+<li>Welke statusmeldingen, en wat betekenen ze</li>
+<li>Is authenticatie nodig?
+<ul>
+<li>Beschrijf hoe er geauthenticeerd kan worden</li>
+<li>Hoe kan je credentials krijgen</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="versiebeheer">Versiebeheer</h3>
+<hr>
+<p><br><br><br><br></p>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="c-operations---vps--linux">C. operations - VPS &amp; Linux</h2>
 <h3 id="virtual-private-server-vps">Virtual Private Server (VPS)</h3>
+<h4 id="http-en-https-samen">HTTP en HTTPS samen</h4>
+<p>kan niet</p>
 <h3 id="basic-networking--vps-commands">Basic Networking / VPS commands</h3>
 <pre><code class="lang-bash">ssh username@ip
 </code></pre>
@@ -853,25 +1093,36 @@ GET, PUT/PATCH, DELETE, OPTIONS
 mkdir [dir] # Make directory
 cd [dir] # Change directory to dir
 cd .. # Go up a directory
+cd / # go to root dir
+cd ~ # go to home dir
+cd - # go to previous dir
 ls # List files
+df -h # show disks
+du -h # show disk usage for a dir
 -a # Show all (including hidden)
 -t # Sort by last modified
 -S # Sort by file size
-cp [dir/name] [newdir/name] # copy
-mv [dir/name] [newdir/name]# move
-rm [dir/name] # remove
+cp [dir || file] [new dir || file] # copy
+mv [dir || file] [new dir || file] # move
+rm [dir || file] # remove
 touch [name] # new file
 
+
+top # show live processes
 ps # process snapshot
 kill [pid] # kill process
 uptime # Show uptime
 uname -a # Show system and kernel
 whoami # Show your username
-help / man # manuals and information
+[tool] -v # show if tool is installen and which version
+[tool] help || -h || --help || man # manuals and information
+whereis || where [tool] # find location of installed tool
 clear # clear screen
+
 
 CTRL-C # Stop dcurrent running command
 </code></pre>
+<p>?how to clean cache &amp; logs</p>
 <h4 id="installing-backend-mern">Installing Backend MERN</h4>
 <p>installing software (linux)</p>
 <pre><code class="lang-bash">sudo apt update # update apt packages
@@ -905,6 +1156,13 @@ sudo ufw status # check firewall status
 
 sudo nano /etc/mongodb.conf # edit mongodb config
 </code></pre>
+<h4 id="screen">Screen</h4>
+<pre><code class="lang-bash">sudo apt install screen
+
+screen
+screen -r
+</code></pre>
+<p><code>ctrl+a d</code></p>
 <h4 id="installing-frontend-mern">Installing Frontend MERN</h4>
 <h4 id="file-rights">File Rights</h4>
 <p><a href="https://www.linux.com/training-tutorials/understanding-linux-file-permissions/">https://www.linux.com/training-tutorials/understanding-linux-file-permissions/</a></p>
@@ -927,16 +1185,772 @@ x: execute</p>
 <code>chmod</code>
 change owner
 <code>chown</code></p>
+<h4 id="directories">Directories</h4>
+<p>var/www/</p>
+<hr>
+<p><br><br><br><br></p>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="d-frontend---react">D. frontend - React</h2>
+<p>javascript framework</p>
+<p>reactjs.org</p>
+<h3 id="1-general">1. General</h3>
+<h4 id="11-history">1.1 History</h4>
+<h5 id="facebook">Facebook</h5>
+<p>De facebook website werd te complex om met
+traditionele webdesign technieken te bouwen.</p>
+<h5 id="react">React</h5>
+<p>Facebook bedacht React in 2013 om beter om te gaan
+met grote hoeveelheid data die door de app &quot;stroomt&quot;.</p>
+<h5 id="flow--typescript">FLOW / Typescript</h5>
+<p>Facebook bedacht &quot;FLOW&quot; om een betere
+ontwikkelomgeving voor Javascript te bouwen.</p>
+<h4 id="12-frontend-frameworks">1.2 Frontend Frameworks</h4>
+<pre><code>React
+Angular
+Vue
+
+Svelte
+Gatsby (CMS)
+Stencil
+Preact
+React Native
+</code></pre>
+<h4 id="13-wanneer-gebruik-je-react-en-wanneer-niet">1.3 Wanneer gebruik je react en wanneer niet?</h4>
+<p>Statische Website (Onepager / Papier)
+Statische tekst en afbeeldingen
+in een html pagina.
+(Geen react nodig)</p>
+<p>Web Applicatie</p>
+<ul>
+<li>Complexe logica</li>
+<li>Complexe interactie</li>
+<li>Veel gebruikersdata</li>
+</ul>
+<h4 id="14-react-native">1.4 React Native</h4>
+<p>React native voor native (mobile) apps</p>
+<h4 id="15-the-3-modern-frontend-framework-concepts">1.5 The 3 Modern Frontend Framework Concepts</h4>
+<p><strong>Single Page Application</strong> <em>&lt; Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. &gt;</em></p>
+<p><strong>Components</strong> <em>&lt; Geïsoleerde componenten &gt;</em></p>
+<p><strong>Databinding</strong> <em>&lt; Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) &gt;</em></p>
+<h4 id="16-native-in-web">1.6 Native In Web</h4>
+<p>Webcomponents</p>
+<p>Modules</p>
+<h4 id="17-react-example-pseudo-code">1.7 React Example (pseudo code):</h4>
+<p><code>app.js</code></p>
+<pre><code class="lang-jsx">&lt;body&gt;
+    &lt;Navigation /&gt;
+    &lt;Shop /&gt;
+&lt;body/&gt;
+</code></pre>
+<p><code>Navigation.js</code></p>
+<pre><code class="lang-jsx">&lt;div&gt;
+    &lt;button&gt;home&lt;/button&gt;
+    &lt;button&gt;about us&lt;/button&gt;
+    &lt;button&gt;shop&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<p><code>shop.js</code></p>
+<pre><code>&lt;div&gt;
+    &lt;Product /&gt;
+    &lt;Product /&gt;
+    &lt;Product /&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="2-prg04-vs-prg06">2. PRG04 vs PRG06</h3>
+<h4 id="flashback-naar-oop-in-prg04">Flashback naar OOP in PRG04</h4>
+<pre><code class="lang-ts">class Car extends Vehicle {
+    constructor() {
+        super()
+    }
+    public drive() {
+        console.log(&quot;Vrooom&quot;)
+    }
+}
+</code></pre>
+<h4 id="no-dom-manipulation">No DOM Manipulation</h4>
+<p>In je React code staat geen rechtstreekse DOM manipulation meer!</p>
+<p>Oude Methode:</p>
+<p><code>shop.html</code></p>
+<pre><code class="lang-html">&lt;div&gt;
+    &lt;p&gt;winkelwagen&lt;/p&gt;
+    &lt;div id=&quot;items&quot;&gt;1&lt;/div&gt;
+    &lt;button id=&quot;button&quot;&gt;Buy Item&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;shop.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p><code>shop.js</code></p>
+<pre><code class="lang-js">let cart = document.querySelector(&quot;#items&quot;)
+let btn = document.querySelector(&quot;#button&quot;)
+btn.addEventListener(&quot;click&quot;, ()=&gt;buyItem())
+
+let items = 1
+
+function buyItem(){
+    items++
+    cart.innerHTML = `Winkelwagen: ${items}`
+}
+</code></pre>
+<h4 id="functional-vs-oop-programming">Functional vs OOP programming</h4>
+<p>function</p>
+<p>hooks function</p>
+<p>functions zijn kleiner</p>
+<p>class</p>
+<p>standaard</p>
+<p>uitgebreider (constructor)</p>
+<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
+<p>geen public of private &gt; alles is private</p>
+<h3 id="3-setup">3. Setup</h3>
+<p>Installeer NodeJS. Maak een project met <code>npm init -y</code> Installeer parcel. Installeer react</p>
+<pre><code class="lang-bash">npm init -y
+npm install --save-dev parcel
+
+npm install react react-dom
+</code></pre>
+<h4 id="typescript--sass">Typescript &amp; SASS</h4>
+<p>Typescript
+Hernoem je .js modules naar .ts modules. Installeer type information.</p>
+<pre><code class="lang-bash">npm install @types/react @types/react-dom --dev
+</code></pre>
+<p>Sass</p>
+<pre><code class="lang-bash">npm install node-sass
+</code></pre>
+<h4 id="directory-structure">Directory Structure</h4>
+<ul>
+<li>/public || /docs</li>
+<li>/src
+<ul>
+<li>App.js</li>
+<li>index.js</li>
+<li>style.css</li>
+</ul>
+</li>
+<li>/node_modules [GITIGNORE]</li>
+<li>package.json</li>
+</ul>
+<h4 id="npm-script">NPM Script</h4>
+<p>Het is handig om Parcel's development en build commandos in je package.json te plaatsen</p>
+<pre><code class="lang-json">{
+    :
+    &quot;scripts&quot;: {
+        &quot;start&quot;: &quot;parcel src/index.html&quot;,
+        &quot;build&quot;: &quot;parcel build src/index.html --dist-dir docs --public-url ./&quot;
+    },
+    :
+}
+</code></pre>
+<p>Start live dev mode</p>
+<pre><code class="lang-bash">npm run start
+</code></pre>
+<p>Build</p>
+<pre><code class="lang-bash">npm run build
+</code></pre>
+<h4 id="packagejson">Package.json</h4>
+<p>package.json bevat informatie over alle libraries die je gebruikt.
+Deze libraries staan in de <code>node_modules</code> map.</p>
+<p><code>package.json</code></p>
+<pre><code class="lang-json">{
+    &quot;name&quot;: &quot;react app&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;description&quot;: &quot;&quot;,
+    &quot;scripts&quot;: {
+        &quot;start&quot;: &quot;parcel src/index.html&quot;,
+        &quot;build&quot;: &quot;parcel build src/index.html --dist-dir docs --public-url ./&quot;
+    },
+    &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;git+https://github.com/...&quot;
+    },
+    &quot;keywords&quot;: [],
+    &quot;author&quot;: &quot;&quot;,
+    &quot;license&quot;: &quot;ISC&quot;,
+    &quot;bugs&quot;: {
+        &quot;url&quot;: &quot;https://github.com/LuukFTF/prg06-frontend/issues&quot;
+    },
+    &quot;devDependencies&quot;: {
+    &quot;parcel&quot;: &quot;^2.0.1&quot;
+    },
+    &quot;dependencies&quot;: {
+    &quot;react&quot;: &quot;^17.0.2&quot;,
+    &quot;react-dom&quot;: &quot;^17.0.2&quot;,
+    &quot;node-sass&quot;: &quot;^7.0.0&quot;
+    }
+}
+</code></pre>
+<h4 id="github">Github</h4>
+<h5 id="gitignore">Gitignore</h5>
+<p>Het heeft geen nut om alle libraries naar je GitHub repo te uploaden. Maak daarom een .gitignore file.</p>
+<p><code>.gitignore</code></p>
+<pre><code class="lang-config">.env
+
+node_modules
+
+.parcel-cache
+
+.DS_Store
+.vscode
+</code></pre>
+<p>Als iemand jouw GitHub repo uit checkt, kan hij/zij zelf de node_modules map aanmaken.</p>
+<pre><code class="lang-bash">npm install
+</code></pre>
+<h5 id="github-pages">Github Pages</h5>
+<!-- todo: (week6.1) -->
+<p>Verander de output map van je project naar docs via package.json</p>
+<p>Na het build commando heb je nu een docs map waarin je project staat.</p>
+<p>Je kan nu je hele project pushen naar GitHub. Activeer Github Pages en kies de main branch, docsfolder voor de live output!</p>
+<pre><code class="lang-json">    ⋮
+    &quot;start&quot;: &quot;parcel src/index.html&quot;,
+    &quot;build&quot;: &quot;parcel build src/index.html --dist-dir docs --public-url ./&quot;
+    ⋮
+</code></pre>
+<h4 id="templates">Templates</h4>
+<h5 id="react-template-vanilla-functionl">React Template vanilla Functionl</h5>
+<p><a href="https://parceljs.org/recipes/react/">https://parceljs.org/recipes/react/</a></p>
+<!-- todo: insert -->
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;PRG06-Frontend&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;module&quot; src=&quot;index.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><code>index.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+
+import { App } from &quot;./App&quot;;
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;))
+</code></pre>
+<p><code>App.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import &quot;./style.css&quot;;
+
+export function App() {
+    render() {
+        return(
+            &lt;div className=&quot;app&quot;&gt;
+
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<h5 id="react-template-vanilla-object-oriented">React Template vanilla Object Oriented</h5>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;PRG06-Frontend&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;module&quot; src=&quot;index.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><code>index.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+
+import { App } from &quot;./App&quot;;
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;))
+</code></pre>
+<p><code>App.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import &quot;./style.css&quot;;
+
+export class App extends React.Component {
+    render() {
+        return(
+            &lt;div className=&quot;app&quot;&gt;
+
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<h5 id="strictmode">Strictmode</h5>
+<!-- TODO -->
+<h3 id="4-tools">4. Tools</h3>
+<h4 id="module-bundler">Module Bundler</h4>
+<p>Parcel
+rollopjs
+webpack
+Create React App</p>
+<h4 id="parcel">Parcel</h4>
+<p>Parcel: <a href="https://parceljs.org">https://parceljs.org</a></p>
+<p>Start de live development server in watch mode. Openhttp://localhost:1234</p>
+<pre><code class="lang-bash">npx parcel src/index.html
+</code></pre>
+<p>Als je project af is maak je de final build. Open deze in localhost of upload naar je server.</p>
+<pre><code class="lang-bash">parcel build src/index.html
+</code></pre>
+<h4 id="broswer-addon">Broswer Addon</h4>
+<p>React Developer Tools</p>
+<h3 id="5-modules">5. Modules</h3>
+<h4 id="commonjs-vs-es6-modules">CommonJS vs ES6 modules</h4>
+<p>In NodeJS heb je met CommonJS
+modules gewerkt</p>
+<p>CommonJS</p>
+<pre><code class="lang-js">const express = require('express');
+const myapp = require('./app.js');
+
+:
+</code></pre>
+<p>In React (en Node 17) werk je met ES6
+modules</p>
+<p>ES6</p>
+<pre><code class="lang-js">export default function App() {
+}
+</code></pre>
+<pre><code class="lang-js">import App from &quot;./App.js&quot;
+
+:
+</code></pre>
+<p>or</p>
+<pre><code class="lang-js">export function App() {
+}
+</code></pre>
+<pre><code class="lang-js">import { App } from &quot;./App.js&quot;
+
+:
+</code></pre>
+<h3 id="6-components">6. Components</h3>
+<p>Een React App is opgebouwd uit geïsoleerde
+components.</p>
+<p>Een component bevat Javascript en HTML (JSX)</p>
+<p>Composition
+App HAS a shop
+Shop HAS products</p>
+<p>Inheritance (fixed structure)
+Shop EXTENDS app</p>
+<h4 id="components-updates-functional">Components Updates (functional)</h4>
+<h5 id="effect-hook">Effect Hook</h5>
+<p><a href="https://reactjs.org/docs/hooks-effect.html">https://reactjs.org/docs/hooks-effect.html</a></p>
+<!-- TODO: help -->
+<h3 id="7-databinding">7. Databinding</h3>
+<p>Een component haalt JSON data van een API.</p>
+<p>De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.</p>
+<p>Variabelen in een component zijn verbonden aan de view van het component. Als de variabele verandert, verandert de view automatisch mee.</p>
+<pre><code class="lang-jsx">let items = 1
+
+function buyItem(){
+    items++
+}
+
+function render() {
+    &lt;div&gt;
+        &lt;p&gt;winkelwagen&lt;/p&gt;
+        &lt;p&gt;{ items }&lt;/p&gt;
+        &lt;button onClick={ buyItem() }&gt;Buy Item&lt;/button&gt;
+    &lt;/div&gt;
+}
+</code></pre>
+<p><em>psuedocode!</em></p>
+<h4 id="state">State</h4>
+<p>Reactive data maak je aan middels een state variabele</p>
+<p>State variabelen mogen alleen door de eigenaar aangepast worden.</p>
+<pre><code class="lang-jsx">
+:
+export class Product extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            name: &quot;Canon 200D&quot;,
+            description: &quot;Een mooie canon camera&quot;,
+            price: 499
+        }
+    }
+
+    updatePrice() {
+        this.setState((oldState) =&gt; {
+            name: &quot;6D&quot;,
+            price: oldState.price + 500
+        })
+    }
+
+    render() { 
+        return(
+            &lt;div className=&quot;product&quot;&gt;
+                &lt;h1&gt;{ this.state.title }&lt;/h1&gt;
+                &lt;p&gt;{ this.state.description }&lt;/p&gt;
+                &lt;h2&gt;Price: { this.state.price }&lt;/h2&gt;
+                &lt;button onClick={ () =&gt; this.updatePrice() }&gt;Aanbieding&lt;/button&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<h4 id="prop">Prop</h4>
+<p>Met Props kan je reactive data aan een childcomponent doorgeven.</p>
+<p>Het child component kan props data tonen maar niet bewerken.</p>
+<pre><code class="lang-jsx">
+:
+export class Product extends React.Component {
+
+    :
+    render() { 
+        return(
+            &lt;div className=&quot;product&quot;&gt;
+                &lt;h1&gt;{ this.props.title }&lt;/h1&gt;
+                &lt;p&gt;{ this.props.description }&lt;/p&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<pre><code class="lang-jsx">
+:
+export class Shop extends React.Component {
+
+    :
+    render() { 
+        return(
+            &lt;div className=&quot;shop&quot;&gt;
+                :
+
+                &lt;Product name=&quot;Google Chromecast&quot;/&gt;
+                &lt;Product name=&quot;Skullcandy Crusher&quot;/&gt;
+                &lt;Product name=&quot;Duracell AA Batterijen&quot;/&gt;
+
+                :
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<p><strong>Een component kan de waarde van zijn props niet aanpassen!</strong></p>
+<h4 id="prop--state">Prop + State</h4>
+<pre><code class="lang-jsx">:
+
+export class Shop extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            products: [&quot;Canon 200D&quot;, &quot;Google Chromecast&quot;, &quot;Skullcandy Crusher&quot;, &quot;Duracell AA Batterijen&quot;]
+        }
+    }
+    :
+
+    :
+    render() { 
+        return(
+            &lt;div className=&quot;shop&quot;&gt;
+
+                :
+                &lt;Product name={ this.state.products[0] }/&gt;
+                &lt;Product name={ this.state.products[1] }/&gt;
+                &lt;Product name={ this.state.products[2] }/&gt;
+                &lt;Product name={ this.state.products[3] }/&gt;
+                :
+
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<h4 id="lifting-state-up">Lifting state up</h4>
+<p>Data die in je hele app relevant is plaats je vaak in de main app.</p>
+<h4 id="data-store">Data Store</h4>
+<p>Gebruik bij complexe / nested flow (big scale, coolblue)</p>
+<h3 id="8-event-handlers">8. Event Handlers</h3>
+<p>Een child component kan event handlers in een parent aanroepen.</p>
+<p>Dit is de manier om de state van een parent te veranderen vanuit een child.</p>
+<pre><code class="lang-jsx">export class Product extends React.Component {
+
+        :
+        render() { 
+
+            :
+            &lt;button onClick={ Shop.doSomething() }&gt;Button&lt;/button&gt;
+            :
+
+        }
+}
+</code></pre>
+<h3 id="9-arrays">9. Arrays</h3>
+<h4 id="map-array">Map (Array)</h4>
+<p>loop over array (&quot;foreach&quot;)</p>
+<pre><code class="lang-jsx">
+:
+export class Shop extends React.Component {
+    constructor {
+        super()
+
+        this.state = {
+            products: [&quot;Canon 200D&quot;, &quot;Google Chromecast&quot;, &quot;Skullcandy Crusher&quot;]
+        }
+    }
+    :
+
+    :
+    render() { 
+        const allProducts = this.state.products.map((prod, index) =&gt; (
+            &lt;Product key={ index } name={ prod }/&gt;
+        ))
+
+        return(
+            &lt;div className=&quot;shop&quot;&gt;
+    
+                :
+                &lt;div&gt;
+                    { allProducts }
+                &lt;/div&gt;
+                :
+
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<h4 id="get-array-length">Get Array length</h4>
+<pre><code class="lang-jsx">
+    :
+    &lt;h2&gt;Total Products: { this.state.products.length } &lt;/h2&gt;
+    :
+
+</code></pre>
+<h4 id="add-to-array">Add to Array</h4>
+<pre><code class="lang-jsx">
+    :
+    addProduct {
+        this.setState((oldState) =&gt; {
+            products: [...oldState.products, &quot;Duracell AA Batterijen&quot;]
+        })
+    }
+    :
+
+</code></pre>
+<h3 id="10-input">10. Input</h3>
+<p>Een input element heeft een <code>onChange</code> handler nodig. Deze verandert de <code>inputValue</code> zodra iemand in het form field typt.</p>
+<p>In je overige code kan je de <code>inputValue</code> variabele gebruiken om te weten wat er is ingevuld</p>
+<pre><code class="lang-jsx">import &quot;./styles.css&quot;;
+import { useState } from &quot;react&quot;;
+
+export function Pokedex() {
+
+    const [inputValue, setInputValue] = useState(&quot;&quot;);
+
+    const onChangeHandler = (event) =&gt; {
+        setInputValue(event.target.value);
+    };
+
+    return (
+        &lt;div className=&quot;Pokedex&quot;&gt;
+            &lt;input type=&quot;text&quot; onChange={onChangeHandler} value={inputValue} /&gt;
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+<h3 id="11-conditional">11. Conditional</h3>
+<h4 id="if">If</h4>
+<p>Je kan <code>&amp;&amp;</code> gebruiken om een element alleen
+te tonen als een variabele TRUE is</p>
+<pre><code class="lang-jsx">    function Pokemon(props) {
+
+        return (
+        &lt;div&gt;
+            &lt;h1&gt;{ props.name }&lt;/h1&gt;
+            { props.liked &amp;&amp; &lt;h2&gt;❤&lt;/h2&gt; }
+        &lt;/div&gt;
+        );
+    }
+</code></pre>
+<pre><code class="lang-jsx">function Pokemon(props) {
+
+    return (
+    &lt;div&gt;
+        &lt;h1&gt;{props.name}&lt;/h1&gt;
+        { props.likes &gt; 100 &amp;&amp; &lt;h2&gt;❤❤❤&lt;/h2&gt; }
+    &lt;/div&gt;
+    );
+}
+</code></pre>
+<h4 id="if-else">If Else</h4>
+<h5 id="class">Class</h5>
+<p>Toon een verschillende CSS style afhankelijk van of LIKED true of false is.</p>
+<pre><code class="lang-jsx">export function Pokemon() {
+
+    const [liked, setLiked] = useState(false);
+
+    return (
+        &lt;div className={ liked ? 'heart' : 'noheart' }&gt;
+            Poliwhirl
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+<h5 id="component">Component</h5>
+<p>Toon een verschillend component afhankelijk van of LOADING true of false is.</p>
+<pre><code class="lang-jsx">export function Pokemon() {
+
+    const [loading, setLoading] = useState(true);
+
+    return (
+        &lt;div&gt;
+            { loading ? &lt;Spinner /&gt; : &lt;Details /&gt; }
+        &lt;/div&gt;
+    );
+}
+</code></pre>
+<h3 id="12-api">12. API</h3>
+<h4 id="fetch-json-laden">fetch (JSON laden)</h4>
+<p>Gebruik <code>async await</code> of <code>promises.then()</code> syntax om JSON te laden.
+Als de JSON geladen is, kan je de state aanpassen.</p>
+<pre><code class="lang-jsx">:
+export function ApiDemo() {
+    const [pokemon, setPokemon] = useState([]);
+
+    const loadJson = () =&gt; {
+        fetch(&quot;https://pokeapi.co/api/v2/pokemon&quot;)
+            .then((response) =&gt; response.json())
+            .then((data) =&gt; dataWasLoaded(data))
+            .catch((error) =&gt; console.error(&quot;API fetch error&quot;))
+    }
+
+    const dataWasLoaded = (data) =&gt; {
+        console.log(data.results)
+        setPokemon(data.results)
+    }
+
+    return (
+        &lt;div className=&quot;ApiDemo&quot;&gt;
+            &lt;h4&gt;JSON Pokemon loaded: { pokemon.length}&lt;/h4&gt;
+            &lt;button onClick={ loadJson }&gt;Load JSON&lt;/button&gt;
+        &lt;/div&gt;
+    )
+}
+</code></pre>
+<h3 id="13-images">13. Images</h3>
+<p>Gebruik import om images te laden.</p>
+<pre><code class="lang-jsx">import logoImage from './images/logo.png';
+</code></pre>
+<pre><code class="lang-jsx">&lt;img src={ logoImage } alt=&quot;logo&quot;/&gt;
+</code></pre>
+<h3 id="14-styling">14. Styling</h3>
+<p><a href="https://reactjs.org/docs/faq-styling.html">https://reactjs.org/docs/faq-styling.html</a></p>
+<p><a href="https://parceljs.org/recipes/react/#styling">https://parceljs.org/recipes/react/#styling</a></p>
+<h3 id="xx-react-full-basic-example-vanilla">XX. React Full Basic Example Vanilla</h3>
+<p><a href="https://reactjs.org/docs/hooks-effect.html">https://reactjs.org/docs/hooks-effect.html</a></p>
+<p><code>index.js</code></p>
+<pre><code class="lang-js">import React from &quot;react&quot;;
+import ReactDOM from &quot;react-dom&quot;;
+
+import { App } from &quot;./App&quot;;
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById(&quot;root&quot;))
+</code></pre>
+<p><code>App.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import &quot;./style.css&quot;;
+import { Shop } from &quot;./Shop.js&quot;
+
+export class App extends React.Component {
+
+    constructor() {
+        super()
+        console.log(&quot;Created the app&quot;)
+        this.doSomethig()
+    }
+
+    doSomething() {
+        console.log(&quot;Doing something!&quot;)
+    }
+
+    render() {
+        return(
+            &lt;div className=&quot;app&quot;&gt;
+                &lt;h1&gt;Title&lt;/h1&gt;
+                &lt;p&gt;Hello World!&lt;/p&gt;
+
+                &lt;Shop /&gt;
+                &lt;Shop /&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+</code></pre>
+<p><code>Shop.js</code></p>
+<pre><code class="lang-jsx">import React from &quot;react&quot;;
+import &quot;./style.css&quot;;
+
+export class Shop extends React.Component {
+    render() { 
+        return(
+            &lt;div className=&quot;shop&quot;&gt;
+                &lt;h1&gt;SHOP&lt;/h1&gt;
+                &lt;p&gt;This is a shop&lt;/p&gt;
+
+            &lt;/div&gt;
+        );
+    }
+
+}
+</code></pre>
+<p><code>style.css</code></p>
+<pre><code class="lang-css">.body {
+    background-color: lightgrey;
+}
+
+.shop {
+    background-color: white;
+    margin: 20px;
+    padding: 20px
+}
+</code></pre>
+<h3 id="lifecycle">Lifecycle</h3>
+<hr>
+<p><br><br><br><br></p>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="e-frontend---sass">E. frontend - Sass</h2>
 <p>styleguides
 <a href="http://styleguides.io/">http://styleguides.io/</a>
 <a href="https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one">https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one</a></p>
+<h3 id="css">CSS</h3>
+<h4 id="grid">Grid</h4>
+<pre><code class="lang-css">.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+</code></pre>
+<pre><code class="lang-html">&lt;div className=&quot;shop&quot;&gt;
+    &lt;div&gt;Item&lt;/div&gt;
+    &lt;div&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="flex">Flex</h4>
+<pre><code class="lang-css">.shop {
+    display: flex;
+}
+</code></pre>
+<pre><code class="lang-html">&lt;div className=&quot;shop&quot;&gt;
+    &lt;div&gt;Item&lt;/div&gt;
+    &lt;div&gt;Item&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="installing">Installing</h3>
+<h4 id="installing-to-react">Installing To React</h4>
+<h4 id="installing-generally-npm">Installing Generally NPM</h4>
+<hr>
+<p><br><br><br><br></p>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 <h2 id="links">Links</h2>
 <p><a href="https://www.youtube.com/watch?v=fgTGADljAeg">https://www.youtube.com/watch?v=fgTGADljAeg</a></p>
 <p><code>end of file</code><br>
-<em>publish date: 0000-00-00</em><br>
-<em>modified date: 0000-00-00</em></p>
+<em>modified date: 2022-01-22</em><br>
+<em>publish date: 2022-01-22</em></p>
 <!-- LINKS -->
 </article>
           </div>
