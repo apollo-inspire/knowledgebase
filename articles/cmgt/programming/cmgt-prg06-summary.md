@@ -1176,6 +1176,16 @@ Sass
 npm install node-sass
 ```
 
+#### Directory Structure
+
+- /public || /docs
+- /src
+    - App.js
+    - index.js
+    - style.css
+- /node_modules [GITIGNORE]
+- package.json
+
 #### NPM Script
 Het is handig om Parcel's development en build commandos in je package.json te plaatsen
 
@@ -1201,16 +1211,84 @@ Build
 npm run build
 ```
 
-#### Directory Structure
+#### Package.json
+package.json bevat informatie over alle libraries die je gebruikt.
+Deze libraries staan in de `node_modules` map.
 
-- /public || /docs
-- /src
-    - App.js
-    - index.js
-    - style.css
-- package.json
+`package.json`
+```json
+{
+    "name": "react app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/..."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LuukFTF/prg06-frontend/issues"
+    },
+    "devDependencies": {
+    "parcel": "^2.0.1"
+    },
+    "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "node-sass": "^7.0.0"
+    }
+}
+```
 
-#### React Template vanilla Functionl
+#### Github 
+
+##### Gitignore
+
+Het heeft geen nut om alle libraries naar je GitHub repo te uploaden. Maak daarom een .gitignore file.
+
+`.gitignore`
+```config
+.env
+
+node_modules
+
+.parcel-cache
+
+.DS_Store
+.vscode
+```
+
+Als iemand jouw GitHub repo uit checkt, kan hij/zij zelf de node_modules map aanmaken.
+
+```bash
+npm install
+```
+
+##### Github Pages 
+<!-- todo: (week6.1) -->
+
+Verander de output map van je project naar docs via package.json
+
+Na het build commando heb je nu een docs map waarin je project staat.
+
+Je kan nu je hele project pushen naar GitHub. Activeer Github Pages en kies de main branch, docsfolder voor de live output!
+
+```json
+    ⋮
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    ⋮
+```
+
+#### Templates
+
+##### React Template vanilla Functionl
 
 https://parceljs.org/recipes/react/
 
@@ -1258,7 +1336,7 @@ export function App() {
 ```
 
 
-### React Template Object Oriented
+##### React Template vanilla Object Oriented
 
 ```html
 <!DOCTYPE html>
@@ -1301,6 +1379,9 @@ export class App extends React.Component {
 }
 ```
 
+##### Strictmode 
+<!-- TODO -->
+
 ### 4. Tools
 
 #### Module Bundler
@@ -1328,11 +1409,7 @@ parcel build src/index.html
 React Developer Tools
 
 
-#### Github 
-<!-- todo: (week6.1) -->
 
-##### Github Pages 
-<!-- todo: (week6.1) -->
 
 ### 5. Modules
 
@@ -1391,6 +1468,8 @@ Shop HAS products
 Inheritance (fixed structure)
 Shop EXTENDS app
 
+#### Effect Hook
+Components Updates (functional)
 
 ### 7. Databinding
 Een component haalt JSON data van een API.
@@ -1761,11 +1840,11 @@ export function ApiDemo() {
 }
 ```
 
-### Components Updates (functional)
 
-#### Effect Hook
 
-<<<<<<< HEAD
+
+
+
 ### 13. Images
 Gebruik import om images te laden.
 
