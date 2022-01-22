@@ -991,6 +991,8 @@ Gebruiker logt in bij andere partij, en geeft een applicatie toegang
 Gebruiker kan toegang te allen tijde intrekken
 
 #### OAuth 2.0
+De gebruiker vraagt om in te loggen bij de applicatie. Je gaat dan meteen door naar de authorisatie server en die valideert of dat mag. Als het mag ga je terug naar de gebruiker en die zet z'n gegevens neer om in te loggen. De authorisatie server kijkt dan of die gegevens correct zijn en valideert ze.  Daarna stuurt de autorisatie server een tijdelijke code naar de applicatie zodat de applicatie een access token kan aanvragen. Je gaat dan naar de resource server voor het aanvragen van de access token. Zowel de autorisatie server en de resource server moeten dan nog een keer het access token valideren. En als die klopt dan laat de applicatie de pagina zien aan de gebruiker
+
 **Resource owner**
 dat is de gebruiker
 **Client**
@@ -1142,6 +1144,8 @@ screen -r
 
 #### File Rights
 https://www.linux.com/training-tutorials/understanding-linux-file-permissions/
+
+Als je geen rechten hebt kun je met “is l’ kijken wie welke rechten heeft. Dan kun je met het command “chmod” deze rechten aanpassen. Je hebt de opties “r, w, x”. Read, Write, Excecute. Je moet dan zorgen dat je of owner wordt, of dat je alle rechten krijgt
 
 Read Write eXecute
 RWX
@@ -2144,6 +2148,8 @@ export class Shop extends React.Component {
 
 
 ### Lifecycle
+Alle statussen die je doorloopt. Deze breid je normaal uit door je classes uit te breiden en 'hook-methods' te implementeren. Daar plaats je code in waarvan je wilt dat hij op dat moment uitgevoerd wordt. 
+useEffect en useState zijn hier goede voorbeelden van. Bijvoorbeeld de functie `useEffect () => {}` hier zet je alles in waarvan je wilt dat het wordt uitgevoerd aan het begin van de pagina. Dus zodra de pagina geladen wordt.
 
 ---
 <br><br><br><br>
