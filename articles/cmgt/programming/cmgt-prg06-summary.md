@@ -69,6 +69,7 @@ Versie: 2021-01-22
         - [4XX client error](#4xx-client-error)
         - [5XX server error](#5xx-server-error)
       - [CORS headers](#cors-headers)
+        - [Preflight Request](#preflight-request)
         - [General](#general)
         - [Options](#options)
     - [RESTfull API](#restfull-api)
@@ -80,9 +81,15 @@ Versie: 2021-01-22
     - [Response Categories](#response-categories)
     - [Type RESTFULL Resources](#type-restfull-resources)
     - [Queries](#queries)
+    - [Json Web Token](#json-web-token)
     - [OAuth](#oauth)
+      - [OAuth 2.0](#oauth-20)
+        - [Grant Types](#grant-types)
+    - [Documentatie](#documentatie)
+    - [Versiebeheer](#versiebeheer)
   - [C. operations - VPS & Linux](#c-operations---vps--linux)
     - [Virtual Private Server (VPS)](#virtual-private-server-vps)
+      - [HTTP en HTTPS samen](#http-en-https-samen)
     - [Basic Networking / VPS commands](#basic-networking--vps-commands)
     - [Linux](#linux)
       - [Basic BASH commands](#basic-bash-commands)
@@ -105,8 +112,8 @@ Versie: 2021-01-22
       - [1.7 React Example (pseudo code):](#17-react-example-pseudo-code)
     - [2. PRG04 vs PRG06](#2-prg04-vs-prg06)
       - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
-    - [Functional vs OOP programming](#functional-vs-oop-programming)
       - [No DOM Manipulation](#no-dom-manipulation)
+      - [Functional vs OOP programming](#functional-vs-oop-programming)
     - [3. Setup](#3-setup)
       - [Typescript & SASS](#typescript--sass)
       - [Directory Structure](#directory-structure)
@@ -126,7 +133,8 @@ Versie: 2021-01-22
     - [5. Modules](#5-modules)
       - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
     - [6. Components](#6-components)
-      - [Effect Hook](#effect-hook)
+      - [Components Updates (functional)](#components-updates-functional)
+        - [Effect Hook](#effect-hook)
     - [7. Databinding](#7-databinding)
       - [State](#state)
       - [Prop](#prop)
@@ -149,6 +157,7 @@ Versie: 2021-01-22
     - [13. Images](#13-images)
     - [14. Styling](#14-styling)
     - [XX. React Full Basic Example Vanilla](#xx-react-full-basic-example-vanilla)
+    - [Lifecycle](#lifecycle)
   - [E. frontend - Sass](#e-frontend---sass)
     - [CSS](#css)
       - [Grid](#grid)
@@ -625,6 +634,18 @@ HTTP Errors
 
 #### CORS headers
 
+Geen acces control voor "normale", cross origin browser requests:
+- GET of POST
+- Geen bijzondere headers (zoals Authentication)
+- Geen custom headers (zoals x-requested-with)
+- Geen custom header values (zoals Accept: application/json)
+- Content-type van request één van
+- application/x-www-form-urlencoded
+- multipart/form-data
+- text/plain
+
+##### Preflight Request
+
 ##### General
 vb.
 res.header("Acces-Control-Allow-Origin", "*");
@@ -947,8 +968,49 @@ Filter
 
 /pokemon?type=fire
 
-### OAuth
+### Json Web Token
+Base64
 
+### OAuth
+Toegang tot de gegevens, maar niet tot het wachtwoord
+Gebruiker logt in bij andere partij, en geeft een applicatie toegang
+Gebruiker kan toegang te allen tijde intrekken
+
+#### OAuth 2.0
+**Resource owner**
+dat is de gebruiker
+**Client**
+dat is je applicatie
+**Resource server**
+die heeft de resource gegevens (twitter, facebook,...)
+**Authorization server**
+die beheert OAuth voor de resource (twitter, facebook,...)
+
+##### Grant Types
+- Authorization code (back-end)
+- Implicit (deels front-end)
+- Client credential (app is resource owner)
+- Resource owner password credential
+
+https://www.c-sharpcorner.com/article/understanding-workflow-of-oauth2-0-authorization-grant-types/
+
+
+### Documentatie
+- Resources
+  - Beschrijving van de resource
+  - URI
+  - Volledige beschrijving van alle velden
+- Representatie-formaten (xml, json)
+- Welke methoden (PUT, POST etc.)
+  - Welke filters zijn mogelijk (?)
+  - Bij POST: beschrijf ook de resource die je stuurt
+  - Welke headers (request en response)
+  - Welke statusmeldingen, en wat betekenen ze
+  - Is authenticatie nodig?
+    - Beschrijf hoe er geauthenticeerd kan worden
+    - Hoe kan je credentials krijgen
+
+### Versiebeheer
 
 ---
 <br><br><br><br>
@@ -957,6 +1019,9 @@ Filter
 ## C. operations - VPS & Linux
 
 ### Virtual Private Server (VPS)
+
+#### HTTP en HTTPS samen
+kan niet
 
 ### Basic Networking / VPS commands
 
@@ -1100,6 +1165,8 @@ var/www/
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
+
+
 ## D. frontend - React
 javascript framework
 
@@ -1218,27 +1285,6 @@ class Car extends Vehicle {
 ```
 
 
-### Functional vs OOP programming
-
-
-function
-
-hooks function
-
-functions zijn kleiner
-
-
-
-class
-
-standaard
-
-uitgebreider (constructor)
-
-<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
-
-geen public of private > alles is private
-
 #### No DOM Manipulation
 In je React code staat geen rechtstreekse DOM manipulation meer!
 
@@ -1269,6 +1315,26 @@ function buyItem(){
 }
 ```
 
+#### Functional vs OOP programming
+
+
+function
+
+hooks function
+
+functions zijn kleiner
+
+
+
+class
+
+standaard
+
+uitgebreider (constructor)
+
+<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
+
+geen public of private > alles is private
 
 
 ### 3. Setup
@@ -1587,8 +1653,12 @@ Shop HAS products
 Inheritance (fixed structure)
 Shop EXTENDS app
 
-#### Effect Hook
-Components Updates (functional)
+#### Components Updates (functional)
+
+##### Effect Hook
+https://reactjs.org/docs/hooks-effect.html
+
+<!-- TODO: help -->
 
 ### 7. Databinding
 Een component haalt JSON data van een API.
@@ -2059,7 +2129,7 @@ export class Shop extends React.Component {
 
 
 
-
+### Lifecycle
 
 ---
 <br><br><br><br>
@@ -2115,12 +2185,18 @@ https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
 #### Installing Generally NPM
 
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Links
 https://www.youtube.com/watch?v=fgTGADljAeg
 
+
 `end of file`  
-*publish date: 0000-00-00*  
-*modified date: 0000-00-00*  
+*modified date: 2022-01-22*  
+*publish date: 2022-01-22*  
 
 <!-- LINKS -->
 [google]: https://www.google.com  
