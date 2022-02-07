@@ -40,13 +40,13 @@ Disciplines:
 - tekst genereren
 - tekst begrijpen
 
-**Artificial Intelligence**
+**Artificial Intelligence**  
 Dumb AI
 
-**Machine Learning**
+**Machine Learning**    
 Supervised Learning
 
-**Deep Learning**
+**Deep Learning**  
 Unsupervised Learning
 
 
@@ -62,24 +62,24 @@ Welk algoritme of model past hierbij
 Data > Algoritme > Model
 
 
-**Data**
+**Data**  
 alles is data, maak er een reeks van getallen voor
 
 
-**Algoritme**
+**Algoritme**  
 De formule of library waarmee je een model maakt
 
-**Model**
+**Model**  
 Gegenereerd door algoritme dmv data
 
 
-**Classification**
+**Classification**  
 verschillende keuzes
 
-**Regression**
-een waarde
+**Regression**  
+een waarde 
 
-**White Box & Black Box**
+**White Box & Black Box**  
 Is het achteraf te begrijpen
 (Ethiek)
 
@@ -93,7 +93,7 @@ Neural Network
 Linear Regression
 
 
-**Pretrained Model**
+**Pretrained Model**  
 Al getrained model
 
 - YOLO
