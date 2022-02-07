@@ -21,9 +21,13 @@ Tensorflow JS
 voorbeelden:
 - Tesla
 - GPT3
+- Google Search
+- Youtube Recommendation
 
 Resources
 Kaggle.com
+
+Teachable Machine
 
 Waarom is ML nu populair
 - Rekenkracht
