@@ -1,26 +1,26 @@
 ---
-title: 'frontend'
+title: 'prg06 fullstack webdev'
 slug: 'cmgt-prg06-summary'
 created: '2021-11-10'
 published: '2021-00-00'
-modified: '2021-11-10'
+modified: '2021-01-22'
 author: 'Lucas van der Vegt'
 class: 'Programmeren 6'
 class-slug: 'PRG06'
-teacher: ''
+teacher: ['Bas', 'Erik']
 modifiedby: ['', '']
-knowledgebase: 'https://luukftf.github.io/knowledgebase'
-link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
-lang: 'en'
-tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript', 'backend', 'api', 'node.js']
+knowledgebase_link: 'https://luukftf.github.io/knowledgebase'
+self_link: 'https://github.com/LuukFTF/knowledgebase/blob/master/articles/cmgt/programming/cmgt-prg06-summary.md'
+lang: 'nl'
+tags: ['fullstack', 'frontend', 'mongodb', 'react', 'javascript', 'typescript', 'backend', 'api', 'nodejs', 'linux', 'vps']
 ---
 
 
 # Programmeren 6: Fullstack Webdevelopment (React & Node.js)
-
-
-*Knowledgebase: https://luukftf.github.io/knowledgebase*  
-*(code: https://github.com/LuukFTF/knowledgebase)*  
+Versie: 2021-01-22  
+ 
+*Knowledgebase: https://luukftf.github.io/knowledgebase*    
+*(code: https://github.com/LuukFTF/knowledgebase)*    
 *By: Lucas van der Vegt*
 
 ---
@@ -68,21 +68,29 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
         - [3XX recoverable error](#3xx-recoverable-error)
         - [4XX client error](#4xx-client-error)
         - [5XX server error](#5xx-server-error)
-      - [CORS headers](#cors-headers)
-        - [General](#general)
-        - [Options](#options)
     - [RESTfull API](#restfull-api)
+      - [Restfull Contstraints](#restfull-contstraints)
     - [API Documentation](#api-documentation)
-    - [HATEOAS (Linking)](#hateoas-linking)
+    - [Linking (HATEOAS)](#linking-hateoas)
       - [HAL](#hal)
         - [link relation types](#link-relation-types)
     - [Pagination](#pagination)
     - [Response Categories](#response-categories)
     - [Type RESTFULL Resources](#type-restfull-resources)
     - [Queries](#queries)
+      - [CORS headers](#cors-headers)
+        - [General](#general)
+        - [Preflight Request](#preflight-request)
+        - [Options](#options)
+    - [Json Web Token](#json-web-token)
     - [OAuth](#oauth)
+      - [OAuth 2.0](#oauth-20)
+        - [Grant Types](#grant-types)
+    - [Documentatie](#documentatie)
+    - [Versiebeheer](#versiebeheer)
   - [C. operations - VPS & Linux](#c-operations---vps--linux)
     - [Virtual Private Server (VPS)](#virtual-private-server-vps)
+      - [HTTP en HTTPS samen](#http-en-https-samen)
     - [Basic Networking / VPS commands](#basic-networking--vps-commands)
     - [Linux](#linux)
       - [Basic BASH commands](#basic-bash-commands)
@@ -92,54 +100,65 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
       - [File Rights](#file-rights)
       - [Directories](#directories)
   - [D. frontend - React](#d-frontend---react)
-    - [History](#history)
-      - [Facebook](#facebook)
-      - [React](#react)
-      - [FLOW / Typescript](#flow--typescript)
-    - [Frontend Frameworks](#frontend-frameworks)
-    - [Wanneer gebruik je react en wanneer niet?](#wanneer-gebruik-je-react-en-wanneer-niet)
-    - [React Native](#react-native)
-    - [The 3 Modern Frontend Framework Concepts](#the-3-modern-frontend-framework-concepts)
-    - [General](#general-1)
-      - [Native In Web](#native-in-web)
-    - [Components](#components)
-      - [Example (pseudo code):](#example-pseudo-code)
-    - [Directory Structure](#directory-structure)
-    - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
-    - [Functional vs OOP programming](#functional-vs-oop-programming)
-    - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
-    - [No Dom Manipulation (Old way)](#no-dom-manipulation-old-way)
-    - [Module Bundler](#module-bundler)
-    - [Browser Addon](#browser-addon)
-    - [Setup](#setup)
-      - [Optional:](#optional)
-    - [Parcel](#parcel)
-    - [NPM Script](#npm-script)
-    - [Github](#github)
-    - [Github Pages](#github-pages)
-    - [React Template vanilla Functionl](#react-template-vanilla-functionl)
-    - [React Template Object Oriented](#react-template-object-oriented)
-    - [Databinding](#databinding)
-    - [State](#state)
-    - [Prop](#prop)
-    - [Prop & State](#prop--state)
-    - [Map (Array)](#map-array)
-    - [Get Array length](#get-array-length)
-    - [Add to Array](#add-to-array)
-    - [Event Handlers](#event-handlers)
-    - [Lifting state up](#lifting-state-up)
-    - [Data Store](#data-store)
-    - [Images](#images)
-    - [Styling](#styling)
-    - [Input](#input)
-    - [Conditional (if)](#conditional-if)
-    - [If Else](#if-else)
-      - [Class](#class)
-      - [Component](#component)
-    - [JSON laden (api fetch)](#json-laden-api-fetch)
-    - [Components Updates (functional)](#components-updates-functional)
-      - [Effect Hook](#effect-hook)
-    - [React Full Basic Example Vanilla](#react-full-basic-example-vanilla)
+    - [1. General](#1-general)
+      - [1.1 History](#11-history)
+        - [Facebook](#facebook)
+        - [React](#react)
+        - [FLOW / Typescript](#flow--typescript)
+      - [1.2 Frontend Frameworks](#12-frontend-frameworks)
+      - [1.3 Wanneer gebruik je react en wanneer niet?](#13-wanneer-gebruik-je-react-en-wanneer-niet)
+      - [1.4 React Native](#14-react-native)
+      - [1.5 The 3 Modern Frontend Framework Concepts](#15-the-3-modern-frontend-framework-concepts)
+      - [1.6 Native In Web](#16-native-in-web)
+      - [1.7 React Example (pseudo code):](#17-react-example-pseudo-code)
+    - [2. PRG04 vs PRG06](#2-prg04-vs-prg06)
+      - [Flashback naar OOP in PRG04](#flashback-naar-oop-in-prg04)
+      - [No DOM Manipulation](#no-dom-manipulation)
+      - [Functional vs OOP programming](#functional-vs-oop-programming)
+    - [3. Setup](#3-setup)
+      - [Typescript & SASS](#typescript--sass)
+      - [Directory Structure](#directory-structure)
+      - [NPM Script](#npm-script)
+      - [Package.json](#packagejson)
+      - [Github](#github)
+        - [Gitignore](#gitignore)
+        - [Github Pages](#github-pages)
+      - [Templates](#templates)
+        - [React Template vanilla Functionl](#react-template-vanilla-functionl)
+        - [React Template vanilla Object Oriented](#react-template-vanilla-object-oriented)
+        - [Strictmode](#strictmode)
+    - [4. Tools](#4-tools)
+      - [Module Bundler](#module-bundler)
+      - [Parcel](#parcel)
+      - [Broswer Addon](#broswer-addon)
+    - [5. Modules](#5-modules)
+      - [CommonJS vs ES6 modules](#commonjs-vs-es6-modules)
+    - [6. Components](#6-components)
+      - [Components Updates (functional)](#components-updates-functional)
+        - [Effect Hook](#effect-hook)
+    - [7. Databinding](#7-databinding)
+      - [State](#state)
+      - [Prop](#prop)
+      - [Prop + State](#prop--state)
+      - [Lifting state up](#lifting-state-up)
+      - [Data Store](#data-store)
+    - [8. Event Handlers](#8-event-handlers)
+    - [9. Arrays](#9-arrays)
+      - [Map (Array)](#map-array)
+      - [Get Array length](#get-array-length)
+      - [Add to Array](#add-to-array)
+    - [10. Input](#10-input)
+    - [11. Conditional](#11-conditional)
+      - [If](#if)
+      - [If Else](#if-else)
+        - [Class](#class)
+        - [Component](#component)
+    - [12. API](#12-api)
+      - [fetch (JSON laden)](#fetch-json-laden)
+    - [13. Images](#13-images)
+    - [14. Styling](#14-styling)
+    - [XX. React Full Basic Example Vanilla](#xx-react-full-basic-example-vanilla)
+    - [Lifecycle](#lifecycle)
   - [E. frontend - Sass](#e-frontend---sass)
     - [CSS](#css)
       - [Grid](#grid)
@@ -153,6 +172,8 @@ tags: ['fullstack', 'frontend', 'framework', 'react', 'javascript', 'typescript'
 ---
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
+**Fullstack** *< server (webserver), back-end (logica en data) en front-end (HTML/JavaScript, de user interactie) >*
 
 ## A. backend - Nodejs & Express & MongoDB
 https://www.youtube.com/watch?v=ENrzD9HAZK4
@@ -386,6 +407,7 @@ https://www.youtube.com/watch?v=-MTSQjw5DrM
 
 **Safe Method** *< Deze method veranderd niks op de server >*
 
+**Internet** *< een netwerk van netwerken >*
 
 ### HTTP
 Hypertext Transfer Protocol
@@ -395,7 +417,6 @@ Uniform Interface
 stateless
 
 Cacheable
-
 
 #### Software
 
@@ -429,14 +450,14 @@ VScode extension: REST Client
 *< Uniform Resource Identifier >*
 https://www.slideshare.net/landlessness/teach-a-dog-to-rest
 
-```
-```
+```http
 protocol://userinfo@subdomain.domain.tld:port/path?query#fragment
-
-
 ```
-https://api.com/v2/comet
 
+
+
+```http
+https://api.com/v2/comet
 ```
 network_location/resource
 
@@ -614,14 +635,6 @@ HTTP Errors
 501 - Not Implemented
 503 - Service Unavailable
 
-#### CORS headers
-
-##### General
-vb.
-res.header("Acces-Control-Allow-Origin", "*");
-res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-
-##### Options
 
 
 ### RESTfull API
@@ -630,13 +643,21 @@ res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Typ
 
 JSON
 
+#### Restfull Contstraints
+
+1. Client gescheiden van server *< cliënt weet niks van de interne server werking en andersom >*
+2. Stateless *< Server houdt niks bij van de state van de cliënt bijv. inloggegevens >*
+3. Cacheable *< Instellen wat wel/niet moet worden gecached om bandbreedte te besparen >*
+4. Uniforme interface *< Een vaste manier waarop de communicatie verloopt >*
+
+
 ### API Documentation
 OpenAPI Specification
 https://swagger.io/specification/
 
 Postman
 
-### HATEOAS (Linking)
+### Linking (HATEOAS)
 *< Hypermedia as the Engine of Application State >*
 https://en.wikipedia.org/wiki/HATEOAS
 
@@ -938,8 +959,74 @@ Filter
 
 /pokemon?type=fire
 
-### OAuth
+#### CORS headers
 
+Geen acces control voor "normale", cross origin browser requests:
+- GET of POST
+- Geen bijzondere headers (zoals Authentication)
+- Geen custom headers (zoals x-requested-with)
+- Geen custom header values (zoals Accept: application/json)
+- Content-type van request één van
+- application/x-www-form-urlencoded
+- multipart/form-data
+- text/plain
+
+
+##### General
+vb.
+res.header("Acces-Control-Allow-Origin", "*");
+res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+##### Preflight Request
+
+##### Options
+
+
+### Json Web Token
+Base64
+
+### OAuth
+Toegang tot de gegevens, maar niet tot het wachtwoord
+Gebruiker logt in bij andere partij, en geeft een applicatie toegang
+Gebruiker kan toegang te allen tijde intrekken
+
+#### OAuth 2.0
+De gebruiker vraagt om in te loggen bij de applicatie. Je gaat dan meteen door naar de authorisatie server en die valideert of dat mag. Als het mag ga je terug naar de gebruiker en die zet z'n gegevens neer om in te loggen. De authorisatie server kijkt dan of die gegevens correct zijn en valideert ze.  Daarna stuurt de autorisatie server een tijdelijke code naar de applicatie zodat de applicatie een access token kan aanvragen. Je gaat dan naar de resource server voor het aanvragen van de access token. Zowel de autorisatie server en de resource server moeten dan nog een keer het access token valideren. En als die klopt dan laat de applicatie de pagina zien aan de gebruiker
+
+**Resource owner**
+dat is de gebruiker
+**Client**
+dat is je applicatie
+**Resource server**
+die heeft de resource gegevens (twitter, facebook,...)
+**Authorization server**
+die beheert OAuth voor de resource (twitter, facebook,...)
+
+##### Grant Types
+- Authorization code (back-end)
+- Implicit (deels front-end)
+- Client credential (app is resource owner)
+- Resource owner password credential
+
+https://www.c-sharpcorner.com/article/understanding-workflow-of-oauth2-0-authorization-grant-types/
+
+
+### Documentatie
+- Resources
+  - Beschrijving van de resource
+  - URI
+  - Volledige beschrijving van alle velden
+- Representatie-formaten (xml, json)
+- Welke methoden (PUT, POST etc.)
+  - Welke filters zijn mogelijk (?)
+  - Bij POST: beschrijf ook de resource die je stuurt
+  - Welke headers (request en response)
+  - Welke statusmeldingen, en wat betekenen ze
+  - Is authenticatie nodig?
+    - Beschrijf hoe er geauthenticeerd kan worden
+    - Hoe kan je credentials krijgen
+
+### Versiebeheer
 
 ---
 <br><br><br><br>
@@ -948,6 +1035,9 @@ Filter
 ## C. operations - VPS & Linux
 
 ### Virtual Private Server (VPS)
+
+#### HTTP en HTTPS samen
+kan niet
 
 ### Basic Networking / VPS commands
 
@@ -1055,6 +1145,8 @@ screen -r
 #### File Rights
 https://www.linux.com/training-tutorials/understanding-linux-file-permissions/
 
+Als je geen rechten hebt kun je met “is l’ kijken wie welke rechten heeft. Dan kun je met het command “chmod” deze rechten aanpassen. Je hebt de opties “r, w, x”. Read, Write, Excecute. Je moet dan zorgen dat je of owner wordt, of dat je alle rechten krijgt
+
 Read Write eXecute
 RWX
 
@@ -1091,26 +1183,31 @@ var/www/
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
+
+
 ## D. frontend - React
 javascript framework
 
 reactjs.org
 
-### History
-#### Facebook
+
+### 1. General
+
+#### 1.1 History
+##### Facebook
 De facebook website werd te complex om met
 traditionele webdesign technieken te bouwen.
 
-#### React
+##### React
 Facebook bedacht React in 2013 om beter om te gaan
 met grote hoeveelheid data die door de app "stroomt".
 
-#### FLOW / Typescript
+##### FLOW / Typescript
 Facebook bedacht "FLOW" om een betere
 ontwikkelomgeving voor Javascript te bouwen.
 
 
-### Frontend Frameworks
+#### 1.2 Frontend Frameworks
     React
     Angular
     Vue
@@ -1121,7 +1218,7 @@ ontwikkelomgeving voor Javascript te bouwen.
     Preact
     React Native
 
-### Wanneer gebruik je react en wanneer niet?
+#### 1.3 Wanneer gebruik je react en wanneer niet?
 
 Statische Website (Onepager / Papier)
 Statische tekst en afbeeldingen
@@ -1133,11 +1230,11 @@ Web Applicatie
 - Complexe interactie
 - Veel gebruikersdata
 
-### React Native
+#### 1.4 React Native
 React native voor native (mobile) apps
 
 
-### The 3 Modern Frontend Framework Concepts
+#### 1.5 The 3 Modern Frontend Framework Concepts
 
 **Single Page Application** *< Een React app bestaat uit 1 enkele HTML pagina. De pagina bevat een Javascript Applicatie, geschreven in React. >*
 
@@ -1145,27 +1242,14 @@ React native voor native (mobile) apps
 
 **Databinding** *< Data oriented, React kan automatisch de DOM updaten zodra je een variabele aanpast. (Reactive) >*
 
-### General
 
-#### Native In Web
+#### 1.6 Native In Web
 Webcomponents
 
 Modules
 
-### Components
-Een React App is opgebouwd uit geïsoleerde
-components.
 
-Een component bevat Javascript en HTML (JSX)
-
-Composition
-App HAS a shop
-Shop HAS products
-
-Inheritance (fixed structure)
-Shop EXTENDS app
-
-#### Example (pseudo code):
+#### 1.7 React Example (pseudo code):
 
 `app.js`
 ```jsx
@@ -1200,17 +1284,12 @@ Shop EXTENDS app
 
 
 
-### Directory Structure
-
-- /public || /docs
-- /src
-    - App.js
-    - index.js
-    - style.css
-- package.json
 
 
-### Flashback naar OOP in PRG04
+
+### 2. PRG04 vs PRG06
+
+#### Flashback naar OOP in PRG04
 
 ```ts
 class Car extends Vehicle {
@@ -1224,68 +1303,7 @@ class Car extends Vehicle {
 ```
 
 
-### Functional vs OOP programming
-
-
-function
-
-hooks function
-
-functions zijn kleiner
-
-
-
-class
-
-standaard
-
-uitgebreider (constructor)
-
-<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
-
-geen public of private > alles is private
-
-### CommonJS vs ES6 modules
-
-In NodeJS heb je met CommonJS
-modules gewerkt
-
-CommonJS
-```js
-const express = require('express');
-const myapp = require('./app.js');
-
-:
-```
-
-In React (en Node 17) werk je met ES6
-modules
-
-ES6
-```js
-export default function App() {
-}
-```
-
-```js
-import App from "./App.js"
-
-:
-```
-or
-
-```js
-export function App() {
-}
-```
-
-```js
-import { App } from "./App.js"
-
-:
-```
-
-### No Dom Manipulation (Old way)
+#### No DOM Manipulation
 In je React code staat geen rechtstreekse DOM manipulation meer!
 
 Oude Methode:
@@ -1315,17 +1333,29 @@ function buyItem(){
 }
 ```
 
-### Module Bundler
-Parcel
-rollopjs
-webpack
-Create React App
+#### Functional vs OOP programming
 
-### Browser Addon
 
-React Developer Tools
+function
 
-### Setup
+hooks function
+
+functions zijn kleiner
+
+
+
+class
+
+standaard
+
+uitgebreider (constructor)
+
+<!-- TODO: insert uitleg dit jaar vs vorig jaar-->
+
+geen public of private > alles is private
+
+
+### 3. Setup
 
 Installeer NodeJS. Maak een project met `npm init -y` Installeer parcel. Installeer react
 
@@ -1336,7 +1366,7 @@ npm install --save-dev parcel
 npm install react react-dom
 ```
 
-#### Optional:
+#### Typescript & SASS
 Typescript
 Hernoem je .js modules naar .ts modules. Installeer type information.
 ```bash
@@ -1349,22 +1379,19 @@ Sass
 npm install node-sass
 ```
 
-### Parcel
-Parcel: https://parceljs.org
+#### Directory Structure
 
-Start de live development server in watch mode. Openhttp://localhost:1234
+- /public || /docs
+- /src
+    - App.js
+    - index.js
+    - style.css
+- /node_modules [GITIGNORE]
+- package.json
 
-```bash
-npx parcel src/index.html
-```
+#### NPM Script
+Het is handig om Parcel's development en build commandos in je package.json te plaatsen
 
-Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
-```bash
-parcel build src/index.html
-```
-
-### NPM Script
-Het is handig om Parcel's development en build commando's in je package.json te plaatsen
 
 ```json
 {
@@ -1387,13 +1414,85 @@ Build
 npm run build
 ```
 
-### Github 
+#### Package.json
+package.json bevat informatie over alle libraries die je gebruikt.
+Deze libraries staan in de `node_modules` map.
+
+`package.json`
+```json
+{
+    "name": "react app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "parcel src/index.html",
+        "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/..."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LuukFTF/prg06-frontend/issues"
+    },
+    "devDependencies": {
+    "parcel": "^2.0.1"
+    },
+    "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "node-sass": "^7.0.0"
+    }
+}
+```
+
+#### Github 
+
+##### Gitignore
+
+Het heeft geen nut om alle libraries naar je GitHub repo te uploaden. Maak daarom een .gitignore file.
+
+`.gitignore`
+```config
+.env
+
+node_modules
+
+.parcel-cache
+
+.DS_Store
+.vscode
+```
+
+Als iemand jouw GitHub repo uit checkt, kan hij/zij zelf de node_modules map aanmaken.
+
+```bash
+npm install
+```
+
+##### Github Pages 
 <!-- todo: (week6.1) -->
 
-### Github Pages 
-<!-- todo: (week6.1) -->
+Verander de output map van je project naar docs via package.json
 
-### React Template vanilla Functionl
+Na het build commando heb je nu een docs map waarin je project staat.
+
+Je kan nu je hele project pushen naar GitHub. Activeer Github Pages en kies de main branch, docsfolder voor de live output!
+
+```json
+    ⋮
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ./"
+    ⋮
+```
+
+#### Templates
+
+##### React Template vanilla Functionl
+
 https://parceljs.org/recipes/react/
 
 <!-- todo: insert -->
@@ -1440,7 +1539,7 @@ export function App() {
 ```
 
 
-### React Template Object Oriented
+##### React Template vanilla Object Oriented
 
 ```html
 <!DOCTYPE html>
@@ -1483,8 +1582,103 @@ export class App extends React.Component {
 }
 ```
 
+##### Strictmode 
+<!-- TODO -->
 
-### Databinding
+### 4. Tools
+
+#### Module Bundler
+Parcel
+rollopjs
+webpack
+Create React App
+
+#### Parcel
+Parcel: https://parceljs.org
+
+Start de live development server in watch mode. Openhttp://localhost:1234
+
+```bash
+npx parcel src/index.html
+```
+
+Als je project af is maak je de final build. Open deze in localhost of upload naar je server.
+```bash
+parcel build src/index.html
+```
+
+#### Broswer Addon
+
+React Developer Tools
+
+
+
+
+### 5. Modules
+
+#### CommonJS vs ES6 modules
+
+In NodeJS heb je met CommonJS
+modules gewerkt
+
+CommonJS
+```js
+const express = require('express');
+const myapp = require('./app.js');
+
+:
+```
+
+In React (en Node 17) werk je met ES6
+modules
+
+ES6
+```js
+export default function App() {
+}
+```
+
+```js
+import App from "./App.js"
+
+:
+```
+or
+
+```js
+export function App() {
+}
+```
+
+```js
+import { App } from "./App.js"
+
+:
+```
+
+
+
+### 6. Components
+Een React App is opgebouwd uit geïsoleerde
+components.
+
+Een component bevat Javascript en HTML (JSX)
+
+Composition
+App HAS a shop
+Shop HAS products
+
+Inheritance (fixed structure)
+Shop EXTENDS app
+
+#### Components Updates (functional)
+
+##### Effect Hook
+https://reactjs.org/docs/hooks-effect.html
+
+<!-- TODO: help -->
+
+### 7. Databinding
 Een component haalt JSON data van een API.
 
 De HTML wordt niet herladen. Alleen de DOM elementen die de data tonen worden aangepast.
@@ -1510,7 +1704,7 @@ function render() {
 
 
 
-### State
+#### State
 Reactive data maak je aan middels een state variabele
 
 State variabelen mogen alleen door de eigenaar aangepast worden.
@@ -1550,7 +1744,7 @@ export class Product extends React.Component {
 }
 ```
 
-### Prop
+#### Prop
 Met Props kan je reactive data aan een childcomponent doorgeven. 
 
 Het child component kan props data tonen maar niet bewerken.
@@ -1597,7 +1791,7 @@ export class Shop extends React.Component {
 
 **Een component kan de waarde van zijn props niet aanpassen!**
 
-### Prop & State
+#### Prop + State
 
 ```jsx
 :
@@ -1630,7 +1824,39 @@ export class Shop extends React.Component {
 }
 ```
 
-### Map (Array)
+#### Lifting state up
+Data die in je hele app relevant is plaats je vaak in de main app.
+
+#### Data Store
+Gebruik bij complexe / nested flow (big scale, coolblue)
+
+
+### 8. Event Handlers
+Een child component kan event handlers in een parent aanroepen.
+
+Dit is de manier om de state van een parent te veranderen vanuit een child.
+
+
+
+```jsx
+export class Product extends React.Component {
+
+        :
+        render() { 
+
+            :
+            <button onClick={ Shop.doSomething() }>Button</button>
+            :
+
+        }
+}
+```
+
+
+
+### 9. Arrays
+
+#### Map (Array)
 loop over array ("foreach")
 
 ```jsx
@@ -1667,7 +1893,7 @@ export class Shop extends React.Component {
 }
 ```
 
-### Get Array length
+#### Get Array length
 ```jsx
 
     :
@@ -1677,7 +1903,7 @@ export class Shop extends React.Component {
 ```
 
 
-### Add to Array
+#### Add to Array
 
 ```jsx
 
@@ -1692,49 +1918,11 @@ export class Shop extends React.Component {
 ```
 
 
-### Event Handlers
-Een child component kan event handlers in een parent aanroepen.
-
-Dit is de manier om de state van een parent te veranderen vanuit een child.
 
 
 
-```jsx
-export class Product extends React.Component {
 
-        :
-        render() { 
-
-            :
-            <button onClick={ Shop.doSomething() }>Button</button>
-            :
-
-        }
-}
-```
-
-### Lifting state up
-Data die in je hele app relevant is plaats je vaak in de main app.
-
-### Data Store
-Gebruik bij complexe / nested flow (big scale, coolblue)
-
-### Images
-Gebruik import om images te laden.
-
-```jsx
-import logoImage from './images/logo.png';
-```
-```jsx
-<img src={ logoImage } alt="logo"/>
-```
-
-### Styling
-https://reactjs.org/docs/faq-styling.html
-
-https://parceljs.org/recipes/react/#styling
-
-### Input
+### 10. Input
 Een input element heeft een `onChange` handler nodig. Deze verandert de `inputValue` zodra iemand in het form field typt.
 
 In je overige code kan je de `inputValue` variabele gebruiken om te weten wat er is ingevuld
@@ -1760,7 +1948,9 @@ export function Pokedex() {
 }
 ```
 
-### Conditional (if)
+### 11. Conditional 
+
+#### If
 
 Je kan `&&` gebruiken om een element alleen
 te tonen als een variabele TRUE is
@@ -1789,9 +1979,9 @@ function Pokemon(props) {
 }
 ```
 
-### If Else
+#### If Else
 
-#### Class
+##### Class
 Toon een verschillende CSS style afhankelijk van of LIKED true of false is.
 
 ```jsx
@@ -1807,7 +1997,7 @@ export function Pokemon() {
 }
 ```
 
-#### Component
+##### Component
 Toon een verschillend component afhankelijk van of LOADING true of false is.
 
 ```jsx
@@ -1823,7 +2013,10 @@ export function Pokemon() {
 }
 ```
 
-### JSON laden (api fetch)
+
+### 12. API
+
+#### fetch (JSON laden)
 Gebruik `async await` of `promises.then()` syntax om JSON te laden.
 Als de JSON geladen is, kan je de state aanpassen.
 
@@ -1854,13 +2047,29 @@ export function ApiDemo() {
 }
 ```
 
-### Components Updates (functional)
 
-#### Effect Hook
 
+
+
+
+### 13. Images
+Gebruik import om images te laden.
+
+```jsx
+import logoImage from './images/logo.png';
+```
+```jsx
+<img src={ logoImage } alt="logo"/>
+```
+
+### 14. Styling
+https://reactjs.org/docs/faq-styling.html
+
+https://parceljs.org/recipes/react/#styling
+
+
+### XX. React Full Basic Example Vanilla
 https://reactjs.org/docs/hooks-effect.html
-
-### React Full Basic Example Vanilla
 
 `index.js`
 ```js
@@ -1938,7 +2147,9 @@ export class Shop extends React.Component {
 
 
 
-
+### Lifecycle
+Alle statussen die je doorloopt. Deze breid je normaal uit door je classes uit te breiden en 'hook-methods' te implementeren. Daar plaats je code in waarvan je wilt dat hij op dat moment uitgevoerd wordt. 
+useEffect en useState zijn hier goede voorbeelden van. Bijvoorbeeld de functie `useEffect () => {}` hier zet je alles in waarvan je wilt dat het wordt uitgevoerd aan het begin van de pagina. Dus zodra de pagina geladen wordt.
 
 ---
 <br><br><br><br>
@@ -1994,12 +2205,18 @@ https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
 #### Installing Generally NPM
 
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Links
 https://www.youtube.com/watch?v=fgTGADljAeg
 
+
 `end of file`  
-*publish date: 0000-00-00*  
-*modified date: 0000-00-00*  
+*modified date: 2022-01-22*  
+*publish date: 2022-01-22*  
 
 <!-- LINKS -->
 [google]: https://www.google.com  
