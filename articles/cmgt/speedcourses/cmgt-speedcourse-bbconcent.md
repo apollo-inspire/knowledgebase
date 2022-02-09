@@ -20,27 +20,27 @@ Tip: werk deze als laatste uit.
 
 Eigen een combinatie van alle onderste onderdelen
 
-Wat is mijn content: is het een product. Wat is het eigenlijk waar het om draait?
-Welk medium?
-waarom heb je gekozen voor dat medium?
+Wat is mijn content: is het een product. Wat is het eigenlijk waar het om draait?  
+Welk medium?  
+waarom heb je gekozen voor dat medium?  
 
 
 ## 2. Doelgroep 
 Specifieke doelgroep
 
-Afgebakende doelgroep
+Afgebakende doelgroep  
 
-Leeftijd
-Regio
-Beroepgroepen / Hobbys
+Leeftijd  
+Regio  
+Beroepgroepen / Hobbys  
 
-Algemene duidelijke overeenkomst in de doelgroep.
+Algemene duidelijke overeenkomst in de doelgroep.  
 
 ## 3. Visuals
-Huisstyle
-Styleguide
+Huisstyle  
+Styleguide  
 
-Blind overnemen mag niet, je mag wel inspireren van
+Blind overnemen mag niet, je mag wel inspireren van  
 
 Het mag niet jouw stylguide zijn, mits je het goed uit kan leggen en hoe het terug te zien is in de content
 
@@ -49,14 +49,14 @@ in 1 oogopslag te zien
 
 voeldoet aan de gegeven requirements
 
-taalniveau afgestemd op doelgroep
+taalniveau afgestemd op doelgroep  
 keuze tussen nederlands en engels
 
-signaalwoorden zijn belangrijk
+signaalwoorden zijn belangrijk  
 koppen witregels etc
 
 
 ## 5. Digitaal Toegankelijk
 
-digitaal toegankelijk volgens die digitoegankelijk.nl of de overheid
+digitaal toegankelijk volgens die digitoegankelijk.nl of de overheid  
 onderbouwen waarom welke gekozen 
