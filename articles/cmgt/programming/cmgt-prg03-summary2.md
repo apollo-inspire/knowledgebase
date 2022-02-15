@@ -63,15 +63,33 @@ CSS
 
 Relaties
 
+```js
+let placeholder = document.getElementById('myVariablePlaceholder');
+placeholder.innerHTML = "hier komt een php variable"
+```
+
 ### 7. JSON
+
+```js
+header("Content-Type: application/json")
+echo json_encode("test")
+```
 
 ### 8. APIs 
 Browser API
 Server API
 
 Webservices 
-Web API
+- REST
+- GraphQL
+- SOAP
 Open APIs
+Authenticated APIs 
+
+WebAPI (camera, locatie)
+
+
+
 
 
 ### 9. RESTful
