@@ -66,9 +66,6 @@ Ik kan:
     - PHP
     - node.js
 
-- Typescript
-
-- Javascript Frameworks
 
 ---
 
@@ -84,14 +81,16 @@ Client Server Model flowchart:
 5. De Javascript van de pagina verwerkt de `response` ern in `callback functie` waarna alle bekende Javascript functies (HTML elementen aanroepen, aanmaken, etc) weer aangeroepen kunnen worden.
 
 **Client** *< de gebruikerskant van de website >*  
-Server
+HTML CSS JS
 
+**Server** *< de client kan geen code zien>*
 Backend
 Web server  
 ngix/ apache  
 PHP  
 Database  
 
+**API**
 AJAX call
 JSON response  
 
@@ -102,6 +101,9 @@ Fetch API
 Frontend
 HTML 
 CSS  
+
+#### HTML Boilerplate
+
 
 ### C. Javascript
 
@@ -192,11 +194,15 @@ php
 
 node.js
 
-### E. Typescript
+### X. Extra Info
+
+Websocket > Socket.io  
+
+#### Typescript
 
 PRG04 > uitbreiding op javascript
 
-### F. Javascript Frameworks
+####  Javascript Frameworks
 
 React  
 Angular  
@@ -209,9 +215,7 @@ React Native
 Flutter
 Electron  
 
-### X. Other
 
-Socket.io  
 
 ---
 
