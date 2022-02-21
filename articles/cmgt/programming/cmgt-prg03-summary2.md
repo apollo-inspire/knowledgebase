@@ -57,16 +57,95 @@ CSS
 
 ### 4. Objects
 
+```js
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+let cat = {
+    hair: "long"
+    age: 5,
+    color: "white",
+    mew: function() {
+        console.log("new!");
+    }
+    eat: function() {
+        console.log("nomnom")
+    }
+    play: function() {
+        this.mew();("Where is my catnip")
+        console.log
+    }
+}
+
+can.mew();
+can.eat();
+cat.play();
+```
+
 ### 5. Classes
 
 ### 6. DOM
 
-Relaties
+Document Object Model
+
 
 ```js
 let placeholder = document.getElementById('myVariablePlaceholder');
 placeholder.innerHTML = "hier komt een php variable"
 ```
+
+html
+```html
+:
+<body>
+    <main>
+        <h1i id="title">Title</h1>
+        <h2 id="total">Total:</h2>
+        <ul class="cart">
+            <li>A</li>
+            <li>B</li>
+            <li>V</li>
+            <li>D</li>
+        </ul>
+    </main>
+</body>
+:
+```
+
+ID
+```js
+let elementTotal = document.getElementById("total");
+elementTotal.innerHTML = "100";
+```
+
+Class
+```js
+let elementsCart = document.getElementByClassName("cart");
+```
+
+CSS Query One
+```js
+let elementTotal = document.querySelector("#total");
+```
+
+CSS Query All
+```js
+let elementsCartItems = document.SelectorAll(".cart li");
+```
+
+DOM Relaties
+
+- Parent
+- Child
+- Sibling
+- LastChild
+
 
 ### 7. JSON
 
@@ -158,8 +237,6 @@ node.js
 
 ## X. Extra Info
 
-Websocket > Socket.io  
-
 ### Typescript
 
 PRG04 > uitbreiding op javascript
@@ -176,6 +253,16 @@ React Native
 
 Flutter
 Electron  
+    (Pennywise)
+
+### Javascript Libraries
+
+Websocket > Socket.io  
+D3.js (Data-Driven Documents)
+Codepen (JS Animations)
+Microcontroller
+Makecodearcade
+
 
 ---
 `end of file`  
