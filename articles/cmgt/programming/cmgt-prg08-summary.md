@@ -253,6 +253,11 @@ https://learn.ml5js.org/#/reference/object-detector
 https://learn.ml5js.org/#/reference/feature-extractor
 
 
+### Opdracht Week 3 Deliverable
+
+1. Bedenk een concept voor het werken met gezichtsuitdrukking herkenning, lichaamspose herkenning, handpose herkenning, object detectie, of de image feature herkenning uit week 2. (Dat is de imageClassifier waar je je eigen images aan hebt toegevoegd)
+2. data uit met javascript en geef feedback aan de gebruiker via de UI.
+3. Bouw een eenvoudige UI voor dit concept met HTML en CSS. De gebruiker hoeft dus niet in de console te kijken.
 
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
