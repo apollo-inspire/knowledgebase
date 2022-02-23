@@ -234,6 +234,7 @@ Inspiration:
 http://charliegerard.dev
 https://unity.com/products/machine-learning-agents
 https://www.youtube.com/watch?v=mPbtR4vorgY
+https://code.visualstudio.com/docs/other/unity
 
 ### PoseNet
 https://learn.ml5js.org/#/reference/posenet
@@ -257,6 +258,7 @@ https://learn.ml5js.org/#/reference/feature-extractor
 
 
 ### Opdracht Week 3 Deliverable
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week3
 
 1. Bedenk een concept voor het werken met gezichtsuitdrukking herkenning, lichaamspose herkenning, handpose herkenning, object detectie, of de image feature herkenning uit week 2. (Dat is de imageClassifier waar je je eigen images aan hebt toegevoegd)
 2. data uit met javascript en geef feedback aan de gebruiker via de UI.
