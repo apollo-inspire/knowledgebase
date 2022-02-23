@@ -218,6 +218,42 @@ Helpers
 ### Feature Extraction
 
 
+
+## Les 3
+
+handpose, bodypose, face, object recognition
+
+- PoseNet
+- Facemesh
+- FaceApi
+- Handpose API
+- ObjectDetector
+- FeatureExtractor
+
+Inspiration: http://charliegerard.dev
+
+### PoseNet
+https://learn.ml5js.org/#/reference/posenet
+
+### FaceApi
+https://learn.ml5js.org/#/reference/face-api
+
+### Facemesh
+https://learn.ml5js.org/#/reference/facemesh
+
+### Handpose API
+https://learn.ml5js.org/#/reference/handpose
+
+landmarks
+
+### ObjectDetector
+https://learn.ml5js.org/#/reference/object-detector
+
+### FeatureExtractor
+https://learn.ml5js.org/#/reference/feature-extractor
+
+
+
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
 

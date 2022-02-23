@@ -80,12 +80,45 @@ nesting is mogelijk
 
 ## Les 2
 
-Floats
+### Float
+**Float** *< een float is een container voor dingen die niet over meerdere paginas verdeeld mogen worden >*
+
+floats drijven door het document
+
+bij het compilen word de meest geschikte plaats gekozen
+
+standaard floats:
+- Figrues
+- Tables
 
 
-Tabellen
+### Figure
 
+```latex
+\usepackage{graphicx}
+```
+
+```latex
+\beging{figure}
+    \centering
+    \includegraphics{figure.jpg}[width=0.8\textwidth]
+    \caption{CaptionText}
+    \label{fig:my_label}
+\end{figure}
+```
+
+Plaatsing:
+- Bij voorkeur onderaan of bovenaan pagina (behalve bij begin hoofdstuk)
+- Indien veel floats met weinig tekst wordt word eventueel een pagina met enkel floats ingevoegd
+- Floats worden in de regel op dezelfde pagina geplaatst als waar ze in de bron-tekst staan, of op een volgende pagina
+
+### Tabellen
+
+Booktabs
+
+```latex
 \usepackage{Booktabs}
+```
 
 Horizontale Lijnen
 ```Latex
