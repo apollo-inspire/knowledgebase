@@ -230,7 +230,10 @@ handpose, bodypose, face, object recognition
 - ObjectDetector
 - FeatureExtractor
 
-Inspiration: http://charliegerard.dev
+Inspiration: 
+http://charliegerard.dev
+https://unity.com/products/machine-learning-agents
+https://www.youtube.com/watch?v=mPbtR4vorgY
 
 ### PoseNet
 https://learn.ml5js.org/#/reference/posenet
