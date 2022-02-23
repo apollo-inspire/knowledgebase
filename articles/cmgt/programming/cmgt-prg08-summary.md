@@ -220,6 +220,7 @@ Helpers
 
 
 ## Les 3
+*(opgenomen les: zie teams 2022-02-23)*
 
 handpose, bodypose, face, object recognition
 
@@ -231,10 +232,10 @@ handpose, bodypose, face, object recognition
 - FeatureExtractor
 
 Inspiration: 
-http://charliegerard.dev
-https://unity.com/products/machine-learning-agents
-https://www.youtube.com/watch?v=mPbtR4vorgY
-https://code.visualstudio.com/docs/other/unity
+http://charliegerard.dev  
+https://unity.com/products/machine-learning-agents  
+https://www.youtube.com/watch?v=mPbtR4vorgY  
+https://code.visualstudio.com/docs/other/unity  
 
 ### PoseNet
 https://learn.ml5js.org/#/reference/posenet
