@@ -237,11 +237,22 @@ https://unity.com/products/machine-learning-agents
 https://www.youtube.com/watch?v=mPbtR4vorgY  
 https://code.visualstudio.com/docs/other/unity  
 
+
+PoseNet vs imageClassifier
+
 ### PoseNet
 https://learn.ml5js.org/#/reference/posenet
 
+https://cmgt.hr.nl/project/danceflow
+https://glitch.com/~draw-circle
+https://github.com/ml5js/ml5-library/blob/main/examples/javascript/PoseNet/PoseNet_webcam/sketch.js
+https://www.youtube.com/watch?v=DMebdxAp0j0
+file:///C:/Users/lpsva/AppData/Local/Temp/PRG08-2022-WEEK3.pdf
+
 ### FaceApi
 https://learn.ml5js.org/#/reference/face-api
+
+https://www.youtube.com/watch?t=765&v=Hd6PG9R3r6c&feature=youtu.be
 
 ### Facemesh
 https://learn.ml5js.org/#/reference/facemesh
@@ -256,6 +267,12 @@ https://learn.ml5js.org/#/reference/object-detector
 
 ### FeatureExtractor
 https://learn.ml5js.org/#/reference/feature-extractor
+
+### EmotionClassifier
+https://brendansudol.com/writing/tfjs-emotions
+https://www.codeproject.com/Articles/5276827/AI-Age-Estimation-in-the-Browser-using-face-api-an
+https://www.codeproject.com/Articles/5276822/Pre-Trained-AI-Emotion-Detection-With-face-api-and
+
 
 
 ### Opdracht Week 3 Deliverable
