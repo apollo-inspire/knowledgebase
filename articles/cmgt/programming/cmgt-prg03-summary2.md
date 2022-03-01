@@ -22,27 +22,29 @@ Client Server Model flowchart:
 5. De Javascript van de pagina verwerkt de `response` ern in `callback functie` waarna alle bekende Javascript functies (HTML elementen aanroepen, aanmaken, etc) weer aangeroepen kunnen worden.
 
 **Client** *< de gebruikerskant van de website >*  
-HTML CSS JS
+- HTML 
+- CSS 
+- JS
 
 **Server** *< de client kan geen code zien>*
-Backend
-Web server  
-ngix/ apache  
-PHP  
-Database  
+- Backend
+- Web server  
+- ngix/ apache  
+- PHP  
+- Database  
 
 **API**
-AJAX call
-JSON response  
+- Fetch API
+  - AJAX call
+  - JSON response  
 
-Fetch API
 
 
 ## B. Basic Frontend: HTML & CSS
 
-Frontend
-HTML 
-CSS  
+- Frontend
+- HTML 
+- CSS  
 
 ### HTML Boilerplate
 
@@ -136,29 +138,28 @@ html
 :
 ```
 
-ID
+**ID**
 ```js
 let elementTotal = document.getElementById("total");
 elementTotal.innerHTML = "100";
 ```
 
-Class
+**Class**
 ```js
 let elementsCart = document.getElementByClassName("cart");
 ```
 
-CSS Query One
+**CSS Query One**
 ```js
 let elementTotal = document.querySelector("#total");
 ```
 
-CSS Query All
+**CSS Query All**
 ```js
 let elementsCartItems = document.SelectorAll(".cart li");
 ```
 
-DOM Relaties
-
+**DOM Relaties**
 - Parent
 - Child
 - Sibling
@@ -167,11 +168,11 @@ DOM Relaties
 
 ### 7. JSON
 
-**JavaScript Object Notation**, is a **text-based** open standard designed for human-readable **data interchange**.
+*< **JavaScript Object Notation**, is a **text-based** open standard designed for human-readable **data interchange**. >*
 
-It is derived from the **JavaScript** scripting language for representing simple **data structures** and associative arrays, called objects.
+*< It is derived from the **JavaScript** scripting language for representing simple **data structures** and associative arrays, called objects. >*
 
-Despite its relationship to JavaScript, it is **language-independent**, with parsers available for many languages.
+*< Despite its relationship to JavaScript, it is **language-independent**, with parsers available for many languages. >*
 
 json example
 ```json
@@ -225,27 +226,24 @@ WebAPI (camera, locatie)
 
 #### HTTP Statuscode
 
-1XX: Informational
-2XX: Succes
-3XX: Redirection
-4XX: Client Error (404: not found)
-5XX: Server Error
+- 1XX: Informational
+- 2XX: Succes
+- 3XX: Redirection
+- 4XX: Client Error (404: not found)
+- 5XX: Server Error
 
 ### 10. AJAX
 https://www.w3schools.com/js/js_ajax_intro.asp
 
+*< Asynchronous JavaScript And XML. AJAX is not a programming language. >*
 
-Asynchronous JavaScript And XML.
-
-AJAX is not a programming language.
-
-AJAX just uses a combination of:
+AJAX uses a combination of:
 - A browser built-in XMLHttpRequest object (to request data from a web server)
 - JavaScript and HTML DOM (to display or use the data)
 
-Synchronous: Kan pas de volgende functie aanroepen als de vorige klaar is.
+**Synchronous** *< Kan pas de volgende functie aanroepen als de vorige klaar is. >*
 
-Asynchronous: Roept de volgende functie aan direct nadat de vorige is begonnen.
+**Asynchronous** *< Roept de volgende functie aan direct nadat de vorige is begonnen. >*
 
 
 Fetch GET
@@ -316,25 +314,25 @@ PRG04 > uitbreiding op javascript
 
 ### Javascript Frameworks
 
-React  
-Angular  
-Vue    
+- React  
+- Angular  
+- Vue    
 
-Progressive Web App:
-Angular PWA
-React Native
+- Progressive Web App:
+- Angular PWA
+- React Native
 
-Flutter
-Electron  
-    (Pennywise)
+- Flutter
+- Electron  
+    - (Pennywise)
 
 ### Javascript Libraries
 
-Websocket > Socket.io  
-D3.js (Data-Driven Documents)
-Codepen (JS Animations)
-Microcontroller
-Makecodearcade
+- Websocket > Socket.io  
+- D3.js (Data-Driven Documents)
+- Codepen (JS Animations)
+- Microcontroller
+- Makecodearcade
 
 
 ---
