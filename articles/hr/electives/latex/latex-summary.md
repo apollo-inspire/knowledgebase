@@ -11,9 +11,9 @@ Wel: what you mean is what you get
 
 Commandos:
 
-begint met backslash: \
-Verplichte input: {}
-Optionele input: []
+begint met backslash: `\`
+Verplichte input: `{}`
+Optionele input: `[]`
 
 Voorbeeld
 ```latex

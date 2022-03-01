@@ -2,7 +2,7 @@
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: Lucas van der Vegt*
-*2022-02-15*
+*2022-03-01*
 <!-- Editted by: NAME, NAME, NAME -->
 
 ## Leerdoelen
@@ -46,6 +46,24 @@ CSS
 
 ### HTML Boilerplate
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+      insert here
+  </body>
+</html>
+```
+
+Advanced:
+https://www.matuzo.at/blog/html-boilerplate/
 
 ## C. Javascript
 
@@ -149,6 +167,38 @@ DOM Relaties
 
 ### 7. JSON
 
+**JavaScript Object Notation**, is a **text-based** open standard designed for human-readable **data interchange**.
+
+It is derived from the **JavaScript** scripting language for representing simple **data structures** and associative arrays, called objects.
+
+Despite its relationship to JavaScript, it is **language-independent**, with parsers available for many languages.
+
+json example
+```json
+{ // json object
+    "company": "mycompany", // string value
+    "companycontacts": { // object inside object
+        "phone": "123-123-1234",
+        "email": "example@example.com"
+    },
+    "employees": [ // json array
+        {
+            "id": 101, // number value
+            "name": "John",
+            "contacts": [ // array inside array
+                "johnwork@example.com",
+                "johnpersonal@example.com"
+            ]
+        },
+        {
+            "id": 102 
+            "name": "William",
+            "contacts": null // null value
+        }
+    ] 
+}
+```
+
 ```js
 header("Content-Type: application/json")
 echo json_encode("test")
@@ -173,14 +223,37 @@ WebAPI (camera, locatie)
 
 ### 9. RESTful
 
+#### HTTP Statuscode
+
+1XX: Informational
+2XX: Succes
+3XX: Redirection
+4XX: Client Error (404: not found)
+5XX: Server Error
+
 ### 10. AJAX
+https://www.w3schools.com/js/js_ajax_intro.asp
+
+
+Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+- A browser built-in XMLHttpRequest object (to request data from a web server)
+- JavaScript and HTML DOM (to display or use the data)
+
+Synchronous: Kan pas de volgende functie aanroepen als de vorige klaar is.
+
+Asynchronous: Roept de volgende functie aan direct nadat de vorige is begonnen.
+
 
 Fetch GET
 ```js
 fetch('https://swapi.dev/api/films/', { method: 'GET' })
     .then(response => response.json())
     .then(data => return data)
-```
+``` 
 
 Fetch POST
 ```js
@@ -267,7 +340,7 @@ Makecodearcade
 ---
 `end of file`  
 *publish date: 2022-02-15*  
-*modified date: 2022-02-15*  
+*modified date: 2022-03-01*  
   
 <!-- LINKS -->
 [google]: https://www.google.com  
