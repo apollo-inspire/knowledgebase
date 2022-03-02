@@ -298,7 +298,78 @@ https://cmgt.hr.nl/project/danceflow
 https://glitch.com/~draw-circle
 https://github.com/ml5js/ml5-library/blob/main/examples/javascript/PoseNet/PoseNet_webcam/sketch.js
 https://www.youtube.com/watch?v=DMebdxAp0j0
-file:///C:/Users/lpsva/AppData/Local/Temp/PRG08-2022-WEEK3.pdf
+https://glitch.com/edit/#!/pong-game-canvas
+
+*Maak de pose detector. Vul de "poses" variabele elke keer dat posenet een pose vindt.*
+```js
+// Maak een poseNet
+constposeNet= ml5.poseNet(video,"single", modelLoaded)
+
+// Berichtje dat het model is geladen
+functionmodelLoaded(){    
+    console.log('Model Loaded!');
+    // Luister naar 'pose' events. Zo lang het model niet geladen is zullen er geen events zijn.    
+    poseNet.on('pose',(results)=>{        
+        pose = result;        
+        console.log(pose)
+    });
+}
+```
+
+**Output**
+```js
+[
+  {
+    pose: {
+      keypoints: [{ position: { x, y }, score, part }, ...],
+      leftAngle: { x, y, confidence },
+      leftEar: { x, y, confidence },
+      leftElbow: { x, y, confidence },
+      ...
+    },
+  },
+];
+```
+
+**Output Multipose**
+```js
+[
+  {
+    pose: {
+      keypoints: [{ position: { x, y }, score, part }, ...],
+      leftAngle: { x, y, confidence },
+      leftEar: { x, y, confidence },
+      leftElbow: { x, y, confidence },
+      ...
+    },
+  },
+  {
+    pose: {
+      keypoints: [{ position: { x, y }, score, part }, ...],
+      leftAngle: { x, y, confidence },
+      leftEar: { x, y, confidence },
+      leftElbow: { x, y, confidence },
+      ...
+    },
+  },
+];
+```
+
+**Pose Draw**
+```js
+function drawCameraIntoCanvas() {
+    // teken het video element in een canvas element  
+    ctx.drawImage(video, 0, 0, 640, 480)
+
+    // nu kunnen we de keypoints en bones ook in het canvas tekenen  
+    drawKeypoints()  
+    drawSkeleton()  
+    window.requestAnimationFrame(drawCameraIntoCanvas)
+}
+
+drawCameraIntoCanvas()
+```
+*Maak een `<canvas>` element om het camera beeld en de poses in te kunnen tekenen.Maak een requestAnimationFrame functie die 60x per seconde wordt uitgevoerd. Hier teken je telkens het camerabeeld in, en daaroverheen de laatst gedetecteerde pose. Het `<video>` element kan je nu onzichtbaar maken.*
 
 ### FaceApi
 https://learn.ml5js.org/#/reference/face-api
