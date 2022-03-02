@@ -1,8 +1,8 @@
-# Programmeren 8: Machine Learning
+# Programmeren 8: Machine Learning (Samenvatting Lessen)
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: Lucas van der Vegt*
-*2022-02-15*
+*2022-03-02*
 <!-- Editted by: NAME, NAME, NAME -->
 
 
@@ -175,15 +175,13 @@ Cat or Dog? (features data)
 **Features** *< De informatie die we gevonden hebben noemen we "features". Door op te slaan welke combinaties van features bij een "auto" horen kunnen we auto's herkennen >* 
 
 
+
 ### Pre-trained models: image classifier
 Je kan een bestaand model gebruiken, dat getraind is op features van de meest voorkomende objecten in de wereld.
 
 Hoe zwaarder het model dat je download, hoe beter de accuracy, en hoe meer objecten herkend worden.
 
-**MobileNet**
-https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
-
-**ML5 Libraries**
+**ALL ML5 Libraries**
 Image:
 - ImageClassifier
 - PoseNet
@@ -214,10 +212,63 @@ Helpers
 - KNNClassifier
 - kmeans
 
+**General ML5 Code**
+Load ML5 Library
+```html
+<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+```
 
-### Feature Extraction
+ML5 Status
+```js
+console.log('ml5 version:', ml5.version);
+```
 
 
+### ML5 Image Classifier
+**MobileNet**
+https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/README.md
+https://learn.ml5js.org/#/reference/image-classifier
+
+Example
+```js
+const classifier = ml5.imageClassifier('MobileNet', modelLoaded)
+
+function modelLoaded() {
+    makePrediction()
+}
+
+function makePrediction() {
+    classifier.classify(document.getElementById('image'), (err, results) => {
+        console.log(results)
+    })
+}
+```
+
+```html
+<image id="image" src="./capibara.png"/>
+```
+
+
+### ML5 Feature Extraction
+https://learn.ml5js.org/#/reference/feature-extractor
+https://github.com/ml5js/ml5-library/tree/main/examples/javascript/FeatureExtractor/FeatureExtractor_Image_Classification
+https://www.youtube.com/watch?v=eeO-rWYFuG0
+https://github.com/HR-CMGT/Machine-Learning-Readinglist/tree/master/extractfeatures
+
+1. Load MobileNet image model
+2. Re-train model with own data
+3. Save new own Model
+4. Load new own Model
+5. Use new own Model
+
+**Opdracht praktijk (week 2)**
+Bouw een photo hunting app voor mobile waarbij de speler op pad moet gaan om foto's te maken.
+
+Maak eerst alles werkend met de imageClassifier
+
+Als je eigen images wil kunnen herkennen, gebruik je de featureExtractor
+
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week2
 
 ## Les 3
 *(opgenomen les: zie teams 2022-02-23)*
