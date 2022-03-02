@@ -976,6 +976,7 @@ Geen acces control voor "normale", cross origin browser requests:
 vb.
 res.header("Acces-Control-Allow-Origin", "*");
 res.header("Acces-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+res.header("Allow-Methods", "*");
 
 ##### Preflight Request
 
@@ -2212,6 +2213,8 @@ https://web.archive.org/web/20170523012226/http://codepen.io/guide/#one
 
 ## Links
 https://www.youtube.com/watch?v=fgTGADljAeg
+
+https://www.bezkoder.com/react-node-express-mongodb-mern-stack/
 
 
 `end of file`  

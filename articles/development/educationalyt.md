@@ -1,9 +1,7 @@
 # Educational Youtube Channels
 [Youtube Learning](https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg)
 
-## Development
-
-### Casual
+## Casual Development
 
 [Joma Tech](https://www.youtube.com/channel/UCV0qA-eDDICsRR9rPcnG7tw)
 [Ben Awad](https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw)
@@ -15,8 +13,9 @@
 [Jim Browning](https://www.youtube.com/c/JimBrowning/)
 [Tren Black](https://www.youtube.com/channel/UCSSBvqWNPq_qO3_W4EJiOAA)
 [Randy](https://www.youtube.com/channel/UCUmLRMERmJrmUtgnbFfknAg)
+[I did a thing](https://www.youtube.com/channel/UCJLZe_NoiG0hT7QCX_9vmqw)
 
-### Webdevelopment
+## Webdevelopment
 
 [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
@@ -32,7 +31,7 @@
 [LearnCode.academy](https://www.youtube.com/channel/UCVTlvUkGslCV_h-nSAId8Sw)
 [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw)
 
-### Gamedev
+## Gamedev
 
 [PolyMars](https://www.youtube.com/channel/UCl7dSJloxuCa9IBFml7sakw)
 [Game Dev Unlocked](https://www.youtube.com/channel/UCKP-9R75QFQX-5Au3HyfjzA)
@@ -59,13 +58,14 @@
 [Farlands Design Den](https://www.youtube.com/channel/UCKmGmd4K-Kv17fu0TMJ5Z0A)
 [Blackthornprod](https://www.youtube.com/channel/UC9Z1XWw1kmnvOOFsj6Bzy2g)
 
-### Hardware
+## Hardware
 
 [Switch & Lever](https://www.youtube.com/channel/UC_1kQQSYFfEFcvzTH0IJkmA)
 [Adafruit Industries](https://www.youtube.com/channel/UCpOlOeQjj7EsVnDh3zuCgsA)
 [bigclivedotcom](https://www.youtube.com/channel/UCtM5z2gkrGRuWd0JQMx76qA)
 
-### Computer Science
+
+## Computer Science
 
 [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
 [Two Minute Papers](https://www.youtube.com/user/keeroyz)
@@ -79,17 +79,17 @@
 [Inspecto](https://www.youtube.com/channel/UCG2IoSJBUhrGL8fb5stMCWw)
 [NDC Conferences](https://www.youtube.com/c/NDCConferences/)
 
-### Design
+## Design
 
 [DesignCourse](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
 
-### Cyber Philosophy
-[HealthyGamerGG](https://www.youtube.com/c/HealthyGamerGG/)
+## Cyber Philosophy
+
 [Ordinary Things](https://www.youtube.com/c/OrdinaryThings/)
 [Lessons in Meme Culture](https://www.youtube.com/c/LessonsinMemeCulture)
 [Disrupt](https://www.youtube.com/c/DisruptReality/)
 
-### Business
+## Business
 
 [The Defiant](https://www.youtube.com/channel/UCL0J4MLEdLP0-UyLu0hCktg)
 [Ryder Carroll](https://www.youtube.com/user/RyderCarroll/)
@@ -108,7 +108,7 @@
 [NetworkChuck](https://www.youtube.com/c/NetworkChuck/)
 [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw)
 
-## Sciences
+## General Knowledge / Sciences
 
 [Tom Scott](https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A)
 [Veritasium](https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA)
@@ -116,18 +116,12 @@
 [TED](https://www.youtube.com/channel/UCAuUUnT6oDeKwE6v1NGQxug)
 [TEDx](https://www.youtube.com/user/TEDxTalks)
 [TED Ed](https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA)
-[Giz Edwards](https://www.youtube.com/channel/UC1u5y6G9doAZYt5zztcn6JA)
 [TheSlomoGuys](https://www.youtube.com/user/theslowmoguys/)
 [Vsauce](https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA)
 [D!NG](https://www.youtube.com/channel/UClq42foiSgl7sSpLupnugGA)
 [Aperture](https://www.youtube.com/c/ApertureScience/)
-[JCS - Criminal Psychology](https://www.youtube.com/channel/UCYwVxWpjeKFWwu8TML-Te9A)
 [CrashCourse](https://www.youtube.com/user/crashcourse/)
-[Biblaridion](https://www.youtube.com/channel/UCMjTcpv56G_W0FRIdPHBn4A/)
 [The Thought Emporium](https://www.youtube.com/c/thethoughtemporium/)
-[Psych2Go](https://www.youtube.com/channel/UCkJEpR7JmS36tajD34Gp4VA)
-[I did a thing](https://www.youtube.com/channel/UCJLZe_NoiG0hT7QCX_9vmqw)
-[PsychedSubstance](https://www.youtube.com/channel/UCn8V3KNSgDr1Dai77_y8JrQ)
 [Nerdwriter1](https://www.youtube.com/channel/UCJkMlOu7faDgqh4PfzbpLdg)
 [Coffee Break](https://www.youtube.com/channel/UC9WQRw8jgJhag-vkDNTDMRg)
 [Josh Deek](https://www.youtube.com/channel/UCetLp-kZUVa2SXSpPxEdUOQ)
@@ -136,7 +130,19 @@
 [CGP Grey](https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w)
 [Joe Rogan Podcast](https://www.youtube.com/c/joerogan/)
 
-## Maatschappelijk
+## Language / Culture
+
+[Biblaridion](https://www.youtube.com/channel/UCMjTcpv56G_W0FRIdPHBn4A/)
+
+## Psychology
+
+[HealthyGamerGG](https://www.youtube.com/c/HealthyGamerGG/)
+[Giz Edwards](https://www.youtube.com/channel/UC1u5y6G9doAZYt5zztcn6JA)
+[Psych2Go](https://www.youtube.com/channel/UCkJEpR7JmS36tajD34Gp4VA)
+[PsychedSubstance](https://www.youtube.com/channel/UCn8V3KNSgDr1Dai77_y8JrQ)
+[JCS - Criminal Psychology](https://www.youtube.com/channel/UCYwVxWpjeKFWwu8TML-Te9A)
+
+## Maatschappelijk Nederland
 
 [Nieuwsuur](https://www.youtube.com/c/nieuwsuur/)
 [Zembla](https://www.youtube.com/channel/UCMo9uZjfZuvVRxKDgaTBOyQ)
@@ -158,6 +164,7 @@
 ## Video Creation
 
 ### Knowledge
+
 [Corridor](https://www.youtube.com/channel/UCsn6cjffsvyOZCZxvGoJxGg)
 [Shutterstock Tutorials](https://www.youtube.com/channel/UCKyVN7fBTaQ3np4WOO7IK9A)
 [RØDE Microphones](https://www.youtube.com/channel/UCoAPdsREDWIFzJ2aZpJQlew)
