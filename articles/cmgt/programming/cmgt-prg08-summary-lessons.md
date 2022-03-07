@@ -406,16 +406,18 @@ https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week3
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4
 https://codepen.io/Qbrid/pen/OwpjLX
 https://github.com/NathanEpstein/KNear
+https://burakkanber.com/blog/machine-learning-in-js-k-nearest-neighbor-part-1/
 
 Reduceer data zoveel mogelijk
 
 dichtbijzijnste vinden 
 
-2 4 8
+`2 4 8`
 $$
 2-4=2 \\
 4-8=4
 $$
+
 2 is het dichtstbij
 
 wortel van de kwadraat = de min wegwerken
@@ -443,9 +445,6 @@ $$
 \sqrt{(a-b)^2 + (a-b)^2 + (a-b)^2 + (a-b)^2 + (a-b)^2}
 $$
 
-```js
-
-```
 
 **Supervised Learning** het algoritme wordt getrained met bestaande data die al labels heeft.
 
@@ -469,6 +468,36 @@ PoseNet + KNN
 Groot verschil tussen schalen in verschillend data verkleinen
 
 
+Inladen Library
+```js
+<script src="knear.js"></script>
+```
+https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week4/knear/js/knear.js
+
+Aanmaken Algoritme
+```js
+const k = 3
+const machine = new kNear(k)
+```
+
+Learn Data
+```js
+machine.learn([6.2, 20, 9], 'cat')
+machine.learn([18,9.2,8.1,2],'cat')
+machine.learn([20.1,17,15.5,5],'dog')
+machine.learn([17,9.1,9,1.95],'cat')
+machine.learn([23.5,20,20,6.2],'dog')
+machine.learn([16,9.0,10,2.1],'cat')
+machine.learn([21,16.7,16,3.3],'cat')
+```
+
+Classify
+```js
+let prediction = machine.classify([7,18,7])
+console.log(`I think this is a ${prediction}`)
+```
+
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4/knear
 
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
