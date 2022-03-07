@@ -174,8 +174,6 @@ Cat or Dog? (features data)
 
 **Features** *< De informatie die we gevonden hebben noemen we "features". Door op te slaan welke combinaties van features bij een "auto" horen kunnen we auto's herkennen >* 
 
-
-
 ### Pre-trained models: image classifier
 Je kan een bestaand model gebruiken, dat getraind is op features van de meest voorkomende objecten in de wereld.
 
@@ -396,13 +394,81 @@ https://www.codeproject.com/Articles/5276827/AI-Age-Estimation-in-the-Browser-us
 https://www.codeproject.com/Articles/5276822/Pre-Trained-AI-Emotion-Detection-With-face-api-and
 
 
-
 ### Opdracht Week 3 Deliverable
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week3
 
 1. Bedenk een concept voor het werken met gezichtsuitdrukking herkenning, lichaamspose herkenning, handpose herkenning, object detectie, of de image feature herkenning uit week 2. (Dat is de imageClassifier waar je je eigen images aan hebt toegevoegd)
 2. data uit met javascript en geef feedback aan de gebruiker via de UI.
 3. Bouw een eenvoudige UI voor dit concept met HTML en CSS. De gebruiker hoeft dus niet in de console te kijken.
+
+
+## Les 4
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4
+https://codepen.io/Qbrid/pen/OwpjLX
+https://github.com/NathanEpstein/KNear
+
+Reduceer data zoveel mogelijk
+
+dichtbijzijnste vinden 
+
+2 4 8
+$$
+2-4=2 \\
+4-8=4
+$$
+2 is het dichtstbij
+
+wortel van de kwadraat = de min wegwerken
+
+$$
+\sqrt{(2-4)^2} = 2 \\
+\sqrt{(8-4)^2} = 4
+$$
+
+
+KNN
+
+Hoeveel Dichtbijzijnste Getal
+
+Algoritme, geen neural network
+
+Drie dimensies  
+
+$$
+\sqrt{(a-b)^2 + (a-b)^2 + (a-b)^2}
+$$
+
+Vijf dimensies  
+$$
+\sqrt{(a-b)^2 + (a-b)^2 + (a-b)^2 + (a-b)^2 + (a-b)^2}
+$$
+
+```js
+
+```
+
+**Supervised Learning** het algoritme wordt getrained met bestaande data die al labels heeft.
+
+kNear
+KNNClassifier
+
+PoseNet + KNN
+
+1 lange array maken
+
+
+**PROs**
+- Veelzijdig, alle soorten data
+- Geen last van slechte scheiding
+
+**CONs**
+- Trainingsdata heb je altijd nodig (data = het model)
+- Alle opties moeten een keer voorbij gekomen zijn
+
+**Normaliseren**
+Groot verschil tussen schalen in verschillend data verkleinen
+
+
 
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
