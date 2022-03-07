@@ -483,7 +483,7 @@ const machine = new kNear(k)
 Learn Data
 ```js
 machine.learn([6.2, 20, 9], 'cat')
-machine.learn([18,9.2,8.1,2],'cat')
+machine.learn([18,9.2,8.1,2],'cat') 
 machine.learn([20.1,17,15.5,5],'dog')
 machine.learn([17,9.1,9,1.95],'cat')
 machine.learn([23.5,20,20,6.2],'dog')
