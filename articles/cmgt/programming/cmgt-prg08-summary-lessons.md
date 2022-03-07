@@ -22,6 +22,9 @@ https://github.com/HR-CMGT/Machine-Learning-Readinglist
 
 https://github.com/tensorflow/models/tree/master/research/slim
 
+
+https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html
+
 ## Les 1
 
 Tensorflow JS

@@ -2,6 +2,13 @@
 *By: Lucas van der Vegt*
 *2022-02-22*
 
+## Resources
+
+https://www.overleaf.com/
+https://www.overleaf.com/learn
+https://en.wikibooks.org/wiki/LaTeX
+https://www.latex-project.org/help/documentation/
+
 ## Les 1
 
 Latex is long term time saving.
@@ -92,6 +99,38 @@ standaard floats:
 - Tables
 
 
+Plaatsing:
+- Bij voorkeur onderaan of bovenaan pagina (behalve bij begin hoofdstuk)
+- Indien veel floats met weinig tekst wordt word eventueel een pagina met enkel floats ingevoegd
+- Floats worden in de regel op dezelfde pagina geplaatst als waar ze in de bron-tekst staan, of op een volgende pagina
+
+```latex
+\begin{figure}[b]
+```
+|||
+|-|-|
+| `b` | bottom | 
+| `t` | top | 
+| `h` | here, ongeveer op de positive als in de bron-tekst | 
+| `p` | page, op aparte pagina met enkel floats | 
+
+Combineren
+```latex
+\begin{figure}[tp]
+```
+
+Lijst van figuren of tabellen:
+```latex
+\listoffigures
+\listoftables
+```
+
+Caption onder float:
+```latex
+\caption[Korte caption in lijst van figuren]{Uitgebreide en lange
+caption met tekst en uitleg onder het figuur}
+```
+
 ### Figure
 
 ```latex
@@ -99,7 +138,7 @@ standaard floats:
 ```
 
 ```latex
-\beging{figure}
+\begin{figure}
     \centering
     \includegraphics{figure.jpg}[width=0.8\textwidth]
     \caption{CaptionText}
@@ -107,12 +146,40 @@ standaard floats:
 \end{figure}
 ```
 
-Plaatsing:
-- Bij voorkeur onderaan of bovenaan pagina (behalve bij begin hoofdstuk)
-- Indien veel floats met weinig tekst wordt word eventueel een pagina met enkel floats ingevoegd
-- Floats worden in de regel op dezelfde pagina geplaatst als waar ze in de bron-tekst staan, of op een volgende pagina
 
 ### Tabellen
+
+Tabular
+
+```latex
+begin{table}
+    \centering
+    \begin{tabular}{c | c} % kolom
+        1 & 2 \\
+        3 & 4
+    \end{tabular}
+    \caption{CaptionText}
+    \label{tab:my_label}
+\end{table}
+```
+
+|||
+|-|-|
+| `l` | left |
+| `c` | center |
+| `r` | right |
+| `p{3cm}` | paragraph kolom: tekst wordt automatisch over meerdere
+regels verdeeld |
+
+Horizontale Lijnen
+```Latex
+\hline
+```
+Tips:
+- Zorg voor strak opgemaakte tabellen: focus moet liggen op inhoud, niet op opmaak
+- Lijn de data uit (r/l) voor vertical lijnen in je tabel => geen lijn nodig
+- Minimaliseer horizontale lijnen
+- Let op inhoud: laat onnodige decimale getallen weg
 
 Booktabs
 
@@ -120,12 +187,13 @@ Booktabs
 \usepackage{Booktabs}
 ```
 
-Horizontale Lijnen
-```Latex
-\hline
-
+```latex
 \toprule % bovenste lijn
 \midrule % lijn in het midden
 \cmidrule % stuk vna een lijn in het midden
 \bottomrule % onderste lijn
+```
+
+uitgebreid voorbeeld tabellen
+```latex
 ```
