@@ -168,8 +168,7 @@ begin{table}
 | `l` | left |
 | `c` | center |
 | `r` | right |
-| `p{3cm}` | paragraph kolom: tekst wordt automatisch over meerdere
-regels verdeeld |
+| `p{3cm}` | paragraph kolom: tekst wordt automatisch over meerdere regels verdeeld |
 
 Horizontale Lijnen
 ```Latex
@@ -240,9 +239,53 @@ Greek letters
 \alpha \Alpha \beta \Beta \gamma \Gamma \pi \Pi \phi \varphi \mu \Phi
 ```
 
+Operators
+```latex
+\sin \tan \exp \lim
+```
+
+Sub & Superscript
+```latex
+a^2
+a_2
+```
+Breuken & Wortels
+```latex
+\frac{num}{den}
+\sqrt{}
+```
+
+Sommatie en integraal: 
+```latex
+\sum   
+\int_{a}^{b}
+```
+
 Mon italic math opmaak
 ```latex
 \mathrm{}
+```
+
+Accenten
+```latex
+\bar{ }   
+\hat{ }    
+\dot{ }   
+\vec{ }  
+\underline{ }
+```
+
+Andere Symbolen
+```latex
+\cdot
+\pm  
+\leq
+\approx
+\subset   
+\infty
+\partial  
+\forall
+\nabla
 ```
 
 - `.` als decimaalschedingsteken
