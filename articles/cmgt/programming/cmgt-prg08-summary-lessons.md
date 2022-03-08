@@ -416,6 +416,7 @@ Reduceer data zoveel mogelijk
 dichtbijzijnste vinden 
 
 `2 4 8`
+
 $$
 2-4=2 \\
 4-8=4

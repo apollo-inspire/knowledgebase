@@ -190,10 +190,86 @@ Booktabs
 ```latex
 \toprule % bovenste lijn
 \midrule % lijn in het midden
-\cmidrule % stuk vna een lijn in het midden
+\cmidrule % stuk van een lijn in het midden
 \bottomrule % onderste lijn
 ```
 
 uitgebreid voorbeeld tabellen
 ```latex
 ```
+
+## Les 3
+
+### Math
+https://en.wikibooks.org/wiki/LaTeX/Mathematics
+https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
+
+Load Package (choose)
+```latex
+\usepackage{amsmath}
+\usepackage{mathtools}
+```
+
+
+wiskunde
+
+inline 
+```latex
+$...$
+```
+
+displayed
+```latex
+$$...$$
+```
+
+displayed & numbered
+```latex
+\begin{equation}
+
+\end{equation}
+```
+
+Symbols
+```latex
++ - = ! / ( ) [ ] < > | ' : *
+```
+
+Greek letters
+```latex
+\alpha \Alpha \beta \Beta \gamma \Gamma \pi \Pi \phi \varphi \mu \Phi
+```
+
+Mon italic math opmaak
+```latex
+\mathrm{}
+```
+
+- `.` als decimaalschedingsteken
+- `\cdot` als vermenigvuldigingsteken
+- \mathrm{}
+  - subscript
+  - d's van differentiaal en integral
+  - het getal e
+  - een eden in de wiskunde omgeving
+- variabelen uitleggen
+
+
+
+### Opmaak truucjes
+Spaties
+```latex
+\quad
+\qquad
+
+\,
+\:
+\;
+\!
+```
+
+### Extra
+
+https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+https://www.overleaf.com/learn/latex/Nomenclatures
+https://www.overleaf.com/learn/latex/Chemistry_formulae
