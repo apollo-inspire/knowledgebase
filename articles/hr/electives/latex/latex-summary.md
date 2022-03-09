@@ -1,6 +1,9 @@
 # Latex 
+*Knowledgebase: https://luukftf.github.io/knowledgebase*  
+*(code: https://github.com/LuukFTF/knowledgebase)*  
 *By: Lucas van der Vegt*
-*2022-02-22*
+*2022-03-08*
+<!-- Editted by: NAME, NAME, NAME -->
 
 ## Resources
 
@@ -83,7 +86,10 @@ enumerate
 
 nesting is mogelijk
 
-
+Next Line
+```latex
+\\
+```
 
 ## Les 2
 
@@ -201,7 +207,7 @@ uitgebreid voorbeeld tabellen
 
 ### Math
 https://en.wikibooks.org/wiki/LaTeX/Mathematics
-https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
+
 
 Load Package (choose)
 ```latex
@@ -261,6 +267,10 @@ Sommatie en integraal:
 \int_{a}^{b}
 ```
 
+Haakjes die grootte aanpassen:
+```latex
+\left( ... \right)
+
 Mon italic math opmaak
 ```latex
 \mathrm{}
@@ -288,6 +298,27 @@ Andere Symbolen
 \nabla
 ```
 
+https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
+
+Verticaal uitlijnen
+```latex
+\begin{align}
+    x + y &= 4 \\
+    2x –3y &= 5
+\end{align}
+```
+
+Alternatief voor `\\`
+```latex
+\nonumber
+```
+
+Matrix
+https://www.overleaf.com/learn/latex/Matrices
+
+Array
+https://opentextbc.ca/pressbooks/chapter/arrays/
+
 - `.` als decimaalschedingsteken
 - `\cdot` als vermenigvuldigingsteken
 - \mathrm{}
@@ -300,15 +331,23 @@ Andere Symbolen
 
 
 ### Opmaak truucjes
+
+Grotere Weergave
+```latex
+\displaystyle
+
+\everymath{\displaystyle} % voor \begin{document}
+```
+
 Spaties
 ```latex
 \quad
 \qquad
 
-\,
-\:
-\;
-\!
+\, % 3/18 quad
+\: % 4/18 quad
+\; % 5/18 quad
+\! % -3/18 quad
 ```
 
 ### Extra
