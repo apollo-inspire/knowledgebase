@@ -16,28 +16,29 @@ https://www.latex-project.org/help/documentation/
 
 Latex is long term time saving.
 
-Niet: what you see is what you get
+Niet: what you see is what you get  
 Wel: what you mean is what you get
 
 Commandos:
 
-begint met backslash: `\`
-Verplichte input: `{}`
-Optionele input: `[]`
+- Begint met backslash: `\`
+- Verplichte input: `{}`
+- Optionele input: `[]`
+- Comments: `%`
 
 Voorbeeld
 ```latex
 \usepackage{babel}[dutch]
 ```
 
-Make-up language 
-Word gelezen door compiler
-tekst naar pdf
+- Make-up language   
+- Word gelezen door compiler
+- tekst naar pdf
 
 Tools:
-TEX works editor
-TEX maker
-Overleaf
+- TEX works editor
+- TEX maker
+- Overleaf
 
 Document template:
 ```latex
@@ -239,42 +240,79 @@ Symbols
 ```latex
 + - = ! / ( ) [ ] < > | ' : *
 ```
+$$ 
++ - = ! / ( ) [ ] < > | ' : * 
+$$ 
 
 Greek letters
 ```latex
-\alpha \Alpha \beta \Beta \gamma \Gamma \pi \Pi \phi \varphi \mu \Phi
+\alpha \Alpha 
+\beta \Beta 
+\gamma \Gamma 
+\pi \Pi 
+\phi \varphi \Phi
+\mu
 ```
+$$ 
+\alpha \Alpha \beta \Beta \gamma \Gamma \pi \Pi \phi \varphi \mu \Phi
+$$ 
 
 Operators
 ```latex
-\sin \tan \exp \lim
+\sin 
+\tan 
+\exp 
+\lim
 ```
+$$
+\sin \tan \exp \lim
+$$
 
 Sub & Superscript
 ```latex
 a^2
 a_2
 ```
+$$
+a^2
+a_2
+$$
+
 Breuken & Wortels
 ```latex
 \frac{num}{den}
 \sqrt{}
 ```
+$$
+\frac{num}{den}
+\sqrt{num}
+$$
 
 Sommatie en integraal: 
 ```latex
 \sum   
 \int_{a}^{b}
 ```
+$$
+\sum   
+\int_{a}^{b}
+$$
 
 Haakjes die grootte aanpassen:
 ```latex
 \left( ... \right)
-
-Mon italic math opmaak
-```latex
-\mathrm{}
 ```
+$$
+\left( ... \right)
+$$
+
+Non italic math opmaak
+```latex
+\mathrm{m}x
+```
+$$
+\mathrm{m}x
+$$
 
 Accenten
 ```latex
@@ -284,6 +322,13 @@ Accenten
 \vec{ }  
 \underline{ }
 ```
+$$
+\bar{a}   
+\hat{a}    
+\dot{a}   
+\vec{a}  
+\underline{a}
+$$
 
 Andere Symbolen
 ```latex
@@ -297,6 +342,17 @@ Andere Symbolen
 \forall
 \nabla
 ```
+$$
+\cdot
+\pm  
+\leq
+\approx
+\subset   
+\infty
+\partial  
+\forall
+\nabla
+$$
 
 https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
 
@@ -335,20 +391,29 @@ https://opentextbc.ca/pressbooks/chapter/arrays/
 Grotere Weergave
 ```latex
 \displaystyle
-
 \everymath{\displaystyle} % voor \begin{document}
 ```
 
 Spaties
 ```latex
 \quad
-\qquad
+\qquad % 2 quad
 
 \, % 3/18 quad
 \: % 4/18 quad
 \; % 5/18 quad
 \! % -3/18 quad
 ```
+
+$$
+a \quad a \\
+a \qquad a \\
+
+a \, a \\
+a \: a \\
+a \; a \\
+a \! a \\
+$$
 
 ### Extra
 
