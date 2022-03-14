@@ -503,6 +503,129 @@ console.log(`I think this is a ${prediction}`)
 
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4/knear
 
+## Les 5
+
+CSV file (data)
+
+
+Decision Tree Algoritme
+
+Heeft voorkeur voor de meeste informatie
+
+groter en kleiner dan een bepaald getal
+
+grafiek, alle vragen bedenken om alles te kunnen classificeren
+
+
+libraries
+
+papaparse 
+```js
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+```  
+
+DecisionTree  
+```js
+import { DecisionTree } from "./libraries/decisiontree.js
+```  
+
+VegaTree 
+```js
+import { VegaTree } from "./libraries/vegatree.js
+```  
+
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week5/oefening/libraries
+
+
+CSV Data
+```json
+"Name","Toothed","Hair","Breathes","Legs","Species"
+"Dog",1,1,1,1,"Mammal"
+"Cat",1,1,1,1,"Mammal"
+"Frog",1,0,1,0,"Reptile"
+"Turtle",0,1,1,1,"Mammal"
+"Bird",1,1,1,1,"Mammal"
+"Human",1,1,1,1,"Mammal"
+"Lizard",1,0,0,0,"Reptile"
+"Crocodile",1,0,1,0,"Reptile"
+"Lion",1,1,1,1,"Mammal"
+"Snake",0,1,1,"Reptile"
+```
+
+Setup Constants
+```js
+const csvFile = "./data/animals.csv"
+const trainingLabel = "Species"
+const ignoredColumns = ['Name']
+```
+
+Inladen csv data / log data
+```js
+loadData() {
+  Papa.parse("data/animals.csv", {
+        download:true,
+        header:true, 
+        dynamicTyping:true,
+        complete: results => console.log(results.data)
+    })
+  }
+}
+```
+
+Train model & Teken Decision Tree
+```js
+function trainModel(data) {
+    let decisionTree = new DecisionTree({
+        ignoredAttributes: ignoredColumns,
+        trainingSet: data,
+        categoryAttr: trainingLabel
+    })
+
+    // Teken de boomstructuur - DOM element, breedte, hoogte, decision tree
+    let visual = new VegaTree('#view', 800, 400, decisionTree.toJSON())
+}
+```
+
+
+Training & Test Data
+
+Dataset opdelen
+- 80% Training
+- 20% Testing
+
+(Eerst data husselen)
+
+```js
+const traingingData = data lenght*0.8
+const testData = data lenght*0.8
+```
+
+Accuracy
+
+
+Confusion Matrix
+- False Negatives
+- False Positives 
+- 
+verbeteren / bepalen welk van de 4 getallen belangrijk zijn
+
+
+Decision Tree Advanced
+tree dept  
+overfitting  
+
+Pros
+- whitebox
+- belangrijke feauteres vooraan
+- data kan gelijk ingedalen worden
+- je hoeft de data niet op te slaan
+
+Con
+- Overfitting
+- Bias
+- Leert geen relaties tussen dingen
+
+
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
 
