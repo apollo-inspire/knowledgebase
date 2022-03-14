@@ -25,6 +25,10 @@ https://github.com/tensorflow/models/tree/master/research/slim
 
 https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Les 1 - Machine Learning Introduction
 
 Tensorflow JS
@@ -131,6 +135,10 @@ Techstack:
 - TensorflowJS (alleen local vanwege privacy)
 - Frontend React
 - Backend NodeJS
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## Les 2 - ML5 Introduction
 
@@ -271,6 +279,10 @@ Als je eigen images wil kunnen herkennen, gebruik je de featureExtractor
 
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week2
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Les 3 - ML5 Pretrained Models
 *(opgenomen les: zie teams 2022-02-23)*
 
@@ -405,6 +417,10 @@ https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week3
 3. Bouw een eenvoudige UI voor dit concept met HTML en CSS. De gebruiker hoeft dus niet in de console te kijken.
 
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Les 4 - KNN
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4
 https://codepen.io/Qbrid/pen/OwpjLX
@@ -502,6 +518,10 @@ console.log(`I think this is a ${prediction}`)
 ```
 
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4/knear
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## Les 5 - Decision Tree
 
@@ -778,6 +798,16 @@ https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week5/inleveropdracht.md#ex
 
 <!-- TODO: insert -->
 
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
+## Les 6
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
+
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
 
@@ -827,6 +857,10 @@ Pandas
 Input > Prediction
 
 Can be embedded or deployed to cloud.
+
+---
+<br><br><br><br>
+<div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## TensorFlow.js Quick Start
 https://www.youtube.com/watch?v=Y_XM3Bu-4yc
