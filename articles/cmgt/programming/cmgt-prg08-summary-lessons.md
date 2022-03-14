@@ -1,18 +1,18 @@
 # Programmeren 8: Machine Learning (Samenvatting Lessen)
 *Knowledgebase: https://luukftf.github.io/knowledgebase*  
 *(code: https://github.com/LuukFTF/knowledgebase)*  
-*By: Lucas van der Vegt*
-*2022-03-02*
+*By: Lucas van der Vegt*  
+*2022-03-02*    
 <!-- Editted by: NAME, NAME, NAME -->
 
 
 ## Leerdoelen
 
 ## Deadlines
-Opdracht 1: Week 3
-Opdracht 2: Week 5
-Eindopdracht Ontwerp: Week 7
-Eindopdracht Uitwerking: Week 9
+- Opdracht 1: Week 3
+- Opdracht 2: Week 5
+- Eindopdracht Ontwerp: Week 7
+- Eindopdracht Uitwerking: Week 9
 
 ## Index
 
@@ -25,7 +25,7 @@ https://github.com/tensorflow/models/tree/master/research/slim
 
 https://storage.googleapis.com/tfjs-examples/webcam-transfer-learning/dist/index.html
 
-## Les 1
+## Les 1 - Machine Learning Introduction
 
 Tensorflow JS
 
@@ -132,7 +132,7 @@ Techstack:
 - Frontend React
 - Backend NodeJS
 
-## Les 2
+## Les 2 - ML5 Introduction
 
 ### ML5 Introduction
 
@@ -271,7 +271,7 @@ Als je eigen images wil kunnen herkennen, gebruik je de featureExtractor
 
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week2
 
-## Les 3
+## Les 3 - ML5 Pretrained Models
 *(opgenomen les: zie teams 2022-02-23)*
 
 handpose, bodypose, face, object recognition
@@ -405,7 +405,7 @@ https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week3
 3. Bouw een eenvoudige UI voor dit concept met HTML en CSS. De gebruiker hoeft dus niet in de console te kijken.
 
 
-## Les 4
+## Les 4 - KNN
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4
 https://codepen.io/Qbrid/pen/OwpjLX
 https://github.com/NathanEpstein/KNear
@@ -503,7 +503,7 @@ console.log(`I think this is a ${prediction}`)
 
 https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4/knear
 
-## Les 5
+## Les 5 - Decision Tree
 
 Inleveropdracht
 - CSV data laden
@@ -511,6 +511,8 @@ Inleveropdracht
 - Voorspelling doen
 - Accuracy uitrekenen
 
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week5
+https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week5/inleveropdracht.md
 
 Data > Algoritme > Model
 
@@ -640,6 +642,9 @@ Dataset opdelen
 - 20% Testing
 
 (Eerst data husselen)
+```js
+data.sort(() => (Math.random() - 0.5)
+```
 
 ```js
 let data      = Papa.parse("titanic.csv")
@@ -654,6 +659,13 @@ De testData heeft al een "Species" label
 ```js
 let testAnimal = testData[0]
 console.log(testData[0])
+```
+
+Prediction
+```js
+let animal = {Name:"Rat", Toothed: 1, Hair: 1, Breathes: 1, Legs: 1}
+let prediction = decisionTree.predict(animal)
+console.log(`${animal.Name} is of the ${prediction} species`)
 ```
 
 Test op 1 uit testdata
@@ -697,8 +709,41 @@ Confusion Matrix
 - False Negatives
 - False Positives 
 
-Als een voorspelling fout is, maakt het dan nog uit wat er precies fout is?  
-verbeteren / bepalen welk van de 4 getallen belangrijk zijn
+Als een voorspelling fout is, maakt het dan nog uit wat er precies fout is? (verbeteren / bepalen welk van de 4 getallen belangrijk zijn)
+
+Met een Confusion Matrix krijg je nog wat meer inzicht in je accuracy. Je gaat nu ook bijhouden waarom een voorspelling goed of fout was. Bijvoorbeeld bij de mushrooms:
+
+```js
+if(prediction == "e" && label == "p") {
+    console.log("🍄 predicted edible, but was actually poisonous!🤮 ⚰️")
+}
+if(prediction == "p" && label == "e") {
+    console.log("🍄 predicted poisonous, but was actually edible! 😬")
+}
+```
+
+```html
+<div>
+    <h4>Confusion Matrix</h4>
+    <table id="confusion">
+        <tr>
+            <td></td>
+            <td>Predicted true</td>
+            <td>Predicted false</td>
+        </tr>
+        <tr>
+            <td>Actually true</td>
+            <td> - </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>Actually false</td>
+            <td> - </td>
+            <td> - </td>
+        </tr>`
+    </table>
+</div>
+```
 
 
 Decision Tree Advanced
@@ -716,6 +761,19 @@ Decision Tree Advanced
 - Overfitting: de tree leert vooral de training data goed herkennen.- Bias: het algoritme heeft een voorkeur voor classes waar meer voorbeelden van zijn. (Meer katten dan honden in trainingdata).
 - Het algoritme leert niet persé de overkoepelende relaties / doel van de classificatie. (greedy algorithm: https://en.wikipedia.org/wiki/Greedy_algorithm)
 
+Opdracht Data:
+
+Bij het inlezen van de data moet je controleren wat het label is waarop we willen trainen. Ook moet je even kijken of er kolommen zijn die niet relevant zijn bij het trainen.
+
+- Bij 'mushrooms.csv' is het label "class", en de inhoud is "p" (poisonous) en "e" (edible.)
+- Bij 'diabetes.csv' is het label "Label" en de inhoud is "1" (diabetes) en "0" (geen diabetes)
+- Bij 'titanic.csv' is het label "Survived" en de inhoud is "1" (survived) en "0" (not survived). Ook heeft de titanic dataset veel kolommen die misschien niet relevant zijn: "Name", "Cabin", "PassengerId", "Ticket", "Fare". Je kan kijken of je algoritme beter wordt als de deze kolommen negeert.
+
+
+Extra Uitdaging:
+https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week5/inleveropdracht.md#extra-uitdaging
+
+<!-- TODO: insert -->
 
 ## Machine Learning Explained in 100 Seconds
 https://www.youtube.com/watch?v=PeMlggyqz0Y
