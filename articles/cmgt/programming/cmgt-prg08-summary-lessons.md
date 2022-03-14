@@ -568,6 +568,7 @@ https://www.papaparse.com/
 ```  
 
 **DecisionTree**  
+https://github.com/lagodiuk/decision-tree-js
 ```js
 import { DecisionTree } from "./libraries/decisiontree.js
 ```  
@@ -584,6 +585,8 @@ import { VegaTree } from "./libraries/vegatree.js
 **Data analyseren**
 Wat is het label?  
 Welke data is relevant?
+
+https://www.kaggle.com/datasets
 
 CSV Data
 ```json
