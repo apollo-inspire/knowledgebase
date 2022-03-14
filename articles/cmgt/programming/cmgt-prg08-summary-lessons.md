@@ -505,10 +505,33 @@ https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week4/knear
 
 ## Les 5
 
-CSV file (data)
+Inleveropdracht
+- CSV data laden
+- Decision Tree tekenen
+- Voorspelling doen
+- Accuracy uitrekenen
 
 
-Decision Tree Algoritme
+Data > Algoritme > Model
+
+**ML5**
+Gebruik pre-trained modellen om poses, gezichten, etc te herkennen
+
+**KNN**
+Vergelijk nieuwe data met de bestaande training dat
+
+**Decision Tree**
+Tekent een beslisboom op basis van training data
+
+
+Data: CSV files (Kaggle)
+
+
+
+
+**Decision Tree Algoritme**
+
+https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
 
 Heeft voorkeur voor de meeste informatie
 
@@ -517,25 +540,48 @@ groter en kleiner dan een bepaald getal
 grafiek, alle vragen bedenken om alles te kunnen classificeren
 
 
-libraries
+**White Box Algoritme**
+Na de training kan je goed zien waarom een bepaalde voorspelling gemaakt wordt.
 
-papaparse 
+
+pseudocode:
+```js
+data = titanicdata.csv
+tree = new DecisionTree()
+model = tree.train(data)
+
+prediction = tree.predict(Jack, Male, 22)
+
+// output: DIED
+```
+
+
+**libraries**  
+https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week5/oefening/libraries
+
+**Papa Parse**
+https://www.papaparse.com/
 ```js
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 ```  
 
-DecisionTree  
+**DecisionTree**  
 ```js
 import { DecisionTree } from "./libraries/decisiontree.js
 ```  
 
-VegaTree 
+**VegaTree**  
+https://vega.github.io/vega/examples/tree-layout/
 ```js
 import { VegaTree } from "./libraries/vegatree.js
-```  
+```   
 
-https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week5/oefening/libraries
 
+
+
+**Data analyseren**
+Wat is het label?  
+Welke data is relevant?
 
 CSV Data
 ```json
@@ -582,7 +628,7 @@ function trainModel(data) {
     })
 
     // Teken de boomstructuur - DOM element, breedte, hoogte, decision tree
-    let visual = new VegaTree('#view', 800, 400, decisionTree.toJSON())
+    let treeImage = new VegaTree('#view', 800, 400, decisionTree.toJSON())
 }
 ```
 
@@ -596,34 +642,79 @@ Dataset opdelen
 (Eerst data husselen)
 
 ```js
-const traingingData = data lenght*0.8
-const testData = data lenght*0.8
+let data      = Papa.parse("titanic.csv")
+let trainData = data.slice(0, Math.floor(data.length * 0.8))
+let testData  = data.slice(Math.floor(data.length * 0.8) + 1)
+
+let tree = new DecisionTree()
+let model = tree.train(trainData)
 ```
 
-Accuracy
+De testData heeft al een "Species" label
+```js
+let testAnimal = testData[0]
+console.log(testData[0])
+```
 
+Test op 1 uit testdata
+```js
+let prediction = model.predict(testData[0])
+
+if(prediction === testAnimal.species) {
+  console.log("CORRECTE  VOORSPELLING!")
+  }
+```
+
+Test hele testdata set
+```js
+let amountCorrect = 0
+
+for(let testAnimal of testData) {
+  if(model.predict(testPerson)  === testAnimal.survived)={
+    amountCorrect++
+    }
+  }
+```
+
+Accuracy berekenen
+```js
+let accuracy = amountCorrect / testData.length
+```
+
+Bij testen moet je het juiste antwoord (species = Mammal of Reptile) niet meegeven!
+```js
+let animalWithoutLabel= Object.assign({}, testData[0])
+delete animalWithoutLabel.species
+
+let prediction = model.predict(personWithoutLabel)
+if(prediction === testAnimal.species) {
+    console.log("Correct prediction!")
+  }
+```
+Doe de prediction met een kopie van het testpersoon, zonder het label
 
 Confusion Matrix
 - False Negatives
 - False Positives 
-- 
+
+Als een voorspelling fout is, maakt het dan nog uit wat er precies fout is?  
 verbeteren / bepalen welk van de 4 getallen belangrijk zijn
 
 
 Decision Tree Advanced
-tree dept  
-overfitting  
+- tree dept  
+- overfitting  (te specifiek trainen)
 
-Pros
-- whitebox
-- belangrijke feauteres vooraan
-- data kan gelijk ingedalen worden
-- je hoeft de data niet op te slaan
+**PROS**
+  White box: duidelijke visualisatie van beslissingen.
+- Onbelangrijke features komen onderaan in de tree te staan.
+- Een Excel sheet kan je zonder veel voorbereiding rechtstreeks in het algoritme gooien.
+- Bij KNN moesten we de data altijd bewaren. Hier bewaar je alleen de tree (het model).
+- Grote hoeveelheid data maakt het uiteindelijke model niet langzamer.
 
-Con
-- Overfitting
-- Bias
-- Leert geen relaties tussen dingen
+**CONS**
+- Overfitting: de tree leert vooral de training data goed herkennen.- Bias: het algoritme heeft een voorkeur voor classes waar meer voorbeelden van zijn. (Meer katten dan honden in trainingdata).
+- Het algoritme leert niet persé de overkoepelende relaties / doel van de classificatie. (greedy algorithm: https://en.wikipedia.org/wiki/Greedy_algorithm)
 
 
 ## Machine Learning Explained in 100 Seconds
