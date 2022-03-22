@@ -420,3 +420,58 @@ $$
 https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
 https://www.overleaf.com/learn/latex/Nomenclatures
 https://www.overleaf.com/learn/latex/Chemistry_formulae
+
+## Les 4
+
+### Verwijzingen
+
+Chapter (in book)
+Section/subsection (in article)
+Figures
+Tables
+Equations
+Appendices
+
+```latex
+\label{marker}
+```
+
+```latex
+\ref{marker}
+
+\eqref{marker} % math
+
+\pageref{marker}
+```
+
+```latex
+Zie Figuur~\ref{fig:mijnfiguur} op pagina~\pageref{fig:mijnfiguur}.
+```
+
+markers herkenbaar maken
+prefix voor labels
+
+|prefix|type|
+|---|---|
+|ch: |chapter|
+|sec: | section|
+|subsec:| subsection|
+|fig: | figure|
+|tab: | table|
+|eq: | equation|
+|lst: | code listing|
+|itm: | enumerated list item|
+|alg: | algorithm|
+|app: | appendix subsection|
+
+
+package:
+`hyperref`
+
+https://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
+
+### Literatuur/bronnenlijst
+
+## Les 5
+
+Includes om met verschillende bestanden te werken.

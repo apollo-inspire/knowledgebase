@@ -531,7 +531,7 @@ Inleveropdracht
 - Voorspelling doen
 - Accuracy uitrekenen
 
-https://github.com/HR-CMGT/PRG08-2021-2022/tree/main/week5
+https://github.com/0HR-CMGT/PRG08-2021-2022/tree/main/week5
 https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week5/inleveropdracht.md
 
 Data > Algoritme > Model
@@ -705,7 +705,7 @@ Test hele testdata set
 let amountCorrect = 0
 
 for(let testAnimal of testData) {
-  if(model.predict(testPerson)  === testAnimal.survived)={
+  if(model.predict(testAnimal) === testAnimal.survived) {
     amountCorrect++
     }
   }
@@ -803,6 +803,24 @@ https://github.com/HR-CMGT/PRG08-2021-2022/blob/main/week5/inleveropdracht.md#ex
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 
 
 ## Les 6
+
+Neural Network
+
+Hidden Layers
+
+Regression
+Classification
+
+Tensorflow
+
+ChartJS
+Scatterplot
+
+
+Map Data (data to axis)
+
+Randomize data
+
 
 ---
 <br><br><br><br>
