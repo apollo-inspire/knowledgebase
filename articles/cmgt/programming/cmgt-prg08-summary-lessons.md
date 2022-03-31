@@ -60,7 +60,9 @@ Disciplines:
 - tekst begrijpen
 
 **Artificial Intelligence**  
-Dumb AI
+
+**Dumb AI**
+If statements
 
 **Machine Learning**    
 Supervised Learning
