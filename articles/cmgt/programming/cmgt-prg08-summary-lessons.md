@@ -822,6 +822,10 @@ Map Data (data to axis)
 Randomize data
 
 
+## Les 7
+
+
+
 ---
 <br><br><br><br>
 <div style="page-break-after: always; visibility: hidden"> \pagebreak </div> 

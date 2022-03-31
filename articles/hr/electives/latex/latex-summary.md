@@ -421,6 +421,9 @@ https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
 https://www.overleaf.com/learn/latex/Nomenclatures
 https://www.overleaf.com/learn/latex/Chemistry_formulae
 
+Javascript
+https://github.com/xgirma/latex-javaScript/blob/master/jslistings.sty
+
 ## Les 4
 
 ### Verwijzingen
